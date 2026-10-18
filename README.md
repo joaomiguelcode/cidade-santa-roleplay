@@ -17,3 +17,4 @@ Servidor FiveM Roleplay - Base Cidade Santa.
    - `steam_webApiKey`: sua chave de API da [Steam](https://steamcommunity.com/dev/apikey)
    - `sv_tebexSecret`: chave secreta da sua loja Tebex (se aplicável)
 4. Execute o `start.bat` para iniciar o servidor.
+"# cidade-santa-roleplay" 

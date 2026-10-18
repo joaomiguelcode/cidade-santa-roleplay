@@ -1,0 +1,19 @@
+{
+  "callMedic": "Appeler un médecin",
+  "cancel": "ANNULER",
+  "confirm": "CONFIRMER",
+  "reportPlayer": "Rapport",
+  "reportPlayerText": "Voulez-vous vraiment signaler ce joueur",
+  "reportPlayerText2": "pour t'avoir tué sans raison",
+  "reportPlayerText3": "De faux rapports peuvent entraîner des sanctions pour vous",
+  "youDied": "Tu es mort",
+  "by": "par",
+  "playerReported": "Joueur signalé",
+  "timeLeft": "TEMPS RESTANT",
+  "timeLeft2": "SECONDES",
+  "timeLeft3": "JUSQU'À CE QUE VOUS RÉPAREZ",
+  "pressF2": "APPUYEZ SUR F2 POUR LIBÉRER LA SOURIS",
+  "chooseLocation": "Choisissez un emplacement",
+  "spawnLabelVip": "DÉBLOQUÉ EN VIP FAC PREMIUM",
+  "spawnLabelPremium": "DÉBLOQUÉ EN VIP ARGENT"
+}

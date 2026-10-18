@@ -1,0 +1,179 @@
+{
+  "prisonsAmount": "السجون المنفذة",
+  "finesAmount": "الغرامات المفروضة",
+  "helloLanding": "مرحبًا مجددًا، ",
+
+  "announce": {
+    "title": "لوحة الإعلانات",
+    "create": "إنشاء إعلان",
+    "modal": {
+      "title": "إنشاء إعلان",
+      "placeholder": "اكتب الإعلان هنا...",
+      "confirm": "تأكيد",
+      "close": "إغلاق"
+    }
+  },
+  "selectOption": "اختر خيارًا",
+
+
+  "noOccurrencesFound": "لم يتم العثور على تقارير",
+  "editOccurrence": "تحرير التقرير",
+  "saveEdit": "حفظ التغييرات",
+
+  "loading": "جاري التحميل...",
+  "occurrenceNotFound": "التقرير غير موجود",
+
+  "description": "الوصف",
+  "describeOccurrence": "صف التقرير",
+
+  "address": "العنوان",
+  "tax": "الرسوم",
+  "model": "النموذج",
+
+  "return": "رجوع",
+
+  "since": {
+    "years": "منذ {0} سنوات",
+    "months": "منذ {0} أشهر",
+    "days": "منذ {0} أيام",
+    "hours": "منذ {0} ساعات",
+    "minutes": "منذ {0} دقائق",
+    "seconds": "منذ {0} ثواني"
+  },
+
+  "since2": {
+    "years": "{0} سنوات",
+    "months": "{0} أشهر",
+    "days": "{0} أيام",
+    "hours": "{0} ساعات",
+    "minutes": "{0} دقائق",
+    "seconds": "{0} ثواني"
+  },
+
+  "search": {
+    "title": "البحث عن أشخاص",
+    "placeholder": "البحث بواسطة جواز السفر...",
+    "status": {
+      "waiting": "في انتظار البحث...",
+      "searching": "جاري البحث...",
+      "notFound": "لم يتم العثور على نتائج"
+    }
+  },
+  "apprehension": {
+    "title": "تنفيذ القبض",
+    "infos": {
+      "title": "المعلومات الأساسية",
+      "officer": "الضابط",
+      "date": "التاريخ والوقت",
+      "infractor": "المخالف"
+    },
+    "infractions": {
+      "title": "المخالفات المرتكبة",
+      "infraction": "المخالفة",
+      "finesReduction": "تخفيض الغرامات",
+      "sentenceReduction": "تخفيض العقوبة",
+      "submit": "تطبيق المخالفات"
+    },
+    "description": {
+      "title": "الوصف",
+      "placeholder": "اكتب وصف القبض هنا..."
+    },
+    "submit": "تنفيذ القبض"
+  },
+  "fines": {
+    "title": "تنفيذ غرامة",
+    "infos": {
+      "title": "المعلومات الأساسية",
+      "officer": "الضابط",
+      "date": "التاريخ والوقت",
+      "infractor": "المخالف"
+    },
+    "infractions": {
+      "title": "المخالفات المرتكبة",
+      "infraction": "المخالفة",
+      "finesReduction": "تخفيض الغرامات",
+      "sentenceReduction": "تخفيض العقوبة",
+      "description": {
+        "title": "الوصف",
+        "placeholder": "اكتب وصف الغرامة هنا..."
+      }
+    },
+    "submit": "تنفيذ الغرامة"
+  },
+  "wanteds": {
+    "title": "الأفراد",
+    "notFound": "لا يوجد مستخدم مطلوب"
+  },
+  "wanted": {
+    "name": "الاسم",
+    "reason": "مطلوب بسبب",
+    "officer": "الضابط",
+    "since": "مطلوب منذ"
+  },
+  "wantedProfile": {
+    "title": "لوحة المطلوبين",
+    "name": "الاسم",
+    "notFound": "المطلوب غير موجود",
+    "informations": {
+      "title": "المعلومات",
+      "name": "الاسم",
+      "estate": "الأصول",
+      "wanted": "مطلوب",
+      "passport": "جواز السفر",
+      "age": "العمر",
+      "hasWeapon": "حمل السلاح"
+    },
+    "options": {
+      "history": "السجل",
+      "vehicles": "المركبات",
+      "houses": "السكن"
+    },
+    "table": {
+      "type": "النوع",
+      "date": "التاريخ",
+      "officer": "الضابط",
+      "time": "الوقت/القيمة",
+      "actions": "الإجراءات"
+    },
+    "modal": {
+      "title": "بدء الملاحقة",
+      "placeholder": "اكتب سبب الملاحقة هنا...",
+      "confirm": "تأكيد",
+      "close": "إغلاق"
+    }
+  },
+
+  "report": {
+    "title": "تقارير الحوادث",
+    "register": "تسجيل تقرير جديد",
+    "informations": {
+      "title": "العنوان",
+      "titlePlaceholder": "اكتب عنوان التقرير هنا...",
+      "officer": "الضابط",
+      "date": "التاريخ والوقت",
+      "infractor": "المخالف",
+      "description": "الوصف",
+      "descriptionPlaceholder": "اكتب وصف التقرير هنا...",
+      "requester": "الطالب",
+      "suspect": "المشتبه به"
+    },
+    "submit": "إنشاء تقرير"
+  },
+
+  "occurrance": {
+    "officer": "الضابط",
+    "requester": "الطالب",
+    "suspect": "المشتبه به",
+    "status": "الحالة",
+    "online": "متصل",
+    "date": "التاريخ والوقت"
+  },
+
+  "currency": "BRL",
+  "locale": "ar-SA",
+  "months": "{0} أشهر",
+  "yes": "نعم",
+  "no": "لا",
+  "age": "{0} سنة",
+  "back": "رجوع"
+}

@@ -1,0 +1,11 @@
+[
+    { "id": 1, "type": null },
+    { "id": 2, "type": "automobile" },
+    { "id": 3, "type": "bike" },
+    { "id": 4, "type": "boat" },
+    { "id": 5, "type": "plane" },
+    { "id": 6, "type": "heli" },
+    { "id": 7, "type": "bicycle" },
+    { "id": 8, "type": "quadbike" },
+    { "id": 9, "type": "favorite" }
+]

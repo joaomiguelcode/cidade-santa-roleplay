@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Painel de Estacao</title>
+<style>
+  :root{
+    --white:#ffffff;
+    --accent-off:#3a5a7e;
+    --cyan-glow:rgba(87,214,236,.5);
+    --alert:#ff5b6a;
+    --alert-glow:rgba(255,91,106,.55);
+    --mono:ui-monospace,"SF Mono","Cascadia Mono","Roboto Mono",Menlo,Consolas,monospace;
+    --sans:"Helvetica Neue","Segoe UI",system-ui,Arial,sans-serif;
+  }
+
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{height:100%}
+  body{background:transparent;color:var(--white);font-family:var(--sans);
+    overflow:hidden;-webkit-font-smoothing:antialiased}
+
+  .board{
+    height:100%;width:100%;
+    display:flex;flex-direction:column;align-items:center;justify-content:center;
+    gap:clamp(2px,.8vw,10px);text-align:center;padding:clamp(10px,2.5vw,26px);
+  }
+
+  .label{color:var(--white);letter-spacing:.18em;text-transform:uppercase;
+    font-weight:800;font-size:clamp(13px,2.6vw,21px);
+    text-shadow:0 2px 10px rgba(0,0,0,.55), 0 0 16px var(--cyan-glow)}
+
+  .timer{font-family:var(--mono);font-weight:700;line-height:.9;
+    font-size:clamp(56px,17vw,150px);letter-spacing:.02em;
+    font-variant-numeric:tabular-nums;color:var(--white);
+    text-shadow:0 3px 14px rgba(0,0,0,.6), 0 0 30px var(--cyan-glow);transition:color .3s ease}
+  .colon{font-style:normal;color:inherit}
+
+  .board[data-state="idle"] .timer{color:var(--accent-off);text-shadow:0 3px 14px rgba(0,0,0,.6)}
+  .board[data-state="boarding"] .colon{animation:blink 1s steps(1) infinite}
+  .board[data-state="boarding"].urgent .timer{color:var(--alert);
+    text-shadow:0 3px 14px rgba(0,0,0,.6), 0 0 30px var(--alert-glow);animation:throb .9s ease-in-out infinite}
+
+  .board[data-state="departing"] .label{display:none}
+  .board[data-state="departing"] .timer{font-family:var(--sans);font-weight:900;
+    font-size:clamp(38px,11vw,96px);letter-spacing:.14em;color:var(--alert);
+    text-shadow:0 3px 14px rgba(0,0,0,.6), 0 0 30px var(--alert-glow);animation:throb .8s ease-in-out infinite}
+
+  @keyframes blink{50%{opacity:.15}}
+  @keyframes throb{0%,100%{opacity:1}50%{opacity:.55}}
+  @media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+</head>
+<body>
+  <div class="board" id="board" data-state="idle">
+    <div class="label" id="label"></div>
+    <div class="timer" id="count">--:--</div>
+  </div>
+
+<script>
+  var el = function(id){ return document.getElementById(id); };
+  var board = el('board');
+  var labels = {
+    boarding: '',
+    departing: ''
+  };
+
+  function fmt(s){ s = Math.max(0, Math.round(s)); var m = Math.floor(s/60), sec = s%60; return m + ':' + String(sec).padStart(2,'0'); }
+
+  function paintCount(str){
+    var c = el('count');
+    if(str.indexOf(':') > -1){ var p = str.split(':'); c.innerHTML = p[0] + '<i class="colon">:</i>' + p[1]; }
+    else { c.textContent = str; }
+  }
+
+  function setState(d){
+    if(d.language){
+      document.documentElement.lang = d.language;
+      document.documentElement.dir = /^ar/i.test(d.language) ? 'rtl' : 'ltr';
+    }
+    if(d.labels){
+      if(d.labels.boarding) labels.boarding = d.labels.boarding;
+      if(d.labels.departing) labels.departing = d.labels.departing;
+    }
+
+    var status = d.status || 'idle';
+    board.dataset.state = status;
+    board.classList.remove('urgent');
+    el('label').textContent = labels.boarding;
+
+    if(status === 'boarding'){
+      paintCount(fmt(d.seconds));
+      if(d.seconds <= 5) board.classList.add('urgent');
+    } else if(status === 'departing'){
+      paintCount(labels.departing);
+    } else {
+      paintCount('--:--');
+    }
+  }
+
+  window.addEventListener('message', function(e){
+    var d = e.data || {};
+    if(typeof d === 'string'){
+      try { d = JSON.parse(d); } catch(err) { d = {}; }
+    }
+    if(d.type === 'trainState'){ setState(d); }
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+{
+  "vipvehicle": {
+  "common": {
+    "processing": "Traitement en cours…",
+    "redeemError": "Impossible de confirmer la récupération. Rouvrez cet écran pour vérifier vos véhicules avant de réessayer.",
+    "closeLabel": "Fermer",
+    "backLabel": "Retour",
+    "slotSelected": "Sélectionné",
+    "badgePermanent": "Permanent",
+    "badgeTemporaryOne": "Temporaire pendant {days} jour",
+    "badgeTemporaryOther": "Temporaire pendant {days} jours",
+    "swapCountdown": "Temps restant pour l'échange",
+    "statusPermanent": "Permanent",
+    "statusTemporary": "Temporaire",
+    "dialogTitle": "Attention",
+    "dialogCancel": "Annuler",
+    "dialogConfirm": "Confirmer",
+    "duplicateLine2": "Les durées d'utilisation seront cumulées.",
+    "conflictTemporary": "temporaire",
+    "conflictAnd": " et ",
+    "conflictPermanent": "permanent",
+    "testDrive": "Essai routier",
+    "successButton": "Terminer",
+    "emptyButton": "Terminer"
+  },
+  "vehicle": {
+    "slotsTitle": "Récupérer un véhicule",
+    "slotsSubtitle": "Récupérez votre véhicule VIP ici !",
+    "slotLabel": "{ordinal} véhicule",
+    "slotButton": "Sélectionner le véhicule",
+    "slotSwap": "Changer de véhicule",
+    "slotUnselected": "Véhicule non sélectionné",
+    "confirmAll": "Récupérer le véhicule",
+    "duplicateLine1": "Vous avez sélectionné le même véhicule dans deux récupérations.",
+    "duplicateNotice": "Vous ne recevrez qu'un seul exemplaire du véhicule.",
+    "conflictBefore": "Le même véhicule ne peut pas être sélectionné comme ",
+    "conflictAfter": ". Modifiez le véhicule dans l'une des options ci-dessus.",
+    "selectionTitle": "Récupérer le {ordinal} véhicule",
+    "selectionSubtitle": "Sélectionnez le {ordinalLower} véhicule que vous souhaitez récupérer",
+    "confirmSelection": "Confirmer le véhicule",
+    "successTitle": "Véhicules récupérés !",
+    "successText": "Félicitations ! Vous venez de récupérer vos véhicules VIP.\nProfitez-en pour explorer la ville avec votre nouvelle acquisition !",
+    "emptyTitle": "Véhicules indisponibles !",
+    "emptyText": "Vous n'avez aucun véhicule VIP à récupérer pour le moment."
+  },
+  "item": {
+    "slotsTitle": "Récupérer des objets",
+    "slotsSubtitle": "Récupérez votre objet VIP ici !",
+    "slotLabel": "{ordinal} objet",
+    "slotButton": "Sélectionner l'objet",
+    "slotSwap": "Changer d'objet",
+    "slotUnselected": "Objet non sélectionné",
+    "confirmAll": "Récupérer les objets",
+    "duplicateLine1": "Vous avez sélectionné le même objet dans deux récupérations.",
+    "duplicateNotice": "Vous ne recevrez qu'un seul exemplaire de l'objet.",
+    "conflictBefore": "Le même objet ne peut pas être sélectionné comme ",
+    "conflictAfter": ". Modifiez l'objet dans l'une des options ci-dessus.",
+    "selectionTitle": "Récupérer le {ordinal} objet",
+    "selectionSubtitle": "Sélectionnez le {ordinalLower} objet que vous souhaitez récupérer",
+    "confirmSelection": "Confirmer l'objet",
+    "successTitle": "Objets récupérés !",
+    "successText": "Félicitations ! Vous venez de récupérer vos objets VIP.\nProfitez-en pour explorer la ville avec votre nouvelle acquisition !",
+    "emptyTitle": "Objets indisponibles !",
+    "emptyText": "Vous n'avez aucun objet VIP à récupérer pour le moment."
+  },
+  "ordinals": [
+    "Premier",
+    "Deuxième",
+    "Troisième",
+    "Quatrième",
+    "Cinquième",
+    "Sixième",
+    "Septième",
+    "Huitième",
+    "Neuvième",
+    "Dixième"
+  ],
+  "ordinalsLower": [
+    "premier",
+    "deuxième",
+    "troisième",
+    "quatrième",
+    "cinquième",
+    "sixième",
+    "septième",
+    "huitième",
+    "neuvième",
+    "dixième"
+  ],
+  "ordinalFallback": "{n}e",
+  "home": {
+    "redeem": {
+      "title": "ÉCHANGER DES VÉHICULES",
+      "button": "ÉCHANGEZ MAINTENANT",
+      "select": "Sélectionnez vos véhicules",
+      "close": "FERMER"
+    },
+    "success": {
+      "title": "Merci de nous soutenir avec votre don !",
+      "close": "FERMER"
+    }
+  },
+  "redeem": {
+    "title": "ÉCHANGER DES VÉHICULES",
+    "button": "ÉCHANGEZ MAINTENANT",
+    "select": "Sélectionnez vos véhicules",
+    "close": "FERMER",
+    "confirmed": "Confirmé",
+    "notSelected": "Non sélectionné"
+  },
+  "success": {
+    "title": "Merci de nous soutenir avec votre don !",
+    "close": "FERMER"
+  }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "title": "حيواناتي الأليفة",
+  "summary": "{pets} حيوانًا أليفًا · {equipped} مجهزًا",
+  "empty": "لا تملك أي حيوانات أليفة بعد.",
+  "listLabel": "حيواناتك الأليفة",
+  "equipped": "مُجهز",
+  "equippedAt": "مُجهز · {position}",
+  "available": "{quantity} وحدات · {positions} مواضع",
+  "positionLabel": "موضع الجسم · {pet}",
+  "equip": "تجهيز",
+  "unequip": "إزالة التجهيز"
+}

@@ -1,0 +1,16 @@
+{
+  "select": "SÉLECTIONNER",
+  "room": "CHAMBRE",
+  "search": "SALLE DE RECHERCHE...",
+  "password": "ENTRER LE MOT DE PASSE",
+  "enter": "ENTRER DANS LA CHAMBRE",
+  "selectRoom": "CHOISIR LA CHAMBRE",
+  "createRoom": "CRÉER UNE CHAMBRE",
+  "roomName": "NOM DE LA CHAMBRE",
+  "roomPassword": "MOT DE PASSE DE LA SALLE",
+  "public": "PUBLIQUE",
+  "private": "PRIVÉ",
+  "create": "CRÉER UNE CHAMBRE",
+  "currentRoom": "CHAMBRE ACTUELLE",
+  "exit": "SORTIE"
+}

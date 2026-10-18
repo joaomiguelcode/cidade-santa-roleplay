@@ -1,0 +1,21 @@
+{
+    "skinweapon_title": "سوق السكنات",
+    "skinweapon_subtitle": "احصل على سكنك",
+    "skinweapon_category_pistol": "المسدسات",
+    "skinweapon_category_my": "المملوكة",
+    "skinweapon_category_rifle": "البنادق",
+    "skinweapon_input_placeholder": "البحث عن سكن...",
+    "skinweapon_selected_skin": "السكن المحدد",
+    "skinweapon_price": "القيمة",
+    "skinweapon_stock": "المخزون",
+    "skinweapon_rarity": "الندرة",
+    "skinweapon_buy": "شراء",
+    "skinweapon_transfer": "نقل",
+    "skinweapon_equip_try": "تجهيز/إلغاء تجهيز",
+    "skinweapon_equip": "تجهيز",
+    "skinweapon_modes": {
+        "Pistol": "المسدسات",
+        "Possuidas": "المملوكة",
+        "Rifle": "البنادق"
+    }
+}

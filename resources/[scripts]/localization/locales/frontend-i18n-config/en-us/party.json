@@ -1,0 +1,24 @@
+{
+  "select": "SELECT",
+  "room": "ROOM",
+
+  "search": "SEARCH ROOM...",
+  "password": "ENTER PASSWORD",
+  "enter": "ENTER ROOM",
+
+  "selectRoom": "SELECT ROOM",
+
+  "createRoom": "CREATE ROOM",
+
+  "roomName": "ROOM NAME",
+  "roomPassword": "ROOM PASSWORD",
+
+  "public": "PUBLIC",
+  "private": "PRIVATE",
+
+  "create": "CREATE ROOM",
+
+  "currentRoom": "CURRENT ROOM",
+
+  "exit": "EXIT"
+}

@@ -1,0 +1,73 @@
+{
+  "allRanks": "جميع التصنيفات",
+  "orgPanel": "لوحة المنظمة",
+
+  "battlepassTitle": "{0}باس",
+  "battlepassTitle2": "{0}<span>باس</span>",
+  "battlepassRedeemAll": "استرداد جميع الجوائز",
+  "battlepassBuy": "شراء باس المعركة",
+  "battlepassEndsIn": "يعاد تعيينه في اليوم الأول من كل شهر",
+  "battlepassItemRedeem": "استرداد",
+  "battlepassItemRedeemed": "تم الاسترداد",
+  "battlepassItemBlocked": "محظور",
+  "battlepassLevel": "اليوم {0}",
+
+  "passText": "الباس",
+  "promotionExpired": "منتهية الصلاحية",
+  "gift": "هدية",
+
+  "unlockPass": "فتح الباس",
+
+  "writeNotice": "اكتب خبرًا",
+
+  "redeemed": "تم الاسترداد",
+
+  "removeImage": "إزالة",
+  "single": "أعزب",
+
+  "pasteImageLink": "الصق رابط الصورة هنا: 340x100",
+
+  "renewVip": "تجديد",
+  "daysLeftVip": "{0} أيام",
+  "hoursLeftVip": "{0} ساعات",
+  "minutesLeftVip": "{0} دقائق",
+  "expiredVip": "منتهي الصلاحية",
+
+  "homeNav": "الرئيسية",
+  "missionsNav": "الإنجازات",
+  "storeNav": "المتجر",
+  "newsNav": "الأخبار",
+  "mapNav": "الخريطة",
+  "configNav": "الإعدادات",
+  "rulesNav": "القواعد",
+
+  "titleAchievements": "نظرة عامة",
+  "disponibleAchievements": "الألقاب",
+  "redeemAchievement": "جمع المكافأة",
+  "rewardAchievement": "المكافأة",
+
+  "writeTitle": "اكتب عنوانًا",
+  "publish": "نشر",
+
+  "buyVipButton": "اشتر الآن",
+
+  "buyVip": "شراء",
+  "changeInsta": "تغيير",
+  "Insta": "إضافة",
+  "changeTiktok": "تغيير",
+  "Tiktok": "إضافة",
+  "hoursPlayed": "ساعات اللعب",
+  "hasntVip": "لا يملك VIP",
+
+  "clickToUnlock": "فتح الباس",
+  "blocked": "محظور",
+  "battlepassTime": "ينتهي في اليوم الأول من كل شهر",
+  "police": "الشرطة",
+  "medic": "المسعفون",
+  "mechanic": "الميكانيكيون",
+  "clickToCreateNews": "انقر هنا لإنشاء خبرك!",
+  "clickToCreateNewsDescription": "بالنقر هنا يمكنك إنشاء خبرك",
+
+  "achievements:playtime_hours_x_daily.displayName": "متصل لأكثر من {0} ساعة/ساعات (اليوم)",
+  "achievements:playtime_hours_x_daily.description": "ابقَ متصلًا لأكثر من {0} ساعة اليوم لإكمال هذه المهمة."
+}

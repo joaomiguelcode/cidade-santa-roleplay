@@ -1,0 +1,2564 @@
+{
+    "matchPanel": {
+        "historyLoaded": "لقاءات محمّلة",
+        "historyMore": "تحميل المزيد",
+        "historyEnd": "نهاية السجل لهذا المرشح",
+        "title": "لوحة اللقاءات",
+        "subtitle": "متابعة مباشرة · للمشرفين 1 و2 فقط",
+        "tabs": {
+            "matches": "في اللقاء",
+            "queue": "في الطابور",
+            "history": "السجل"
+        },
+        "kinds": {
+            "iniciante": "مبتدئ",
+            "novato": "جديد",
+            "veterano": "مخضرم",
+            "unknown": "غير معروف"
+        },
+        "results": {
+            "completed": "مكتمل",
+            "skipped": "تم تخطيه",
+            "expired": "منتهي الصلاحية",
+            "staff_cancel": "ألغاه المشرفون",
+            "legacy": "سجل سابق"
+        },
+        "genders": {
+            "male": "ذكر",
+            "female": "أنثى",
+            "unknown": "غير محدد"
+        },
+        "empty": {
+            "matches": "لا توجد أزواج في لقاء الآن",
+            "queue": "لا أحد يبحث عن شريك الآن",
+            "history": "لا توجد لقاءات في السجل"
+        },
+        "periods": {
+            "today": "اليوم",
+            "yesterday": "أمس",
+            "week": "7 أيام",
+            "fortnight": "14 يومًا",
+            "custom": "مخصص"
+        },
+        "errors": {
+            "forbidden": "ليس لديك إذن لفتح لوحة اللقاءات",
+            "unavailable": "اللوحة غير متاحة. حاول مجددًا.",
+            "classification_unavailable": "التصنيف غير متاح.",
+            "history_unavailable": "تعذر تحميل السجل.",
+            "narrow_period": "نتائج كثيرة جدًا. اختر فترة أقصر.",
+            "target_unavailable": "اللاعب أو اللقاء لم يعد متاحًا.",
+            "leave_minigame": "غادر تجربتك قبل استخدام النقل أو المشاهدة.",
+            "rate_limit": "انتظر قليلًا وحاول مجددًا.",
+            "invalid_period": "اختر فترة صالحة لا تتجاوز سنة.",
+            "closed": "أُغلقت اللوحة. افتح /painelmatch مجددًا."
+        },
+        "search": "ابحث بالاسم أو المعرّف...",
+        "close": "إغلاق اللوحة",
+        "return": "العودة إلى موقعي",
+        "spec": "مشاهدة",
+        "stop": "إيقاف المشاهدة",
+        "cancel": "إلغاء اللقاء",
+        "back": "رجوع",
+        "confirm": "هل تريد إلغاء هذا اللقاء؟",
+        "confirmText": "يعود اللاعبان إلى العالم العادي في موضعيهما السابقين وينتهي اللقاء.",
+        "visible": "ظاهر",
+        "hidden": "مخفي",
+        "new": "جديد",
+        "period": "الفترة",
+        "from": "من",
+        "until": "إلى",
+        "loading": "جارٍ التحميل...",
+        "retry": "حاول مجددًا",
+        "session": "جلسة",
+        "actions": "إجراءات",
+        "updated": "مباشر: آخر تحديث منذ",
+        "offline": "توقفت التحديثات",
+        "matchTime": "الوقت في اللقاء",
+        "queueTime": "في الطابور",
+        "player": "اللاعب",
+        "type": "النوع",
+        "gender": "الجنس",
+        "card": "البطاقة",
+        "when": "متى",
+        "duration": "المدة",
+        "result": "النتيجة",
+        "inHouse": "أنت في منزل",
+        "visiting": "أنت مع",
+        "spectating": "تشاهد",
+        "ended": "انتهى اللقاء.",
+        "returned": "عادوا إلى العالم",
+        "pairTotal": "أزواج في اللقاء",
+        "queueTotal": "لاعبون في الطابور",
+        "historyTotal": "لقاءات في السجل"
+    },
+
+    "ban": {
+        "common": { "cancel": "إلغاء", "continue": "متابعة", "sending": "جارٍ الإرسال..." },
+        "warnGate": { "title": "تنبيه", "bodyBefore": "أنت على وشك معاقبة مستخدم", "bodyHighlight": "ذي أهمية كبيرة للمجتمع", "bodyAfter": ". هل أنت متأكد من المتابعة؟", "evidenceNotice": "عند المتابعة، سيُطلب منك إرفاق الأدلة على {0}. سيؤدي عدم تقديم الأدلة إلى اتخاذ إجراء بحقك." },
+        "modalStaff": { "title": "تأكيد العقوبة", "playerIdLabel": "معرّف اللاعب", "playerIdPlaceholder": "مثال: 152", "reasonLabel": "السبب", "reasonPlaceholder": "اختر السبب", "descriptionLabel": "وصف تفصيلي", "descriptionPlaceholder": "صِف ما حدث بأكبر قدر ممكن من التفاصيل...", "minChars": "الحد الأدنى {0} حرفًا", "evidenceNotice": "ستحتاج إلى إرفاق الأدلة على suporte.santagroup.gg. سيؤدي عدم تقديم الأدلة إلى اتخاذ إجراء بحقك." },
+        "acessoRestrito": {
+            "eyebrow": "تم تطبيق العقوبة", "title": "وصول مقيّد", "subtitle": "تم تقييد وصولك إلى المدينة. أدخل بريدك الإلكتروني لإنشاء رابط التذكرة ومتابعة الحالة.", "emailLabel": "أدخل بريدك الإلكتروني", "emailPlaceholder": "you@example.com", "generate": "إنشاء رابط التذكرة", "generating": "جارٍ الإنشاء...", "invalidEmail": "أدخل بريدًا إلكترونيًا صالحًا.", "apiError": "تعذر إرسال البريد الإلكتروني الآن. حاول مرة أخرى بعد قليل.",
+            "errors": { "TICKET_NOT_FOUND": "لم يتم إنشاء التذكرة على البوابة بعد. اطلب من الفريق التحقق من إعدادات الخادم.", "UNREGISTERED_STAFF": "عضو الفريق الذي طبّق العقوبة غير مسجّل في بوابة الدعم لهذه المدينة.", "ALREADY_LINKED": "هذا الحظر مرتبط بالفعل ببريد إلكتروني آخر. استخدم «تغيير البريد الإلكتروني» لتصحيح ذلك.", "UNKNOWN_CITY": "هذه المدينة غير مهيأة في البوابة.", "UNAUTHORIZED": "مفتاح API ‏(FIVEM_API_KEY) مفقود أو غير صالح.", "FIVEM_API_KEY_MISSING": "مفتاح API ‏(FIVEM_API_KEY) غير مهيأ على الخادم.", "EMAIL_SEND_FAILED": "تعذر إرسال رسالة الوصول. حاول مرة أخرى بعد قليل.", "CREATE_TICKET_FAILED": "تعذر فتح التذكرة على البوابة. حاول مرة أخرى بعد قليل.", "BAN_CLAIM_FAILED": "تعذر ربط بريدك الإلكتروني بالتذكرة. حاول مرة أخرى بعد قليل.", "VALIDATION_ERROR": "البيانات المستخدمة لفتح التذكرة غير صالحة. يجب على الفريق مراجعة العقوبة.", "INTERNAL_ERROR": "خطأ داخلي في بوابة الدعم. حاول مرة أخرى بعد قليل." },
+            "checkEmailSubtitle": "أرسلنا رابط وصول إلى بريدك الإلكتروني. افتحه للدخول إلى التذكرة ومتابعة الاعتراض.", "checkEmailLabel": "تحقق من بريدك الإلكتروني", "checkEmailBody": "افتح صندوق الوارد (ومجلد الرسائل غير المرغوب فيها) للبريد الذي أدخلته، ثم انقر على رابط الدخول للوصول إلى تذكرتك في بوابة الدعم.", "checkEmailNotice": "لن يختفي هذا التنبيه إلا بعد إكمال تسجيل الدخول على الموقع. لا تغلق اللعبة قبل فتح الرابط.", "readyLabel": "تذكرتك جاهزة", "generatedForBefore": "تم إنشاء رابط الاستئناف لـ", "generatedForAfter": ".", "copy": "نسخ رابط التذكرة", "copied": "تم نسخ الرابط!", "wrongEmail": "البريد الإلكتروني غير صحيح؟", "changeEmail": "تغيير البريد الإلكتروني", "infoNotice": "لدى من طبّق العقوبة مهلة تصل إلى ساعة واحدة لإرفاق الأدلة. يمكنك متابعة كل شيء عبر رابط تذكرتك."
+        },
+        "statusProvas": {
+            "aguardando": { "badge": "قيد الانتظار", "title": "في انتظار الأدلة", "description": "لا يزال الفريق يرفق الأدلة. بمجرد إرسالها، ستصبح التذكرة متاحة للاعتراض. إذا لم تُرفق خلال 60 دقيقة، فسيتم رفع التقييد." },
+            "analise": { "badge": "قيد المراجعة", "title": "العقوبة قيد المراجعة", "description": "تم إرفاق الأدلة وأصبحت التذكرة قيد المراجعة. قدّم مبرراتك وأدلتك المضادة مباشرةً في التذكرة." },
+            "mantido": { "badge": "تأييد الحظر", "title": "وصولك مقيّد", "description": "لا يمكنك دخول المدينة، لكن لا يزال بإمكانك فتح تذكرة جديدة على الموقع لتقديم استئناف." },
+            "restabelecido": { "title": "تمت استعادة الوصول", "description": "تمت استعادة وصولك. انقر على «متابعة» للانتقال إلى نقطة الظهور." },
+            "countdownLabel": { "aguardando": "الوقت التقديري", "analise": "الوقت التقديري للحل" }, "goToTicket": "الانتقال إلى التذكرة"
+        }
+    },
+    "telagem": {
+        "common": { "cancel": "إلغاء", "sending": "جارٍ الإرسال..." },
+        "modalStaff": { "title": "تأكيد المراجعة", "body": "أنت على وشك طلب مراجعة حساب هذا اللاعب. تأكد من البيانات أدناه قبل المتابعة.", "playerIdLabel": "معرّف اللاعب", "playerIdPlaceholder": "مثال: 152", "descriptionLabel": "وصف تفصيلي", "descriptionPlaceholder": "صِف ما حدث بأكبر قدر ممكن من التفاصيل...", "minChars": "الحد الأدنى {0} حرفًا", "notice": "ملاحظة: سيتم استدعاء اللاعب إلى مكالمة صوتية مع الفريق. إذا غادر اللعبة، فسيتم تعليق الحساب مؤقتًا.", "submit": "طلب مراجعة" },
+        "revisaoSolicitada": { "eyebrow": "الحساب قيد المراجعة", "title": "تم طلب المراجعة", "subtitle": "بسبب تحليلات داخلية حديثة، تم تصنيف حسابك على أنه مشبوه. انضم إلى مكالمة صوتية مع فريقنا لتقديم توضيحاتك.", "cta": "الانتقال إلى المكالمة الصوتية", "noticeLabel": "تنبيه:", "notice": "إذا غادرت اللعبة الآن، فسيتم تعليق حسابك مؤقتًا." },
+        "secureQuit": {
+            "badge": "خروج آمن",
+            "title": "يمكنك مغادرة اللعبة",
+            "description": "الإجراء جارٍ، ويمكنك مغادرة اللعبة بأمان دون أي عقوبة.",
+            "cta": "الانتقال إلى قناة الدعم"
+        }
+    },
+    "calls": {
+        "header": {
+            "title": "مركز المساعدة"
+        },
+        "current": {
+            "title": "طلبك",
+            "staffIsComing": "أحد الموظفين في طريقه إليك!",
+            "tryFinding": "حاول البحث عن مكان بعيد عن الآخرين ليتم خدمتك.",
+            "averageWaitingTime": "متوسط وقت الانتظار:",
+            "cancel": "لإلغاء الطلب",
+            "cancelConfirmation": "هل تريد حقًا إلغاء هذا الطلب؟",
+            "yes": "نعم",
+            "no": "لا",
+            "accepted": "تم قبول طلبك!",
+            "important": "مهم:",
+            "attention": "قم بتفعيل وانتبه لصوت اللعبة لسماع التعليمات."
+        },
+        "home": {
+            "searchPlaceholder": "بحث",
+            "lawyer": "محامٍ",
+            "notFound": "لم تجد ما تبحث عنه؟ افتح طلبًا مع فريقنا.",
+            "administration": "الإدارة",
+            "salesSupport": "دعم المبيعات",
+            "paramedic": "المسعف",
+            "police": "الشرطة",
+            "mechanic": "الميكانيكي"
+        },
+        "new": {
+            "descriptionError": "يرجى وصف المشكلة قبل الإرسال",
+            "descriptionErrorLimit": "الوصف يتجاوز الحد الأقصى للأحرف",
+            "title": "طلب جديد",
+            "description": "حدد نوع الطلب الذي تريد فتحه.",
+            "warning": "تحذير",
+            "descriptionPlaceholder": "صف المشكلة",
+            "send": "إرسال الطلب",
+            "cancel": "إلغاء"
+        },
+        "review": {
+            "header": {
+                "title": "قيّم الخدمة"
+            },
+            "howWouldYouRate": "كيف تقيّم خدمتنا؟",
+            "howWouldYouRateDesc": "من 0 إلى 10، ما احتمالية أن توصي بخدمتنا للاعب آخر؟",
+            "notSatisfied": "غير راضٍ على الإطلاق",
+            "satisfied": "راضٍ",
+            "feedback": "هل تريد ترك ملاحظات؟",
+            "feedbackPlaceholder": "صف المشكلة",
+            "send": "إرسال التقييم",
+            "cancel": "إلغاء"
+        }
+    },
+    "dashboard": {
+        "calendar": {
+            "clear": "مسح",
+            "apply": "تطبيق",
+            "weekdays": [
+                "أحد",
+                "إثنين",
+                "ثلاثاء",
+                "أربعاء",
+                "خميس",
+                "جمعة",
+                "سبت"
+            ],
+            "months": [
+                "يناير",
+                "فبراير",
+                "مارس",
+                "أبريل",
+                "مايو",
+                "يونيو",
+                "يوليو",
+                "أغسطس",
+                "سبتمبر",
+                "أكتوبر",
+                "نوفمبر",
+                "ديسمبر"
+            ]
+        },
+        "toast": {
+            "copied": "تم النسخ!",
+            "copyFailed": "فشل النسخ"
+        },
+        "navbar": {
+            "wallstreet": "وول ستريت",
+            "tickets": {
+                "wallstreet": "طلبات وول ستريت",
+                "admin": "طلبات المشرف",
+                "health": "طلبات المسعف",
+                "police": "طلبات الشرطة",
+                "mechanic": "طلبات الميكانيكي",
+                "lawyer": "طلبات المحامي",
+                "purchases": "طلبات المشتريات"
+            },
+            "groups": "المجموعات",
+            "suspects": "المشتبه بهم",
+            "rdm": "RDM",
+            "retention": "الاحتفاظ WS",
+            "purchases": "المشتريات",
+            "customers": "العملاء",
+            "ranking": {
+                "title": "التصنيف",
+                "calls": "الطلبات",
+                "rdm": "RDM"
+            },
+            "affiliates": {
+                "title": "الشركاء",
+                "personal": "المبيعات الشخصية",
+                "list": "الشركاء",
+                "management": "الإدارة",
+                "customers": "العملاء"
+            }
+        },
+        "header": {
+            "rules": {
+                "wallstreet": "قواعد وول ستريت",
+                "folder": "قواعد المجلد"
+            }
+        },
+        "followers": {
+            "header": {
+                "title": "وول ستريت"
+            },
+            "subtitle": "الاحتفاظ بوول ستريت",
+            "searchPlaceholder": "البحث بالاسم أو المعرف أو المجموعة",
+            "table": {
+                "id": "المعرف",
+                "name": "الاسم",
+                "quantity": "الكمية",
+                "after1day": "بعد يوم واحد",
+                "after2days": "بعد يومين",
+                "after3days": "بعد 3 أيام"
+            }
+        },
+        "groups": {
+            "header": {
+                "title": "المجموعات"
+            },
+            "tabs": {
+                "normal": "المجموعات العادية",
+                "suspects": "المجموعات المشتبهة"
+            },
+            "worlds": {
+                "1": "افتراضي",
+                "2": "حرب",
+                "5": "سام",
+                "6": "حدث",
+                "7": "آمن",
+                "8": "سيطرة",
+                "9": "ابتدائي",
+                "10": "ثانوي",
+                "11": "ثالثي",
+                "12": "غزو البندقية",
+                "13": "تصوير",
+                "20": "عالم PVP",
+                "25": "رويال"
+            },
+            "suspects": {
+                "title": "المجموعات المشتبهة",
+                "status": { "new": "جديد", "suspect": "مشتبه به" },
+                "searchPlaceholder": "البحث بالاسم أو المعرف",
+                "noResults": "لم يتم العثور على مجموعات مشتبهة",
+                "table": {
+                    "id": "المعرف",
+                    "name": "الاسم",
+                    "hoursPlayed": "ساعات اللعب",
+                    "score": "النقاط",
+                    "lastEvent": "آخر حدث",
+                    "world": "العالم",
+                    "discord": "ديسكورد",
+                    "status": "الحالة",
+                    "actions": "الإجراءات",
+                    "spectateAll": "مراقبة الجميع",
+                    "noSuspectsFound": "لم يتم العثور على مشتبه بهم",
+                    "toxicity": "السمّية",
+                    "punishment": "العقوبة",
+                    "punishmentMute": "كتم {{minutes}} دقيقة",
+                    "punishmentIsland": "الجزيرة، سارية حتى {{date}}",
+                    "dayPoints": "اليوم {{points}}",
+                    "tracking": "الساعات"
+                },
+                "actions": {
+                    "teleport": "انتقال",
+                    "view": "مراقبة",
+                    "copyId": "نسخ المعرف",
+                    "cancel": "إزالة",
+                    "ban": "حظر",
+                    "banConfirm": {
+                        "title": "حظر المشتبه به؟",
+                        "description": "سيتم حظر اللاعب تلقائيًا بسبب \"لم يجتز القائمة البيضاء\". لا يمكن التراجع عن هذا الإجراء.",
+                        "notice": "يُسجَّل الحظر بسبب \"عدم اجتياز القائمة البيضاء\".",
+                        "confirm": "حظر",
+                        "cancel": "إلغاء"
+                    }
+                },
+                "row": {
+                    "none": "لا يوجد",
+                    "na": "غير متاح",
+                    "noName": "بلا اسم",
+                    "noEvent": "لا يوجد حدث",
+                    "viewScore": "عرض النقاط",
+                    "suspiciousDiscord": "ديسكورد مشبوه",
+                    "yes": "نعم",
+                    "no": "لا",
+                    "status": {
+                        "high": "خطير",
+                        "medium": "متوسط",
+                        "low": "خفيف"
+                    },
+                    "tooltips": {
+                        "rdm": "قتال لاعب غير مسلح",
+                        "early_kill": "قتل مفرط",
+                        "effort_none": "لم يتم اكتشاف تخصيص",
+                        "effort_low": "تغييرات قليلة في التخصيص",
+                        "vdm": "دهس/قتل باستخدام مركبة",
+                        "collisions": "تصادمات مفرطة",
+                        "shots_fired_streak": "إطلاق نار مفرط",
+                        "reports": "تقارير مفرطة",
+                        "in_discord_cheater_server": "عضو في خادم غش",
+                        "banned_other_city": "محظور في مدينة أخرى",
+                        "new_discord": "تم اكتشاف ديسكورد مشبوه",
+                        "none": "لم يتم اكتشاف أحداث مشبوهة"
+                    },
+                    "eventLabels": {
+                        "toxicity_mute_1": "كتم بسبب السلوك السام",
+                        "toxicity_mute_2": "كتم بسبب السلوك السام",
+                        "toxicity_island": "الجزيرة بسبب السلوك السام",
+                        "rdm": "RDM",
+                        "early_kill": "قتل",
+                        "effort_none": "صفر تخصيص",
+                        "effort_low": "تخصيص منخفض",
+                        "vdm": "VDM",
+                        "collisions": "تصادمات",
+                        "shots_fired_streak": "إطلاق نار",
+                        "reports": "تقارير",
+                        "in_discord_cheater_server": "خادم غش",
+                        "banned_other_city": "محظور في مدينة أخرى",
+                        "new_discord": "ديسكورد مشبوه",
+                        "none": "لا يوجد",
+                        "good_behaviour": "سلوك جيد",
+                        "voice_discrimination": "صوت: تمييز",
+                        "voice_sexual": "صوت: جنسي",
+                        "voice_harassment": "صوت: تحرش",
+                        "voice_illicit": "صوت: غير مشروع",
+                        "voice_romantic": "صوت: رومانسي",
+                        "voice_profanity": "صوت: ألفاظ نابية",
+                        "warning_attention": "تحذير: انتباه",
+                        "warning_last": "التحذير الأخير",
+                        "mute_1": "كتم 25 دقيقة (المستوى 1)",
+                        "mute_2": "كتم 40 دقيقة (المستوى 2)",
+                        "island_3": "الجزيرة 12 ساعة (المستوى 3)",
+                        "cap_island": "سقف اليوم: الجزيرة 12 ساعة",
+                        "cap_ban": "سقف اليوم: حظر",
+                        "cleared": "تمت إزالة العقوبة",
+                        "revert_voice_stt_test": "إلغاء (اختبار الصوت)",
+                        "addsalev1": "تم إتمام البيع",
+                        "agentsalecompletedv1": "تم إتمام البيع",
+                        "agentsale_completedv1": "تم إتمام البيع",
+                        "leadagentagentsalecompletedv1": "تم إتمام البيع من قبل شريك",
+                        "leadagentagent_sale_completedv1": "تم إتمام البيع من قبل شريك",
+                        "agentsale_completed_price_gte_1500": "بيع بأكثر من 1,500 ريال",
+                        "agentsale_completed_price_gte_2000": "بيع بأكثر من 2,000 ريال",
+                        "agentsale_completed_price_gte_3000": "بيع بأكثر من 3,000 ريال",
+                        "addsaleover500v1": "بيع بأكثر من 500 ريال",
+                        "addsaleover1000v1": "بيع بأكثر من 1,000 ريال",
+                        "addsaleover2000v1": "بيع بأكثر من 2,000 ريال",
+                        "addsaleover5000v1": "بيع بأكثر من 5,000 ريال",
+                        "addsale5ofdayv1": "وصل إلى 5 مبيعات في اليوم",
+                        "addsale10ofdayv1": "وصل إلى 10 مبيعات في اليوم",
+                        "addsalefirstofdayv1": "أول بيع في اليوم",
+                        "addsalenewcustomerv1": "بيع لعميل جديد",
+                        "addsalepreferentialcustomerv1": "بيع لعميل مفضل",
+                        "teleporttoclientv1": "انتقال لشراء عبر F1",
+                        "movimentedareav1": "دخل منطقة آمنة/مزدحمة",
+                        "notclientv1": "لم يشتري أي شيء أبدًا",
+                        "notclientv2": "أكمل الحد الأدنى من الساعات",
+                        "vipexpiringv1": "VIP على وشك الانتهاء (≤ 3 أيام)",
+                        "addcustomersalebasev1": "شراء",
+                        "customersale_spent_less_than_or_equal_to_20_reaisv1": "أنفق حتى 20 ريال",
+                        "customersale_spent_more_than_20_reaisv1": "أنفق أكثر من 20 ريال",
+                        "importedpurchased": "مصاريف مستوردة",
+                        "importedpurchasedonprofilesignedin": "مصاريف مستوردة عند تسجيل الدخول",
+                        "customerscoredecaydaily": "انخفاض يومي",
+                        "agentscoredecaydelay": "انخفاض يومي",
+                        "agentscoredecayweekly": "انخفاض أسبوعي",
+                        "leadagentaddsalev1": "تم إتمام البيع من قبل شريك",
+                        "leadagentaddsaleover500v1": "بيع بأكثر من 500 ريال من قبل شريك",
+                        "leadagentaddsaleover1000v1": "بيع بأكثر من 1,000 ريال من قبل شريك",
+                        "leadagentaddsaleover2000v1": "بيع بأكثر من 2,000 ريال من قبل شريك",
+                        "leadagentaddsaleover5000v1": "بيع بأكثر من 5,000 ريال من قبل شريك",
+                        "leadagentaddsalenewcustomerv1": "بيع لعميل جديد من قبل شريك",
+                        "createpurchaseticketv1": "فتح طلب مبيعات",
+                        "enterroyalev1": "شارك في حدث مهم",
+                        "enterorganizationv1": "جزء من منظمة نشطة",
+                        "salegreater20tebexv1": "أنفق حتى 20 ريال في المتجر",
+                        "salegreater20v1": "أنفق أكثر من 20 ريال",
+                        "openstorehubv1": "نقر على المتجر عبر المركز",
+                        "trybuyvoucherhousev1": "حاول شراء منزل بدون قسيمة",
+                        "subtractcustomerfirstpurchasev1": "أول عملية شراء",
+                        "activevipv1": "VIP نشط",
+                        "activevipv2": "VIP نشط (v2)",
+                        "addwarningv1": "تم تحذيره",
+                        "leaveorganizationv1": "غادر منظمة",
+                        "promo_video_play_progress_dailyv1": "شاهد جزءًا من الفيديو الترويجي",
+                        "customerweekly_playtime_gte_5_hours": "وقت اللعب الأسبوعي ≥ 5 ساعات",
+                        "customerweekly_playtime_gte_15_hours": "وقت اللعب الأسبوعي ≥ 15 ساعة",
+                        "customerweekly_playtime_gte_30_hours": "وقت اللعب الأسبوعي ≥ 30 ساعة",
+                        "customerweekly_playtime_gte_45_hours": "وقت اللعب الأسبوعي ≥ 45 ساعة",
+                        "customerweekly_playtime_gte_60_hours": "وقت اللعب الأسبوعي ≥ 60 ساعة",
+                        "customerweekly_playtime_gte_5_hours_active_bonus": "وقت اللعب الأسبوعي ≥ 5 ساعات (مكافأة نشطة)",
+                        "customerweekly_playtime_gte_15_hours_active_bonus": "وقت اللعب الأسبوعي ≥ 15 ساعة (مكافأة نشطة)",
+                        "customerweekly_playtime_gte_30_hours_active_bonus": "وقت اللعب الأسبوعي ≥ 30 ساعة (مكافأة نشطة)",
+                        "customerweekly_playtime_gte_45_hours_active_bonus": "وقت اللعب الأسبوعي ≥ 45 ساعة (مكافأة نشطة)",
+                        "customerweekly_playtime_gte_60_hours_active_bonus": "وقت اللعب الأسبوعي ≥ 60 ساعة (مكافأة نشطة)",
+                        "customersale_spent_lte_20v1": "اشترى أقل من 20.00 ريال",
+                        "customersale_spent_gte_20v1": "اشترى أكثر من 20.00 ريال",
+                        "customersale_spent_gte_100v1": "اشترى أكثر من 100.00 ريال",
+                        "customersale_spent_gte_500v1": "اشترى أكثر من 500.00 ريال",
+                        "customersale_spent_any_bonus_with_couponv1": "مكافأة شراء مع قسيمة",
+                        "customersale_spent_any_bonus_without_couponv1": "مكافأة شراء بدون قسيمة",
+                        "ticketcustomer_refused_offer": "العميل رفض العرض",
+                        "customerscoreweeklysocial": "النقاط الاجتماعية الأسبوعية",
+                        "customerscoreweeklysocialcontactsgte_5": "أكثر من 5 جهات اتصال في الهاتف (أسبوعي)",
+                        "customerscoreweeklysocialcontactsgte_20": "أكثر من 20 جهة اتصال في الهاتف (أسبوعي)",
+                        "customerscoreweeklysocialcontactsgte_40": "أكثر من 40 جهة اتصال في الهاتف (أسبوعي)",
+                        "customerscoreweeklysocialcontactsgte_14": "أكثر من 14 جهة اتصال في الهاتف (أسبوعي)",
+                        "customerscoreweeklyphone_contactsgte_41": "أكثر من 41 جهة اتصال في الهاتف (أسبوعي)",
+                        "customerscoreweeklyphone_contactsgte_20": "أكثر من 20 جهة اتصال في الهاتف (أسبوعي)",
+                        "customerscoreweeklyphone_contactsgte_5": "أكثر من 5 جهات اتصال في الهاتف (أسبوعي)",
+                        "customerscoreweeklysocialrelationshipgte_7": "علاقة نشطة لأكثر من 7 أيام (أسبوعي)",
+                        "customerscoreweeklysocialrelationshipgte_14": "علاقة نشطة لأكثر من 14 يومًا (أسبوعي)",
+                        "customerscoreweekly_roi_tier_0": "العائد على الاستثمار الأسبوعي المستوى 0",
+                        "customerscoreweekly_roi_tier_1": "العائد على الاستثمار الأسبوعي المستوى 1",
+                        "customerscoreweekly_roi_tier_2": "العائد على الاستثمار الأسبوعي المستوى 2",
+                        "customerscoreweekly_roi_tier_3": "العائد على الاستثمار الأسبوعي المستوى 3",
+                        "customerscoreplayer_active_14_days": "نشط لأكثر من 14 يومًا",
+                        "customerscoreplayer_active_30_days": "نشط لأكثر من 30 يومًا",
+                        "customerscorenever_purchased_weekly": "لم يشت أبدًا (أسبوعي)",
+                        "profileplaysession_socialarea_milestone": "إنجاز الجلسة في المنطقة الاجتماعية",
+                        "playerentered_guerra_bucket": "دخل عالم الحرب",
+                        "groupgamemode_game_lostrei_do_crime": "خسر اللعبة: ملك الجريمة",
+                        "groupgamemode_game_lostguerra": "خسر اللعبة: حرب",
+                        "enterroyalev1mandatory": "دخل الرويال (إلزامي)",
+                        "enterroyalev1optional": "دخل الرويال (اختياري)",
+                        "profilegroup_membership_created_as_leadership_rolev1": "دخل المنظمة كقائد",
+                        "profilepromo_url_openedv1": "فتح رابط ترويجي",
+                        "customerfirst_purchasev1": "أول عملية شراء",
+                        "customersalecombinationbonusleader_manager_spending_500": "مكافأة كومبو قائد/مدير (إنفاق ≥ 500 ريال)",
+                        "customersalecombinationbonusleader_manager_spending_1000": "مكافأة كومبو قائد/مدير (إنفاق ≥ 1,000 ريال)",
+                        "customerprofile_weekly_organization_membership_is_leader_1v1": "قائد المنظمة (أسبوعي)",
+                        "customerprofile_weekly_organization_membership_is_leader_2v1": "مدير/نائب المنظمة (أسبوعي)",
+                        "customerweekly_sale_spent_gte500_profile_org_leadership_bonusv1": "قائد/مدير المنظمة أنفق +5,000.00 ريال في الأسبوع",
+                        "customerweekly_sale_spent_gte_1000_profile_org_leadership_bonusv1": "قائد/مدير المنظمة أنفق +1,000.00 ريال في الأسبوع",
+                        "salepayment_failed_gte_20v1": "فشل في الشراء بأكثر من 20.00 ريال مع قسيمة (مؤقت)",
+                        "salepayment_failed_gte_20_no_couponv1": "فشل في الشراء بأكثر من 20.00 ريال بدون قسيمة (مؤقت)",
+                        "salepayment_failed_gte_100v1": "فشل في الشراء بأكثر من 100.00 ريال مع قسيمة (مؤقت)",
+                        "salepayment_failed_gte_100_no_couponv1": "فشل في الشراء بأكثر من 100.00 ريال بدون قسيمة (مؤقت)",
+                        "salepayment_failed_gte_300v1": "فشل في الشراء بأكثر من 300.00 ريال مع قسيمة (مؤقت)",
+                        "salepayment_failed_gte_300_no_couponv1": "فشل في الشراء بأكثر من 300.00 ريال بدون قسيمة (مؤقت)",
+                        "salepayment_failed_gte_500v1": "فشل في الشراء بأكثر من 500.00 ريال مع قسيمة (مؤقت)",
+                        "salepayment_failed_gte_500_no_couponv1": "فشل في الشراء بأكثر من 500.00 ريال بدون قسيمة (مؤقت)",
+                        "salepayment_failed_gte_20_multiple_attemptsv1": "فشل في عدة محاولات شراء بأكثر من 20.00 ريال في نفس اليوم (مؤقت)",
+                        "salepayment_failed_gte_100_multiple_attemptsv1": "فشل في عدة محاولات شراء بأكثر من 100.00 ريال في نفس اليوم (مؤقت)",
+                        "salepayment_failed_gte_300_multiple_attemptsv1": "فشل في عدة محاولات شراء بأكثر من 300.00 ريال في نفس اليوم (مؤقت)",
+                        "salepayment_failed_gte_500_multiple_attemptsv1": "فشل في عدة محاولات شراء بأكثر من 500.00 ريال في نفس اليوم (مؤقت)",
+                        "salepayment_failedwith_ticket": "فشل في الشراء مع فتح طلب (مؤقت)",
+                        "customerpurchase_ticket_created_after_payment_failedv1": "فشل في الشراء مع فتح طلب (مؤقت)",
+                        "agentweekly_revenue_milestonev1": "تم تحقيق هدف الإيرادات الأسبوعية ≥ 15 ألف ريال",
+                        "agentweekly_inactivity_penaltyv1": "عقوبة أسبوعية للخمول (< 5 ساعات متصلة)"
+                    }
+                },
+                "scoreModal": {
+                    "recording": "جارٍ التسجيل",
+                    "viewClip": "مشاهدة المقطع",
+                    "banManual": "حظر يدوي · المشرف {{name}}",
+                    "banAutomatic": "حظر تلقائي",
+                    "title": "النقاط",
+                    "subtitle": "سجل الأحداث",
+                    "loading": "جاري تحميل السجل...",
+                    "error": "خطأ في تحميل سجل النقاط",
+                    "noHistory": "لم يتم العثور على سجل",
+                    "totalPoints": "الإجمالي: {{points}} نقطة",
+                    "tabSuspect": "مشتبه به",
+                    "tabToxicity": "السمّية",
+                    "now": "الآن",
+                    "justNow": "الآن",
+                    "minutesAgo": "منذ {{minutes}} دقيقة",
+                    "hoursAgo": "منذ {{hours}} ساعة",
+                    "daysAgo": "منذ {{days}} يومًا",
+                    "yesterday": "أمس",
+                    "subtitleWithName": "سجل {{name}}"
+                }
+            },
+            "table": {
+                "country": "البلد",
+                "id": "المعرف",
+                "name": "الاسم",
+                "hours": "الساعات",
+                "observations": "الملاحظات",
+                "action": "الإجراء"
+            },
+            "observations": {
+                "retention": {
+                    "title": "الاحتفاظ:",
+                    "notStarted": "لم يبدأ"
+                },
+                "spent": "اللاعب لم يمر عبر القائمة البيضاء بعد (-20 ساعة)",
+                "noSpent": "اللاعب لم يصبح عميلاً بعد",
+                "banned": "محظور: {{banned}}"
+            },
+            "list": {
+                "searchPlaceholder": "بحث",
+                "sort": "ترتيب حسب الكمية",
+                "asc": "تصاعدي",
+                "desc": "تنازلي",
+                "suspectsGroup": "المشتبه بهم"
+            },
+            "modal": {
+                "title": "الإعدادات",
+                "description": "إدارة إعدادات المجموعة",
+                "selectOption": "اختر خيارًا",
+                "roles": {
+                    "title": "المسؤول عن الوردية",
+                    "placeholder": "اختر المنصب",
+                    "sub": "نائب المسؤول",
+                    "resp": "المسؤول",
+                    "none": "لا يوجد"
+                },
+                "shifts": {
+                    "placeholder": "اختر الوردية",
+                    "dawn": "فجر",
+                    "morning": "صباح",
+                    "afternoon": "عصر",
+                    "night": "ليل",
+                    "none": "لا يوجد"
+                },
+                "save": "حفظ"
+            },
+            "actions": {
+                "teleport": "انتقال",
+                "configure": "إدارة",
+                "view": "مراقبة",
+                "copyId": "نسخ المعرف",
+                "anotation": "ترك ملاحظة",
+                "cancel": "إلغاء",
+                "discord": "ديسكورد",
+                "whatsapp": "واتساب"
+            }
+        },
+        "rdm": {
+            "header": {
+                "title": "RDM"
+            },
+            "userActions": {
+                "teleport": "انتقال",
+                "view": "مراقبة",
+                "copyId": "نسخ المعرف"
+            },
+            "row": {
+                "now": "الآن",
+                "minutes": "دقيقة مضت",
+                "hour": "ساعة مضت",
+                "hours": "ساعات مضت"
+            },
+            "table": {
+                "time": "الوقت",
+                "id": "المعرف",
+                "killer": "القاتل",
+                "victim": "الضحية",
+                "actions": "الإجراء"
+            },
+            "actions": {
+                "attend": "الرد على الطلب",
+                "cancel": "إلغاء",
+                "cancelAttend": "إنهاء الطلب"
+            }
+        },
+        "suspects": {
+            "header": {
+                "title": "المشتبه بهم"
+            },
+            "table": {
+                "id": "المعرف",
+                "name": "الاسم",
+                "reason": "السبب",
+                "actions": "الإجراء",
+                "time": "الوقت"
+            },
+            "row": {
+                "now": "الآن",
+                "minutes": "دقيقة مضت",
+                "hour": "ساعة مضت",
+                "hours": "ساعات مضت"
+            },
+            "actions": {
+                "teleport": "انتقال",
+                "view": "مراقبة",
+                "copyId": "نسخ المعرف",
+                "cancel": "إلغاء"
+            }
+        },
+        "tickets": {
+            "header": {
+                "title": "الطلبات"
+            },
+            "table": {
+                "id": "المعرف",
+                "name": "الاسم",
+                "reason": "السبب",
+                "actions": "الإجراء",
+                "time": "الوقت",
+                "message": "الرسالة"
+            },
+            "actions": {
+                "teleport": "انتقال",
+                "view": "مراقبة",
+                "copyId": "نسخ المعرف",
+                "cancel": "إلغاء",
+                "attend": "الرد على الطلب",
+                "finish": "إنهاء الطلب",
+                "markOnMap": "وضع علامة على الخريطة"
+            },
+            "row": {
+                "now": "الآن",
+                "minutes": "دقيقة مضت",
+                "hour": "ساعة مضت",
+                "hours": "ساعات مضت"
+            },
+            "mechanicModal": {
+                "title": "طلب ميكانيكي جديد",
+                "subtitle": "أحد اللاعبين يحتاج إلى مساعدة",
+                "player": "اللاعب",
+                "message": "الرسالة",
+                "noMessage": "لم يتم تقديم رسالة",
+                "accept": "قبول",
+                "reject": "رفض"
+            }
+        },
+        "wallstreet": {
+            "header": {
+                "title": "وول ستريت",
+                "button": {
+                    "dateSelector": "اختيار التاريخ",
+                    "7days": "7 أيام",
+                    "14days": "14 يومًا",
+                    "30days": "30 يومًا"
+                },
+                "categories": "الفئات",
+                "categoriesSelected": "الفئات المختارة"
+            },
+            "retention": {
+                "title": "الاحتفاظ",
+                "subtitle": "هنا يمكنك متابعة الاحتفاظ بالخادم"
+            },
+            "recruitment": {
+                "title": "التجنيد",
+                "subtitle": "هنا يمكنك متابعة تجنيد الخادم"
+            },
+            "metricCard": {
+                "onlineNow": "متصل الآن",
+                "retentionNow": "الاحتفاظ الآن",
+                "7daysAgo": "منذ 7 أيام",
+                "result": "النتيجة",
+                "growth": {
+                    "title": "اللاعبون",
+                    "labelTitle": "ذروة اللاعبين",
+                    "subtitle": "اليوم مقابل منذ 7 أيام"
+                },
+                "retention": {
+                    "title": "الاحتفاظ",
+                    "labelTitle": "الاحتفاظ",
+                    "subtitle": "اليوم مقابل منذ 7 أيام"
+                }
+            },
+            "topPasta": {
+                "title": "أفضل الفرق",
+                "subtitle": "تهانينا، أنت من بين أعضاء فريق العمل الأكثر إنتاجية!",
+                "table": {
+                    "id": "المعرف",
+                    "name": "الاسم",
+                    "retention": "الاحتفاظ",
+                    "members": "الأعضاء"
+                }
+            },
+            "statsCard": {
+                "whitelist": "القائمة البيضاء",
+                "whitelistDescription": "عدد اللاعبين الذين لعبوا لأكثر من 30 دقيقة",
+                "contratados": "تم التعاقد",
+                "banidos": "محظورون",
+                "ativados": "تم التفعيل",
+                "yesterday": "أمس",
+                "today": "اليوم",
+                "7daysAgo": "منذ 7 أيام"
+            },
+            "npsCard": {
+                "last14days": "منذ 14 يومًا",
+                "title": "NPS",
+                "subtitle": "تابع وقارن NPS المدينة.",
+                "yesterday": "أمس",
+                "today": "اليوم",
+                "detractor": "منتقدون",
+                "neutral": "محايدون",
+                "promoter": "مروجون",
+                "total": "الإجمالي"
+            },
+            "periodSelector": {
+                "day": "اليوم كله",
+                "dawn": "فجر",
+                "morning": "صباح",
+                "afternoon": "عصر",
+                "night": "ليل"
+            },
+            "progressBarRetention": {
+                "dawn": {
+                    "title": "فجر",
+                    "description": "00:15 إلى 06:00"
+                },
+                "morning": {
+                    "title": "صباح",
+                    "description": "06:00 إلى 12:00"
+                },
+                "afternoon": {
+                    "title": "عصر",
+                    "description": "12:00 إلى 18:00"
+                },
+                "night": {
+                    "title": "ليل",
+                    "description": "18:00 إلى 00:00"
+                },
+                "virada": {
+                    "title": "التبديل",
+                    "description": "00:00 إلى 00:15"
+                },
+                "delivery": "تم التسليم",
+                "generated": "تم الإنشاء",
+                "total": "الإجمالي",
+                "meta": "الهدف",
+                "missing": "النقص",
+                "result": "النتيجة",
+                "added": "تمت الإضافة",
+                "retention": "الاحتفاظ",
+                "responsabile": "المسؤول:",
+                "subresponsabile": "النائب:"
+            }
+        },
+        "purchases": {
+            "header": {
+                "title": "المشتريات"
+            },
+            "table": {
+                "id": "المعرف",
+                "name": "الاسم",
+                "totalPurchases": "إجمالي الإنفاق",
+                "lastPurchase": "آخر عملية شراء",
+                "dateLastBuy": "تاريخ آخر عملية شراء",
+                "status": "الحالة",
+                "coupon": "قسيمة",
+                "actions": "الإجراء"
+            },
+            "actions": {
+                "teleport": "انتقال",
+                "view": "مراقبة",
+                "copyId": "نسخ المعرف",
+                "attend": "خدمة العميل",
+                "cancelAttend": "إنهاء الطلب",
+                "configure": "إدارة"
+            }
+        },
+        "customers": {
+            "currency": "ر.س",
+            "header": {
+                "title": "العملاء"
+            },
+            "list": {
+                "general": "عام",
+                "searchPlaceholder": "بحث",
+                "sort": "ترتيب حسب المعرف",
+                "asc": "تصاعدي",
+                "desc": "تنازلي"
+            },
+            "table": {
+                "searchPlaceholder": "بحث",
+                "filter": {
+                    "online": "متصل الآن",
+                    "recurrent": "متكررون",
+                    "best": "أفضل المشتريات",
+                    "recent": "آخر المشتريات"
+                },
+                "id": "المعرف",
+                "lastLogin": "آخر تسجيل دخول",
+                "name": "الاسم",
+                "lastPurchase": "آخر عملية شراء",
+                "totalSpent": "إجمالي الإنفاق",
+                "actions": "الإجراءات"
+            },
+            "row": {
+                "never": "أبدًا",
+                "now": "الآن",
+                "minutes": "دقيقة مضت",
+                "hour": "ساعة مضت",
+                "hours": "ساعات مضت",
+                "day": "يوم مضى",
+                "days": "أيام مضت",
+                "ago": "مضت",
+                "online": "متصل"
+            },
+            "actions": {
+                "finish": "متابعة",
+                "attend": "التحدث مع العميل",
+                "copyId": "نسخ المعرف",
+                "cancel": "إلغاء",
+                "discord": "ديسكورد",
+                "anotation": "ترك ملاحظة"
+            },
+            "modal": {
+                "description": {
+                    "title": "وصف العميل",
+                    "description": "وصف العميل",
+                    "error": {
+                        "other": "خطأ في إرسال الوصف",
+                        "empty": "لا يمكن أن يكون الوصف فارغًا",
+                        "limit": "الوصف يتجاوز الحد الأقصى للأحرف",
+                        "notFound": "تعذر تحميل بيانات العميل"
+                    },
+                    "firstSpawn": "وصل في:",
+                    "timePlayed": "ساعات اللعب:",
+                    "warning": "ملاحظة",
+                    "warningPlaceholder": "اكتب وصف العميل...",
+                    "sending": "جاري الإرسال...",
+                    "send": "إرسال",
+                    "cancel": "إلغاء"
+                },
+                "user": {
+                    "firstSpawn": "وصل في:",
+                    "timePlayed": "ساعات اللعب:",
+                    "totalSpent": "إجمالي الإنفاق:",
+                    "product": "المنتج",
+                    "price": "القيمة",
+                    "error": {
+                        "notFound": "تعذر تحميل بيانات العميل"
+                    }
+                }
+            }
+        },
+        "ranking": {
+            "header": {
+                "title": "التصنيف"
+            },
+            "table": {
+                "noResults": "لم يتم العثور على نتائج.",
+                "searchPlaceholder": "بحث",
+                "id": "المعرف",
+                "name": "الاسم",
+                "calls": "الطلبات",
+                "callsEvaluated": "الطلبات المقيّمة",
+                "evaluations": "التقييمات",
+                "pagination": {
+                    "previous": "السابق",
+                    "next": "التالي"
+                }
+            },
+            "calls": {
+                "title": "الطلبات",
+                "description": "سريع، مهذب ومحبوب دائمًا، محبوب الخدمة يفوز بكل عميل",
+                "subdescription": "بتميز في الدعم. إذا تولى طلبًا، تأكد أن الثناء سيأتي في تسلسل!"
+            },
+            "rdm": {
+                "title": "RDM",
+                "description": "حازم، عادل ومتيقظ دائمًا، صانع السلام يأتي لفرض النظام على الفوضى",
+                "subdescription": "إذا دخل المشهد، يمكنك المراهنة أن الفوضى ستتحول إلى هدوء والخادم سيتنفس بسلام!"
+            }
+        },
+        "influencers": {
+            "header": {
+                "title": "المؤثرون"
+            },
+            "actions": {
+                "copyId": "نسخ المعرف",
+                "discord": "ديسكورد",
+                "whatsapp": "واتساب"
+            }
+        },
+        "affiliates": {
+            "tier": {
+                "s": "S",
+                "1": "🔥 ساخن",
+                "2": "🥵 حار",
+                "3": "🌡️ فاتر",
+                "4": "❄️ بارد",
+                "5": "🧊 مجمد"
+            },
+            "header": {
+                "title": "الشركاء"
+            },
+            "dateSelector": {
+                "placeholder": "اختيار الفترة"
+            },
+            "list": {
+                "especial": "💎 مميز",
+                "selectTier": "اختر مستوى لعرض الشركاء",
+                "noAffiliatesFound": "لم يتم العثور على شركاء"
+            },
+            "personal": {
+                "title": "مبيعاتي",
+                "latestClients": "آخر العملاء",
+                "search": "بحث",
+                "hoursPlayed": "ساعات اللعب",
+                "lastPurchase": "آخر عملية شراء",
+                "customerTotalSpent": "إجمالي الإنفاق"
+            },
+            "cards": {
+                "totalSellers": "العملاء المخدّمين",
+                "totalSales": "إجمالي المبيعات",
+                "lostClients": "العملاء المفقودون",
+                "totalRevenue": "إجمالي المبيعات",
+                "averageTicket": "متوسط التذكرة",
+                "availableAffiliates": "الشركاء المتاحون"
+            },
+            "userCard": {
+                "affiliateName": "اسم الشريك",
+                "id": "المعرف",
+                "attendances": "الخدمات",
+                "evaluations": "التقييمات",
+                "totalSales": "إجمالي المبيعات",
+                "tier": "المستوى",
+                "totalSalesValue": "إجمالي المبيعات",
+                "averageTicket": "متوسط التذكرة",
+                "hiredAt": "تم التعيين في",
+                "hoursWorked": "ساعات العمل",
+                "hoursPlayed": "ساعات اللعب",
+                "startSearch": "بدء البحث",
+                "searching": "جاري البحث",
+                "searchingSubtitle": "نحن نحدد موقع عملاء محتملين جدد",
+                "stopSearch": "إيقاف البحث",
+                "found": "وجدنا!",
+                "notFound": "لا أحد!",
+                "redirectingMessage": "يرجى الانتظار، نحن نقوم بتحويلك إلى العميل.",
+                "noClientFoundMessage": "لم يتم العثور على أي عميل محتمل في الوقت الحالي.",
+                "stopSearchMessage": "لإيقاف البحث",
+                "accept": "قبول",
+                "reject": "رفض",
+                "preferentialCustomer": "عميل مفضل",
+                "events": "الأحداث",
+                "lastSales": "آخر المبيعات",
+                "sales": "المبيعات",
+                "purchases": "المشتريات",
+                "loading": "جاري التحميل...",
+                "endTicket": "إنهاء الخدمة",
+                "endServiceModal": {
+                    "title": "شريك",
+                    "finished": "تم إنهاء الخدمة.",
+                    "question": "هل تم إتمام البيع بنجاح؟",
+                    "yes": "نعم",
+                    "no": "لا"
+                },
+                "hide": "إخفاء",
+                "viewMore": "عرض المزيد"
+            },
+            "management": {
+                "title": "المبيعات العامة",
+                "loadingMore": "جاري تحميل المزيد...",
+                "filters": {
+                    "recentClients": "آخر الخدمات",
+                    "availableAffiliates": "الشركاء المتاحون",
+                    "expiringBenefits": "الفوائد المنتهية",
+                    "lostClients": "العملاء المفقودون"
+                },
+                "table": {
+                    "columns": {
+                        "time": "الوقت",
+                        "id": "المعرف",
+                        "name": "العميل",
+                        "tier": "المستوى",
+                        "temperature": "الدرجة",
+                        "score": "النقاط",
+                        "affiliate": "الشريك",
+                        "lastSale": "آخر عملية بيع",
+                        "lastPurchase": "آخر عملية شراء",
+                        "saleValue": "القيمة",
+                        "sellerId": "معرف البائع",
+                        "sellerName": "البائع",
+                        "source": "المصدر",
+                        "customerId": "المعرف",
+                        "status": "الحالة",
+                        "benefit": "الفائدة",
+                        "daysRemaining": "الأيام المتبقية",
+                        "paidValue": "القيمة المدفوعة",
+                        "totalSpent": "الإنفاق الشهري",
+                        "online": "متصل",
+                        "absent": "غائب",
+                        "offline": "غير متصل",
+                        "action": "الإجراء",
+                        "periodSalesNet": "المبيعات الشهرية",
+                        "atendimentos": "خدمات",
+                        "role": "المنصب",
+                        "roleSeller": "البائع",
+                        "roleAffiliate": "الشريك"
+                    },
+                    "data": {
+                        "source": {
+                            "direct": "يدوي",
+                            "matchmaking": "تلقائي",
+                            "unknown": "غير معروف"
+                        }
+                    }
+                },
+                "actions": {
+                    "teleport": "انتقال",
+                    "anotation": "ملاحظة",
+                    "view": "عرض",
+                    "copyId": "نسخ المعرف",
+                    "discord": "ديسكورد",
+                    "whatsapp": "واتساب",
+                    "cancel": "إلغاء"
+                },
+                "buttons": {
+                    "expectAll": "مراقبة الجميع"
+                }
+            },
+            "modal": {
+                "purchaseLabel": "شراء #{{id}}",
+                "saleLabel": "بيع #{{id}}",
+                "playerInfo": {
+                    "joinedOn": "وصل في:",
+                    "hoursPlayed": "ساعات اللعب:",
+                    "totalSpent": "إجمالي الإنفاق:",
+                    "averageTicket": "متوسط التذكرة:",
+                    "tier": "المستوى"
+                },
+                "purchases": {
+                    "title": "المشتريات",
+                    "columns": {
+                        "product": "المنتج",
+                        "date": "التاريخ",
+                        "value": "القيمة"
+                    },
+                    "noPurchases": "لم يتم العثور على مشتريات."
+                },
+                "metricsSummary": {
+                    "clientsAttended": "العملاء المحوّلون",
+                    "totalSales": "الشهر الحالي",
+                    "lostClients": "العملاء المفقودون"
+                },
+                "errors": {
+                    "notFound": "لم يتم العثور على الشريك"
+                },
+                "reason": "السبب",
+                "observation": "الملاحظة",
+                "statusReasons": {
+                    "COMPLETED_SALE_CONFIRMED": "تم تأكيد البيع",
+                    "CANCELED_CUSTOMER_ALREADY_HAS_PRODUCT": "العميل يملك المنتج بالفعل",
+                    "CANCELED_CUSTOMER_NO_FUNDS": "العميل بدون أموال",
+                    "CANCELED_CUSTOMER_REFUSED_OFFER": "العميل رفض العرض",
+                    "CANCELED_CUSTOMER_UNAVAILABLE": "العميل غير متاح",
+                    "CANCELED_CUSTOMER_CONNECTION_ISSUES": "مشاكل اتصال العميل",
+                    "CANCELED_CUSTOMER_WANTS_TO_BUY_LATER": "العميل يريد الشراء لاحقًا",
+                    "CANCELED_CUSTOMER_BADCONDUCT": "العميل ذو سلوك سيء",
+                    "CANCELED_AGENT_SIGNED_OUT": "الشريك قام بتسجيل الخروج",
+                    "USERREASON_SALE_MADE": "تم إتمام البيع"
+                }
+            },
+            "salesModal": {
+                "title": "المبيعات",
+                "seller": "البائع",
+                "totalSales": "إجمالي المبيعات",
+                "product": "المنتج",
+                "date": "التاريخ",
+                "value": "القيمة",
+                "loading": "جاري التحميل...",
+                "noSalesFound": "لم يتم العثور على مبيعات",
+                "noPurchasesFound": "لم يتم العثور على مشتريات",
+                "purchasesTitle": "المشتريات",
+                "customer": "العميل",
+                "totalSpent": "إجمالي الإنفاق"
+            },
+            "atendimentosModal": {
+                "title": "الخدمات",
+                "seller": "البائع",
+                "totalAtendimentos": "إجمالي الخدمات",
+                "convertedSuffix": "المحوّلون",
+                "avgTime": "متوسط وقت الخدمة",
+                "totalSales": "إجمالي المبيعات",
+                "today": "اليوم",
+                "days7": "7 أيام",
+                "days14": "14 يومًا",
+                "days30": "30 يومًا",
+                "loading": "جاري التحميل...",
+                "noData": "لم يتم العثور على خدمات",
+                "columns": {
+                    "date": "التاريخ",
+                    "time": "الوقت",
+                    "customer": "العميل",
+                    "temperature": "الدرجة",
+                    "duration": "المدة",
+                    "converted": "تم التحويل"
+                }
+            },
+            "filter": {
+                "converted": "تم التحويل",
+                "notConverted": "لم يتم التحويل",
+                "advanced": "فلاتر متقدمة",
+                "bestSales": "أفضل المبيعات",
+                "online": "متصل الآن",
+                "recentSales": "أحدث المبيعات",
+                "recurrent": "متكررون"
+            }
+        }
+    },
+    "tags": {
+        "vip": {
+            "black": "VIP بلاك",
+            "gold": "VIP جولد",
+            "silver": "VIP فضي"
+        },
+        "account": {
+            "large": "حساب كبير",
+            "new": "حساب جديد"
+        },
+        "status": {
+            "active": "عميل نشط",
+            "churning": "في خطر"
+        }
+    },
+    "common": {
+        "live": "مباشر",
+        "perHour": "/س",
+        "yes": "نعم",
+        "no": "لا",
+        "comingSoon": "قريبًا",
+        "loading": "جارٍ التحميل…",
+        "loadingHint": "جارٍ جلب أحدث البيانات من الخادم.",
+        "errorTitle": "تعذّر تحميل البيانات.",
+        "errorHint": "لم يستجب الخادم. ستعود القائمة عند التحديث التالي.",
+        "copyFailed": "تعذر النسخ."
+    },
+    "identity": {
+        "role": "كبير المجنِّدين"
+    },
+    "nav": {
+        "eyebrow": "القائمة",
+        "recruitment": "التجنيد",
+        "tickets": "التذاكر",
+        "groups": "المجموعات",
+        "retention": "الاحتفاظ",
+        "suspects": "المشتبه بهم",
+        "ranking": "التصنيف",
+        "purchases": "المشتريات",
+        "clients": "العملاء",
+        "affiliates": "الشركاء"
+    },
+    "page": {
+        "title": "التجنيد",
+        "subtitle": "تابع رحلة الوافدين الجدد ونمو المدينة."
+    },
+    "period": {
+        "7d": "7 أيام",
+        "14d": "14 يومًا",
+        "30d": "30 يومًا"
+    },
+    "action": {
+        "rules": "القواعد",
+        "retention": "الاحتفاظ",
+        "close": "إغلاق",
+        "selectDate": "اختر التاريخ",
+        "clear": "مسح",
+        "apply": "تطبيق",
+        "cancel": "إلغاء"
+    },
+    "calendar": {
+        "previousMonth": "الشهر السابق",
+        "nextMonth": "الشهر التالي"
+    },
+    "shift": {
+        "all": "طوال اليوم",
+        "dawn": "آخر الليل",
+        "morning": "الصباح",
+        "afternoon": "بعد الظهر",
+        "night": "المساء"
+    },
+    "hiring": {
+        "title": "WL × التجنيد",
+        "subtitle": "كل ساعة في الوقت الفعلي",
+        "live": "مباشر",
+        "summary": "{{created}} WL أُنشئت، {{recruited}} جُنِّدوا، {{lost}} فُقدوا اليوم",
+        "now": "الآن الساعة {{hour}}",
+        "legend": {
+            "created": "WL المُنشأة",
+            "recruited": "المجنَّدون",
+            "healthy": "80%+",
+            "unhealthy": "80%-"
+        },
+        "filterByHour": "تصفية القائمة حسب الساعة {{hour}}"
+    },
+    "conversion": {
+        "title": "تحويل WL",
+        "subtitle": "مقياس كل ساعة",
+        "hint": "يرفع نسبة التحويل",
+        "target": "الهدف {{value}}%",
+        "done": "مكتمل",
+        "hired": "التعيينات",
+        "lost": "المفقودون",
+        "viewLost": "عرض WL المفقودة",
+        "level": {
+            "critical": "سيّئ جدًا",
+            "warning": "انتبه",
+            "good": "ممتاز"
+        }
+    },
+    "nps": {
+        "title": "NPS",
+        "subtitle": "صافي نقاط الترويج، 7 أيام",
+        "filter": "تصفية:",
+        "detractors": "المنتقدون",
+        "neutrals": "المحايدون",
+        "promoters": "المروِّجون",
+        "total": "الإجمالي",
+        "survey": {
+            "indication": "التوصية",
+            "culture": "الثقافة",
+            "staff_support": "الدعم",
+            "wallstreet": "WS"
+        },
+        "audience": {
+            "general": "عام",
+            "newbies": "الوافدون الجدد",
+            "veterans": "القدامى"
+        }
+    },
+    "players": {
+        "updatedAt": "آخر تحديث {{time}}",
+        "joined": "انضم {{time}}",
+        "rerun": "عاد {{time}} فرصة ثانية",
+        "online": "متصل",
+        "offline": "غير متصل",
+        "empty": "لا يوجد لاعبون في هذه التصفية.",
+        "selection": {
+            "criminoso": "مجرم",
+            "policial": "ضابط شرطة",
+            "mecanico": "ميكانيكي",
+            "paramedico": "مسعف",
+            "empresario": "رجل أعمال",
+            "produtor": "منتج"
+        },
+        "tab": {
+            "online": "متصل",
+            "recruiting": "قيد التجنيد",
+            "offline": "غير متصل",
+            "notRecruited": "غير مجنَّد",
+            "rerun": "فرصة ثانية"
+        },
+        "col": {
+            "faction": "الجهة",
+            "player": "اللاعب",
+            "id": "ID",
+            "time": "الوقت",
+            "recruited": "مجنَّد",
+            "activated": "مفعَّل",
+            "status": "الحالة",
+            "actions": "الإجراءات"
+        },
+        "action": {
+            "teleport": "الانتقال إلى اللاعب",
+            "teleportShort": "TP",
+            "spectate": "مراقبة",
+            "discord": "فتح في Discord",
+            "copyDiscord": "نسخ الديسكورد"
+        },
+        "hourCut": {
+            "label": "WL الساعة {{hour}} · {{date}}",
+            "clear": "مسح التصفية حسب الساعة"
+        }
+    },
+    "kpi": {
+        "playersOnline": "اللاعبون المتصلون",
+        "whitelist": "Whitelist",
+        "hired": "المعيَّنون",
+        "banned": "المحظورون",
+        "activated": "المفعَّلون"
+    },
+    "bans": {
+        "title": "الحظر",
+        "subtitle": "تأثير اليوم على الاحتفاظ",
+        "today": "حُظروا اليوم",
+        "newbies": "الوافدون الجدد",
+        "veterans": "القدامى",
+        "share": "{{percent}}% من الحظر",
+        "byCategory": "حسب الفئة",
+        "variableReasons": "أسباب متنوعة",
+        "viewAll": "عرض المحظورين"
+    },
+    "tickets": {
+        "mode": {
+            "all": "الكل",
+            "admin": "الإدارة",
+            "health": "الصحة",
+            "police": "الشرطة",
+            "wallstreet": "Wallstreet",
+            "mechanic": "الميكانيكي",
+            "lawyer": "المحامي",
+            "purchases": "المشتريات"
+        },
+        "title": "التذاكر",
+        "subtitle": "طابور مباشر بنظام FIFO: من انتظر أطول يُخدَم أولًا",
+        "searchPlaceholder": "ابحث بالاسم أو ID...",
+        "connectedFor": "متصل منذ {{time}}",
+        "startedAgo": "بدأت منذ {{time}}",
+        "take": "استلام التذكرة",
+        "sortLabel": "الترتيب:",
+        "empty": "لا توجد تذاكر في الطابور.",
+        "col": {
+            "wait": "الانتظار",
+            "id": "ID",
+            "player": "اللاعب",
+            "message": "الرسالة",
+            "status": "الحالة / الإجراء",
+            "actions": "الإجراءات"
+        },
+        "badge": {
+            "next": "التالي في الطابور",
+            "new": "جديد"
+        },
+        "filter": {
+            "all": "الكل {{count}}",
+            "free": "مفتوحة {{count}}",
+            "serving": "قيد المعالجة {{count}}"
+        },
+        "sort": {
+            "fifo": "الأقدم انتظارًا أولًا (FIFO)",
+            "recent": "الأحدث انتظارًا أولًا"
+        },
+        "action": {
+            "profile": "عرض الملف الشخصي",
+            "discard": "تجاهل التذكرة"
+        },
+        "dialog": {
+            "title": "التذكرة {{id}}",
+            "openedAt": "قيد الانتظار، فُتحت في {{time}}",
+            "playerMeta": "ID {{id}}، متصل منذ {{connected}}",
+            "viewPlayer": "عرض اللاعب",
+            "message": "رسالة اللاعب",
+            "discard": "تجاهل التذكرة",
+            "take": "استلام التذكرة"
+        },
+        "discard": {
+            "title": "تجاهل التذكرة {{id}}؟",
+            "subtitle": "{{player}}، ينتظر منذ {{wait}}",
+            "description": "سيُبلَّغ اللاعب بأن التذكرة أُغلقت دون خدمة وسيغادر الطابور. لا يمكن التراجع عن هذا.",
+            "notice": "يُسجَّل التجاهل في سجل الطاقم مع اسمك والسبب المحدد.",
+            "reasonLabel": "سبب التجاهل:",
+            "confirm": "تجاهل التذكرة",
+            "reason": {
+                "duplicate": "تذكرة مكررة",
+                "resolved": "تم حلها بالفعل",
+                "noResponse": "لم يستجب اللاعب",
+                "offTopic": "خارج النطاق"
+            }
+        },
+        "emptyHint": "تمت خدمة جميع اللاعبين. سينطلق التنبيه الصوتي فور وصول تذكرة جديدة.",
+        "finish": "إغلاق التذكرة",
+        "toast": {
+            "idCopied": "تم نسخ المعرّف {{id}} إلى الحافظة"
+        }
+    },
+    "lostWls": {
+        "title": "WL المفقودة",
+        "subtitle": "{{total}} WL مفقودة، استعد اللاعبين الذين لم يتحوّلوا",
+        "empty": "لا توجد WL مفقودة في هذه التصفية.",
+        "filter": {
+            "all": "الكل",
+            "notRecruited": "غير مجنَّد",
+            "rerun": "فرصة ثانية",
+            "online": "متصل",
+            "offline": "غير متصل"
+        }
+    },
+    "bansModal": {
+        "title": "الحظر",
+        "subtitle": "{{total}} مستخدم محظور، المصدر والسبب والتاريخ",
+        "searchPlaceholder": "ابحث بالاسم أو ID...",
+        "banned": "محظور",
+        "updatedAgo": "آخر تحديث منذ {{time}}",
+        "empty": "لا يوجد حظر في هذه التصفية.",
+        "hoursValue": "{{hours}} س",
+        "toast": { "idCopied": "تم نسخ المعرّف {{id}}" },
+        "col": {
+            "user": "المستخدم",
+            "origin": "المصدر",
+            "staff": "حُظر بواسطة",
+            "hours": "الساعات",
+            "reason": "السبب",
+            "date": "التاريخ"
+        },
+        "origin": {
+            "staff": "الطاقم",
+            "system": "النظام",
+            "bot": "BOT"
+        },
+        "filter": {
+            "all": "الكل",
+            "staff": "الطاقم",
+            "system": "النظام",
+            "bot": "BOT"
+        }
+    },
+    "groups": {
+        "title": "المجموعات",
+        "subtitle": "{{players}} لاعبًا منظَّمون في {{groups}} مجموعة، جميعهم من خادم BR",
+        "listTitle": "المجموعات",
+        "count": "{{count}} مجموعة",
+        "searchGroup": "ابحث عن مجموعة",
+        "searchPlayer": "ابحث عن لاعب بالاسم أو ID",
+        "level": "Lv {{level}}",
+        "noDiscord": "لا يوجد Discord مرتبط",
+        "note": {
+            "banned": "محظور",
+            "noWhitelist": "بدون Whitelist",
+            "repeatOffender": "مخالف متكرر",
+            "vipExpired": "انتهت صلاحية VIP",
+            "noDiscord": "Discord غير مرتبط",
+            "notClient": "ليس عميلًا"
+        },
+        "sortLabel": "الترتيب:",
+        "spectateAll": "مراقبة الكل ({{count}})",
+        "empty": "لا يوجد لاعبون في هذه المجموعة.",
+        "col": {
+            "id": "ID",
+            "player": "اللاعب",
+            "hours": "الساعات",
+            "notes": "الملاحظات",
+            "action": "الإجراء",
+            "xpSocial": "XP الاجتماعي"
+        },
+        "sort": {
+            "hoursDesc": "الساعات، الأعلى أولًا",
+            "hoursAsc": "الساعات، الأدنى أولًا",
+            "nameAsc": "الاسم (A-Z)",
+            "levelDesc": "XP الاجتماعي، الأعلى أولًا",
+            "levelAsc": "XP الاجتماعي، الأدنى أولًا"
+        },
+        "menu": {
+            "settings": "إعدادات اللاعب",
+            "copyId": "نسخ ID",
+            "copyDiscord": "نسخ Discord"
+        },
+        "action": {
+            "teleportTo": "الانتقال إلى {{name}}",
+            "more": "المزيد من الإجراءات"
+        },
+        "toast": {
+            "idCopied": "تم نسخ ID {{id}} إلى الحافظة",
+            "discordCopied": "تم نسخ Discord {{tag}} إلى الحافظة"
+        },
+        "spectateDialog": {
+            "title": "مراقبة جميع اللاعبين في {{group}}؟",
+            "subtitle": "{{count}} لاعبًا في المجموعة، تدوير تلقائي",
+            "description": "تدخل وضع المراقبة ويتنقل الخادم تلقائيًا بين لاعبي المجموعة الـ {{count}}. يمكنك الخروج في أي وقت بـ Esc.",
+            "notice": "إجراء عالي التأثير: مراقبة {{count}} لاعبًا بالتتابع تُحمِّل الخادم وتُسجَّل في سجل الطاقم.",
+            "confirm": "مراقبة {{count}} لاعبًا"
+        },
+        "settings": {
+            "title": "إعدادات اللاعب",
+            "roleLabel": "الرتبة",
+            "shiftLabel": "الوردية",
+            "placeholder": "اختر خيارًا",
+            "role": {
+                "sub": "نائب القائد",
+                "resp": "المسؤول",
+                "none": "لا شيء"
+            },
+            "shift": {
+                "dawn": "الفجر",
+                "morning": "الصباح",
+                "afternoon": "بعد الظهر",
+                "night": "الليل",
+                "none": "لا شيء"
+            },
+            "save": "حفظ"
+        }
+    },
+    "retention": {
+        "title": "الاحتفاظ",
+        "subtitle": "تصنيف مجنِّدي WallStreet حسب الاحتفاظ D1، آخر 30 يومًا، الاحتفاظ D1 = نسبة المبتدئين الذين عادوا في اليوم التالي للبدء (تُحتسب فقط الحالات التي أُغلقت نافذة اليوم الواحد الخاصة بها، نفس قاعدة Growth)",
+        "searchPlaceholder": "ابحث عن مجنِّد...",
+        "sortLabel": "الترتيب:",
+        "audit": "سجل تدقيق الإزالة",
+        "empty": "لا يوجد مجنِّدون في هذه التصفية.",
+        "notice": "نطاقات الحالة (قابلة للتعديل): خفيف من 80%، متوسط من 60% إلى 79%، حاد أقل من 60%. لا يُطبَّق «حاد» إلا اعتبارًا من 30 مبتدئًا في الفترة، حتى لا تُعاقَب العينات الصغيرة.",
+        "championRole": "{{role}}، {{count}} مبتدئًا",
+        "severeTitle": "{{count}} مجنِّدين في وضع حاد",
+        "severeHint": "احتفاظ أقل من 60% مع 30 مبتدئًا أو أكثر في آخر 30 يومًا",
+        "seeSevere": "عرض الـ{{count}}",
+        "col": {
+            "rank": "#",
+            "recruiter": "المجنِّد",
+            "recruited": "المبتدئون",
+            "retention": "الاحتفاظ",
+            "trend": "الاتجاه",
+            "status": "الحالة",
+            "actions": "الإجراءات",
+            "id": "المعرّف"
+        },
+        "status": {
+            "light": "خفيف",
+            "medium": "متوسط",
+            "severe": "حاد"
+        },
+        "filter": {
+            "all": "الكل {{count}}",
+            "light": "خفيف {{count}}",
+            "medium": "متوسط {{count}}",
+            "severe": "حاد {{count}}"
+        },
+        "sort": {
+            "bestFirst": "أفضل احتفاظ أولًا",
+            "worstFirst": "أسوأ احتفاظ أولًا",
+            "mostRecruited": "الأكثر تجنيدًا أولًا"
+        },
+        "action": {
+            "seeRecruits": "عرض المبتدئين",
+            "remove": "إزالة من WallStreet"
+        },
+        "prizeTitle": "جائزة المركز الأول",
+        "prizeHint": "حافظ على المركز الأول لتحتفظ بها",
+        "severeBadge": "حاد {{count}}",
+        "sortBy": "الترتيب حسب {{column}}",
+        "sortState": {
+            "name": {
+                "asc": "الاسم (A-Z)",
+                "desc": "الاسم (Z-A)"
+            },
+            "recruited": {
+                "desc": "الأكثر تجنيدًا أولًا",
+                "asc": "الأقل تجنيدًا أولًا"
+            },
+            "retention": {
+                "desc": "أفضل احتفاظ أولًا",
+                "asc": "أسوأ احتفاظ أولًا"
+            },
+            "trend": {
+                "desc": "أكبر ارتفاع أولًا",
+                "asc": "أكبر انخفاض أولًا"
+            },
+            "status": {
+                "asc": "الحالة: الأفضل أولًا",
+                "desc": "الحالة: الأسوأ أولًا"
+            }
+        },
+        "remove": {
+            "title": "إزالة {{name}} من WallStreet؟",
+            "subtitle": "#{{rank}} في التصنيف، {{recruited}} مبتدئًا، احتفاظ {{retention}}%، الحالة {{status}}، {{trend}} خلال 30 يومًا",
+            "description": "يغادر المجنِّد مجموعة WallStreet ويفقد دور المجنِّد: لن يفتح WL بعد الآن، ويخرج من هذا التصنيف. لا يتأثر اللاعبون الذين جنَّدهم سابقًا.",
+            "notice": "يُسجَّل في سجل التدقيق: من قام بالإزالة، والتاريخ والوقت، ونسبة الاحتفاظ في تلك اللحظة ({{retention}}%، {{recruited}} مبتدئًا).",
+            "reasonLabel": "سبب الإزالة:",
+            "groupLevel": "المستوى {{level}}",
+            "groupsTitle": "الرتب التي ستتم إزالتها ({{count}})",
+            "noGroups": "لا يحمل هذا المجنّد أي رتبة في WallStreet — لن تتم إزالة أي شيء.",
+            "confirm": "إزالة من WallStreet",
+            "reason": {
+                "lowRetention": "احتفاظ أقل من الحد الأدنى",
+                "inactive": "عدم النشاط",
+                "misconduct": "سوء سلوك",
+                "ownRequest": "بناءً على طلبه"
+            }
+        },
+        "emptyHint": "عدِّل التصفية أو البحث لعرض مجنِّدين آخرين.",
+        "auditModal": {
+            "subtitle": "من غادر WallStreet، ومن أزاله، ونسبة الاحتفاظ في ذلك الوقت",
+            "col": {
+                "removed": "المُزال",
+                "removedBy": "أزاله",
+                "reason": "السبب",
+                "when": "متى",
+                "snapshot": "الاحتفاظ وقتها"
+            },
+            "recruited": "{{count}} مبتدئًا",
+            "count": "{{count}} إزالة مسجَّلة",
+            "empty": "لا توجد إزالات مسجَّلة."
+        },
+        "recruitsModal": {
+            "title": "مبتدئو {{name}}",
+            "subtitle": "آخر {{days}} أيام، المحتفَظ به (D1) = عاد في اليوم التالي للبدء",
+            "col": {
+                "player": "اللاعب",
+                "start": "البداية",
+                "status": "الحالة"
+            },
+            "filter": {
+                "all": "الكل {{count}}",
+                "retained": "المحتفَظ بهم {{count}}",
+                "lost": "المفقودون {{count}}",
+                "banned": "المحظورون {{count}}"
+            },
+            "status": {
+                "retained": "محتفَظ به",
+                "lost": "مفقود",
+                "banned": "محظور"
+            },
+            "count": "{{count}} مبتدئًا في الفترة",
+            "empty": "لا يوجد مبتدئون في هذا الفلتر."
+        },
+        "toast": {
+            "idCopied": "تم نسخ المعرّف {{id}}"
+        }
+    },
+    "suspects": {
+        "title": "المشتبه بهم",
+        "subtitle": "سجل اكتشافات مكافحة الغش، {{alerts}} تنبيهًا، {{players}} لاعبًا، آخر {{hours}} ساعة، تُجمَع التنبيهات المتطابقة من اللاعب نفسه في صف واحد مع عدّاد",
+        "searchPlaceholder": "ابحث بالاسم أو ID...",
+        "live": "مباشر {{seconds}}ث",
+        "sortLabel": "الترتيب:",
+        "sortBy": "الترتيب حسب {{column}}",
+        "empty": "لا توجد تنبيهات في هذه التصفية.",
+        "copyId": "نسخ ID {{id}}",
+        "sessionAlerts": "{{count}} تنبيهًا في هذه الجلسة",
+        "timeTooltip": "اليوم {{time}}، الجلسة {{session}}، أحدث تنبيه في المجموعة",
+        "detail": {
+            "removed": "تمت إزالة {{count}} كيانًا"
+        },
+        "col": {
+            "time": "آخر تنبيه",
+            "id": "ID",
+            "player": "اللاعب",
+            "reason": "السبب والتكرارات",
+            "actions": "الإجراءات"
+        },
+        "severity": {
+            "critical": "حرج",
+            "suspect": "مشتبه",
+            "info": "معلومة"
+        },
+        "severityLabel": {
+            "critical": "حرج",
+            "suspect": "مشتبه",
+            "info": "معلومة"
+        },
+        "filter": {
+            "reason": "السبب:",
+            "severity": "الخطورة:",
+            "period": "الفترة:",
+            "allReasons": "الكل",
+            "allSeverities": "الكل",
+            "lastHours": "آخر {{count}} ساعة"
+        },
+        "reason": {
+            "weaponSpawn": "توليد سلاح غير مصرَّح به",
+            "menuBypass": "تجاوز قائمة غش",
+            "godmode": "Godmode، ضرر صفري",
+            "teleport": "انتقال غير طبيعي",
+            "crashEntity": "كيان انهيار محتمل",
+            "unknownResource": "تحميل مورد غير معروف",
+            "handling": "تعديل تحكُّم المركبة",
+            "vehicleSpawn": "توليد مركبة غير مصرَّح بها",
+            "ping": "Ping غير مستقر، فقدان تزامن"
+        },
+        "sort": {
+            "newest": "أحدث تنبيه",
+            "oldest": "أقدم تنبيه",
+            "mostRepeats": "الأكثر تكرارًا",
+            "playerAsc": "اللاعب (A-Z)"
+        },
+        "sortState": {
+            "time": {
+                "desc": "أحدث تنبيه",
+                "asc": "أقدم تنبيه"
+            },
+            "id": {
+                "asc": "ID تصاعديًا",
+                "desc": "ID تنازليًا"
+            },
+            "player": {
+                "asc": "اللاعب (A-Z)",
+                "desc": "اللاعب (Z-A)"
+            },
+            "reason": {
+                "desc": "الأكثر تكرارًا",
+                "asc": "الأقل تكرارًا"
+            }
+        },
+        "action": {
+            "history": "السجل",
+            "historyHint": "عرض سجل تنبيهات الجلسة",
+            "copyAlert": "نسخ تفاصيل التنبيه"
+        },
+        "time": {
+            "now": "الآن",
+            "minutes": "منذ {{count}} دقيقة",
+            "hours": "منذ {{count}} ساعة"
+        },
+        "emptyHint": "لا توجد اكتشافات لمكافحة الغش في هذه الشريحة. عدِّل التصفية أو الفترة.",
+        "history": {
+            "title": "سجل الجلسة",
+            "subtitle": "{{player}}، #{{id}}، الجلسة {{session}}، {{count}} تنبيهًا",
+            "col": {
+                "time": "الوقت",
+                "alert": "التنبيه والتفاصيل التقنية"
+            },
+            "filter": {
+                "all": "الكل {{count}}",
+                "critical": "حرج {{count}}",
+                "suspect": "مشتبه {{count}}",
+                "info": "معلومة {{count}}"
+            },
+            "minutes": "منذ {{count}} دقيقة",
+            "hours": "منذ {{count}} ساعة",
+            "footer": "{{count}} تنبيهًا في هذه الجلسة، ترتيب زمني، الأحدث أولًا",
+            "updated": "حُدِّث للتو",
+            "emptyTitle": "لا توجد تنبيهات في هذا النطاق",
+            "emptySubtitle": "بدِّل تصفية الخطورة لعرض بقية تنبيهات هذه الجلسة."
+        }
+    },
+    "dialog": {
+        "escCancels": "Esc للإلغاء",
+        "escCloses": "Esc للإغلاق"
+    },
+    "purchases": {
+        "title": "المشتريات",
+        "subtitle": "طابور مشتريات المتجر، {{count}} في الانتظار و{{free}} غير مُسنَدة، اخدم العميل وأغلق التذكرة وتابع سجل الإنفاق",
+        "sortBy": "الترتيب حسب {{column}}",
+        "empty": "لا توجد مشتريات في الطابور.",
+        "col": {
+            "id": "ID",
+            "status": "الحالة",
+            "name": "الاسم",
+            "totalSpent": "إجمالي الإنفاق",
+            "lastPurchase": "آخر عملية شراء",
+            "coupon": "الكوبون",
+            "lastPurchaseAt": "تاريخ آخر شراء",
+            "action": "الإجراء"
+        },
+        "presence": {
+            "online": "متصل",
+            "offline": "غير متصل"
+        },
+        "action": {
+            "attend": "خدمة العميل",
+            "finish": "إغلاق التذكرة",
+            "attendant": "{{name}} #{{id}}",
+            "takenBy": "يخدمه {{name}}",
+            "spectate": "مراقبة",
+            "profile": "عرض الملف الشخصي"
+        },
+        "time": {
+            "now": "الآن",
+            "minute": "منذ {{count}} دقيقة",
+            "minutes": "منذ {{count}} دقائق",
+            "hour": "منذ {{count}} ساعة",
+            "hours": "منذ {{count}} ساعات",
+            "day": "منذ {{count}} يوم",
+            "days": "منذ {{count}} أيام"
+        },
+        "toast": {
+            "finished": "أُغلقت تذكرة {{name}}"
+        },
+        "emptyHint": "يفرغ الطابور بعد معالجة جميع الطلبات."
+    },
+    "ranking": {
+        "title": "تصنيف التذاكر",
+        "flavor": "سريع ولبِق ولا يُنسى، محبوب الدعم يكسب كل عميل بخدمة استثنائية. عندما يستلم تذكرة، فالثناء قادم لا محالة!",
+        "subtitle": "{{flavor}} {{summary}}",
+        "summary": "{{count}} مجنِّدًا، آخر تحديث منذ {{minutes}} دقيقة",
+        "searchPlaceholder": "ابحث عن مجنِّد بالاسم أو ID...",
+        "sortBy": "الترتيب حسب {{column}}",
+        "position": "{{position}}",
+        "empty": "لم يُعثر على مجنِّدين.",
+        "col": {
+            "id": "ID",
+            "name": "الاسم",
+            "tickets": "التذاكر",
+            "rated": "التذاكر المقيَّمة",
+            "rating": "التقييمات"
+        },
+        "medal": {
+            "gold": "المركز الأول",
+            "silver": "المركز الثاني",
+            "bronze": "المركز الثالث"
+        },
+        "tier": {
+            "good": "تقييم مرتفع",
+            "warn": "تقييم متوسط",
+            "bad": "تقييم منخفض"
+        },
+        "score": {
+            "title": "النقاط",
+            "subtitle": "سجل الأحداث، {{name}} #{{id}}",
+            "open": "عرض نقاط {{name}}",
+            "total": "الإجمالي: {{points}} نقطة",
+            "stamp": "{{date}} - {{time}}",
+            "empty": "لا توجد أحداث نقاط.",
+            "reason": {
+                "saleConfirmed": "تم تأكيد البيع",
+                "buyLater": "سيشتري العميل لاحقًا",
+                "offerRefused": "رفض العميل العرض",
+                "saleDone": "اكتمل البيع",
+                "affiliateLoggedOut": "سجَّل الشريك خروجه",
+                "ticketRated": "قُيِّمت التذكرة جيدًا",
+                "ticketDropped": "تذكرة متروكة",
+                "praiseReceived": "تم تلقّي ثناء"
+            }
+        }
+    },
+    "clients": {
+        "title": "العملاء",
+        "subtitle": "قاعدة العملاء النشطين في آخر {{days}} يومًا، الملف وسجل الشراء والملاحظات، مجموعة {{group}}، {{shown}} من {{total}} عميلًا",
+        "searchPlaceholder": "ابحث بالاسم أو ID...",
+        "sortBy": "الترتيب حسب {{column}}",
+        "empty": "لا يوجد عميل يطابق هذه التصفية.",
+        "noValue": "—",
+        "col": {
+            "id": "ID",
+            "lastLogin": "آخر تسجيل دخول",
+            "name": "الاسم",
+            "lastPurchase": "آخر عملية شراء",
+            "totalSpent": "إجمالي الإنفاق",
+            "actions": "الإجراءات"
+        },
+        "ago": {
+            "online": "متصل",
+            "never": "أبدًا",
+            "minutes": "منذ {{count}}د",
+            "hours": "منذ {{count}}س",
+            "days": "منذ {{count}}ي"
+        },
+        "chip": {
+            "online": "متصل الآن",
+            "topSpenders": "الأكثر إنفاقًا"
+        },
+        "group": {
+            "all": "الكل",
+            "iniciante": "مبتدئ",
+            "bronze": "برونزي",
+            "prata": "فضي",
+            "ouro": "ذهبي",
+            "diamante": "ماسي",
+            "vip": "VIP"
+        },
+        "groups": {
+            "searchPlaceholder": "بحث",
+            "sortBySize": "الترتيب حسب الحجم",
+            "sortByName": "الترتيب حسب الاسم",
+            "empty": "لا توجد مجموعة بهذا الاسم."
+        },
+        "action": {
+            "talk": "التحدث مع العميل",
+            "note": "ملاحظة العميل",
+            "profile": "عرض الملف والمشتريات",
+            "chat": "سجل المحادثات"
+        },
+        "toast": {
+            "talk": "جارٍ فتح محادثة مع {{name}}",
+            "chat": "سجل محادثات {{name}}",
+            "noteSaved": "حُفظت ملاحظة {{name}}"
+        },
+        "profile": {
+            "subtitle": "ID: {{id}}، عميل منذ {{since}}",
+            "arrived": "انضم في:",
+            "hoursPlayed": "ساعات اللعب:",
+            "hours": "{{count}}س",
+            "totalSpent": "إجمالي الإنفاق",
+            "empty": "لم يشترِ هذا العميل شيئًا بعد.",
+            "col": {
+                "product": "المنتج",
+                "value": "القيمة"
+            }
+        },
+        "note": {
+            "title": "ملاحظة",
+            "subtitle": "{{name}}، #{{id}}",
+            "placeholder": "اكتب وصف العميل...",
+            "counter": "{{count}}/{{max}}",
+            "cancel": "إلغاء",
+            "submit": "إرسال"
+        },
+        "product": {
+            "boostXp7": "تعزيز XP، 7 أيام",
+            "skinStreet": "مظهر، هودي Street",
+            "petCat": "حيوان أليف، قط سيامي",
+            "garageSlot": "مكان في المرآب",
+            "petHusky": "حيوان أليف، هاسكي",
+            "skinExecutive": "مظهر، بدلة تنفيذية",
+            "pistolDeagle": "مسدس Desert Eagle",
+            "smgMicro": "رشاش Micro SMG",
+            "phonePremium": "هاتف مميز",
+            "rifleAk47": "بندقية AK-47",
+            "vipBronze30": "VIP برونزي، 30 يومًا",
+            "vipPrata30": "VIP فضي، 30 يومًا",
+            "apartmentDelPerro": "شقة، Del Perro",
+            "businessLicense": "رخصة عمل تجاري",
+            "vipOuro30": "VIP ذهبي، 30 يومًا",
+            "vehicleCometSr": "مركبة، Comet SR",
+            "vehicleSultanRs": "مركبة، Sultan RS",
+            "houseMirrorPark": "منزل، Mirror Park",
+            "garageWorkshop": "مرآب ورشة",
+            "vehicleKuruma": "مركبة، Kuruma مصفحة",
+            "vipDiamante30": "VIP ماسي، 30 يومًا",
+            "houseVinewood": "منزل، Vinewood Hills"
+        }
+    },
+    "affiliates": {
+        "view": {
+            "personal": "المبيعات الشخصية",
+            "management": "الإدارة",
+            "list": "الشركاء",
+            "clients": "العملاء"
+        },
+        "personal": {
+            "title": "الشركاء، المبيعات الشخصية",
+            "subtitle": "تابع مبيعاتك وفئتك وآخر العملاء الذين خدمتهم، {{count}} في الفترة",
+            "section": "مبيعاتي",
+            "tableTitle": "آخر العملاء"
+        },
+        "management": {
+            "title": "الشركاء، الإدارة",
+            "subtitle": "المبيعات الإجمالية للعملية، {{count}} جلسة مع حرارة العميل والتحويل",
+            "section": "المبيعات الإجمالية",
+            "tableTitle": "آخر الجلسات"
+        },
+        "list": {
+            "title": "الشركاء، القائمة",
+            "subtitle": "جميع الشركاء حسب الفئة، {{shown}} من {{total}} مع الأداء والنقاط ومبيعات هذا الشهر",
+            "allTiers": "كل الفئات",
+            "noTier": "لا توجد فئة بهذا الاسم"
+        },
+        "clients": {
+            "title": "الشركاء، العملاء",
+            "subtitle": "العملاء حسب الحرارة، {{shown}} من {{total}} مع النقاط والإنفاق الشهري وسجل الشراء",
+            "allTemperatures": "كل درجات الحرارة",
+            "noTemperature": "لا توجد درجة حرارة بهذا الاسم"
+        },
+        "empty": "لا نتائج للتصفيات الحالية",
+        "searchClient": "ابحث عن عميل",
+        "searchAffiliate": "ابحث عن شريك",
+        "searchBoth": "ابحث عن بائع أو عميل",
+        "searchTier": "بحث",
+        "searchTemperature": "بحث",
+        "orderByCount": "الترتيب حسب الحجم",
+        "sortBy": "الترتيب حسب {{column}}",
+        "hash": "#{{id}}",
+        "tagged": "#{{id}} {{name}}",
+        "hours": "{{hours}}س",
+        "tier": "الفئة {{tier}}",
+        "noValue": "--",
+        "card": {
+            "id": "ID: {{id}}",
+            "attendances": "الجلسات",
+            "ratings": "التقييمات",
+            "sales": "إجمالي المبيعات",
+            "tier": "الفئة",
+            "totalSales": "إجمالي المبيعات",
+            "avgTicket": "متوسط الفاتورة",
+            "hiredAt": "تاريخ التعيين",
+            "hoursWorked": "ساعات العمل",
+            "startSearch": "بدء البحث",
+            "stopSearch": "إيقاف البحث"
+        },
+        "kpi": {
+            "available": "الشركاء المتاحون",
+            "attended": "العملاء المخدومون",
+            "sales": "إجمالي المبيعات",
+            "lost": "العملاء المفقودون",
+            "total": "الإجمالي المُباع",
+            "avgTicket": "متوسط الفاتورة",
+            "vsPrevious": "مقارنة بالفترة السابقة"
+        },
+        "col": {
+            "time": "الوقت",
+            "origin": "المصدر",
+            "id": "ID",
+            "client": "العميل",
+            "hoursPlayed": "ساعات اللعب",
+            "totalSpent": "إجمالي الإنفاق",
+            "sellerId": "ID البائع",
+            "seller": "البائع",
+            "temperature": "الحرارة",
+            "score": "النقاط",
+            "value": "القيمة",
+            "status": "الحالة",
+            "affiliate": "الشريك",
+            "tier": "الفئة",
+            "attendances": "جلسات",
+            "monthSales": "مبيعات هذا الشهر",
+            "role": "الدور",
+            "monthlySpend": "الإنفاق الشهري",
+            "actions": "الإجراء"
+        },
+        "origin": {
+            "auto": "تلقائي",
+            "manual": "يدوي"
+        },
+        "presence": {
+            "online": "متصل",
+            "away": "بعيد",
+            "offline": "غير متصل"
+        },
+        "role": {
+            "seller": "بائع",
+            "affiliate": "شريك"
+        },
+        "temperature": {
+            "special": "💎 مميز",
+            "boiling": "🔥 يغلي",
+            "hot": "🥵 حار",
+            "warm": "🌡️ دافئ",
+            "cold": "❄️ بارد",
+            "frozen": "🧊 متجمد"
+        },
+        "filter": {
+            "label": "التصفيات:",
+            "all": "الكل",
+            "converted": "تم التحويل",
+            "lost": "لم يتحول",
+            "auto": "تلقائي",
+            "manual": "يدوي"
+        },
+        "quick": {
+            "onlineNow": "متصل الآن",
+            "recurring": "متكرر",
+            "bestSales": "أفضل المبيعات",
+            "lastSales": "آخر المبيعات"
+        },
+        "clientQuick": {
+            "onlineNow": "متصل الآن",
+            "recurring": "متكرر",
+            "bestPurchases": "أفضل المشتريات",
+            "lastPurchases": "آخر المشتريات"
+        },
+        "action": {
+            "teleport": "الانتقال إلى اللاعب",
+            "teleportShort": "TP",
+            "spectate": "مراقبة",
+            "spectateAll": "مراقبة الكل",
+            "sales": "عرض المبيعات",
+            "purchases": "عرض المشتريات",
+            "services": "عرض الجلسات",
+            "clientDetail": "تفاصيل العميل",
+            "message": "إرسال رسالة",
+            "call": "اتصال",
+            "whatsapp": "نسخ WhatsApp"
+        },
+        "time": {
+            "seconds": "{{count}}ث",
+            "minute": "منذ {{count}} دقيقة",
+            "minutes": "منذ {{count}} دقائق",
+            "hour": "منذ {{count}} ساعة",
+            "hours": "منذ {{count}} ساعات",
+            "clock": "{{hour}}:{{minute}}",
+            "yesterday": "أمس، {{time}}",
+            "date": "{{date}}، {{time}}"
+        },
+        "modal": {
+            "stamp": "{{date}} - {{time}}",
+            "col": {
+                "product": "المنتج",
+                "date": "التاريخ",
+                "value": "القيمة"
+            }
+        },
+        "sales": {
+            "title": "المبيعات",
+            "subtitle": "البائع: #{{id}} {{name}}",
+            "total": "إجمالي المبيعات",
+            "empty": "لا توجد مبيعات مسجلة"
+        },
+        "purchases": {
+            "title": "المشتريات",
+            "subtitle": "العميل: #{{id}} {{name}}",
+            "total": "إجمالي الإنفاق",
+            "empty": "لا توجد مشتريات مسجلة"
+        },
+        "services": {
+            "title": "الجلسات",
+            "subtitle": "البائع: #{{id}} {{name}}",
+            "attended": "إجمالي الجلسات",
+            "convertedOf": "/{{total}} تم تحويلهم",
+            "avgDuration": "متوسط مدة الجلسة",
+            "total": "إجمالي المبيعات",
+            "today": "اليوم",
+            "days": "{{count}} أيام",
+            "notConverted": "-- -- --",
+            "empty": "لا توجد جلسات في هذه الفترة",
+            "col": {
+                "date": "التاريخ",
+                "time": "الوقت",
+                "client": "العميل",
+                "temperature": "الحرارة",
+                "duration": "المدة",
+                "converted": "تم التحويل"
+            }
+        },
+        "client": {
+            "title": "تفاصيل {{name}}",
+            "arrivedAt": "وصل في:",
+            "hoursPlayed": "ساعات اللعب:",
+            "totalSpent": "إجمالي الإنفاق:",
+            "reason": "السبب",
+            "points": "الإجمالي: {{total}} نقطة",
+            "tab": {
+                "events": "الأحداث",
+                "purchases": "المشتريات"
+            }
+        },
+        "event": {
+            "saleConfirmed": "تم تأكيد البيع",
+            "saleMade": "اكتمل البيع",
+            "wantsLater": "سيشتري العميل لاحقًا",
+            "returned": "عاد العميل",
+            "firstContact": "أول تواصل",
+            "noAnswer": "لم يرد العميل",
+            "loggedOff": "سجَّل الشريك خروجه",
+            "refusedOffer": "رفض العميل العرض"
+        },
+        "search": {
+            "searching": {
+                "title": "جارٍ البحث",
+                "subtitle": "نبحث عن عملاء محتملين جدد"
+            },
+            "found": {
+                "title": "وجدنا واحدًا!",
+                "subtitle": "انتظر قليلًا، نوجهك إلى العميل"
+            },
+            "nobody": {
+                "title": "لا أحد!",
+                "subtitle": "لم يُعثر على أي عميل محتمل الآن."
+            }
+        },
+        "toast": {
+            "idCopied": "تم نسخ المعرّف {{id}} إلى الحافظة",
+            "discordCopied": "تم نسخ ديسكورد {{tag}} إلى الحافظة",
+            "whatsappCopied": "تم نسخ واتساب {{number}} إلى الحافظة"
+        }
+    },
+    "profile": {
+        "subtitle": "الجواز #{{id}}",
+        "arrived": "انضم في:",
+        "hoursPlayed": "ساعات اللعب:",
+        "hours": "{{count}}h",
+        "totalSpent": "إجمالي الإنفاق",
+        "empty": "هذا اللاعب لم يشترِ شيئًا بعد.",
+        "col": {
+            "product": "المنتج",
+            "date": "التاريخ",
+            "value": "القيمة"
+        }
+    },
+    "activityPunishment": {
+        "badge": "عقوبة",
+        "title": "تنبيه: تمت معاقبتك\nبسبب انخفاض النشاط",
+        "reasonBefore": "مر وقت طويل دون أن تبدأ المستجدين.\nتمت إزالة صلاحياتك ووُضعت في\n",
+        "reasonHighlight": "قائمة سوداء مؤقتة",
+        "reasonAfter": ".",
+        "guidance": "ركّز على البقاء نشطًا واستخدام صلاحياتك بجودة\nحتى لا تتعرض لعقوبات جديدة",
+        "acknowledge": "فهمت",
+        "lowRetention": {
+            "title": "تنبيه: تمت معاقبتك\nبسبب انخفاض الاحتفاظ",
+            "reasonBefore": "اللاعبون الذين بدأتهم لم يبقوا في المدينة.\nتمت إزالة صلاحياتك ووُضعت في\n",
+            "guidance": "ركّز على بدء اللاعبين بجودة ومتابعة المستجدين\nحتى لا تتعرض لعقوبات جديدة"
+        }
+    },
+    "legalFocus": {
+        "leadership": {
+            "debugOpen": "إظهار المنظمة القانونية في دائرة التركيز",
+            "debugClose": "إغلاق المنظمة القانونية في دائرة التركيز",
+            "ariaLabel": "المنظمة القانونية في دائرة التركيز",
+            "title": "المنظمة القانونية في دائرة التركيز",
+            "fallbackFaction": "المنظمة المختارة",
+            "headline": "منظمتكم في دائرة التركيز!"
+        }
+    },
+    "factionFocus": {
+        "hint": {
+            "expand": "إظهار العصابة في دائرة التركيز ({{hotkey}})"
+        },
+        "day": {
+            "anteontem": "أول أمس",
+            "ontem": "أمس",
+            "hoje": "اليوم"
+        },
+        "period": {
+            "ontem": "أمس",
+            "hoje": "اليوم",
+            "7dias": "7 أيام"
+        },
+        "periodIn": {
+            "ontem": "أمس",
+            "hoje": "اليوم",
+            "7dias": "خلال 7 أيام"
+        },
+        "status": {
+            "foco": "في دائرة التركيز",
+            "proxima": "التالية",
+            "ok": "في قائمة الانتظار",
+            "limite": "40 متصلاً",
+            "bloqueio": "محظورة مؤقتاً",
+            "qg": "لا تستوفي الشروط",
+            "piso": "عدد المتصلين قليل",
+            "ret": "لا تستوفي الشروط",
+            "dados": "لا توجد بيانات",
+            "blacklist": "محظورة مؤقتاً"
+        },
+        "elapsed": {
+            "none": "لا أحد حتى الآن",
+            "now": "الآن",
+            "minutes": "منذ {{minutes}} دقيقة",
+            "hours": "منذ {{hours}} ساعة و{{minutes}} دقيقة"
+        },
+        "selectionReason": {
+            "best_eligible_retention": "أفضل نسبة عودة للاعبين بين العصابات التي استوفت الشروط",
+            "best_eligible_activation": "أفضل نسبة بقاء في الساعة الأولى بين العصابات التي استوفت الشروط",
+            "retention_without_activation": "أفضل نسبة عودة للاعبين؛ لم يمر وقت كافٍ لحساب البقاء في الساعة الأولى",
+            "fallback_most_active_members_in_hq": "لم تستوفِ أي عصابة الشروط، فاختيرت العصابة ذات أكبر عدد من الأعضاء النشطين في المقر",
+            "manual": "اختارها فريق الإدارة يدوياً"
+        },
+        "exitReason": {
+            "cheia": {
+                "short": "وصلت إلى 40 متصلاً",
+                "full": "وصلت إلى 40 عضواً متصلاً ولا تحتاج إلى المزيد"
+            },
+            "leva": {
+                "short": "اكتملت الدفعة",
+                "full": "استقبلت دفعة المبتدئين كاملة"
+            },
+            "qg": {
+                "short": "فقدت شروط المقر",
+                "full": "أصبح في المقر أقل من 3 أعضاء نشطين أو لم يعد فيه مجنّد نشط برتبة 3 أو أعلى"
+            },
+            "afk": {
+                "short": "أصبح المجنّد غير نشط",
+                "full": "أصبح المجنّد غير نشط ولم يبقَ في المقر مجنّد نشط برتبة 3 أو أعلى"
+            },
+            "online": {
+                "short": "أقل من الحد الأدنى",
+                "full": "انخفض عدد الأعضاء المتصلين عن الحد الأدنى"
+            },
+            "staff": {
+                "short": "أزالتها الإدارة",
+                "full": "أزالها فريق الإدارة"
+            },
+            "low_conversion": {
+                "short": "جنّدت عدداً قليلاً",
+                "full": "جنّدت أقل من 45% ممن بدأوا في المقر"
+            }
+        },
+        "stateReason": {
+            "focusManual": "اختارها فريق الإدارة",
+            "focusFallback": "اختيرت لأنها تضم أكبر عدد من الأعضاء النشطين في المقر بين العصابات التي لديها أقل من 40 متصلاً",
+            "focusActivationWithoutD1": "جنّد الموجودون أقل من 3 مبتدئين خلال الأيام الثلاثة المكتملة، فاختيرت حسب البقاء في الساعة الأولى ({{activation}}%)",
+            "focusActivationD1": "عاد {{d1}}% من مجنّدي الموجودين في اليوم التالي للتجنيد، وهي أفضل نسبة بين المستوفين للشروط",
+            "focusLegacyRetention": "لا تجنيد خلال آخر 48 ساعة، فاختيرت حسب نسبة العودة ({{d1}}%)",
+            "focusLegacyActivation": "أفضل نسبة بقاء بين المستوفين للشروط ({{activation}}% بقوا ساعة اليوم)",
+            "okActivation": "استوفت الشروط: بقي {{activation}}% ساعة، ويوجد أعضاء في المقر ولم تمتلئ بعد",
+            "okLegacy": "استوفت الشروط: عاد {{d1}}% في اليوم التالي، ويوجد أعضاء في المقر ولم تمتلئ بعد",
+            "limite": "لديها 40 متصلاً بالفعل ولا تحتاج إلى التركيز",
+            "bloqueio": "استقبلت دفعتها أو وصلت إلى 40 متصلاً؛ تعود خلال {{minutes}} دقيقة",
+            "qg": "أقل من 3 أعضاء نشطين في المقر أو لا يوجد مجنّد نشط برتبة 3 أو أعلى",
+            "piso": "عدد الأعضاء المتصلين قليل مقارنة بعدد لاعبي المدينة الآن",
+            "retActivation": "بقي {{activation}}% فقط من مجنّدي آخر 48 ساعة لمدة ساعة؛ الحد الأدنى 20%",
+            "retLegacy": "عاد {{d1}}% خلال آخر 7 أيام؛ الحد الأدنى 30%",
+            "dadosActivation": "لا يوجد تجنيد مرّ عليه أكثر من 60 دقيقة خلال آخر 48 ساعة",
+            "dadosLegacy": "لم تجنّد الحد الأدنى من المبتدئين خلال آخر 7 أيام",
+            "blacklist": "خرجت لأنها جنّدت أقل من 45% ممن بدأوا في المقر؛ تعود خلال {{minutes}} دقيقة"
+        },
+        "next": {
+            "peakAriaLabel": "العصابات التالية في دائرة التركيز خلال ذروة المدينة",
+            "peakKicker": "العصابات التالية في دائرة التركيز",
+            "peakCountdownLabel": "تبدأ خلال",
+            "peakSupport": "ازداد وصول المبتدئين، وستوزّعهم العلامة بين {{count}} عصابات",
+            "rank": "{{rank}}",
+            "ariaLabel": "العصابة التالية في دائرة التركيز",
+            "alert": "انتباه!",
+            "kicker": "العصابة التالية في دائرة التركيز",
+            "set": "المجموعة {{set}}",
+            "countdownLabel": "يبدأ التركيز خلال",
+            "progressLabel": "الوقت المتبقي حتى بدء التركيز"
+        },
+        "leadership": {
+            "debugOpen": "إظهار العصابة في دائرة التركيز",
+            "debugClose": "إغلاق العصابة في دائرة التركيز",
+            "ariaLabel": "العصابة في دائرة التركيز",
+            "title": "العصابة في دائرة التركيز",
+            "fallbackFaction": "العصابة المختارة",
+            "nextCheck": "الفحص التالي",
+            "badge": "انتباه يا قادة!",
+            "headline": "عصابتكم في دائرة التركيز!",
+            "tipNewcomers": "سيبدأ المبتدئون في مقركم",
+            "tipRecruiter": "أبقوا مجنّداً عند البوابة دائماً",
+            "batch": "دفعة هذا التركيز",
+            "arrived": "وصلوا من أصل {{target}} كحد أقصى",
+            "hired": "تم تجنيد {{count}}",
+            "progressLabel": "المبتدئون الذين وصلوا في هذه الدفعة",
+            "onlineMembers": "{{online}}/{{limit}} أعضاء متصلون",
+            "defaultReward": "المركز الأول في المدينة",
+            "rewardTitle": "احصلوا على {{reward}}",
+            "rewardBefore": "جنّدوا ",
+            "rewardHighlight": "بجودة",
+            "rewardAfter": " ",
+            "hiredOne": "تم تجنيد {{count}}",
+            "hireBefore": "جنّدوا ",
+            "hireFast": "بسرعة",
+            "hireMiddle": " وإلا ",
+            "hireLose": "ستخسرون التركيز!",
+            "waiting": "بانتظار التجنيد: {{count}} مبتدئين",
+            "waitingOne": "بانتظار التجنيد: {{count}} مبتدئ",
+            "rewardGoal": "للحفاظ على تركيزكم!",
+            "viewRanking": "عرض ترتيبكم",
+            "hide": "إخفاء"
+        },
+        "staff": {
+            "debugOpen": "إظهار بطاقة التركيز للإدارة",
+            "debugClose": "إغلاق بطاقة التركيز للإدارة",
+            "ariaLabel": "العصابة في دائرة التركيز · الإدارة",
+            "title": "العصابة في دائرة التركيز",
+            "subtitleSet": " · المجموعة {{set}} ({{qg}})",
+            "subtitleQg": " · {{qg}}",
+            "generalCycleTitle": "الوقت حتى الفحص العام التالي",
+            "generalCycle": "الدورة العامة",
+            "batch": "الدفعة",
+            "subcycleTitle": "الوقت حتى فحص التقدم التالي",
+            "subcycle": "الفحص الدوري",
+            "goalLine": "وصل {{received}} من أصل {{target}} كحد أقصى",
+            "peakAriaLabel": "العصابة في دائرة التركيز · الإدارة · ذروة المدينة",
+            "peakLabel": "المدينة في الذروة",
+            "peakIntro": "المدينة في وقت الذروة!",
+            "peakDescription": "ازداد وصول المبتدئين، لذلك وُزّعوا بين أفضل {{count}} عصابات في الترتيب، بمعدل مبتدئَين اثنين في الدقيقة لكل عصابة.",
+            "peakArrived": "وصلوا من أصل {{target}} كحد أقصى",
+            "peakHiredOne": "تم تجنيد {{count}}",
+            "peakHiredOther": "تم تجنيد {{count}}",
+            "recruitersInHq": "المجنّدون في المقر",
+            "markAll": "تحديد الكل على الخريطة",
+            "alsoInFocus": "في دائرة التركيز أيضاً: {{faction}} · {{received}} من {{target}}",
+            "peakStarted": "المدينة في وقت الذروة: {{factions}} في دائرة التركيز والعلامة توزّع المبتدئين بينها.",
+            "peakEnded": "انتهت ذروة المدينة، وعادت العلامة إلى عصابة واحدة.",
+            "hired": " · تم تجنيد {{count}}",
+            "progressLabel": "وصول الدفعة إلى المقر",
+            "reasonTitle": "سبب الاختيار",
+            "online": "متصلون",
+            "onlineLimit": " / الحد {{limit}}",
+            "recruitersAtWaypoint": "المجنّدون عند العلامة",
+            "noWaypoint": "لا توجد علامة",
+            "recruiterOne": " مجنّد",
+            "recruiterOther": " مجنّدين",
+            "lastRecruited": "آخر مجنّد",
+            "markLocation": "تحديد موقع العصابة",
+            "hide": "إخفاء"
+        },
+        "rules": {
+            "ariaLabel": "قواعد العصابة في دائرة التركيز",
+            "eyebrow": "العصابة في دائرة التركيز",
+            "title": "كيف يعمل الترتيب",
+            "subtitle": "قواعد نظام العلامة 2.0 · الإصدار 3",
+            "close": "إغلاق",
+            "queue": {
+                "title": "كيف تُرتّب قائمة الانتظار",
+                "bodyActivation": "تُراجع كل 15 دقيقة حسب عودة المجنّدين في اليوم التالي خلال الأيام المكتملة من D−4 إلى D−2، للمجنّدين الموجودين في أي مكان داخل المقر دون خمول لمدة 10 دقائق. يُجمع العائدون والمجنّدون ثم تُحسب النسبة مرة واحدة. عند التعادل: عدد العائدين أولاً ثم عدد المجنّدين عند العلامة. من جنّد أقل من 3 يُرتّب بعد الباقين حسب البقاء في الساعة الأولى. شرط قرب المجنّد من العلامة معلّق مؤقتاً.",
+                "bodyLegacy": "تُراجع كل 15 دقيقة. عند التعادل تُقدّم العصابة ذات المجنّدين النشطين الأكثر قرب العلامة ثم ذات العائدين الأكثر، دون إخراج العصابة الحالية.",
+                "example": "المجنّد هو عضو برتبة 3 أو أعلى في لوحة العصابة."
+            },
+            "entry": {
+                "title": "شروط دخول العصابة",
+                "bodyActivation": "بقاء 20% على الأقل من مبتدئي آخر 48 ساعة لمدة ساعة، سواء جاؤوا عبر العلامة أم لا. يُحسب فقط التجنيد الذي مرّ عليه أكثر من 60 دقيقة والبقاء ساعة في أول دخول. لا حد أدنى للعدد؛ دون تجنيد ناضج لا تدخل. يجب استيفاء الحد الأدنى للمتصلين ووجود 3 أعضاء نشطين في المقر وأقل من 40 متصلاً وعدم وجود حظر مؤقت.",
+                "bodyLegacy": "تجنيد 10 خلال 7 أيام وعودة 30% في اليوم التالي واستيفاء الحد الأدنى للمتصلين ووجود 3 أعضاء نشطين في المقر، مع أقل من 40 متصلاً ودون حظر مؤقت.",
+                "example": "العضو دون الرتبة 3 يُحسب ضمن الأعضاء النشطين الثلاثة، لكنه لا يُحسب مجنّداً."
+            },
+            "batch": {
+                "title": "كم تستقبل العصابة",
+                "body": "تستقبل حتى {{spawnLimit}} مبتدئاً لكل فترة تركيز أو حتى تصل إلى 40 متصلاً، أيهما أولاً.",
+                "example": "مثال: تدخل بـ10 متصلين وتستقبل {{spawnLimit}}؛ تدخل بـ38 وتخرج عند 40. تبدأ الدفعة من الصفر عند العودة للتركيز."
+            },
+            "exit": {
+                "title": "لماذا تخرج من التركيز",
+                "body": "ترتيب أسباب الخروج: انخفاض التجنيد، وصول {{spawnLimit}} مبتدئاً أو 40 متصلاً، فقدان شروط المقر، ثم انخفاض المتصلين عن الحد الأدنى. يُفحص المتصلون كل 5 دقائق.",
+                "example": "يُفحص التجنيد بعد وجود {{sample}} مبتدئين على الأقل مرّ على بدايتهم في المقر أكثر من {{maturity}} دقيقة. أقل من 45% يعني الخروج والحظر لمدة 45 دقيقة."
+            },
+            "cooldown": {
+                "title": "بعد استقبال الدفعة أو الوصول إلى 40",
+                "body": "تنتظر 30 دقيقة قبل العودة، حتى لو عبرت منتصف الليل. انخفاض التجنيد يسبب حظراً لمدة 45 دقيقة.",
+                "example": "لا يوجد حد للبدايات في الساعة أو اليوم."
+            },
+            "fallback": {
+                "title": "إذا لم يستوفِ أحد الشروط",
+                "bodyActivation": "تُختار العصابة ذات أكبر عدد من الأعضاء النشطين في المقر بين من لديهم أقل من 40 متصلاً، متجاوزة بقية الشروط والحظر. عند التعادل تُفضّل نسبة البقاء الأعلى ثم العدد الأقل من المتصلين.",
+                "bodyLegacy": "تُختار العصابة ذات أكبر عدد من الأعضاء النشطين في المقر بين من لديهم أقل من 40 متصلاً، متجاوزة بقية الشروط.",
+                "example": "لا تخرج العصابة الاحتياطية بسبب شروط المقر أو الحد الأدنى للمتصلين. تُستبدل كل 5 دقائق إذا استوفت أخرى الشروط؛ وتظل خاضعة للتجنيد وحد {{spawnLimit}} مبتدئاً و40 متصلاً. بعد انخفاض التجنيد تُفضّل عصابة أخرى إلا إذا كانت الوحيدة."
+            },
+            "cityLimit": {
+                "title": "الحد في جميع المدن",
+                "body": "40 متصلاً في Grande وSanta وجميع المدن الأخرى."
+            }
+        },
+        "history": {
+            "ariaLabel": "سجل {{faction}}",
+            "eyebrow": "سجل التركيز",
+            "summary": "{{sessions}} فترات تركيز خلال آخر 3 أيام · {{contracted}} مجنّدين خلالها · عودة {{d1}}% {{window}}",
+            "windowActivation": "لدى المجنّدين الموجودين، في اليوم التالي لكل تجنيد",
+            "windowLegacy": "خلال 7 أيام",
+            "emptyTitle": "لا يوجد تركيز سابق",
+            "inProgress": "جارٍ",
+            "entryManual": "اختيار يدوي",
+            "entryAuto": "اختيار تلقائي",
+            "inFocus": "في دائرة التركيز",
+            "duration": "المدة",
+            "enteredBecause": "سبب الدخول:",
+            "enteredManual": "اختارها فريق الإدارة",
+            "enteredAuto": "أفضل عودة في اليوم التالي بين المستوفين للشروط",
+            "exitedBecause": "سبب الخروج:",
+            "cityOnEntry": "المدينة عند الدخول",
+            "cityOnEntryNote": "تمتلئ العصابة عند {{value}}",
+            "onlineOnEntry": "المتصلون عند الدخول",
+            "onlineOnEntryNote": "أعضاء العصابة",
+            "targetOnEntry": "الهدف عند الدخول",
+            "targetOnEntryNote": "حتى تمتلئ",
+            "spawned": "بدأوا في العصابة",
+            "spawnedNote": "بدأوا في المقر",
+            "contracted": "تم تجنيدهم",
+            "contractedNote": "مبتدئون جدد فعلاً",
+            "result": "النتيجة",
+            "resultComplete": "استقبلت الدفعة",
+            "resultIncomplete": "خرجت قبل اكتمال الدفعة"
+        },
+        "confirm": {
+            "titleRemove": "إزالة من التركيز",
+            "titlePlace": "وضع في التركيز",
+            "titleForce": "فرض التركيز",
+            "ariaLabel": "{{title}}: {{faction}}",
+            "eyebrow": "إجراء إداري",
+            "close": "إغلاق",
+            "warningTitle": "هذه العصابة لا تستوفي الشروط",
+            "warningBody": "{{reason}}. الفرض يتجاوز الشروط وقد تخرج في الفحص الدوري التالي.",
+            "whatHappens": "ما الذي سيحدث",
+            "removeSession": "تنتهي فترة التركيز الآن بإزالة يدوية.",
+            "removeWaypoint": "تنتقل العلامة إلى التالية في القائمة أو إلى الاختيار الاحتياطي.",
+            "removeQueue": "تعود العصابة للمنافسة في الفحص التالي.",
+            "placeCurrentExits": "تخرج العصابة الحالية بإزالة يدوية.",
+            "placeEnters": "تدخل {{faction}} لاستقبال حتى {{spawnLimit}} مبتدئاً ({{online}} متصلون، والحد {{fullAt}}).",
+            "placeSkipsQueue": "ستتجاوز الانتظار؛ ترتيبها الرسمي {{position}}.",
+            "forceIgnoresFilter": "سيتم تجاوز الشروط لهذا الدخول.",
+            "justification": "التبرير",
+            "justificationRequired": "مطلوب",
+            "justificationPlaceholder": "مثال: اختيار عصابة جديدة",
+            "justificationHint": "يُسجّل مع اسمك في سجل التركيز. قد تطلب قيادة العصابة هذا التفسير.",
+            "registeredBefore": "مسجّل باسم ",
+            "registeredAfter": " · الآن",
+            "cancel": "إلغاء",
+            "submitRemove": "تأكيد الإزالة من التركيز",
+            "submitPlace": "تأكيد الوضع في التركيز",
+            "submitForce": "تأكيد فرض التركيز"
+        },
+        "ranking": {
+            "breadcrumbParent": "عودة اللاعبين",
+            "breadcrumbCurrent": "العصابة في دائرة التركيز",
+            "title": "العصابة في دائرة التركيز",
+            "subtitleActivation": "بقاء 20% على الأقل في الساعة الأولى. الترتيب حسب العودة في اليوم التالي خلال الأيام المكتملة من D−4 إلى D−2 للمجنّدين الموجودين في المقر.",
+            "subtitleLegacy": "ترتيب العصابات حسب البقاء في الساعة الأولى مع شرط العودة في اليوم التالي خلال 7 أيام مكتملة.",
+            "subtitleSuffix": "الأولى هي العصابة الحالية في التركيز.",
+            "generalCheck": "الفحص العام",
+            "rulesButton": "القواعد",
+            "cityNow": "المدينة الآن",
+            "online": "متصلون",
+            "lockAfterBatch": "الانتظار بعد الدفعة",
+            "minutes": "دقائق",
+            "fullAt": "تمتلئ العصابة عند",
+            "factionOnline": "أعضاء العصابة المتصلون",
+            "minOnline": "الحد الأدنى للمتصلين",
+            "minOnlineNote": "أعضاء (1% من المدينة، حتى 10)",
+            "minActivation": "الحد الأدنى للبقاء",
+            "minD1": "الحد الأدنى للعودة",
+            "minActivationNote": "أول دخول · 60 دقيقة",
+            "minD1Note": "10 مجنّدين",
+            "engineVersion": "الإصدار 3 يعمل",
+            "engineNote": "فحص كل 15 دقيقة · فحص دوري كل 5 دقائق",
+            "cardTitle": "ترتيب العصابات",
+            "competing": "{{count}} تتنافس",
+            "outOfFilter": "{{count}} خارج الشروط",
+            "sessionsFrom": "فترات التركيز من",
+            "searchPlaceholder": "ابحث باسم العصابة أو المجموعة",
+            "clear": "مسح",
+            "resultsOne": "{{count}} نتيجة",
+            "resultsOther": "{{count}} نتائج",
+            "officialOrder": "الترتيب الرسمي للقائمة",
+            "sortedBy": "مرتب حسب {{key}}، {{direction}} أولاً",
+            "sortDescending": "الأعلى",
+            "sortAscending": "الأقل",
+            "colRank": "#",
+            "colFaction": "العصابة",
+            "colD1Activation": "العودة · 3 أيام",
+            "colD1Legacy": "العودة · 7 أيام",
+            "colEntered": "دخلت التركيز · متصلون",
+            "colOrigin": "المصدر",
+            "colSpawned": "بدأوا",
+            "colContracted": "تم تجنيدهم",
+            "colReason": "السبب",
+            "colStatus": "الحالة",
+            "colExited": "خرجت من التركيز · متصلون",
+            "colAction": "الإجراء",
+            "emptyTitle": "لم تُعثر على عصابة",
+            "emptyHint": "يمكن البحث باسم العصابة أو المجموعة.",
+            "copySetTitle": "انقر لنسخ المجموعة",
+            "setCopied": "نُسخت المجموعة",
+            "retainedOf": "{{retained}} من {{sample}}",
+            "sessionOnline": "· {{online}} متصلون",
+            "noFocusIn": "لم تدخل التركيز {{period}}",
+            "originManual": "يدوي",
+            "originAuto": "تلقائي",
+            "receivedOf": "{{received}} من أصل {{spawnLimit}} كحد أقصى",
+            "arrivedNote": "وصل {{spawned}}",
+            "inProgress": "جارٍ",
+            "inProgressOnline": "· {{online}}/{{fullAt}} متصلون",
+            "atWaypointFor": "عند العلامة منذ {{duration}}",
+            "lastFocus": "آخر تركيز {{day}}",
+            "neverFocused": "لم تدخل التركيز من قبل",
+            "actionRemove": "إزالة من التركيز",
+            "actionPlace": "وضع في التركيز مع تجاوز الانتظار",
+            "actionForce": "فرض التركيز مع تجاوز الشروط",
+            "actionHistory": "عرض سجل التركيز",
+            "footActivation": "بقاء ≥ 20% · العودة في اليوم التالي خلال الأيام المكتملة من D−4 إلى D−2 للمجنّدين الموجودين",
+            "footLegacy": "عودة 30% على الأقل خلال 7 أيام",
+            "footLimits": "حتى {{spawnLimit}} مبتدئاً لكل تركيز أو {{fullAt}} متصلاً · انتظار 30 دقيقة",
+            "footNotPunishment": "الامتلاء ليس عقوبة",
+            "loadError": "تعذّر تحميل اللوحة",
+            "batch": "الدفعة",
+            "batchValue": "حتى {{spawnLimit}}",
+            "batchNote": "مبتدئون لكل فترة تركيز"
+        },
+        "sortKey": {
+            "official": "الترتيب الرسمي",
+            "d1": "العودة في اليوم التالي",
+            "entered": "الدخول في التركيز",
+            "origin": "المصدر",
+            "spawned": "البدايات",
+            "contracted": "التجنيد",
+            "exited": "الخروج من التركيز"
+        }
+    },
+    "waypointSquare": {
+        "debugOpen": "فتح نافذة الذهاب إلى الساحة",
+        "title": "أهلاً أيها المواطن!",
+        "description": "لاحظنا أنك لم تجد عصابة في المدينة بعد.",
+        "invitation": "هل تريد الذهاب إلى الساحة؟ هناك أشخاص يمكنك التعرف إليهم 🚀",
+        "decline": "لا",
+        "accept": "الذهاب إلى الساحة",
+        "failed": "تعذّر تأكيد الاختيار. حاول مرة أخرى."
+    },
+    "_locale": "ar-SA"
+}

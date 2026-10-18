@@ -1,0 +1,37 @@
+{
+  "search": "Search for a vehicle",
+  "categories": {
+    "null": "All",
+    "all": "All",
+    "cars": "Cars",
+    "bikes": "Bikes",
+    "favorites": "Favorites",
+    "favorite": "Favorites",
+    "automobile": "Automobile",
+    "bike": "Motorcycle",
+    "boat": "Boat",
+    "plane": "Plane",
+    "heli": "Helicopter",
+    "bicycle": "Bicycle",
+    "quadbike": "Quad bike"
+  },
+  "retire": "Spawn",
+  "keep": "Store",
+  "statistics": {
+    "chassis": "Chassis",
+    "engine": "Engine",
+    "gas": "Fuel",
+    "body": "Bodywork"
+  },
+  "chest": "Trunk",
+  "fee": "Fee",
+  "feeCurrency": "$",
+  "vehPayTax": "Pay taxes",
+  "vehSell": "Sell vehicle",
+  "vehTransfer": "Transfer vehicle",
+  "vehBuy": "Buy",
+  "vehStoreItems": "Store items",
+  "vehExpired": "Expired",
+  "vehExpires": "Expires in:",
+  "vehicleDisappeared": "Disappears in:"
+}

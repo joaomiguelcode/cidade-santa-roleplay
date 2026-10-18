@@ -1,0 +1,181 @@
+{
+    "tabs": {
+        "all": "الكل",
+        "information": "المعلومات",
+        "interactions": "التفاعلات",
+        "control": "التحكم"
+    },
+    "menu": {
+        "financial": "المالية",
+        "purchases": "المشتريات",
+        "loginList": "قائمة تسجيل الدخول",
+        "copyId": "نسخ المعرف",
+        "discordId": "معرف Discord",
+        "bans": "الحظر",
+        "revivePlayer": "إحياء اللاعب",
+        "reviveLocations": "إحياء في موقع",
+        "giveItem": "إعطاء عنصر",
+        "openInventory": "فتح المخزون",
+        "addGroup": "إضافة مجموعة",
+        "groups": "المجموعات",
+        "kickPlayer": "طرد اللاعب",
+        "banPlayer": "حظر اللاعب"
+    },
+    "playerCard": {
+        "openCloseMenu": "فتح/إغلاق قائمة المشرف",
+        "exitSpectator": "خروج من المراقب",
+        "switchPlayer": "تبديل اللاعب",
+        "status": {
+            "low": "خفيف",
+            "medium": "متوسط",
+            "high": "خطير"
+        }
+    },
+    "keys": {
+        "ban": "حظر",
+        "reviveLocations": "إحياء في موقع",
+        "openInventory": "فتح المخزون",
+        "copyId": "نسخ المعرف"
+    },
+    "shortcut": {
+        "title": "اختصار",
+        "description": "ضع الاختصار المطلوب في الوظيفة المختارة.",
+        "placeholder": "انقر وحدد اختصارًا",
+        "cancel": "إلغاء",
+        "confirm": "إتمام",
+        "duplicateError": "هذا المفتاح مستخدم بالفعل لإجراء آخر.",
+        "blockedKeyError": "لا يمكن استخدام هذه المجموعة من المفاتيح."
+    },
+    "loginList": {
+        "login": "سجل دخول",
+        "logout": "سجل خروج",
+        "totalTimePlayed": "إجمالي وقت اللعب",
+        "inProgress": "(قيد التقدم)",
+        "to": "الى"
+    },
+    "bans": {
+        "banned": "محظور",
+        "unbanned": "تم رفع الحظر",
+        "bannedBy": "محظور بواسطة:",
+        "unbannedBy": "تم رفع الحظر بواسطة:"
+    },
+    "financial": {
+        "currency": "ر.س",
+        "bankBalance": "رصيد البنك",
+        "cashInHand": "النقد في اليد",
+        "totalAssets": "إجمالي الأصول"
+    },
+    "purchases": {
+        "totalSpent": "إجمالي الإنفاق في المدينة",
+        "history": "سجل المشتريات"
+    },
+    "headers": {
+        "spectators": {
+            "title": "المراقبون",
+            "subtitle": "قائمة المراقبين الحاليين"
+        },
+        "purchases": {
+            "title": "المشتريات",
+            "subtitle": "سجل المشتريات"
+        },
+        "groups": {
+            "title": "{id} | {name}",
+            "subtitle": "قوائم إجراءات المشرف"
+        },
+        "financial": {
+            "title": "{id} | {name}",
+            "subtitle": "قوائم إجراءات المشرف"
+        },
+        "loginList": {
+            "title": "{id} | {name}",
+            "subtitle": "قوائم إجراءات المشرف"
+        },
+        "bans": {
+            "title": "{id} | {name}",
+            "subtitle": "قوائم إجراءات المشرف"
+        },
+        "menu": {
+            "subtitle": "قوائم إجراءات المشرف"
+        }
+    },
+    "modals": {
+        "addGroup": {
+            "title": "إضافة مجموعة",
+            "description": "أضف المجموعة المطلوبة إلى معرف اللاعب",
+            "playerIdLabel": "جواز السفر",
+            "playerIdPlaceholder": "أدخل جواز السفر",
+            "groupLabel": "المجموعة",
+            "groupPlaceholder": "أدخل اسم المجموعة",
+            "levelLabel": "المستوى",
+            "levelPlaceholder": "أدخل المستوى",
+            "submitText": "إضافة"
+        },
+        "reviveLocation": {
+            "title": "إحياء في موقع",
+            "description": "اختر الموقع المطلوب لإحياء اللاعب",
+            "locationPlaceholder": "الموقع",
+            "submitText": "إحياء",
+            "locations": {
+                "praca": "الساحة",
+                "pier-sul": "الرصيف الجنوبي",
+                "pier-norte": "الرصيف الشمالي",
+                "hp-sul": "المستشفى الجنوبي",
+                "hp-norte": "المستشفى الشمالي",
+                "mecanica": "الميكانيكا",
+                "dp1": "قسم الشرطة 1",
+                "dp2": "قسم الشرطة 2",
+                "dp3": "قسم الشرطة 3"
+            }
+        },
+        "removeGroup": {
+            "title": "إزالة مجموعة",
+            "message": "هل أنت متأكد من رغبتك في إزالة المجموعة {group} من المعرف {id}?",
+            "confirmText": "إزالة",
+            "cancelText": "إلغاء"
+        },
+        "kickPlayer": {
+            "title": "طرد",
+            "description": "أدخل سبب الطرد في الحقل أدناه.",
+            "playerIdLabel": "جواز السفر",
+            "playerIdPlaceholder": "معرف اللاعب",
+            "reasonLabel": "السبب",
+            "reasonPlaceholder": "أدخل سبب الطرد",
+            "submitText": "طرد"
+        },
+        "banPlayer": {
+            "title": "حظر",
+            "description": "أدخل سبب الحظر في الحقل أدناه.",
+            "playerIdLabel": "جواز السفر",
+            "playerIdPlaceholder": "معرف اللاعب",
+            "reasonLabel": "السبب",
+            "reasonPlaceholder": "أدخل سبب الحظر",
+            "tagLabel": "الوسوم",
+            "tagPlaceholder": "اختر وسمًا",
+            "submitText": "حظر",
+            "tags": {
+                "zaralho": "فوضى",
+                "desrespeito": "عدم احترام المدينة/الفريق",
+                "prog_ilicitos": "برامج غير مشروعة/رفض الفحص",
+                "dark_rp": "لعب غامق",
+                "hacker": "هاكر",
+                "comercial": "تجاري"
+            }
+        },
+        "giveItem": {
+            "title": "إعطاء عنصر",
+            "description": "اختر العنصر والكمية التي تريد تسليمها للاعب",
+            "playerIdLabel": "جواز السفر",
+            "playerIdPlaceholder": "أدخل جواز السفر",
+            "itemLabel": "العنصر",
+            "itemPlaceholder": "اسم العنصر",
+            "addButton": "إضافة",
+            "submitText": "إعطاء عنصر",
+            "itemNotFound": "العنصر غير موجود",
+            "checkItemError": "خطأ في التحقق من العنصر",
+            "consumable": "قابل للاستهلاك"
+        }
+    },
+    "search": {
+        "placeholder": "بحث"
+    }
+}

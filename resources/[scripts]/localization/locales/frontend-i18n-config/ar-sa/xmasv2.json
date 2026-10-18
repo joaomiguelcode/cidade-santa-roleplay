@@ -1,0 +1,97 @@
+{
+    "use": "استخدم",
+    "to_leave_the_game": "للخروج من اللعبة",
+    "game_time": "وقت اللعب",
+    "overtime": "وقت إضافي",
+    "team_full": "الفريق ممتلئ",
+    "choose_team": "اختيار الفريق",
+    "killstreak_bonus": "مكافأة سلسلة القتل",
+    "player_killed": "تم إسقاط المشارك",
+    "points": "نقاط",
+    "point": "نقطة",
+    "open_shop": "عرض المتجر",
+    "open_ranking": "عرض التصنيف",
+    "winner": "الفائز!",
+    "next_game_in": "اللعبة التالية في",
+    "seconds": "ثواني",
+    "most_falls": "أكثر السقطات",
+    "most_hits": "أكثر الإصابات",
+    "rules": "القواعد",
+    "actions": {
+        "take_snow": "أخذ الثلج"
+    },
+    "taking_snowball": {
+        "description": "جاري أخذ كرة الثلج..."
+    },
+    "ranking": {
+        "title": "تصنيف حرب الثلج",
+        "description": "تابع تصنيف حرب الثلج في الوقت الفعلي",
+        "best": {
+            "title": "أفضل الثلوج",
+            "subtitle": "أفضل محارب في الثلج",
+            "points": "النقاط",
+            "victories": "الانتصارات"
+        },
+        "table": {
+            "position": "الموضع",
+            "id": "المعرف",
+            "name": "الاسم",
+            "points": "النقاط",
+            "wins": "الانتصارات",
+            "time_played": "وقت اللعب"
+        }
+    },
+    "ui": {
+        "previous": "السابق",
+        "next": "التالي"
+    },
+    "team": {
+        "red": "الفريق الأحمر",
+        "blue": "الفريق الأزرق"
+    },
+    "shop": {
+        "title": "أحداث الموسم",
+        "description": "استبدل عملاتك بالجوائز",
+        "header": {
+            "title": "حرب كرة الثلج",
+            "description": "انضم إلى حرب كرة الثلج واحصل على أفضل الجوائز!",
+            "button": "العب الآن"
+        },
+        "error": {
+            "not_enough_coins": "ليس لديك عملات كافية",
+            "purchase_failed": "فشل شراء العنصر"
+        }
+    },
+    "store": {
+        "not": {
+            "enough": {
+                "quantity": "ليس لديك كمية كافية"
+            },
+            "buy": {
+                "because": {
+                    "limit": "لقد وصلت إلى حد هذا العنصر",
+                    "collectible": "لديك هذا المقتني بالفعل"
+                }
+            }
+        }
+    },
+    "leave_game_modal": {
+        "title": "مغادرة المباراة",
+        "description": "هل أنت متأكد من رغبتك في مغادرة المباراة؟",
+        "no": "لا",
+        "yes": "نعم"
+    },
+    "combat": {
+        "hits": "إصابات",
+        "falls": "سقطات",
+        "points": "نقاط"
+    },
+    "countdown": {
+        "be_ready": "استعد!",
+        "starting_in": "يبدأ في",
+        "starting": "يبدأ!"
+    },
+    "data_table": {
+        "no_results": "لا توجد نتائج"
+    }
+}

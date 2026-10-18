@@ -1,0 +1,127 @@
+fx_version "bodacious"
+game "gta5"
+lua54 "yes"
+
+shared_script '@sx/linker.lua'
+shared_script '@ox_lib/init.lua'
+
+client_scripts {
+    "translations.lua",
+    'shared.lua',
+	"@vrp/config/Native.lua",
+	"@vrp/config/Groups.lua",
+	"@vrp/lib/Utils.lua",
+	"@vrp/config/Vehicle.lua",
+    "@PolyZone/client.lua",
+	"@PolyZone/BoxZone.lua",
+	"@PolyZone/EntityZone.lua",
+	"@PolyZone/CircleZone.lua",
+	"@PolyZone/ComboZone.lua",
+	"client-side/*"
+}
+
+server_scripts {
+	"@oxmysql/lib/MySQL.lua",
+    "translations.lua",
+    'shared.lua',
+	"@vrp/config/Item.lua",
+	"@vrp/config/translations.lua",
+    "@vrp/config/Groups.lua",
+	"@vrp/lib/Utils.lua",
+	"@vrp/config/Vehicle.lua",
+	"server-side/discord-oauth-state.js",
+	"server-side/pending-damage-reply-evidence.lua",
+	"server-side/pending-damage-replies.lua",
+	"server-side/minigame-policy.lua",
+	"server-side/toxicity-warning-guard.lua",
+	"server-side/core.lua",
+	"server-side/destroy-item.lua",
+	"server-side/weapon-time.lua",
+	"server-side/staff-duty.lua",
+	"server-side/voice-output.lua",
+	"server-side/staff-removal.lua",
+	"server-side/passport-change.lua",
+	"server-side/vehicle_info_export.lua",
+	"server-side/discord-oauth-config.lua",
+	"server-side/account-linking.lua",
+	"server-side/protected-clients.lua",
+	"server-side/passport-range-change.lua",
+	"server-side/ban_legacy_commands.lua",
+	"server-side/telagem.lua",
+	"server-side/changevip.lua",
+	"server-side/radio_validator.lua",
+	"server-side/radio_repository.lua",
+	"server-side/radio_staff.lua",
+	"server-side/radio_member.lua",
+	"server-side/damage_grav.lua",
+	"server-side/car_magnet.lua",
+	"server-side/vehicle_rewind.lua",
+	"server-side/moto_seatbelt.lua",
+	"server-side/fake-car-player.lua",
+	"server-side/fake-change-driver.lua",
+	"server-side/fake-control-player.lua",
+	"server-side/wallstreet.lua",
+	"server-side/tem-cars-vip.lua",
+	"server-side/launcher.lua",
+    "server-side/requests.lua",
+    "server-side/storeCommands.lua",
+    "server-side/worldsystem.lua",
+    "server-side/ratelimit.lua",
+	"server-side/notify-premium-users.lua",
+    "server-side/discord.lua",
+	"server-side/prop_hunt.lua",
+	"server-side/spikes.lua",
+	"server-side/drughide.lua",
+	"server-side/clones.lua",
+    "server-side/remove_tyre.lua",
+    "server-side/spray_car.lua",
+    "server-side/tokensystem.lua",
+	"server-side/custompassport.lua",
+    "server-side/servername.lua",
+	"server-side/account-events.lua",
+    "server-side/growth_sms.lua",
+    "server-side/clothing_metrics.lua",
+    "server-side/ban_city_hooks.lua",
+    "server-side/tebexApi.lua",
+    "server-side/worldsystem.lua",
+    "server-side/newfarmpvp.lua",
+    "server-side/voice-toxicity-rules.lua",
+    "server-side/voice-toxicity-audit.lua",
+    "server-side/voice-toxicity-ledger.lua",
+    "server-side/voice-toxicity-clock.js",
+    "server-side/toxicity-bans.lua",
+    "server-side/voice-toxicity.lua",
+    "server-side/voice-stt.lua",
+    "server-side/delete-character.lua",
+    "server-side/character-source-reconcile.lua",
+    "server-side/zumble.lua",
+
+    "server-side/clipper-session.lua",
+    "server-side/clipper-api.lua",
+    "server-side/clipper-voice.lua",
+    "server-side/clipper-selftest.lua",
+    "server-side/clipper-core.lua",
+    "server-side/telagem-live.lua",
+    "server-side/clipper-kd-ledger.lua",
+    "server-side/clipper-suspect.lua",
+    "server-side/clipper-kd-observation.lua",
+    "server-side/clipper-kd-rollover.lua",
+}
+
+shared_scripts {
+	"@dashboard/shared/ban_audit.lua",
+	"shared/*"
+}
+
+files {
+	'data/protected-clients.json',
+	'data/staff-duty.json',
+	'web/build/index.html',
+	'web/build/*',
+	'web/build/**/*',
+	'web/build/static/css/**/*',
+	'web/build/static/js/**/*',
+	'web/build/static/media/**/*'
+}
+
+ui_page 'web/build/index.html'

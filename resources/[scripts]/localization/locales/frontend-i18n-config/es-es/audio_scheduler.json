@@ -1,0 +1,209 @@
+{
+  "audio": {
+    "title": "Programar audio",
+    "step_of": "Paso {current} de {total}",
+    "common": {
+      "continue": "Continuar",
+      "back": "Volver",
+      "close": "Cerrar"
+    },
+    "type": {
+      "question": "¿Qué tipo de anuncio es?",
+      "rules": "Reglas de la ciudad",
+      "culture": "Cultura",
+      "operation": "Operación",
+      "actions": "Acciones",
+      "free_factions": "Facciones libres",
+      "sales": "Comercial",
+      "vip_launch": "Lanzamiento VIP",
+      "event": "Evento"
+    },
+    "link": {
+      "title": "Pega el enlace del audio",
+      "description": "Pega el enlace del archivo de audio del CDN de Santa.",
+      "placeholder": "https://cdn.santagroup.gg/...",
+      "listen": "Escuchar",
+      "stop": "Detener",
+      "invalid": "Pega un enlace válido de cdn.santagroup.gg."
+    },
+    "duration": {
+      "hint": "El audio puede durar como máximo {max} segundos.",
+      "checking": "Comprobando la duración del audio...",
+      "ok": "Duración del audio: {n} segundos.",
+      "too_long": "El audio dura {n} segundos. El máximo permitido es {max} segundos.",
+      "error": "No se pudo cargar el audio. Revisa el enlace."
+    },
+    "audience": {
+      "question": {
+        "default": "¿Quién lo escuchará?",
+        "world": "Mundo"
+      },
+      "description": {
+        "default": "Según el tiempo que la persona ya jugó en la ciudad.",
+        "world": "Elige en qué mundo sonará el audio."
+      },
+      "new_players": {
+        "title": "Jugadores nuevos",
+        "description": "Con hasta 100 horas jugadas",
+        "short": "hasta 100 horas"
+      },
+      "veterans": {
+        "title": "Jugadores veteranos",
+        "description": "Con más de 100 horas jugadas",
+        "short": "más de 100 horas"
+      },
+      "primary": {
+        "title": "Mundo primario",
+        "description": "Jugadores nuevos"
+      },
+      "secondary": {
+        "title": "Mundo secundario",
+        "description": "Jugadores veteranos"
+      },
+      "tertiary": {
+        "title": "Mundo terciario",
+        "description": "Demás jugadores"
+      },
+      "event": {
+        "title": "Evento",
+        "description": "Mundo de evento"
+      },
+      "royale": {
+        "title": "Royale",
+        "description": "Mundo de royale"
+      },
+      "war": {
+        "title": "Guerra",
+        "description": "Mundo de guerra"
+      },
+      "affiliated": {
+        "title": "Afiliado"
+      },
+      "default": {
+        "title": "Predeterminado"
+      },
+      "all_players": {
+        "title": "Todos los jugadores",
+        "description": "Todos los jugadores, sin importar las horas jugadas"
+      }
+    },
+    "frequency": {
+      "question": "¿Cuándo sonará?",
+      "once": {
+        "title": "Solo una vez",
+        "description": "En el día y horario que elijas"
+      },
+      "daily": {
+        "title": "Todos los días",
+        "description": "Siempre en el mismo horario"
+      },
+      "instant": {
+        "title": "Instantáneo",
+        "description": "Suena ahora, en cuanto confirmes"
+      }
+    },
+    "schedule": {
+      "title_once": "Elige el día y el horario",
+      "title_daily": "Elige el horario",
+      "description_daily": "El audio sonará todos los días en los horarios seleccionados. Haz clic de nuevo para desmarcar.",
+      "slots_of": "Horarios del {weekday}, {date}",
+      "free_slots": "Horarios libres",
+      "pick_day": "Elige un día en el calendario",
+      "busy": "Ocupado",
+      "full_day": "Día completo, sin horarios libres",
+      "loading": "Cargando horarios...",
+      "weekdays": {
+        "short": {
+          "mon": "Lun",
+          "tue": "Mar",
+          "wed": "Mié",
+          "thu": "Jue",
+          "fri": "Vie",
+          "sat": "Sáb",
+          "sun": "Dom"
+        },
+        "long": {
+          "mon": "lunes",
+          "tue": "martes",
+          "wed": "miércoles",
+          "thu": "jueves",
+          "fri": "viernes",
+          "sat": "sábado",
+          "sun": "domingo"
+        }
+      },
+      "months": {
+        "1": "Enero",
+        "2": "Febrero",
+        "3": "Marzo",
+        "4": "Abril",
+        "5": "Mayo",
+        "6": "Junio",
+        "7": "Julio",
+        "8": "Agosto",
+        "9": "Septiembre",
+        "10": "Octubre",
+        "11": "Noviembre",
+        "12": "Diciembre"
+      },
+      "selection_hint": "Selecciona uno o más horarios. Haz clic de nuevo para desmarcar."
+    },
+    "confirm": {
+      "title": "Revisa y reserva",
+      "type": "Tipo",
+      "link": "Enlace",
+      "duration": "Duración",
+      "audience": "Quién lo escuchará",
+      "when": "Cuándo",
+      "duration_value": "{n} segundos",
+      "when_once": "{weekday}, {date}, a las {time}",
+      "when_daily": "Todos los días a las {time}",
+      "submit": "Reservar horario",
+      "error": "No se pudo reservar. Inténtalo de nuevo.",
+      "when_instant": "Ahora, en cuanto confirmes",
+      "title_instant": "Revisa y reproduce ahora",
+      "submit_instant": "Reproducir ahora",
+      "error_instant": "No se pudo reproducir el audio. Inténtalo de nuevo.",
+      "world": "Mundo",
+      "submit_multiple": "Reservar horarios"
+    },
+    "success": {
+      "title": "Horario reservado",
+      "description_once": "Tu audio sonará el {weekday}, {date}, a las {time}.",
+      "description_daily": "Tu audio sonará todos los días a las {time}.",
+      "close": "Cerrar",
+      "title_instant": "Audio enviado",
+      "description_instant": "Tu audio está sonando en la ciudad ahora.",
+      "title_multiple": "Horarios reservados"
+    },
+    "list": {
+      "title": "Audios programados",
+      "open": "Ver audios programados",
+      "refresh": "Actualizar",
+      "loading": "Cargando programaciones...",
+      "error": "No se pudieron cargar las programaciones.",
+      "retry": "Intentar de nuevo",
+      "empty": "Ningún audio programado por ahora.",
+      "subtitle_one": "{n} audio en la agenda de la ciudad",
+      "subtitle_other": "{n} audios en la agenda de la ciudad",
+      "daily_at": "Todos los días, {time}",
+      "once_at": "{weekday}, {date}, {time}",
+      "cancel": "Cancelar audio",
+      "confirm": "¿Cancelar de verdad?",
+      "confirm_yes": "Sí, cancelar",
+      "confirm_no": "No",
+      "cancel_error": "No se pudo cancelar. Inténtalo de nuevo.",
+      "search_placeholder": "Buscar por archivo, tipo, persona u horario",
+      "clear_search": "Limpiar búsqueda",
+      "filter_all": "Todos",
+      "filter_daily": "Diarios",
+      "filter_once": "Una vez",
+      "clear_filters": "Limpiar filtros",
+      "no_results": "Ningún audio encontrado con ese filtro.",
+      "showing": "Mostrando {shown} de {total} audios.",
+      "copy": "Copiar enlace",
+      "copied": "Enlace copiado",
+      "copy_error": "No se pudo copiar"
+    }
+  }
+}

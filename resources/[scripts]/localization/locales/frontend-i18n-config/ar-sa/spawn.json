@@ -1,0 +1,61 @@
+{
+  "welcome": "أهلاً بك",
+  "player": "اللاعب",
+  "where_to_spawn": "أين تريد أن تستيقظ؟",
+  "choose_below": "اختر أدناه",
+
+  "organization": "المنظمة",
+
+  "game_time": "وقت اللعب",
+  "choose_one": "اختر واحدًا",
+  "location": "الموقع",
+  "spawn_location": "موقع الظهور",
+
+  "character_data": "بيانات الشخصية",
+  "name": "الاسم:",
+  "surname": "اسم العائلة:",
+  "age": "العمر:",
+  "sex": "الجنس:",
+
+  "man": "ذكر",
+  "woman": "أنثى",
+
+  "male": "ذكر",
+  "female": "أنثى",
+
+  "Last_location": "آخر موقع",
+  "last_location": "آخر موقع",
+
+  "creating_character": "جاري الإنشاء...",
+  "create_characters": "إنشاء الشخصية",
+  "confirm_character": "تأكيد",
+
+  "sleep": "استيقاظ",
+
+  "create_your_character": "أنشئ شخصيتك",
+  "start_your_story": "ابدأ قصتك",
+
+  "welcome_back_to_the_city": "أهلاً بك مجددًا في المدينة",
+
+  "access_our_menu_f9_and_know_more": "ادخل إلى قائمتنا F9 وتعرف أكثر على المدينة",
+
+  "unlock_this_slot": "فتح هذه الفتحة",
+
+  "minimum_3_characters": "الحد الأدنى 3 أحرف",
+  "invalid_name": "اسم غير صالح",
+  "invalid_last_name": "اسم عائلة غير صالح",
+  "minimum_18_years": "الحد الأدنى 18 سنة",
+  "maximum_100_years": "الحد الأقصى 100 سنة",
+  "min_3_characters": "الحد الأدنى 3 أحرف",
+
+  "select_a_sex": "اختر الجنس",
+  "select_sex": "اختر الجنس",
+
+  "new_character": "شخصية جديدة",
+  "access_the_vip_store": "الوصول إلى متجر VIP",
+  "create_character": "إنشاء الشخصية",
+
+  "back": "رجوع",
+
+  "where_did_find_us": "أين وجدتنا؟"
+}

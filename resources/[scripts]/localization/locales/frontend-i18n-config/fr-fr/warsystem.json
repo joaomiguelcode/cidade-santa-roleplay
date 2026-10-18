@@ -1,0 +1,61 @@
+{
+  "countdown": {
+    "invasion": "INVASION",
+    "event": "ÉVÉNEMENT",
+    "starting_in": "COMMENCER DANS"
+  },
+  "form_domination": {
+    "groups_not_selected": "AUCUN GROUPE SÉLECTIONNÉ",
+    "area_not_selected": "ZONE NON SÉLECTIONNÉE",
+    "points_invalid": "POINTS INVALIDES",
+    "players_invalid": "JOUEURS INVALIDES",
+    "success": "SUCCÈS",
+    "groups": "GROUPES",
+    "points": "POINTS",
+    "players": "JOUEURS",
+    "start_time": "HEURE DE DÉBUT",
+    "cancel": "ANNULER",
+    "save": "SAUVEGARDER"
+  },
+  "form_invasion": {
+    "invalid_date": "DATE INVALIDE",
+    "groups_not_selected": "AUCUN GROUPE SÉLECTIONNÉ",
+    "area_not_selected": "ZONE NON SÉLECTIONNÉE",
+    "points_invalid": "POINTS INVALIDES",
+    "players_invalid": "JOUEURS INVALIDES",
+    "success": "SUCCÈS",
+    "groups": "GROUPES",
+    "genneral": "GÉNÉRAL",
+    "points": "POINTS",
+    "players": "JOUEURS",
+    "start_time": "HEURE DE DÉBUT",
+    "cancel": "ANNULER",
+    "save": "SAUVEGARDER"
+  },
+  "form_war": {
+    "inputDate": "fr-us",
+    "invalid_date": "DATE INVALIDE",
+    "groups_not_selected": "AUCUN GROUPE SÉLECTIONNÉ",
+    "area_not_selected": "ZONE NON SÉLECTIONNÉE",
+    "points_invalid": "POINTS INVALIDES",
+    "players_invalid": "JOUEURS INVALIDES",
+    "success": "SUCCÈS",
+    "groups": "GROUPES",
+    "points": "POINTS",
+    "defense_groups": "GROUPES DE DÉFENSE",
+    "attack_groups": "GROUPES D'ATTAQUE",
+    "start_time": "HEURE DE DÉBUT",
+    "end_time": "HEURE DE FIN",
+    "general": "GÉNÉRAL",
+    "cancel": "ANNULER",
+    "save": "SAUVEGARDER"
+  },
+  "spectate": {
+    "spectating": "SPECTATEUR"
+  },
+  "versus_queue": {
+    "you_are_in_queue": "VOUS ÊTES DANS LA QUEUE 1V1",
+    "your_place_in_queue": "VOTRE PLACE DANS LA FILE EST",
+    "press_e_to_cancel": "APPUYEZ SUR E POUR ANNULER"
+  }
+}

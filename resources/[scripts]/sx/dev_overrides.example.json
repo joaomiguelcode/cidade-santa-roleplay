@@ -1,0 +1,4 @@
+{
+    "business": "http://localhost:5173",
+    "inventory": "http://localhost:5174"
+}

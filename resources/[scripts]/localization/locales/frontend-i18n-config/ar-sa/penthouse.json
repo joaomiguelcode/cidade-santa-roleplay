@@ -1,0 +1,200 @@
+{
+    "common": {
+        "cancel": "إلغاء",
+        "confirm": "تأكيد",
+        "close": "إغلاق",
+        "search": "بحث",
+        "loading": "جار التحميل...",
+        "error": "خطأ",
+        "people": "أشخاص",
+        "furnished": "مفروش",
+        "unfurnished": "غير مفروش",
+        "rooms": "غرف",
+        "days": "أيام",
+        "permanent": "دائم"
+    },
+    "home": {
+        "title": "العقارات",
+        "selectProperty": "اختر بنتهاوسًا لعرض التفاصيل",
+        "tour": "جولة في البنتهاوس",
+        "buyNow": "اشتر الآن",
+        "callHelp": "طلب المساعدة",
+        "helpModal": {
+            "title": "طلب المساعدة",
+            "description": "هل تحتاج إلى مساعدة في البنتهاوس؟ فريقنا جاهز لمساعدتك!",
+            "confirm": "طلب المساعدة"
+        },
+        "level": "المستوى",
+        "buyModal": {
+            "title": "تأكيد الشراء",
+            "description": "هل تريد شراء هذا البنتهاوس لمدة {duration}؟ سيتم استهلاك القسيمة المناسبة.",
+            "descriptionNoDuration": "هل تريد شراء هذا البنتهاوس؟ سيتم استهلاك القسيمة المناسبة.",
+            "confirm": "اشتر الآن"
+        },
+        "buySuccess": {
+            "title": "اكتمل الشراء",
+            "description": "يمكنك الوصول إلى البنتهاوس بسهولة باستخدام المصعد المتاح في الموقع."
+        }
+    },
+    "edit": {
+        "title": "تعديل البنتهاوس",
+        "openStore": "فتح المتجر",
+        "houseName": "اسم البنتهاوس",
+        "houseNamePlaceholder": "اسم البنتهاوس",
+        "maxVisitors": "الحد الأقصى للزوار",
+        "houseAccess": "وصول البنتهاوس",
+        "accessTypes": {
+            "open": "مفتوح",
+            "invisible": "غير مرئي",
+            "locked": "مغلق",
+            "lockedWithDoorbell": "مغلق مع جرس"
+        },
+        "visitors": "الزوار",
+        "banned": "المحظورون",
+        "noVisitors": "لا يوجد زوار حاليًا",
+        "noBanned": "لا يوجد لاعبون محظورون",
+        "ban": "حظر",
+        "kick": "طرد",
+        "unban": "إلغاء الحظر",
+        "owner": "المالك",
+        "level": "المستوى",
+        "timeRemaining": "الوقت المتبقي",
+        "expired": "منتهية",
+        "permanentLegacy": "دائم (قديم)",
+        "renew": "تجديد البنتهاوس",
+        "upgrade": "ترقية البنتهاوس",
+        "renewModal": {
+            "title": "تجديد البنتهاوس",
+            "description": "هل تريد تجديد هذا البنتهاوس لمدة 30 يومًا إضافية؟ سيتم استهلاك القسيمة المناسبة.",
+            "confirm": "تجديد"
+        },
+        "upgradeIdModal": {
+            "title": "ترقية البنتهاوس",
+            "description": "أدخل ID البنتهاوس الذي تريد ترقيته.",
+            "placeholder": "ID البنتهاوس",
+            "confirm": "متابعة",
+            "invalidId": "ID غير صالح أو أن البنتهاوس لا يخصك."
+        },
+        "upgradeSelectModal": {
+            "title": "ترقية البنتهاوس",
+            "description": "اعرض المعلومات وقم بترقية البنتهاوس الخاص بك",
+            "levelLabel": "المستوى",
+            "nameLabel": "الاسم",
+            "totalTimeLabel": "الوقت الإجمالي",
+            "changeOptionLabel": "أي خيار تريد تغييره؟",
+            "infoTitle": "معلومات",
+            "infoPoint1": "مطلوب قسيمة المستوى المطلوب",
+            "infoPoint2": "سيتم نقل أغراضك تلقائيًا إلى صندوق المنزل الجديد.",
+            "infoPoint3": "سيتم تحويل الوقت المتبقي في البنتهاوس الخاص بك بشكل صحيح إلى المستوى المطلوب.",
+            "current": "الحالي",
+            "timeRemaining": "الوقت المتبقي",
+            "selectLevel": "اختر المستوى الجديد",
+            "newTime": "الوقت الجديد المقدر",
+            "confirm": "ترقية",
+            "noOptions": "لا يوجد مستوى أعلى متاح للترقية."
+        },
+        "banModal": {
+            "title": "حظر",
+            "description": "هل أنت متأكد من حظر {playerName} من شقتك؟",
+            "confirm": "حظر"
+        },
+        "kickModal": {
+            "title": "طرد",
+            "description": "هل أنت متأكد من طرد {playerName} من شقتك؟",
+            "confirm": "طرد"
+        },
+        "unbanModal": {
+            "title": "إلغاء الحظر",
+            "description": "هل أنت متأكد من إلغاء حظر {playerName} من شقتك؟",
+            "confirm": "إلغاء الحظر"
+        },
+        "upgradeSuccess": {
+            "title": "تم تحديث البنتهاوس",
+            "description": "يجب عليك دخول البنتهاوس مرة أخرى حتى يتم تطبيق التغييرات."
+        }
+    },
+    "elevator": {
+        "title": "المصعد",
+        "neighbors": "الجيران",
+        "myProperties": "بنتهاوساتي",
+        "searchNeighbors": "البحث عن الجيران...",
+        "searchProperties": "البحث عن البنتهاوسات",
+        "pending": "معلق",
+        "overdue": "متأخر",
+        "permanent": "دائم",
+        "doorbellModal": {
+            "title": "جرس الباب",
+            "description": "البنتهاوس مغلق. اقرع جرس الباب لطلب الدخول. عند القبول، سيتم نقلك إلى الشقة.",
+            "confirm": "قرع جرس الباب"
+        },
+        "renewModal": {
+            "title": "تجديد البنتهاوس",
+            "description": "انتهت صلاحية البنتهاوس الخاص بك. هل تريد تجديده؟",
+            "confirm": "تجديد"
+        }
+    },
+    "wallpapers": {
+        "title": "متجر الديكورات",
+        "visualize": "معاينة",
+        "buy": "شراء",
+        "helpModal": {
+            "title": "طلب المساعدة",
+            "description": "هل أنت متأكد من طلب المساعدة من أحد المنتسبين؟",
+            "confirm": "طلب المساعدة"
+        }
+    },
+    "properties": {
+        "imobiliaria": "العقارات",
+        "sem_mobilias": "غير مفروش",
+        "ver_detalhes": "عرض التفاصيل"
+    },
+    "doorbellModal": {
+        "title": "جرس الباب",
+        "description": "اضغط جرس الباب لفتح الباب",
+        "cobertura_trancada_desc": "البنتهاوس مغلق. اقرع جرس الباب لطلب الدخول. عند القبول، سيتم نقلك إلى الشقة.",
+        "close": "إغلاق",
+        "cancel": "إلغاء",
+        "ringing": "جار الرنين...",
+        "ring_doorbell": "قرع جرس الباب"
+    },
+    "editPenthouseModal": {
+        "title": "تعديل البنتهاوس",
+        "close": "إغلاق",
+        "nome_da_cobertura": "اسم البنتهاوس",
+        "numero_maximo_visitantes": "الحد الأقصى للزوار",
+        "acesso_cobertura": "وصول البنتهاوس",
+        "tipo_de_acesso": "نوع الوصول",
+        "aberto": "مفتوح",
+        "invisivel": "غير مرئي",
+        "trancado": "مغلق",
+        "trancado_com_campainha": "مغلق مع جرس",
+        "salvar": "حفظ",
+        "cancelar": "إلغاء",
+        "people_wanting_access": "أشخاص يريدون الوصول إلى البنتهاوس",
+        "no_pending_requests": "لا توجد طلبات معلقة",
+        "approve": "موافقة",
+        "reject": "رفض"
+    },
+    "penthouseList": {
+        "title": "البنتهاوسات",
+        "search_coberturas": "البحث عن البنتهاوسات",
+        "edit": "تعديل",
+        "ring_doorbell": "قرع جرس الباب"
+    },
+    "aberto": "مفتوح",
+    "acesso_cobertura": "وصول البنتهاوس",
+    "aprovar": "موافقة",
+    "campainha_tocada": "تم قرع جرس الباب!",
+    "editar_cobertura": "تعديل البنتهاوس",
+    "erro_tocar_campainha": "خطأ أثناء قرع جرس الباب",
+    "invisivel": "غير مرئي",
+    "nome_da_cobertura": "اسم البنتهاوس",
+    "numero_maximo_visitantes": "الحد الأقصى للزوار",
+    "pessoas_querendo_acessar_cobertura": "أشخاص يريدون الوصول إلى البنتهاوس",
+    "rejeitar": "رفض",
+    "salvando": "جار الحفظ",
+    "salvar_configuracoes": "حفظ الإعدادات",
+    "sem_resposta": "لا يوجد رد",
+    "trancado": "مغلق",
+    "trancado_com_campainha": "مغلق مع جرس"
+}

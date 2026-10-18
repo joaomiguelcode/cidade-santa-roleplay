@@ -1,0 +1,200 @@
+{
+    "common": {
+        "cancel": "Annuler",
+        "confirm": "Confirmer",
+        "close": "Fermer",
+        "search": "Rechercher",
+        "loading": "Chargement...",
+        "error": "Erreur",
+        "people": "personnes",
+        "furnished": "Meublé",
+        "unfurnished": "Non meublé",
+        "rooms": "pièces",
+        "days": "jours",
+        "permanent": "Permanent"
+    },
+    "home": {
+        "title": "Agence immobilière",
+        "selectProperty": "Sélectionnez un Penthouse pour voir les détails",
+        "tour": "Faire une visite du Penthouse",
+        "buyNow": "Acheter maintenant",
+        "callHelp": "Appeler l'aide",
+        "helpModal": {
+            "title": "Appeler l'aide",
+            "description": "Besoin d'aide pour votre Penthouse ? Notre équipe est prête à vous aider !",
+            "confirm": "Appeler l'aide"
+        },
+        "level": "Niveau",
+        "buyModal": {
+            "title": "Confirmer l'achat",
+            "description": "Voulez-vous acquérir ce Penthouse pour {duration} ? Un voucher correspondant sera consommé.",
+            "descriptionNoDuration": "Voulez-vous acquérir ce Penthouse ? Un voucher correspondant sera consommé.",
+            "confirm": "Acheter maintenant"
+        },
+        "buySuccess": {
+            "title": "Achat terminé",
+            "description": "Vous pouvez accéder facilement à votre Penthouse en utilisant l'ascenseur disponible sur place."
+        }
+    },
+    "edit": {
+        "title": "Modifier le Penthouse",
+        "openStore": "Ouvrir la boutique",
+        "houseName": "Nom du Penthouse",
+        "houseNamePlaceholder": "Nom du Penthouse",
+        "maxVisitors": "Nombre maximum de visiteurs",
+        "houseAccess": "Accès au Penthouse",
+        "accessTypes": {
+            "open": "Ouvert",
+            "invisible": "Invisible",
+            "locked": "Verrouillé",
+            "lockedWithDoorbell": "Verrouillé avec sonnette"
+        },
+        "visitors": "Visiteurs",
+        "banned": "Bannis",
+        "noVisitors": "Aucun visiteur pour le moment",
+        "noBanned": "Aucun joueur banni",
+        "ban": "Bannir",
+        "kick": "Expulser",
+        "unban": "Débannir",
+        "owner": "Propriétaire",
+        "level": "Niveau",
+        "timeRemaining": "Temps restant",
+        "expired": "Expirée",
+        "permanentLegacy": "Permanent (Héritage)",
+        "renew": "Renouveler le Penthouse",
+        "upgrade": "Mettre à jour le Penthouse",
+        "renewModal": {
+            "title": "Renouveler le Penthouse",
+            "description": "Voulez-vous renouveler ce Penthouse pour 30 jours supplémentaires ? Un voucher correspondant sera consommé.",
+            "confirm": "Renouveler"
+        },
+        "upgradeIdModal": {
+            "title": "Mettre à jour le Penthouse",
+            "description": "Saisissez l'ID du Penthouse que vous souhaitez mettre à jour.",
+            "placeholder": "ID du Penthouse",
+            "confirm": "Continuer",
+            "invalidId": "ID invalide ou le Penthouse ne vous appartient pas."
+        },
+        "upgradeSelectModal": {
+            "title": "Mettre à jour le Penthouse",
+            "description": "Voir les informations et mettre à jour votre Penthouse",
+            "levelLabel": "Niveau",
+            "nameLabel": "Nom",
+            "totalTimeLabel": "Temps total",
+            "changeOptionLabel": "Quelle option voulez-vous modifier ?",
+            "infoTitle": "Informations",
+            "infoPoint1": "Voucher du niveau souhaité requis",
+            "infoPoint2": "Vos objets seront déplacés automatiquement vers le coffre de la nouvelle maison.",
+            "infoPoint3": "Le temps restant de votre Penthouse sera correctement converti vers celui du Niveau Souhaité.",
+            "current": "Actuel",
+            "timeRemaining": "Temps restant",
+            "selectLevel": "Sélectionnez le nouveau niveau",
+            "newTime": "Nouveau temps estimé",
+            "confirm": "Mettre à jour",
+            "noOptions": "Aucun niveau supérieur disponible pour l'upgrade."
+        },
+        "banModal": {
+            "title": "Bannissement",
+            "description": "Êtes-vous sûr de vouloir bannir {playerName} de votre appartement ?",
+            "confirm": "Bannir"
+        },
+        "kickModal": {
+            "title": "Expulser",
+            "description": "Êtes-vous sûr de vouloir expulser {playerName} de votre appartement ?",
+            "confirm": "Expulser"
+        },
+        "unbanModal": {
+            "title": "Débannissement",
+            "description": "Êtes-vous sûr de vouloir débannir {playerName} de votre appartement ?",
+            "confirm": "Débannir"
+        },
+        "upgradeSuccess": {
+            "title": "Penthouse mis à jour",
+            "description": "Vous devez entrer à nouveau dans votre penthouse pour que les changements soient appliqués."
+        }
+    },
+    "elevator": {
+        "title": "Ascenseur",
+        "neighbors": "Voisins",
+        "myProperties": "Mes Penthouses",
+        "searchNeighbors": "Rechercher des voisins...",
+        "searchProperties": "Rechercher des Penthouses",
+        "pending": "En attente",
+        "overdue": "En retard",
+        "permanent": "Permanent",
+        "doorbellModal": {
+            "title": "Sonnette",
+            "description": "Penthouse verrouillé. Sonnez à la porte pour demander l’entrée. Une fois accepté, vous serez téléporté à l’appartement.",
+            "confirm": "Sonner"
+        },
+        "renewModal": {
+            "title": "Renouveler le Penthouse",
+            "description": "Votre Penthouse a expiré. Voulez-vous le renouveler ?",
+            "confirm": "Renouveler"
+        }
+    },
+    "wallpapers": {
+        "title": "Boutique de décorations",
+        "visualize": "Visualiser",
+        "buy": "Acheter",
+        "helpModal": {
+            "title": "Appeler l'aide",
+            "description": "Êtes-vous sûr de vouloir demander l'aide d'un affilié ?",
+            "confirm": "Appeler l'aide"
+        }
+    },
+    "properties": {
+        "imobiliaria": "Agence immobilière",
+        "sem_mobilias": "Non meublé",
+        "ver_detalhes": "Voir les détails"
+    },
+    "doorbellModal": {
+        "title": "Sonnette",
+        "description": "Appuyer sur la sonnette pour ouvrir la porte",
+        "cobertura_trancada_desc": "Penthouse verrouillé. Sonnez à la porte pour demander l’entrée. En sonnant, vous serez téléporté à l’appartement.",
+        "close": "Fermer",
+        "cancel": "Annuler",
+        "ringing": "Sonnerie...",
+        "ring_doorbell": "Sonner"
+    },
+    "editPenthouseModal": {
+        "title": "Modifier le Penthouse",
+        "close": "Fermer",
+        "nome_da_cobertura": "Nom du Penthouse",
+        "numero_maximo_visitantes": "Nombre maximum de visiteurs",
+        "acesso_cobertura": "Accès au Penthouse",
+        "tipo_de_acesso": "Type d’accès",
+        "aberto": "Ouvert",
+        "invisivel": "Invisible",
+        "trancado": "Verrouillé",
+        "trancado_com_campainha": "Verrouillé avec sonnette",
+        "salvar": "Enregistrer",
+        "cancelar": "Annuler",
+        "people_wanting_access": "Personnes souhaitant accéder au Penthouse",
+        "no_pending_requests": "Aucune demande en attente",
+        "approve": "Approuver",
+        "reject": "Rejeter"
+    },
+    "penthouseList": {
+        "title": "Penthouses",
+        "search_coberturas": "Rechercher des Penthouses",
+        "edit": "Modifier",
+        "ring_doorbell": "Sonner"
+    },
+    "aberto": "Ouvert",
+    "acesso_cobertura": "Accès au Penthouse",
+    "aprovar": "Approuver",
+    "campainha_tocada": "Sonnette actionnée !",
+    "editar_cobertura": "Modifier le Penthouse",
+    "erro_tocar_campainha": "Erreur lors de l’utilisation de la sonnette",
+    "invisivel": "Invisible",
+    "nome_da_cobertura": "Nom du Penthouse",
+    "numero_maximo_visitantes": "Nombre maximum de visiteurs",
+    "pessoas_querendo_acessar_cobertura": "Personnes souhaitant accéder au Penthouse",
+    "rejeitar": "Rejeter",
+    "salvando": "Enregistrement",
+    "salvar_configuracoes": "Enregistrer les paramètres",
+    "sem_resposta": "Pas de réponse",
+    "trancado": "Verrouillé",
+    "trancado_com_campainha": "Verrouillé avec sonnette"
+}

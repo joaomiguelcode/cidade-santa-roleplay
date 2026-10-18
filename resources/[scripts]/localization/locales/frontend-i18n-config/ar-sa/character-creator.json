@@ -1,0 +1,168 @@
+{
+  "welcome": "أهلاً بك",
+  "create_your_character": "أنشئ شخصيتك",
+  "name": "الاسم",
+  "last_name": "اسم العائلة",
+  "age": "العمر",
+  "character_gender": "جنس الشخصية",
+  "male": "ذكر",
+  "female": "أنثى",
+  "creating": "جاري الإنشاء...",
+  "next": "التالي",
+  "where_did_find_us": "أين وجدتنا؟",
+  "which_social_media": "أي شبكة اجتماعية؟",
+  "friend_id_optional": "معرف الصديق (اختياري)",
+  "error_creating_character": "خطأ في إنشاء الشخصية",
+  "cancel": "إلغاء",
+  "apply": "تطبيق",
+  "finish": "إنهاء",
+  "loading": "جارٍ التحميل...",
+  "previous": "رجوع",
+  "rotate_character": "تدوير الشخصية",
+  "action": {
+    "zoom_in_out": "تكبير/تصغير"
+  },
+  "appearance": {
+    "export": {
+      "generating_code": "جارٍ إنشاء الرمز...",
+      "title": "تصدير المظهر",
+      "description": "انسخ رمز الإعداد المسبق الحالي"
+    },
+    "finish": {
+      "title": "إنشاء الشخصية",
+      "description": "هل أنت متأكد أنك تريد إنهاء إنشاء الشخصية؟ يمكنك أيضًا نسخ رمز مظهر الشخصية."
+    },
+    "import": {
+      "code": "رمز الإعداد المسبق",
+      "title": "استيراد المظهر",
+      "description": "الصق رمز الإعداد المسبق المطلوب",
+      "code_placeholder": "أدخل رمز الإعداد المسبق"
+    },
+    "title": {
+      "creating": "إنشاء الشخصية",
+      "editing": "تعديل الشخصية"
+    },
+    "groups": {
+      "aspect": "المظهر",
+      "bodySpots": "بقع الجسم",
+      "cheek": "الخد",
+      "chin": "الذقن",
+      "eyebrows": "الحواجب",
+      "eyes": "العينان",
+      "fur": "الشعر",
+      "gender": "الجنس",
+      "jaw": "الفك",
+      "kinship": "القرابة",
+      "makeup": "المكياج",
+      "mouth": "الفم",
+      "nose": "الأنف",
+      "options": "الخيارات",
+      "parentColors": "ألوان الوالدين"
+    },
+    "options": {
+      "ageing": "الشيخوخة",
+      "beard": "اللحية",
+      "blemishes": "عيوب البشرة",
+      "blush": "أحمر الخدود",
+      "bodyHair": "شعر الجسم",
+      "bodySpot1": "بقعة",
+      "cheekBonesHeight": "ارتفاع عظام الخد",
+      "cheekBonesWidth": "عرض عظام الخد",
+      "chinFormat": "شكل الذقن",
+      "chinLength": "طول الذقن",
+      "chinPosition": "موضع الذقن",
+      "chinWidth": "عرض الذقن",
+      "eyebrows": "الحواجب",
+      "eyebrowsDepth": "عمق الحواجب",
+      "eyebrowsHeight": "ارتفاع الحواجب",
+      "eyeColor": "لون العينين",
+      "eyeGap": "المسافة بين العينين",
+      "hair": "الشعر",
+      "hairSecondary": "لون الشعر الثانوي",
+      "jawBoneHeight": "ارتفاع عظم الفك",
+      "jawBoneWidth": "عرض عظم الفك",
+      "lipstick": "أحمر الشفاه",
+      "lipThickness": "سماكة الشفاه",
+      "makeup": "المكياج",
+      "molesFreckles": "الشامات والنمش",
+      "noseCurve": "انحناء الأنف",
+      "noseHeight": "ارتفاع الأنف",
+      "noseLength": "طول الأنف",
+      "noseTip": "طرف الأنف",
+      "noseWidth": "عرض الأنف",
+      "parent1Color": "لون الوالد 1",
+      "parent2Color": "لون الوالد 2",
+      "similarity": "التشابه",
+      "skinTone": "لون البشرة",
+      "sunDamage": "أضرار الشمس"
+    },
+    "description": {
+      "creating": "أنشئ شخصيتك كما تريد",
+      "editing": "عدّل شخصيتك كما تريد"
+    }
+  },
+  "colorSelector": {
+    "description": "اختر اللون المطلوب",
+    "opacity": "الشفافية",
+    "title": "الألوان"
+  },
+  "kinship": {
+    "select_father": "اختيار الأب",
+    "select_mother": "اختيار الأم",
+    "selector": {
+      "description": "اختر القريب الأول",
+      "title": "القرابة"
+    }
+  },
+  "presets": {
+    "description": "اختر الإعداد المسبق المطلوب",
+    "randomize": "شخصية عشوائية",
+    "title": "إعدادات المظهر المسبقة"
+  },
+  "criminal_spawn": {
+    "title": "المسار الإجرامي",
+    "subtitle": "أين تريد أن تبدأ؟",
+    "faction": {
+      "title": "مباشرة في العصابة",
+      "description": "تبدأ عند مدخل مقر العصابة التي تجنّد الآن",
+      "badge": "بداية أسرع"
+    },
+    "pier": {
+      "title": "عند الرصيف",
+      "description": "تبدأ عند الرصيف الرئيسي وتلتقي بمن يستقبلك"
+    },
+    "confirm": "تأكيد",
+    "close": "إغلاق"
+  },
+  "validation": {
+    "firstNameMin": "يجب أن يحتوي الاسم على 3 أحرف على الأقل.",
+    "firstNameMax": "يجب أن يحتوي الاسم على {0} حرفًا كحد أقصى.",
+    "firstNameNoSpaces": "لا يمكن أن يحتوي حقل الاسم على مسافات.",
+    "firstNameLettersOnly": "استخدم الأحرف فقط.",
+    "firstNameRepeat": "يحتوي الاسم على الكثير من الأحرف المكررة.",
+    "firstNameInvalid": "أدخل اسمًا صالحًا.",
+    "lastNameMin": "يجب أن يحتوي اسم العائلة على 3 أحرف على الأقل.",
+    "lastNameMax": "يجب أن يحتوي اسم العائلة على {0} حرفًا كحد أقصى.",
+    "lastNameLettersOnly": "يجب أن يحتوي اسم العائلة على أحرف فقط.",
+    "lastNameRepeat": "يحتوي اسم العائلة على الكثير من الأحرف المكررة.",
+    "lastNameInvalid": "أدخل اسمًا صالحًا.",
+    "duplicateNames": "لا يمكن أن يكون الاسم واسم العائلة متطابقين.",
+    "nameNoSymbols": "لا تستخدم أرقامًا أو رموزًا.",
+    "ageRequired": "العمر مطلوب.",
+    "ageOnlyNumbers": "استخدم الأرقام فقط.",
+    "ageMin": "الحد الأدنى للعمر هو 18 سنة.",
+    "ageMax": "يجب أن يكون العمر أقل من 100 سنة.",
+    "ageMaxChars": "حرفان كحد أقصى.",
+    "influencerCouponMax": "20 حرفًا كحد أقصى.",
+    "influencerCouponFormat": "أحرف وأرقام فقط، بدون مسافات أو رموز خاصة.",
+    "influencerCouponInvalid": "كوبون المؤثر غير صالح."
+  },
+  "origin_options": {
+    "fivem_list": "قائمة FiveM",
+    "influencer": "مؤثر",
+    "friend_referral": "توصية صديق",
+    "social_media": "وسائل التواصل الاجتماعي",
+    "other": "أخرى"
+  },
+  "influencer_coupon_optional": "قسيمة المؤثر (اختياري)"
+}

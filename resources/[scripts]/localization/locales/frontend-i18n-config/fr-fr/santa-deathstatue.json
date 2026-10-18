@@ -1,0 +1,52 @@
+{
+  "eventHud": {
+    "greenLight": "FEU VERT",
+    "greenAction": "COURS !",
+    "redLight": "FEU ROUGE",
+    "redAction": "STOP !",
+    "rankingTitle": "CLASSEMENT",
+    "rankingSubtitle": "Score actuel de l'événement",
+    "roundsLabel": "Manches",
+    "exitUse": "Appuie",
+    "exitHint": "pour quitter le jeu",
+    "pointsSuffix": "pts",
+    "rankSuffix": "e",
+    "timeRemaining": "Temps Restant"
+  },
+  "estatuaMortal": {
+    "exitUse": "Appuie",
+    "exitHint": "pour quitter le jeu",
+    "logo": "Santa",
+    "rankSuffix": "e",
+    "lobby": {
+      "players": "Joueurs",
+      "startingIn": "démarrage dans"
+    },
+    "tutorial": {
+      "name": "Chef de Jeu",
+      "skip": "pour passer le dialogue",
+      "text": "Le jeu est un couloir où tous les joueurs doivent atteindre l'autre côté. Cependant, personne ne peut bouger tant que la lumière est rouge, seulement lorsqu'elle est verte. Bonne chance à tous et bon jeu !"
+    },
+    "result": {
+      "title": "Statue Mortelle",
+      "subtitle": "Voici le résultat final de tous les participants du jeu de la statue.",
+      "close": "Fermer",
+      "colResult": "Résultat",
+      "colTime": "Temps"
+    },
+    "ranking": {
+      "title": "Classement Statue Mortelle",
+      "subtitle": "Suivez le classement de la statue mortelle en temps réel",
+      "best": "Meilleur Joueur",
+      "bestSub": "Meilleur joueur de statue mortelle",
+      "colId": "ID",
+      "colName": "Nom",
+      "colPoints": "Points",
+      "colTime": "Temps de Jeu",
+      "colWins": "Victoires",
+      "empty": "Aucun joueur dans le classement pour le moment",
+      "next": "Suivante",
+      "previous": "Précédente"
+    }
+  }
+}

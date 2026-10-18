@@ -1,0 +1,27 @@
+{
+    "petinfo": {
+        "header": {
+            "interactions": "Interactions"
+        },
+        "interactions": {
+            "title": "Interactions",
+            "description": "Interactions with your pet"
+        },
+        "actions": {
+            "caresses": "Caresses",
+            "play": "Play",
+            "feed": "Feed",
+            "walk": "Walk",
+            "groom": "Groom",
+            "bath": "Bath"
+        },
+        "stats": {
+            "hunger": "Hunger",
+            "level": "Level"
+        }
+    },
+    "savePet": "SAVE PET",
+    "callPet": "CALL PET",
+    "yourPets": "Your adopted pets",
+    "yearsOld": "Years old"
+}

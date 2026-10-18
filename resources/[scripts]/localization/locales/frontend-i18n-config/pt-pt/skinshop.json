@@ -1,0 +1,31 @@
+{
+  "home": {
+    "primary": "Primárias",
+    "secondary": "Secundárias",
+
+    "cancel": "Cancelar",
+    "save": "Guardar"
+  },
+  "clothes": {
+    "back": "VOLTAR",
+    "number": "Número",
+    "vip": "SÓ VIP"
+  },
+  "category": {
+    "torso": "Casacos",
+    "pants": "Calças",
+    "shoes": "Sapatos",
+    "tshirt": "T-shirts",
+    "arms": "Mãos",
+    "hat": "Chapéu",
+    "glass": "Óculos",
+    "accessory": "Acessórios",
+    "backpack": "Mochilas",
+    "mask": "Máscara",
+    "vest": "Coletes",
+    "decals": "Adesivos",
+    "ear": "Brincos",
+    "bracelet": "Pulseiras",
+    "watch": "Relógios"
+  }
+}

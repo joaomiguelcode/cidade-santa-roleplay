@@ -1,0 +1,168 @@
+{
+  "welcome": "Welcome",
+  "create_your_character": "Create your character",
+  "name": "Name",
+  "last_name": "Last name",
+  "age": "Age",
+  "character_gender": "Character gender",
+  "male": "Male",
+  "female": "Female",
+  "creating": "Creating...",
+  "next": "Next",
+  "where_did_find_us": "Where did you find us?",
+  "which_social_media": "Which social media?",
+  "friend_id_optional": "Friend ID (optional)",
+  "error_creating_character": "Error creating character",
+  "cancel": "Cancel",
+  "apply": "Apply",
+  "finish": "Finish",
+  "loading": "Loading...",
+  "previous": "Back",
+  "rotate_character": "Rotate character",
+  "action": {
+    "zoom_in_out": "Zoom in/out"
+  },
+  "appearance": {
+    "export": {
+      "generating_code": "Generating code...",
+      "title": "Export Appearance",
+      "description": "Copy the current preset code"
+    },
+    "finish": {
+      "title": "Create Character",
+      "description": "Are you sure you want to finish creating your character? You can also copy the character's appearance code."
+    },
+    "import": {
+      "code": "Preset code",
+      "title": "Import Appearance",
+      "description": "Paste the desired preset code",
+      "code_placeholder": "Enter the preset code"
+    },
+    "title": {
+      "creating": "Character Creation",
+      "editing": "Character Editing"
+    },
+    "groups": {
+      "aspect": "Look",
+      "bodySpots": "Body spots",
+      "cheek": "Cheeks",
+      "chin": "Chin",
+      "eyebrows": "Eyebrows",
+      "eyes": "Eyes",
+      "fur": "Hair",
+      "gender": "Gender",
+      "jaw": "Jaw",
+      "kinship": "Kinship",
+      "makeup": "Makeup",
+      "mouth": "Mouth",
+      "nose": "Nose",
+      "options": "Options",
+      "parentColors": "Parent colors"
+    },
+    "options": {
+      "ageing": "Ageing",
+      "beard": "Beard",
+      "blemishes": "Skin blemishes",
+      "blush": "Blush",
+      "bodyHair": "Body hair",
+      "bodySpot1": "Spot",
+      "cheekBonesHeight": "Cheekbone height",
+      "cheekBonesWidth": "Cheekbone width",
+      "chinFormat": "Chin shape",
+      "chinLength": "Chin length",
+      "chinPosition": "Chin position",
+      "chinWidth": "Chin width",
+      "eyebrows": "Eyebrows",
+      "eyebrowsDepth": "Eyebrow depth",
+      "eyebrowsHeight": "Eyebrow height",
+      "eyeColor": "Eye color",
+      "eyeGap": "Eye gap",
+      "hair": "Hair",
+      "hairSecondary": "Secondary hair color",
+      "jawBoneHeight": "Jawbone height",
+      "jawBoneWidth": "Jawbone width",
+      "lipstick": "Lipstick",
+      "lipThickness": "Lip thickness",
+      "makeup": "Makeup",
+      "molesFreckles": "Moles and freckles",
+      "noseCurve": "Nose curve",
+      "noseHeight": "Nose height",
+      "noseLength": "Nose length",
+      "noseTip": "Nose tip",
+      "noseWidth": "Nose width",
+      "parent1Color": "Parent 1 color",
+      "parent2Color": "Parent 2 color",
+      "similarity": "Resemblance",
+      "skinTone": "Skin tone",
+      "sunDamage": "Sun damage"
+    },
+    "description": {
+      "creating": "Create your character the way you want",
+      "editing": "Edit your character the way you want"
+    }
+  },
+  "colorSelector": {
+    "description": "Select the desired color",
+    "opacity": "Opacity",
+    "title": "Colors"
+  },
+  "kinship": {
+    "select_father": "Select Father",
+    "select_mother": "Select Mother",
+    "selector": {
+      "description": "Select the first relative",
+      "title": "Kinship"
+    }
+  },
+  "presets": {
+    "description": "Select the desired preset",
+    "randomize": "Randomize Character",
+    "title": "Appearance Presets"
+  },
+  "criminal_spawn": {
+    "title": "Criminal Path",
+    "subtitle": "Where do you want to start?",
+    "faction": {
+      "title": "At the gang",
+      "description": "Start at the HQ entrance of the gang that is recruiting now",
+      "badge": "FASTER START"
+    },
+    "pier": {
+      "title": "At the pier",
+      "description": "Start at the main pier and meet people who can welcome you"
+    },
+    "confirm": "Confirm",
+    "close": "Close"
+  },
+  "validation": {
+    "firstNameMin": "First name must have at least 3 characters.",
+    "firstNameMax": "First name must be at most {0} characters.",
+    "firstNameNoSpaces": "First name cannot contain spaces.",
+    "firstNameLettersOnly": "Use letters only.",
+    "firstNameRepeat": "First name has too many repeated letters.",
+    "firstNameInvalid": "Enter a valid name.",
+    "lastNameMin": "Last name must have at least 3 characters.",
+    "lastNameMax": "Last name must be at most {0} characters.",
+    "lastNameLettersOnly": "Last name must contain only letters.",
+    "lastNameRepeat": "Last name has too many repeated letters.",
+    "lastNameInvalid": "Enter a valid name.",
+    "duplicateNames": "First and last name cannot be the same.",
+    "nameNoSymbols": "Don't use numbers or symbols.",
+    "ageRequired": "Age is required.",
+    "ageOnlyNumbers": "Use numbers only.",
+    "ageMin": "Minimum age is 18.",
+    "ageMax": "Age must be less than 100.",
+    "ageMaxChars": "Maximum 2 characters.",
+    "influencerCouponMax": "Maximum 20 characters.",
+    "influencerCouponFormat": "Only letters and numbers, no spaces or special characters.",
+    "influencerCouponInvalid": "Invalid influencer coupon."
+  },
+  "origin_options": {
+    "fivem_list": "FiveM list",
+    "influencer": "Influencer",
+    "friend_referral": "Friend referral",
+    "social_media": "Social media",
+    "other": "Other"
+  },
+  "influencer_coupon_optional": "Influencer coupon (optional)"
+}

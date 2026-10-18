@@ -1,0 +1,20 @@
+TosLink = {
+    ["Santa"] = "https://docs.google.com/document/d/1e9Ao-2qTPE-Z1HaW_KmNVFOouT8pY7nx3f7ItLCd0Xw/edit?usp=sharing",
+    ["CidadeNobre"] = "https://docs.google.com/document/d/1CiVJWZA2RgmxlL05WjvdLVa0AcCjBmfMO4tI1U7lI-M/edit?usp=sharing",
+    ["Boomerang"] = "https://docs.google.com/document/d/12CaROCvJr8ibpRz596ezrBd-EwnmMI7uVBx5x-iWxKE/edit?usp=sharing",
+    ["Universo"] = "https://docs.google.com/document/d/1MJSK8yAbh-HWamtOKxdDoKP_yXRmDjBk00ModW3Uk-g/edit?usp=sharing",
+    ["Kingdom"] = "https://docs.google.com/document/d/17JPvy3TsSUVeahYwPkgy7G2LT-2wfdMrrqy88XhuFRg/edit?usp=sharing",
+    ["District99"] = "https://docs.google.com/document/d/1QpTHMzdPWMHLRoLEr79JJI5KGph2gkgHdFhdvtEFtJU/edit?usp=sharing",
+    ["Krown"] = "https://docs.google.com/document/d/1k9TAsJg3ikyCaDHA5zAO6DIeekYxBIicz-PF1GK4IzM/",
+    ["Orizon"] = "https://docs.google.com/document/d/16gVbjZYHS-yi5PFQVy19JtbSYRtHzz2xAmp54Hefmzs/edit?usp=sharing",
+    ["Royal"] = "https://docs.google.com/document/d/11jHcf475kAnN3wWJYwvNy5HCy1Qmpi2KFhD3D7TOBZA/edit?usp=sharing",
+    ["Real"] = "https://docs.google.com/document/d/1L9kQFIXIpPVKKa7dOhIztAIPUfaqM02q5LrOdd0cBGw/edit?usp=sharing",
+    ["Prime"] = "https://docs.google.com/document/d/1BP_CW7DOzDTvglfxp9hhvuzNcLRVv3VNX0CZ-GTFdYU/edit?usp=sharing",
+    ["Grande"] = "https://docs.google.com/document/d/1kithm0qJ4u6b_H8keLT2vpD1R5QPbBEz7qwyaZu4tDM/edit?usp=sharing",
+    ["Fronteira"] = "https://docs.google.com/document/d/1IQMzR60fpcnOwqDJYRfti7XgqA6NWt69CycRDYJw2Y8/edit?usp=sharing",
+    ["Alexandria"] = "https://docs.google.com/document/d/1kithm0qJ4u6b_H8keLT2vpD1R5QPbBEz7qwyaZu4tDM/edit?usp=sharing",
+    ["Maresia"] = "https://docs.google.com/document/d/1gW5oEtY7c8sMi6mMYAJwoispT9iBqGULQDnV-J7nrt8/edit?usp=sharing",
+    ["Malta"] = "https://docs.google.com/document/d/1iYNbokIUuxLYOjPO3kYajv4qejs1C9Np9PtsTl7eHPE/edit?usp=sharing",
+    ["Liberty99"] = "https://docs.google.com/document/d/1ah3GoRAht7dCHMhpeYN8bhgBwomU1CtnrEkv3X2hlUc/edit?tab=t.0",
+}
+TosLink["Base"] = TosLink["Santa"]

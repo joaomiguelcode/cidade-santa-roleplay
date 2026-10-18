@@ -1,0 +1,18 @@
+{
+  "_react-vendor-BStAX1aO.js": {
+    "file": "assets/react-vendor-BStAX1aO.js",
+    "name": "react-vendor"
+  },
+  "index.html": {
+    "file": "assets/index-6be033cd.js",
+    "name": "index",
+    "src": "index.html",
+    "isEntry": true,
+    "imports": [
+      "_react-vendor-BStAX1aO.js"
+    ],
+    "css": [
+      "assets/index-rndhVBVQ.css"
+    ]
+  }
+}

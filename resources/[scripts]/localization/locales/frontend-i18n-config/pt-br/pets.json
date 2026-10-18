@@ -1,0 +1,27 @@
+{
+    "petinfo": {
+        "header": {
+            "interactions": "Interações"
+        },
+        "interactions": {
+            "title": "Interações",
+            "description": "Interações com seu pet"
+        },
+        "actions": {
+            "caresses": "Carícias",
+            "play": "Brincar",
+            "feed": "Alimentar",
+            "walk": "Passear",
+            "groom": "Escovar",
+            "bath": "Banho"
+        },
+        "stats": {
+            "hunger": "Fome",
+            "level": "Nível"
+        }
+    },
+    "savePet": "GUARDAR PET",
+    "callPet": "CHAMAR PET",
+    "yourPets": "Seus pets adotados",
+    "yearsOld": "ANOS DE IDADE"
+}

@@ -1,0 +1,8 @@
+COMBATREASON_ADVANCED_ROBBERY = DEFINE_COMBATREASON 'advanced_robbery' {
+
+    isInfinite = true, --[[ INFINITE COMBAT ]]
+
+    addDuration = 60,
+}
+
+eCombatReasons.ADVANCED_ROBBERY = COMBATREASON_ADVANCED_ROBBERY

@@ -1,0 +1,23 @@
+# FiveM Cache & Logs
+cache/
+crash/
+logs/
+*.log
+.replxx_history
+
+# Scripts desativados e arquivos pesados
+resources/.disabled_escrow/
+
+# Binários do FXServer (baixados separadamente)
+artifacts/*
+!artifacts/artifacts.txt
+
+# Arquivos locais e backups
+*.local
+*.bkp
+
+# Editores e Sistema Operacional
+.vscode/
+.idea/
+Thumbs.db
+Desktop.ini

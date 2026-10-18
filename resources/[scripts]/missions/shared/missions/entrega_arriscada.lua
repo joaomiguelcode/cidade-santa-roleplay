@@ -1,0 +1,15 @@
+-- DEFINE_MISSION 'entrega_arriscada' {
+--     group = eMissionGroup.Criminal,
+--     order = 2,
+--     name = "Entrega Arriscada",
+--     description = "Va ate o ponto de contrabando, aceite a entrega, pegue o pacote no inventario e leve ao destino marcado no mapa sem ser preso ou morto.",
+--     dependencies = {},
+--     flags = eMissionFlags.NONE,
+--     rewards = {
+--         skills = { crime = 150, driving = 100 },
+--         title = "Mãos Limpas",
+--     },
+--     metadata = {
+--         hook = "missions:hook:contraband_delivery_completed",
+--     },
+-- }

@@ -1,0 +1,12 @@
+{
+  "title": "Os meus animais",
+  "summary": "{pets} animais · {equipped} equipados",
+  "empty": "Ainda não possui nenhum animal.",
+  "listLabel": "OS SEUS ANIMAIS",
+  "equipped": "EQUIPADO",
+  "equippedAt": "Equipado · {position}",
+  "available": "{quantity} unidades · {positions} posições",
+  "positionLabel": "POSIÇÃO NO CORPO · {pet}",
+  "equip": "Equipar",
+  "unequip": "Desequipar"
+}

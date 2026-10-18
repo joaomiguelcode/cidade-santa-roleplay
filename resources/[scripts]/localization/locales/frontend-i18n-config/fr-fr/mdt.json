@@ -1,0 +1,166 @@
+{
+  "prisonsAmount": "Prisons terminées",
+  "finesAmount": "Amendes imposées",
+  "helloLanding": "Hé encore,",
+  "announce": {
+    "title": "Tableau d'annonces",
+    "create": "Créer une annonce",
+    "modal": {
+      "title": "Créer une annonce",
+      "placeholder": "Tapez l'annonce ici...",
+      "confirm": "Confirmer",
+      "close": "Fermer"
+    }
+  },
+  "selectOption": "Sélectionnez une option",
+  "noOccurrencesFound": "Aucun rapport trouvé",
+  "editOccurrence": "Modifier le rapport",
+  "saveEdit": "Enregistrer les modifications",
+  "loading": "Chargement...",
+  "occurrenceNotFound": "Rapport introuvable",
+  "description": "Description",
+  "describeOccurrence": "Décrire le rapport",
+  "address": "Adresse",
+  "tax": "Frais",
+  "model": "Modèle",
+  "return": "Dos",
+  "since": {
+    "years": "il y a {0} ans",
+    "months": "il y a {0} mois",
+    "days": "il y a {0} jours",
+    "hours": "il y a {0} heures",
+    "minutes": "il y a {0} minutes",
+    "seconds": "il y a {0} secondes"
+  },
+  "since2": {
+    "years": "{0} ans",
+    "months": "{0} mois",
+    "days": "{0} jours",
+    "hours": "{0} heures",
+    "minutes": "{0} minutes",
+    "seconds": "{0} secondes"
+  },
+  "search": {
+    "title": "Rechercher des personnes",
+    "placeholder": "Recherche par passeport...",
+    "status": {
+      "waiting": "En attente de recherche...",
+      "searching": "Recherche...",
+      "notFound": "Aucun résultat trouvé"
+    }
+  },
+  "apprehension": {
+    "title": "Faire une appréhension",
+    "infos": {
+      "title": "Informations de base",
+      "officer": "Officier",
+      "date": "Date et heure",
+      "infractor": "Délinquant"
+    },
+    "infractions": {
+      "title": "Infractions commises",
+      "infraction": "Infraction",
+      "finesReduction": "Réduction fine",
+      "sentenceReduction": "Réduction de peine",
+      "submit": "Appliquer les infractions"
+    },
+    "description": {
+      "title": "Description",
+      "placeholder": "Tapez la description de l'appréhension ici..."
+    },
+    "submit": "Faire appréhender"
+  },
+  "fines": {
+    "title": "Émettre une amende",
+    "infos": {
+      "title": "Informations de base",
+      "officer": "Officier",
+      "date": "Date et heure",
+      "infractor": "Délinquant"
+    },
+    "infractions": {
+      "title": "Infractions commises",
+      "infraction": "Infraction",
+      "finesReduction": "Réduction fine",
+      "sentenceReduction": "Réduction de peine",
+      "description": {
+        "title": "Description",
+        "placeholder": "Tapez la description fine ici..."
+      }
+    },
+    "submit": "Problème bien"
+  },
+  "wanteds": {
+    "title": "Particuliers",
+    "notFound": "Aucun utilisateur n'est recherché"
+  },
+  "wanted": {
+    "name": "Nom",
+    "reason": "Recherché pour",
+    "officer": "Officier",
+    "since": "Recherché depuis"
+  },
+  "wantedProfile": {
+    "title": "Conseil d'administration recherché",
+    "name": "Nom",
+    "notFound": "Recherché introuvable",
+    "informations": {
+      "title": "Informations",
+      "name": "Nom",
+      "estate": "Richesse",
+      "wanted": "Recherché",
+      "passport": "Passeport",
+      "age": "Âge",
+      "hasWeapon": "Permis d'arme à feu"
+    },
+    "options": {
+      "history": "Histoire",
+      "vehicles": "Véhicules",
+      "houses": "Maisons"
+    },
+    "table": {
+      "type": "TAPER",
+      "date": "DATE",
+      "officer": "OFFICIER",
+      "time": "DURÉE/QUANTITÉ",
+      "actions": "ACTES"
+    },
+    "modal": {
+      "title": "Démarrer le mandat de recherche",
+      "placeholder": "Tapez ici le motif du mandat...",
+      "confirm": "Confirmer",
+      "close": "Fermer"
+    }
+  },
+  "report": {
+    "title": "Rapports d'événements",
+    "register": "Enregistrer un nouveau rapport",
+    "informations": {
+      "title": "Titre",
+      "titlePlaceholder": "Tapez le titre du rapport ici...",
+      "officer": "Officier",
+      "date": "Date et heure",
+      "infractor": "Délinquant",
+      "description": "Description",
+      "descriptionPlaceholder": "Tapez la description du rapport ici...",
+      "requester": "Demandeur",
+      "suspect": "Suspect"
+    },
+    "submit": "Créer un rapport"
+  },
+  "occurrance": {
+    "officer": "Officier",
+    "requester": "Demandeur",
+    "suspect": "Suspect",
+    "status": "Statut",
+    "online": "En ligne",
+    "date": "Date et heure"
+  },
+  "currency": "USD",
+  "locale": "fr-FR",
+  "months": "{0} MOIS",
+  "yes": "Oui",
+  "no": "Non",
+  "age": "{0} ans",
+  "back": "Dos"
+}

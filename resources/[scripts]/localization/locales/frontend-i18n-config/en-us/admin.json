@@ -1,0 +1,7 @@
+{
+  "ban": {
+    "reason": "Reason for ban",
+    "reason_for_ban": "Reason for ban",
+    "id": "ID"
+  }
+}

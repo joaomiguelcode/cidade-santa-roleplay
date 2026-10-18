@@ -1,0 +1,183 @@
+{
+  "title": {
+    "hotbar": "Barra Rápida",
+    "main": "Inventario",
+    "trunk": "Maletero",
+    "property": "Propiedad",
+    "inspect": "Inspeccionar",
+    "shop": "Tienda",
+    "ground": "Suelo",
+    "chest": "Cofre",
+    "preview": "Vista Previa"
+  },
+
+  "use": "Usar",
+  "send": "Enviar",
+  "delivery": "Entregar",
+  "destroy": "Destruir",
+  "destruct": "Destruir",
+  "collection": "Colección",
+
+  "loading": "Cargando...",
+
+  "chestPermission": {
+    "title": "Configurar cofre",
+    "subtitle": "Define quién puede retirar objetos.",
+    "viewPermissions": "Ver permisos del cofre",
+    "activePermissions": "Permisos activos",
+    "loadingPermissions": "Cargando permisos...",
+    "noActivePermission": "No hay permisos activos.",
+    "removePermission": "Quitar permiso a {0}",
+    "close": "Cerrar",
+    "configureBy": "Configurar por",
+    "whoCanWithdraw": "Quién puede retirar",
+    "configureMember": "Configurar miembro",
+    "configureRole": "Configurar rango",
+    "member": "Miembro",
+    "memberRole": "Rango del miembro",
+    "memberId": "ID del miembro",
+    "noOptionAvailable": "No hay opciones disponibles.",
+    "noOptionFound": "No se encontraron opciones.",
+    "saleCommission": "Comisión por venta",
+    "saleCommissionDescription": "Porcentaje que recibe el vendedor por cada transacción.",
+    "authorizeWithdraw": "Autorizar retirada de objetos",
+    "authorizedToWithdraw": "Autorizado a retirar objetos",
+    "authorizeConfigureChest": "Autorizar configuración del cofre",
+    "authorizedToConfigureChest": "Autorizado a configurar el cofre",
+    "immediateChangesHint": "Los cambios se aplican inmediatamente a todos los afectados.",
+    "cancel": "Cancelar",
+    "saveChanges": "Guardar cambios"
+  },
+
+  "factionArsenal": {
+    "fallbackFactionName": "Facción Los Santos Vagos",
+    "howItWorks": "¿Cómo funciona?",
+    "helpSubtitle": "Descubre para qué sirve cada opción del arsenal",
+    "close": "Cerrar",
+    "back": "Volver",
+    "important": "IMPORTANTE",
+    "understood": "Entendido",
+    "stockNotice": "Todos los objetos retirados por los miembros a través del Arsenal se descuentan automáticamente de las existencias del Cofre del Líder.",
+    "helpTopics": {
+      "position": {
+        "title": "Ubicación del arsenal",
+        "description": "Establece dónde acceden los miembros al arsenal. Debe estar a 50 m como máximo del cuartel general."
+      },
+      "roles": {
+        "title": "Configurar rangos",
+        "description": "Selecciona el rango que tendrá su propia configuración."
+      },
+      "enable": {
+        "title": "Activar arsenal",
+        "description": "Permite o bloquea el acceso al arsenal para el rango seleccionado."
+      },
+      "cooldown": {
+        "title": "Tiempo de espera",
+        "description": "Establece cuánto deben esperar los miembros antes de volver a retirar el kit."
+      },
+      "kit": {
+        "title": "Objetos del kit",
+        "description": "Establece las armas, municiones, otros objetos y cantidades asignados al rango."
+      },
+      "disable-all": {
+        "title": "Activar/Desactivar todos los rangos",
+        "description": "Cambia el acceso al arsenal para todos los rangos de la facción a la vez."
+      }
+    },
+    "roleArsenalSection": "1. Arsenal del rango",
+    "activateArsenal": "Activar arsenal",
+    "deactivateArsenal": "Desactivar arsenal",
+    "enabled": "Activado",
+    "disabled": "Desactivado",
+    "withdrawRulesSection": "2. Reglas de retirada",
+    "interval": "Intervalo",
+    "withdrawAgainHint": "Tiempo antes de volver a retirar",
+    "kitItemsSection": "3. Objetos del kit ({0})",
+    "emptyKit": "El kit de este rango no tiene objetos.",
+    "itemQuantity": "Cantidad de {0}",
+    "max": "Máx.",
+    "removeItem": "Eliminar {0}",
+    "addItem": "Añadir objeto",
+    "saveChanges": "Guardar cambios",
+    "itemPickerSubtitle": "Selecciona un objeto para añadirlo al kit del rango.",
+    "closeItemList": "Cerrar lista de objetos",
+    "searchItemPlaceholder": "Buscar objetos...",
+    "searchItem": "Buscar objetos",
+    "loadingItems": "Cargando objetos...",
+    "noItemFound": "No se encontraron objetos.",
+    "discardTitle": "¿Descartar los cambios?",
+    "discardDescription": "Has modificado este rango. Si vuelves ahora, los cambios no se guardarán.",
+    "continueEditing": "Seguir editando",
+    "discardAndBack": "Descartar y volver",
+    "searchRolePlaceholder": "Buscar rangos...",
+    "searchRole": "Buscar rangos",
+    "rolesCount": "{0} rangos",
+    "noRoleFound": "No se encontraron rangos.",
+    "itemsCount": "{0} objetos",
+    "configureRoles": "Configurar rangos",
+    "setupPositionFirst": "Establece primero la ubicación del arsenal",
+    "toggleAllRoles": "Activar/Desactivar todos los rangos",
+    "toggleAllRolesDescription": "Activa o desactiva el arsenal para todos los rangos de la facción",
+    "configureRolesDescription": "Kit, cantidades, tiempo de espera y activación/desactivación",
+    "editPosition": "Editar ubicación",
+    "markPosition": "Establecer ubicación del arsenal",
+    "editPositionDescription": "Guarda tu posición actual como la nueva ubicación del arsenal",
+    "markPositionDescription": "Guarda tu posición actual como ubicación del arsenal (máx. 50 m del cuartel general)",
+    "removePosition": "Eliminar ubicación",
+    "removePositionDescription": "Elimina la ubicación — nadie podrá retirar el kit"
+  },
+
+  "utils": [
+    {
+      "button": "CLIC DERECHO",
+      "description": "Usar objeto"
+    },
+    {
+      "button": "SHIFT + CLIC DERECHO",
+      "description": "Usar objeto"
+    },
+    {
+      "button": "SHIFT + CLIC DERECHO",
+      "description": "Usar todos los objetos"
+    },
+    {
+      "button": "BOTÓN IZQUIERDO",
+      "description": "Arrastrar 1 objeto"
+    },
+    {
+      "button": "BOTÓN IZQUIERDO + SHIFT",
+      "description": "Arrastrar todos"
+    },
+    {
+      "button": "1 al 5",
+      "description": "Accesos rápidos"
+    }
+  ],
+  "getAll": "COGER TODO",
+  "getIllegal": "COGER ILEGALES",
+
+  "upgradeInventoryTitle": "Mejora tu inventario",
+  "upgradeInventoryButton": "AUMENTAR ESPACIO",
+
+  "noDescription": "No hay información sobre este objeto.",
+  "priceDesc": "Precio",
+  "quantityDesc": "Cantidad",
+  "stockDesc": "Stock",
+  "weightDesc": "Peso",
+  "economyDesc": "Economía",
+  "expiresInDesc": "Expira en",
+  "durabilityDesc": "Durable por",
+  "rechargeDesc": "Recargable",
+  "nameDesc": "Nombre",
+  "passportDesc": "Pasaporte",
+  "ageDesc": "Edad",
+  "rolepassDesc": "Rolepass",
+  "keyDesc": "Llave",
+  "phoneDesc": "Teléfono",
+  "premiumDesc": "Premium",
+  "suitcaseDesc": "Maleta",
+  "collection": "Colección",
+
+  "days": "días",
+  "day": "día"
+}

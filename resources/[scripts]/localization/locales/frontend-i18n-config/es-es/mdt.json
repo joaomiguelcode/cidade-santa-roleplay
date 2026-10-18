@@ -1,0 +1,178 @@
+{
+  "prisonsAmount": "Detenciones Realizadas",
+  "finesAmount": "Multas Realizadas",
+  "helloLanding": "Hola de nuevo, ",
+
+  "announce": {
+    "title": "Mural de avisos",
+    "create": "Crear anuncio",
+    "modal": {
+      "title": "Crear Anuncio",
+      "placeholder": "Escribe el anuncio aquí...",
+      "confirm": "Confirmar",
+      "close": "Cerrar"
+    }
+  },
+  "selectOption": "Selecciona una opción",
+
+  "noOccurrencesFound": "No se encontraron informes",
+  "editOccurrence": "Editar informe",
+  "saveEdit": "Guardar cambios",
+
+  "loading": "Cargando...",
+  "occurrenceNotFound": "Informe no encontrado",
+
+  "description": "Descripción",
+  "describeOccurrence": "Describe el informe",
+
+  "address": "Dirección",
+  "tax": "Tasa",
+  "model": "Modelo",
+  
+  "return": "Volver",
+
+  "since": {
+    "years": "años {0} atrás",
+    "months": "meses {0} atrás",
+    "days": "días {0} atrás",
+    "hours": "horas {0} atrás",
+    "minutes": "minutos {0} atrás",
+    "seconds": "segundos {0} atrás"
+  },
+
+  "since2": {
+    "years": "años {0}",
+    "months": "meses {0}",
+    "days": "días {0}",
+    "hours": "horas {0}",
+    "minutes": "minutos {0}",
+    "seconds": "segundos {0}"
+  },
+
+  "search": {
+    "title": "Consultar personas",
+    "placeholder": "Buscar por pasaporte...",
+    "status": {
+      "waiting": "Esperando búsqueda...",
+      "searching": "Buscando...",
+      "notFound": "No se encontraron resultados"
+    }
+  },
+  "apprehension": {
+    "title": "Realizar detención",
+    "infos": {
+      "title": "Información básica",
+      "officer": "Oficial",
+      "date": "Fecha y hora",
+      "infractor": "Infractor"
+    },
+    "infractions": {
+      "title": "Infracciones cometidas",
+      "infraction": "Infracción",
+      "finesReduction": "Reducción de Multas",
+      "sentenceReduction": "Reducción de Sentencia",
+      "submit": "Aplicar infracciones"
+    },
+    "description": {
+      "title": "Descripción",
+      "placeholder": "Escribe la descripción de la detención aquí..."
+    },
+    "submit": "Realizar detención"
+  },
+  "fines": {
+    "title": "Realizar multa",
+    "infos": {
+      "title": "Información básica",
+      "officer": "Oficial",
+      "date": "Fecha y hora",
+      "infractor": "Infractor"
+    },
+    "infractions": {
+      "title": "Infracciones cometidas",
+      "infraction": "Infracción",
+      "finesReduction": "Reducción de Multas",
+      "sentenceReduction": "Reducción de Sentencia",
+      "description": {
+        "title": "Descripción",
+        "placeholder": "Escribe la descripción de la multa aquí..."
+      }
+    },
+    "submit": "Realizar multa"
+  },
+  "wanteds": {
+    "title": "Individuos",
+    "notFound": "Ningún usuario está en busca y captura"
+  },
+  "wanted": {
+    "name": "Nombre",
+    "reason": "Buscado por",
+    "officer": "Oficial",
+    "since": "Buscado desde"
+  },
+  "wantedProfile": {
+    "title": "Mural de buscados",
+    "name": "Nombre",
+    "notFound": "Buscado no encontrado",
+    "informations": {
+      "title": "Información",
+      "name": "Nombre",
+      "estate": "Patrimonio",
+      "wanted": "Buscado",
+      "passport": "Pasaporte",
+      "age": "Edad",
+      "hasWeapon": "Porte de Armas"
+    },
+    "options": {
+      "history": "Historial",
+      "vehicles": "Vehículos",
+      "houses": "Residencias"
+    },
+    "table": {
+      "type": "TIPO",
+      "date": "FECHA",
+      "officer": "OFICIAL",
+      "time": "TIEMPO/VALOR",
+      "actions": "ACCIONES"
+    },
+    "modal": {
+      "title": "Iniciar búsqueda",
+      "placeholder": "Escribe el motivo de la búsqueda aquí...",
+      "confirm": "Confirmar",
+      "close": "Cerrar"
+    }
+  },
+
+  "report": {
+    "title": "Informes de Incidentes",
+    "register": "Registrar nuevo informe",
+    "informations": {
+      "title": "Título",
+      "titlePlaceholder": "Escribe el título del informe aquí...",
+      "officer": "Oficial",
+      "date": "Fecha y hora",
+      "infractor": "Infractor",
+      "description": "Descripción",
+      "descriptionPlaceholder": "Escribe la descripción del informe aquí...",
+      "requester": "Solicitante",
+      "suspect": "Sospechoso"
+    },
+    "submit": "Crear informe"
+  },
+
+  "occurrance": {
+    "officer": "Oficial",
+    "requester": "Solicitante",
+    "suspect": "Sospechoso",
+    "status": "Estado",
+    "online": "En línea",
+    "date": "Fecha y hora"
+  },
+
+  "currency": "EUR",
+  "locale": "es-ES",
+  "months": "{0} MESES",
+  "yes": "Sí",
+  "no": "No",
+  "age": "{0} años",
+  "back": "Volver"
+}

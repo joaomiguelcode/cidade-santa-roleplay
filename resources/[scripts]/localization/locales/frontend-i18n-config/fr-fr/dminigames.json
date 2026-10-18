@@ -1,0 +1,708 @@
+{
+  "murder": {
+    "gameEnd": {
+      "victory": "VICTOIRE",
+      "assassin": "ASSASSIN",
+      "assassinWinDesc": "Tout est calme maintenant. Les assassins ont gagné.",
+      "innocents": "INNOCENTS",
+      "innocentsWinDesc": "Les innocents ont survécu ! La justice a prévalu.",
+      "eliminated": "ÉLIMINÉ",
+      "eliminatedDesc": "Vous avez été éliminé et êtes désormais un fantôme.",
+      "gameOver": "JEU TERMINÉ",
+      "matchEnded": "MATCH TERMINÉ",
+      "matchEndedDesc": "Le match est terminé.",
+      "nextMatchIn": "Prochain match dans :",
+      "seconds": "Secondes",
+      "pointsTotal": "Vous avez obtenu un total de",
+      "points": "points",
+      "thisRound": "ce tour !",
+      "useToExit": "Utiliser",
+      "toExitGame": "pour quitter le jeu"
+    },
+    "gamePlay": {
+      "survivor": "SURVIVANT",
+      "detective": "DÉTECTIVE",
+      "assassin": "ASSASSIN",
+      "timeRemaining": "Temps restant",
+      "survivorsRemaining": "Survivants restants :",
+      "ghost": "FANTÔME",
+      "pickupWeapon": "Ramasser l'arme",
+      "useToExit": "Utiliser",
+      "toExitGame": "pour quitter le jeu",
+      "eliminated": "ÉLIMINÉ",
+      "eliminatedDesc": "Vous avez été éliminé et êtes désormais un fantôme."
+    },
+    "roleAssignment": {
+      "survivor": "SURVIVANT",
+      "survivorDesc": "Survivre! L'assassin est en liberté. Cachez-vous et ne faites confiance à personne.",
+      "detective": "DÉTECTIVE",
+      "detectiveDesc": "La ville dépend de vous. Utilisez votre arme pour neutraliser l'assassin.",
+      "assassin": "ASSASSIN",
+      "assassinDesc": "Vous êtes l'ombre. Chassez, surprenez et assurez-vous que personne ne découvre votre identité.",
+      "useToExit": "Utiliser",
+      "toExitGame": "pour quitter le jeu"
+    },
+    "searchingPlayers": {
+      "title": "RECHERCHE DE JOUEURS !",
+      "description": "Nous recherchons des personnes pour jouer à Murder. Veuillez patienter un moment.",
+      "playersMissing": "Joueurs manquants :",
+      "use": "Utiliser",
+      "toStopSearch": "arrêter de chercher"
+    },
+    "pointNotification": {
+      "eliminatedAssassin": "Assassin éliminé",
+      "eliminatedDetective": "Détective éliminé",
+      "pickedWeapon": "Arme ramassée",
+      "survival": "Survie",
+      "eliminatedInnocent": "Innocent éliminé"
+    },
+    "weaponPickupPrompt": {
+      "pickupWeapon": "Ramasser l'arme"
+    }
+  },
+  "scoreboard": {
+    "ranking": "Classement",
+    "neighborRanking": "Classement des quartiers",
+    "desc": "Suivez le classement du {{game}} en temps réel",
+    "neighborDesc": "Suivez le classement des quartiers en temps réel",
+    "id": "IDENTIFIANT",
+    "name": "Nom",
+    "victories": "Victoires",
+    "points": "Points",
+    "likes": "Goûts",
+    "playTime": "Temps de jeu",
+    "previous": "< Précédent",
+    "next": "Suivant >",
+    "bestNeighbor": "Meilleur voisin",
+    "bestPlayer": "Meilleur joueur",
+    "bestNeighborDesc": "Meilleur voisin de la ville",
+    "bestPlayerDesc": "Meilleur joueur {{game}}",
+    "noPlayer": "Aucun joueur"
+  },
+  "pvp": {
+    "bet": {
+      "free": "Sans mise"
+    },
+    "challengeBetConfirm": {
+      "title": "Défi",
+      "challengedBy": "Vous a défié | {{count}} joueurs",
+      "warning": "La mise de cette équipe diffère de la vôtre. Continuer ?",
+      "ownRoom": "Votre salon",
+      "versus": "VS",
+      "totalPot": "Cagnotte totale",
+      "freeSummary": "Aucun montant ne sera débité",
+      "prizeSummary": "La partie utilise la mise la plus basse : {{value}}. Le gagnant remporte {{pot}}.",
+      "cancel": "Annuler",
+      "continue": "Continuer"
+    },
+    "actions": {
+      "alreadyInLobby": "Vous êtes déjà dans un salon",
+      "sideLabel": "Camp",
+      "side": {
+        "attacker": "Attaquant",
+        "defender": "Défenseur"
+      },
+      "creating": "Création...",
+      "loadingOptions": "Chargement des actions...",
+      "loadError": "Impossible de charger les actions.",
+      "emptyOptions": "Aucune action disponible",
+      "retry": "Réessayer",
+      "enterError": "Impossible de rejoindre le salon.",
+      "roomsError": "Impossible de charger les salons.",
+      "emptyRooms": "Aucun salon disponible pour cette action.",
+      "noResults": "Aucun salon trouvé.",
+      "type": {
+        "small": "Petite",
+        "medium": "Moyenne",
+        "large": "Grande"
+      },
+      "title": "Actions",
+      "roomsSubtitle": "Salons disponibles",
+      "catalogSubtitle": "Actions disponibles",
+      "back": "Retour aux actions",
+      "typeLabel": "Type d’action",
+      "enterRoom": "Rejoindre {{name}}",
+      "roomUnavailable": "Salon complet ou vous êtes déjà dans un salon",
+      "lobbyCount": {
+        "one": "1 salon",
+        "other": "{{count}} salons"
+      },
+      "openCard": "Ouvrir {{name}}"
+    },
+    "dominationHint": {
+      "title": "Domination est là !",
+      "description": "Viens conquérir des territoires et gagner des récompenses.",
+      "explore": "Viens voir",
+      "dismiss": "Fermer l’annonce"
+    },
+    "dominationMigration": {
+      "title": "Domination a une nouvelle adresse !",
+      "description": "Rejoins-nous depuis le menu :",
+      "openPvp": "Ouvrir /pvp",
+      "zoneNeutral": "Neutre",
+      "zoneCapturing": "Capture en cours...",
+      "zoneOwned": "Capturée par toi",
+      "confirm": "Compris",
+      "previewReopen": "Revoir le message"
+    },
+    "dominationRespawn": {
+      "previewLabel": "APERÇU · APRÈS LA MORT",
+      "title": "Choisissez où revenir",
+      "killedBy": "Éliminé par",
+      "description": "Votre délai de réanimation est écoulé. Quelle est votre prochaine destination ?",
+      "stay": "RESTER DANS LE MODE",
+      "safeTitle": "Réapparaître en zone sûre",
+      "safeDescription": "Choisissez une base sûre et reprenez la lutte pour les territoires.",
+      "chooseBase": "Choisir une base sûre",
+      "leave": "QUITTER LE MODE",
+      "qgTitle": "Retourner au QG",
+      "qgDescription": "Terminez votre participation et retournez au QG de votre organisation.",
+      "leaveAction": "Quitter Domination",
+      "selectorEyebrow": "DOMINATION · RÉAPPARITION",
+      "selectorTitle": "Où voulez-vous réapparaître ?",
+      "back": "Revenir au choix",
+      "search": "Rechercher une base sûre",
+      "preparing": "Préparation de la réapparition...",
+      "confirmed": "Base sélectionnée",
+      "empty": "Aucune base trouvée",
+      "available": "{total} bases sûres disponibles",
+      "filtered": "{visible} bases sur {total}",
+      "simulation": "SIMULATION DE LA DESTINATION",
+      "qgDestination": "QG de votre organisation",
+      "safeResult": "Vous réapparaîtriez dans cette base et resteriez en Domination.",
+      "qgResult": "Vous quitteriez Domination et retourneriez au QG.",
+      "previewOnly": "Aperçu visuel uniquement. Aucune téléportation effectuée.",
+      "reset": "Revoir les options",
+      "failed": "Impossible de sélectionner la destination."
+    },
+    "dominationStore": {
+      "hint": "Boutique",
+      "spawnsHint": "Points d’apparition",
+      "allProducts": "Tous les produits",
+      "exit": "Quitter le jeu",
+      "title": "Boutique de Gemmes",
+      "subtitle": "Échangez vos gemmes contre des objets exclusifs",
+      "buyGems": "Acheter des gemmes",
+      "cart": "Ouvrir le panier",
+      "close": "Fermer",
+      "categories": "Catégories de la boutique",
+      "categoryHint": "Choisissez une catégorie",
+      "searchPlaceholder": "Rechercher des produits",
+      "searchEmpty": "Aucun produit trouvé dans cette catégorie.",
+      "loading": "Chargement des produits...",
+      "empty": "Aucun produit disponible dans cette catégorie.",
+      "add": "Ajouter",
+      "cartTitle": "Votre Panier",
+      "itemSelected": "article sélectionné",
+      "itemsSelected": "articles sélectionnés",
+      "cartEmpty": "Votre panier est vide",
+      "cartEmptyDescription": "Ajoutez un produit pour continuer.",
+      "total": "Total",
+      "insufficientBalance": "Solde insuffisant.",
+      "processing": "Traitement...",
+      "checkout": "Finaliser l'achat",
+      "purchaseError": "L'achat n'a pas pu être finalisé.",
+      "purchaseSuccess": "Achat effectué avec succès !",
+      "catalogError": "Les produits de la boutique n'ont pas pu être chargés.",
+      "vehicles": "Véhicules",
+      "weapons": "Armes"
+    },
+    "dominationVehicles": {
+      "hint": "Véhicules",
+      "title": "Mes véhicules",
+      "subtitle": "Choisissez un véhicule à sortir dans cette base sûre",
+      "count": "véhicules",
+      "garage": "Garage",
+      "garageHint": "Vérifiez son état avant de le sortir",
+      "searchPlaceholder": "Rechercher par nom, modèle ou plaque",
+      "allVehicles": "Tous les véhicules",
+      "cars": "Voitures",
+      "bikes": "Motos",
+      "others": "Autres",
+      "favorites": "Favoris",
+      "empty": "Aucun véhicule trouvé",
+      "emptyHint": "Modifiez la recherche ou choisissez une autre catégorie.",
+      "unfavorite": "Retirer des favoris",
+      "favorite": "Ajouter aux favoris",
+      "active": "En cours d'utilisation",
+      "engine": "Moteur",
+      "body": "Carrosserie",
+      "fuel": "Carburant",
+      "trunk": "Coffre",
+      "storing": "Rangement...",
+      "retiring": "Sortie...",
+      "store": "Ranger le véhicule",
+      "retire": "Sortir le véhicule"
+    },
+    "home": {
+      "bannerGoToSlide": "Voir la sélection {{index}}",
+      "emptyMinigames": {
+        "title": "Aucun mini-jeu disponible pour le moment...",
+        "descriptionLine1": "Quand des modes seront disponibles,",
+        "descriptionLine2": "ils apparaîtront ici."
+      },
+      "emptyTeams": {
+        "title": "Aucune équipe disponible pour le moment...",
+        "descriptionLine1": "Quand un autre lobby compétitif sera prêt",
+        "descriptionLine2": "pour un défi, il apparaîtra ici."
+      },
+      "title": "Modes de Jeu",
+      "subtitle": "Modes de jeu en vedette",
+      "loadingRooms": "Chargement des salles..."
+    },
+    "challengeTeams": {
+      "emptyTeams": {
+        "title": "Aucune équipe à défier pour le moment...",
+        "descriptionLine1": "Quand une autre équipe sera disponible",
+        "descriptionLine2": "pour un défi, elle apparaîtra ici."
+      },
+      "title": "Défier des Équipes",
+      "subtitle": "Défiez des équipes déjà formées par d autres groupes.",
+      "challenge": "Défier",
+      "status": {
+        "challenged": "Défié",
+        "inMatch": "Match en Cours"
+      },
+      "block": {
+        "emptyTeam": "Une des équipes est sans joueurs.",
+        "maxPlayers": "Les équipes peuvent avoir au maximum 10 joueurs.",
+        "notReady": "Tous les joueurs doivent être prêts."
+      },
+      "error": {
+        "missingChallengeId": "Invitation sans identifiant de défi."
+      },
+      "search": {
+        "emptyTitle": "Aucun résultat...",
+        "emptyDescriptionLine1": "Essayez un autre nom d’équipe",
+        "emptyDescriptionLine2": "ou un autre ID de joueur.",
+        "placeholder": "Rechercher par nom d'équipe ou ID du joueur"
+      },
+      "filter": {
+        "all": "Tous",
+        "wagered": "Mise"
+      }
+    },
+    "common": {
+      "emptyOptions": "Aucune option disponible",
+      "accept": "Accepter",
+      "decline": "Refuser",
+      "enter": "Entrer",
+      "search": "Rechercher",
+      "select": "Sélectionnez",
+      "no": "Non",
+      "yes": "Oui"
+    },
+    "mode": {
+      "timeVsTime": "Équipe contre Équipe"
+    },
+    "header": {
+      "playerAvatarAlt": "Avatar du joueur",
+      "level": "Niveau",
+      "reconnect": "Reconnecter",
+      "ranking": "Classement"
+    },
+    "filters": {
+      "actions": "Actions",
+      "all": "Toutes",
+      "public": "Publique",
+      "private": "Privée",
+      "roomType": "Type de salle",
+      "createLobby": "Créer un Lobby",
+      "competitive": "Compétitif",
+      "tournament": "Tournoi",
+      "pvp": "Modes de jeu",
+      "wagered": "Mise",
+      "minigames": "Minigames"
+    },
+    "lobbySidebar": {
+      "close": "Fermer le salon",
+      "publicRoom": "Salle publique",
+      "privateRoom": "Salle privée",
+      "invite": "Inviter",
+      "roomType": "Type de salle",
+      "public": "Publique",
+      "private": "Privée",
+      "ready": "Prêt",
+      "challengeTeam": "Défier l Équipe",
+      "tournamentRegistered": "Inscrit au Tournoi",
+      "joinTournament": "Participer au Tournoi",
+      "tournamentMinPlayers": "L'équipe doit compter au moins {{count}} joueurs pour participer au tournoi.",
+      "leaveGroup": "Quitter le groupe",
+      "totalPot": "Mise",
+      "editBet": "Modifier la mise"
+    },
+    "createLobby": {
+      "nameMaxError": "Le nom du salon ne peut pas dépasser {{count}} caractères",
+      "title": "Créer un Lobby",
+      "subtitle": "Personnalisez votre lobby avec les paramètres. Cliquez sur Terminer quand vous avez fini.",
+      "roomType": "Type de salle",
+      "public": "Publique",
+      "private": "Privée",
+      "teamName": "Nom de l Équipe",
+      "teamNamePlaceholder": "Ex : Équipe des amis",
+      "nameMinWarning": "Le nom de la salle doit contenir au moins 2 caractères.",
+      "nameMinError": "Le nom de la salle doit contenir au moins 2 caractères",
+      "defaultWeapon": "Fusil",
+      "playersLimit": "Jusqu à {{count}} joueurs",
+      "cancel": "Annuler",
+      "submit": "Terminer",
+      "createError": "Erreur lors de la création du lobby",
+      "betMode": "Mise",
+      "betAmount": "Montant de la mise",
+      "betMinWarning": "La mise minimale est de R$ 100 000.",
+      "betMinError": "La mise minimale est de R$ 100 000.",
+      "betBadge": "Mise {{value}}",
+      "betReserveWarning": "Le montant sera débité de votre compte et réservé jusqu’à la fin du match."
+    },
+    "inviteModal": {
+      "title": "Inviter",
+      "subtitle": "Inviter un joueur au lobby",
+      "playerId": "ID du joueur",
+      "playerIdPlaceholder": "ID",
+      "submit": "Inviter"
+    },
+    "notifyLobbyInvite": {
+      "title": "Invitation",
+      "message": "vous invite au lobby"
+    },
+    "ranking": {
+      "filter": {
+        "gameMode": "Mode de jeu"
+      },
+      "title": "Classement Hebdomadaire",
+      "subtitle": "Liste des joueurs avec les meilleures performances de la semaine",
+      "subtitleOrganizations": "Organisations les plus performantes dans ce mode de jeu",
+      "loading": "Chargement du classement...",
+      "empty": "Aucun joueur trouvé",
+      "emptyOrganizations": "Aucune organisation trouvée",
+      "scopes": {
+        "label": "Type de classement",
+        "players": "Joueurs",
+        "organizations": "Organisations"
+      },
+      "table": {
+        "id": "ID",
+        "name": "Nom",
+        "organization": "Organisation",
+        "victories": "Victoires",
+        "killsDeaths": "Éliminations/Morts",
+        "assists": "Assistances",
+        "assistsRevives": "Assist./Réanim.",
+        "damage": "Dégâts",
+        "kd": "K/D",
+        "gameTime": "Temps",
+        "captures": "Captures",
+        "controlTime": "Contrôle",
+        "score": "Score"
+      },
+      "profile": {
+        "title": "Votre profil",
+        "subtitle": "Analysez votre classement personnel",
+        "score": "Score",
+        "unranked": "Non classé",
+        "empty": "Aucune donnée de classement",
+        "organizationTitle": "Votre organisation",
+        "organizationSubtitle": "Suivez la position de votre organisation",
+        "emptyOrganization": "Votre organisation n'est pas encore classée"
+      },
+      "modes": {
+        "competitive": "Compétitif",
+        "all": "Tous",
+        "ffaRifle": "FFA Fusil",
+        "ffaPistol": "FFA Pistolet",
+        "armedRace": "Course armée",
+        "sniperOnly": "Sniper uniquement",
+        "breakDown": "Descends et casse",
+        "oneVsOne": "1x1",
+        "murder": "Murder",
+        "domination": "Domination"
+      }
+    },
+    "pagination": {
+      "previous": "Précédent",
+      "next": "Suivant"
+    },
+    "mapSelector": {
+      "title": "VOTEZ POUR LA PROCHAINE CARTE",
+      "vote": "{{count}} Vote",
+      "votes": "{{count}} Votes",
+      "voteMap": "Voter pour la carte",
+      "minutesSeconds": "{{minutes}}:{{seconds}}",
+      "seconds": "{{count}} Secondes",
+      "voteError": "Impossible d enregistrer votre vote.",
+      "nextMatchStartingIn": "Prochain match dans",
+      "leaveMatch": "Quitter le match"
+    },
+    "weaponSelector": {
+      "title": "VOTEZ POUR LA PROCHAINE ARME",
+      "vote": "{{count}} Vote",
+      "votes": "{{count}} Votes",
+      "voteWeapon": "Voter pour l'arme",
+      "minutesSeconds": "{{minutes}}:{{seconds}}",
+      "seconds": "{{count}} Secondes",
+      "nextMatchStartingIn": "Prochain match dans",
+      "voteError": "Impossible d'enregistrer votre vote.",
+      "leaveMatch": "Quitter le match"
+    },
+    "killNotification": {
+      "eliminated": "A éliminé",
+      "headshot": "Headshot"
+    },
+    "countdown": {
+      "label": "Démarrage...",
+      "start": "START!",
+      "go": "GO!"
+    },
+    "teamSelection": {
+      "title": "Choisissez une équipe",
+      "subtitle": "Choisissez l’une des quatre équipes disponibles pour rejoindre le mode de jeu.",
+      "play": "Jouer",
+      "blue": "Équipe Bleue",
+      "green": "Équipe Verte",
+      "yellow": "Équipe Jaune",
+      "red": "Équipe Rouge"
+    },
+    "mapVote": {
+      "title": "Votez pour la prochaine carte",
+      "votes": "Votes",
+      "nextMatchIn": "Prochain match dans",
+      "seconds": "Secondes",
+      "exitMatch": "Quitter le match"
+    },
+    "matchStart": {
+      "defaultMap": "Banque Centrale",
+      "defaultMode": "Team vs Team"
+    },
+    "scoreboard": {
+      "player": "Joueur",
+      "kills": "Éliminations",
+      "assists": "Assistances",
+      "deaths": "Morts"
+    },
+    "matchResult": {
+      "victory": "VICTOIRE",
+      "defeat": "DÉFAITE",
+      "kills": "Éliminations",
+      "deaths": "Morts",
+      "assists": "Assistances",
+      "headshot": "Headshot",
+      "points": "Points"
+    },
+    "levelUp": {
+      "title": "Niveau supérieur",
+      "subtitle": "Level"
+    },
+    "hud": {
+      "exitHint": "Quitter le jeu"
+    },
+    "exitMatch": {
+      "title": "Quitter le Match",
+      "description": "Voulez-vous vraiment quitter le match ?",
+      "confirm": "Confirmer",
+      "cancel": "Annuler"
+    },
+    "room": {
+      "wageredMatch": "Partie avec mise",
+      "betMatch": "Match avec mise R$ {{amount}}",
+      "commonMatch": "Match commun",
+      "averagePing": "Ping moyen"
+    },
+    "editBet": {
+      "title": "Modifier la mise",
+      "betAmount": "Montant de la mise",
+      "betMinError": "La mise minimale est de R$ 100 000.",
+      "betMinWarning": "La mise minimale est de R$ 100 000.",
+      "updateError": "Solde insuffisant",
+      "reserveWarning": "Le montant sera ajusté sur votre compte et réservé jusqu’à la fin du match.",
+      "cancel": "Annuler",
+      "submit": "Mettre à jour"
+    },
+    "debug": {
+      "open": "Débogage PvP",
+      "title": "Débogage PvP",
+      "toggleHint": "F9 ouvre ou ferme le menu",
+      "close": "Fermer",
+      "lobbyAllReady": "Salon : tous prêts",
+      "lobbyMissingReady": "Salon : joueurs non prêts",
+      "lobbyTenPlayers": "Salon : 10 joueurs",
+      "playerLevelZero": "Joueur de niveau 0",
+      "playerWithReconnect": "Joueur avec option de reconnexion",
+      "playerWithoutLobby": "Joueur sans salon",
+      "populateLists": "Remplir les listes",
+      "openCreateLobby": "Ouvrir la création de salon",
+      "openPlayerInvite": "Ouvrir l’invitation de joueur",
+      "openChallengeTeams": "Ouvrir les défis d’équipes",
+      "notifyLobbyInvite": "Notifier une invitation au salon",
+      "notifyChallengeInvite": "Notifier une invitation au défi",
+      "openSidebar": "Ouvrir le panneau latéral",
+      "closeSidebar": "Fermer le panneau latéral",
+      "goHome": "Aller à l’accueil",
+      "goActions": "Aller aux actions",
+      "goRanking": "Aller au classement",
+      "populateRanking": "Remplir le classement",
+      "emptyRanking": "Classement vide",
+      "clearRankingMock": "Effacer les données de test du classement",
+      "openMapSelector": "Ouvrir la sélection de carte",
+      "openWeaponSelector": "Ouvrir la sélection d’arme",
+      "openTournament": "Ouvrir le tournoi",
+      "openTournamentReady": "Ouvrir le tournoi prêt",
+      "openTournamentRegistrationAdmin": "Ouvrir les inscriptions du tournoi (admin)",
+      "openTournamentRegistrationPlayer": "Ouvrir les inscriptions du tournoi (joueur)"
+    },
+    "tournament": {
+      "mountBracket": "Créer le Tableau",
+      "registrationOpenTitle": "Tournoi actif - inscriptions ouvertes",
+      "registrationOpenDescription": "Crée ton équipe pour participer. Le tableau apparaîtra au lancement du tournoi.",
+      "createTeam": "Créer Une Équipe",
+      "modal": {
+        "teamQuantity": "Nombre d'equipes",
+        "teamQuantityHint": "Definit la taille du tableau du tournoi",
+        "teamQuantityUnit": "equipes",
+        "nextStep": "Étape Suivante",
+        "activateTournament": "Activer Le Tournoi",
+        "mountingBracket": "Création...",
+        "selectPrizeItem": "Sélectionner un objet",
+        "searchPrizeItem": "Chercher un objet",
+        "noPrizeItems": "Aucun objet trouvé",
+        "selectPrizeItemHint": "Choisis un objet dans la liste",
+        "itemPrizeType": "Objet",
+        "editDescription": "Mettez à jour les paramètres du tournoi actif",
+        "saving": "Enregistrement...",
+        "saveChanges": "Enregistrer les modifications",
+        "activating": "Activation...",
+        "allTeamsPositioned": "Toutes les équipes disponibles sont déjà positionnées.",
+        "availableTeams": "Équipes disponibles",
+        "availableTeamsHint": "Faites glisser une équipe vers une place du tableau.",
+        "back": "Retour",
+        "cancel": "Annuler",
+        "decreaseItemPrize": "Réduire la quantité",
+        "defaultMoneyPrize": "$100 000",
+        "defaultName": "Tournoi PvP",
+        "deleteTeam": "Supprimer l'Équipe",
+        "dragHintPrefix": "Utilisez",
+        "dragHintSuffix": "pour faire glisser et déposer une équipe à l'emplacement souhaité",
+        "dropTeam": "Déposer l'Équipe",
+        "dropTeamHint": "Faites glisser une équipe vers cette place",
+        "finish": "Terminer",
+        "finishing": "Création...",
+        "increaseItemPrize": "Augmenter la quantité",
+        "itemPrize": "Récompense en Objets",
+        "itemPrizeQuantity": "Quantité de l'objet",
+        "moneyPrize": "Récompense en Argent",
+        "moneyPrizeHint": "{{value}} pour chaque joueur de l'équipe. Débité du compte du chef d'équipe.",
+        "moneyPrizePlaceholder": "$100 000",
+        "mountBracketDescription": "Sélectionnez et positionnez les équipes inscrites au tournoi.",
+        "mountBracketTitle": "Créer le Tableau",
+        "next": "Suivant",
+        "noTeamsToSelect": "Aucune équipe prête n'est disponible à la sélection.",
+        "organizeDescription": "Créez et organisez un tournoi avec des équipes prêtes",
+        "organizeTitle": "Organiser le Tournoi",
+        "playersCount": "{{count}} Joueurs",
+        "randomize": "Mélanger",
+        "roundsHint": "La première équipe à remporter le nombre de manches gagne",
+        "roundsPlaceholder": "Entre 13 et 25",
+        "roundsQuantity": "Nombre de Manches",
+        "searchTeam": "Rechercher",
+        "weaponSelect": "Sélectionner",
+        "weaponSelected": "Sélectionné",
+        "zoomHintPrefix": "Utilisez",
+        "zoomHintSuffix": "pour zoomer ou dézoomer"
+      },
+      "ending": "Clôture...",
+      "confirmEndLiveTitle": "Terminer le tournoi",
+      "confirmEndLiveQuestion": "Voulez-vous terminer le tournoi en cours ?",
+      "activeName": "Tournoi de {{weapon}}",
+      "activeSectionSubtitle": "Consultez toutes les équipes qui participent au tournoi.",
+      "activeSectionTitle": "Tournoi Actif",
+      "activeStatus": "Tournoi Actif",
+      "closeRegistrations": "Fermer les Inscriptions",
+      "confrontation": "Affrontement {{count}}",
+      "create": "Créer un Tournoi",
+      "defaultWeapon": "Fusil",
+      "edit": "Modifier le Tournoi",
+      "emptyDescription": "Attendez la création d'un tournoi pour voir le tableau",
+      "emptyTeam": "En attente d'une équipe",
+      "emptyTitle": "Aucun tournoi disponible pour le moment...",
+      "endTournament": "Terminer le Tournoi",
+      "goToLiveMatch": "Accéder au match en direct {{count}}",
+      "live": "En Direct",
+      "matchInProgress": "En cours",
+      "noLiveDescription": "Attendez le lancement d'un tournoi pour regarder un match",
+      "noLiveMatch": "En attente d'un affrontement",
+      "noLiveTitle": "Aucun tournoi en direct...",
+      "noResult": "Pas encore de résultat !",
+      "openRegistrations": "Ouvrir les Inscriptions",
+      "prize": "Récompense",
+      "registeredTeams": "Équipes Inscrites",
+      "registrationClosedDescription": "Attendez le début du tournoi. Le tableau apparaîtra ici lorsqu'un match commencera.",
+      "registrationClosedTitle": "Tournoi actif · inscriptions fermées",
+      "registrationsClosed": "Inscriptions Fermées",
+      "registrationsOpen": "Inscriptions Ouvertes",
+      "rounds": "Manches",
+      "startMatch": "Lancer l'Affrontement",
+      "awaitingValidation": "En attente de validation",
+      "manageMatch": "Gérer l'affrontement",
+      "match": "Affrontement",
+      "round": "Manche",
+      "currentScore": "Score actuel",
+      "currentScoreHint": "Consultez le score actuel en temps réel",
+      "changeScore": "Modifier le score",
+      "changeScoreHint": "La modification s'applique au redémarrage de la manche",
+      "pendingScoreChanges": "Modifications en attente",
+      "noPendingScoreChanges": "Aucune modification en attente",
+      "applyingMatchChanges": "Application...",
+      "applyAndRestartRound": "Appliquer et relancer la manche",
+      "updatingMatch": "Mise à jour...",
+      "resumeMatch": "Reprendre",
+      "pauseMatch": "Mettre en pause",
+      "advanceWinner": "Faire avancer le vainqueur",
+      "superviseMatch": "Superviser",
+      "configureMatch": "Configurer l'affrontement",
+      "decreaseTeamScore": "Diminuer le score de {{team}}",
+      "teamScore": "Score de {{team}}",
+      "increaseTeamScore": "Augmenter le score de {{team}}",
+      "startTournament": "Lancer le Tournoi",
+      "startingTournament": "Lancement...",
+      "subtitle": "Tableau de toutes les équipes participantes",
+      "title": "Tableau",
+      "updatingRegistrations": "Mise à jour...",
+      "vs": "VS",
+      "waitingTeam": "En attente d'une équipe",
+      "watchMatch": "Regarder le Match",
+      "weaponLabel": "Arme",
+      "zoomIn": "Zoomer",
+      "zoomOut": "Dézoomer",
+      "weapon": {
+        "rifle": "Fusil",
+        "rifleSubtitle": "Assault Carbine MK2",
+        "pistol": "Pistolet",
+        "pistolSubtitle": "Combat Pistol MK2"
+      }
+    }
+  },
+  "neighbor": {
+    "searchingPlayers": {
+      "title": "RECHERCHE DE JOUEURS !",
+      "description": "Nous cherchons des joueurs pour Voisinage. Merci de patienter.",
+      "searching": "Recherche de joueurs",
+      "playersMissing": "Joueurs manquants : ",
+      "use": "Utilisez",
+      "toStopSearch": "pour arrêter la recherche",
+      "you": "Vous"
+    }
+  },
+  "prophunt": {
+    "searchingPlayers": {
+      "title": "RECHERCHE DE JOUEURS !",
+      "description": "Nous cherchons des joueurs pour Prophunt. Merci de patienter.",
+      "playersMissing": "Joueurs manquants : ",
+      "use": "Utilisez",
+      "toStopSearch": "pour arrêter la recherche"
+    }
+  },
+  "uno": {
+    "searchingPlayers": {
+      "title": "RECHERCHE DE JOUEURS !"
+    }
+  }
+}

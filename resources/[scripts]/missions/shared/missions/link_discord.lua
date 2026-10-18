@@ -1,0 +1,16 @@
+-- DEFINE_MISSION "link_discord" {
+-- 	group = eMissionGroup.Connect,
+-- 	order = 1,
+-- 	name = _t("mission.link_discord.name"),
+-- 	description = _t("mission.link_discord.description"),
+-- 	icon = "https://cdn.santagroup.gg/onboarding/discord.svg",
+-- 	dependencies = {},
+-- 	flags = eMissionFlags.BLOCK_INVENTORY_INTERACTION | eMissionFlags.BLOCK_VEHICLE_INTERACTION,
+-- 	auto_activate = true,
+-- 	rewards = {
+-- 		skills = { social = 50 },
+-- 	},
+-- 	metadata = {
+-- 		hook = "missions:hook:discord_linked",
+-- 	},
+-- }

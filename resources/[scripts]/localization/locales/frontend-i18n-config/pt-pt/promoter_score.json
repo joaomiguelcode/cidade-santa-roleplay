@@ -1,0 +1,31 @@
+{
+  "old": {
+    "title": "De 1 a 10, o quanto recomendaria a cidade <br/> a um amigo ou familiar?"
+  },
+  "org": {
+    "title": "De 1 a 10, o quanto recomendaria esta <br/> organização/facção a um amigo ou familiar?"
+  },
+  "player": {
+    "title": "De 1 a 10, o quanto recomendaria a cidade <br/> a um amigo ou familiar?"
+  },
+
+  "title": "Que nota daria a este atendimento?",
+  "feedbackShort": "Deixe aqui a sua opinião sobre o atendimento",
+  "send": "Enviar",
+  "thanks": "Obrigado por responder!",
+
+  "thenQuestion": "Justifique sua nota sobre o jogador",
+  "question": "De 1 a 10, o quanto esse jogador é gente boa?",
+
+  "because": "Porque deu esta nota?",
+
+  "page": {
+    "counter": "Pergunta"
+  },
+  "navigation": {
+    "cancel": "Cancelar",
+    "back": "Voltar",
+    "nextStep": "Próxima Pergunta",
+    "complete": "Enviar Avaliação"
+  }
+}

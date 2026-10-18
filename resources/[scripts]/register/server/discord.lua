@@ -1,0 +1,1 @@
+-- Register server module: discord.lua

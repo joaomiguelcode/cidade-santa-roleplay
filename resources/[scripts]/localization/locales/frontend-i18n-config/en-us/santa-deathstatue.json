@@ -1,0 +1,52 @@
+{
+  "eventHud": {
+    "greenLight": "GREEN LIGHT",
+    "greenAction": "RUN!",
+    "redLight": "RED LIGHT",
+    "redAction": "STOP!",
+    "rankingTitle": "RANKING",
+    "rankingSubtitle": "Current event score",
+    "roundsLabel": "Rounds",
+    "exitUse": "Press",
+    "exitHint": "to leave the game",
+    "pointsSuffix": "pts",
+    "rankSuffix": "#",
+    "timeRemaining": "Time Remaining"
+  },
+  "estatuaMortal": {
+    "exitUse": "Press",
+    "exitHint": "to leave the game",
+    "logo": "Santa",
+    "rankSuffix": "#",
+    "lobby": {
+      "players": "Players",
+      "startingIn": "starting in"
+    },
+    "tutorial": {
+      "name": "Game Leader",
+      "skip": "to skip dialogue",
+      "text": "The game is a corridor where all players must reach the other side. However, nobody can move while the light is red, only when it is green. Good luck to everyone and have fun!"
+    },
+    "result": {
+      "title": "Deadly Statue",
+      "subtitle": "This was the final result of every participant in the statue game.",
+      "close": "Close",
+      "colResult": "Result",
+      "colTime": "Time"
+    },
+    "ranking": {
+      "title": "Deadly Statue Ranking",
+      "subtitle": "Follow the Deadly Statue ranking in real time",
+      "best": "Best Player",
+      "bestSub": "Best Deadly Statue player",
+      "colId": "ID",
+      "colName": "Name",
+      "colPoints": "Points",
+      "colTime": "Play Time",
+      "colWins": "Wins",
+      "empty": "No players on the ranking yet",
+      "next": "Next",
+      "previous": "Previous"
+    }
+  }
+}

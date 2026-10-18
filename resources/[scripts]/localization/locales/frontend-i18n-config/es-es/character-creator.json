@@ -1,0 +1,168 @@
+{
+  "welcome": "Bienvenido",
+  "create_your_character": "Crea tu personaje",
+  "name": "Nombre",
+  "last_name": "Apellido",
+  "age": "Edad",
+  "character_gender": "Género del personaje",
+  "male": "Masculino",
+  "female": "Femenino",
+  "creating": "Creando...",
+  "next": "Siguiente",
+  "where_did_find_us": "¿Dónde nos encontraste?",
+  "which_social_media": "¿Qué red social?",
+  "friend_id_optional": "ID de amigo (opcional)",
+  "error_creating_character": "Error al crear personaje",
+  "cancel": "Cancelar",
+  "apply": "Aplicar",
+  "finish": "Finalizar",
+  "loading": "Cargando...",
+  "previous": "Volver",
+  "rotate_character": "Girar personaje",
+  "action": {
+    "zoom_in_out": "Acercar/Alejar zoom"
+  },
+  "appearance": {
+    "export": {
+      "generating_code": "Generando código...",
+      "title": "Exportar apariencia",
+      "description": "Copia el código del preset actual"
+    },
+    "finish": {
+      "title": "Crear personaje",
+      "description": "¿Seguro que quieres finalizar la creación del personaje? También puedes copiar el código de apariencia del personaje."
+    },
+    "import": {
+      "code": "Código del preset",
+      "title": "Importar apariencia",
+      "description": "Pega el código del preset deseado",
+      "code_placeholder": "Introduce el código del preset"
+    },
+    "title": {
+      "creating": "Creación de personaje",
+      "editing": "Edición de personaje"
+    },
+    "groups": {
+      "aspect": "Aspecto",
+      "bodySpots": "Manchas del cuerpo",
+      "cheek": "Mejilla",
+      "chin": "Mentón",
+      "eyebrows": "Cejas",
+      "eyes": "Ojos",
+      "fur": "Vello",
+      "gender": "Género",
+      "jaw": "Mandíbula",
+      "kinship": "Parentesco",
+      "makeup": "Maquillaje",
+      "mouth": "Boca",
+      "nose": "Nariz",
+      "options": "Opciones",
+      "parentColors": "Colores de los padres"
+    },
+    "options": {
+      "ageing": "Envejecimiento",
+      "beard": "Barba",
+      "blemishes": "Manchas de piel",
+      "blush": "Colorete",
+      "bodyHair": "Vello corporal",
+      "bodySpot1": "Mancha",
+      "cheekBonesHeight": "Altura de los pómulos",
+      "cheekBonesWidth": "Anchura de los pómulos",
+      "chinFormat": "Forma del mentón",
+      "chinLength": "Longitud del mentón",
+      "chinPosition": "Posición del mentón",
+      "chinWidth": "Anchura del mentón",
+      "eyebrows": "Cejas",
+      "eyebrowsDepth": "Profundidad de las cejas",
+      "eyebrowsHeight": "Altura de las cejas",
+      "eyeColor": "Color de ojos",
+      "eyeGap": "Separación de los ojos",
+      "hair": "Cabello",
+      "hairSecondary": "Color secundario del cabello",
+      "jawBoneHeight": "Altura de la mandíbula",
+      "jawBoneWidth": "Anchura de la mandíbula",
+      "lipstick": "Pintalabios",
+      "lipThickness": "Grosor de los labios",
+      "makeup": "Maquillaje",
+      "molesFreckles": "Lunares y pecas",
+      "noseCurve": "Curvatura de la nariz",
+      "noseHeight": "Altura de la nariz",
+      "noseLength": "Longitud de la nariz",
+      "noseTip": "Punta de la nariz",
+      "noseWidth": "Anchura de la nariz",
+      "parent1Color": "Color del padre 1",
+      "parent2Color": "Color del padre 2",
+      "similarity": "Parecido",
+      "skinTone": "Tono de piel",
+      "sunDamage": "Daño solar"
+    },
+    "description": {
+      "creating": "Crea tu personaje como quieras",
+      "editing": "Edita tu personaje como quieras"
+    }
+  },
+  "colorSelector": {
+    "description": "Selecciona el color deseado",
+    "opacity": "Opacidad",
+    "title": "Colores"
+  },
+  "kinship": {
+    "select_father": "Seleccionar padre",
+    "select_mother": "Seleccionar madre",
+    "selector": {
+      "description": "Selecciona el primer pariente",
+      "title": "Parentesco"
+    }
+  },
+  "presets": {
+    "description": "Selecciona el preset deseado",
+    "randomize": "Aleatorizar personaje",
+    "title": "Presets de apariencia"
+  },
+  "criminal_spawn": {
+    "title": "Rama criminal",
+    "subtitle": "¿Dónde quieres empezar?",
+    "faction": {
+      "title": "Directo en la facción",
+      "description": "Empiezas en la entrada de la sede de la facción que está reclutando ahora",
+      "badge": "INICIO MÁS RÁPIDO"
+    },
+    "pier": {
+      "title": "En el muelle",
+      "description": "Empiezas en el muelle principal y encuentras gente que te reciba"
+    },
+    "confirm": "Confirmar",
+    "close": "Cerrar"
+  },
+  "validation": {
+    "firstNameMin": "El nombre debe tener al menos 3 caracteres.",
+    "firstNameMax": "El nombre debe tener como máximo {0} caracteres.",
+    "firstNameNoSpaces": "El campo Nombre no puede contener espacios.",
+    "firstNameLettersOnly": "Usa solo letras.",
+    "firstNameRepeat": "El nombre contiene muchas letras repetidas.",
+    "firstNameInvalid": "Ingresa un nombre válido.",
+    "lastNameMin": "El apellido debe tener al menos 3 caracteres.",
+    "lastNameMax": "El apellido debe tener como máximo {0} caracteres.",
+    "lastNameLettersOnly": "El apellido debe contener solo letras.",
+    "lastNameRepeat": "El apellido contiene muchas letras repetidas.",
+    "lastNameInvalid": "Ingresa un nombre válido.",
+    "duplicateNames": "El nombre y el apellido no pueden ser iguales.",
+    "nameNoSymbols": "No uses números ni símbolos.",
+    "ageRequired": "La edad es obligatoria.",
+    "ageOnlyNumbers": "Usa solo números.",
+    "ageMin": "La edad mínima es 18 años.",
+    "ageMax": "La edad debe ser menor que 100 años.",
+    "ageMaxChars": "Máximo 2 caracteres.",
+    "influencerCouponMax": "Máximo de 20 caracteres.",
+    "influencerCouponFormat": "Solo letras y números, sin espacios ni caracteres especiales.",
+    "influencerCouponInvalid": "Cupón de Influencer inválido."
+  },
+  "origin_options": {
+    "fivem_list": "Lista de FiveM",
+    "influencer": "Influencer",
+    "friend_referral": "Recomendación de amigo",
+    "social_media": "Redes sociales",
+    "other": "Otros"
+  },
+  "influencer_coupon_optional": "Cupón de Influencer (opcional)"
+}

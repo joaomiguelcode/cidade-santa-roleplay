@@ -1,0 +1,1 @@
+AFK_PLAYER_STATEBAG_KEY = 'player-afk'

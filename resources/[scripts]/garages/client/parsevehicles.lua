@@ -1,0 +1,5 @@
+RegisterCommand("parsevehicles",function()
+    local VehiclesConfig = VehicleGlobal()
+    local vehiclesModels = GetAllVehicleModels()
+    TriggerServerEvent("garages:parseVehicles",vehiclesModels)
+end)

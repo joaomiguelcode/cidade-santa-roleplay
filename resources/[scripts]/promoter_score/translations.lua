@@ -1,0 +1,190 @@
+lang = GetConvar("language", "pt-br") or "pt-br"
+
+translations = {
+    ["en-us"] = {
+        ["admin_question_1"] = "Your issue wasn't resolved? How about explaining your feedback better?",
+        ["admin_question_2"] = "Your issue wasn't resolved? How about explaining your feedback better?",
+        ["admin_question_3"] = "Your issue wasn't resolved? How about explaining your feedback better?",
+        ["admin_question_4"] = "Your issue wasn't resolved? How about explaining your feedback better?",
+        ["admin_question_5"] = "Your issue wasn't resolved? How about explaining your feedback better?",
+        ["admin_question_6"] = "Your issue wasn't resolved? How about explaining your feedback better?",
+        ["admin_question_7"] = "How about leaving your feedback for city improvement?",
+        ["admin_question_8"] = "How about leaving your feedback for city improvement?",
+        ["admin_question_9"] = "Was your issue resolved? How about giving us feedback on the service?",
+        ["admin_question_10"] = "Was your issue resolved? How about giving us feedback on the service?",
+        ["default_question_1"] = "What do you think needs improvement in the city?",
+        ["default_question_2"] = "What do you think needs improvement in the city?",
+        ["default_question_3"] = "What do you think needs improvement in the city?",
+        ["default_question_4"] = "What do you think needs improvement in the city?",
+        ["default_question_5"] = "What do you think needs improvement in the city?",
+        ["default_question_6"] = "What do you think needs improvement in the city?",
+        ["default_question_7"] = "How about leaving your feedback for city improvement?",
+        ["default_question_8"] = "How about leaving your feedback for city improvement?",
+        ["default_question_9"] = "What made you decide to stay in the city?",
+        ["default_question_10"] = "What made you decide to stay in the city?",
+        ["rateCity"] = "Would you like to rate the city?",
+    },
+    ["pt-br"] = {
+        ["admin_question_1"] = "Seu problema não foi resolvido? Que tal explicar melhor seu feedback?",
+        ["admin_question_2"] = "Seu problema não foi resolvido? Que tal explicar melhor seu feedback?",
+        ["admin_question_3"] = "Seu problema não foi resolvido? Que tal explicar melhor seu feedback?",
+        ["admin_question_4"] = "Seu problema não foi resolvido? Que tal explicar melhor seu feedback?",
+        ["admin_question_5"] = "Seu problema não foi resolvido? Que tal explicar melhor seu feedback?",
+        ["admin_question_6"] = "Seu problema não foi resolvido? Que tal explicar melhor seu feedback?",
+        ["admin_question_7"] = "Que tal deixar seu feedback para melhoria da cidade?",
+        ["admin_question_8"] = "Que tal deixar seu feedback para melhoria da cidade?",
+        ["admin_question_9"] = "Seu problema foi resolvido? Que tal nos deixar um feedback do atendimento?",
+        ["admin_question_10"] = "Seu problema foi resolvido? Que tal nos deixar um feedback do atendimento?",
+        ["default_question_1"] = "O que precisa melhorar na cidade na sua opnião?",
+        ["default_question_2"] = "O que precisa melhorar na cidade na sua opnião?",
+        ["default_question_3"] = "O que precisa melhorar na cidade na sua opnião?",
+        ["default_question_4"] = "O que precisa melhorar na cidade na sua opnião?",
+        ["default_question_5"] = "O que precisa melhorar na cidade na sua opnião?",
+        ["default_question_6"] = "O que precisa melhorar na cidade na sua opnião?",
+        ["default_question_7"] = "Que tal deixar seu feedback para melhoria da cidade?",
+        ["default_question_8"] = "Que tal deixar seu feedback para melhoria da cidade?",
+        ["default_question_9"] = "O que foi que te fez ficar definitivamente na cidade?",
+        ["default_question_10"] = "O que foi que te fez ficar definitivamente na cidade?",
+        ["rateCity"] = "Gostaria de avaliar a cidade?",
+    },
+
+    ["fr-fr"] = {
+        ["admin_question_1"] = "Votre problème n'a pas été résolu ? Souhaitez-vous expliquer mieux votre retour ?",
+        ["admin_question_2"] = "Votre problème n'a pas été résolu ? Souhaitez-vous expliquer mieux votre retour ?",
+        ["admin_question_3"] = "Votre problème n'a pas été résolu ? Souhaitez-vous expliquer mieux votre retour ?",
+        ["admin_question_4"] = "Votre problème n'a pas été résolu ? Souhaitez-vous expliquer mieux votre retour ?",
+        ["admin_question_5"] = "Votre problème n'a pas été résolu ? Souhaitez-vous expliquer mieux votre retour ?",
+        ["admin_question_6"] = "Votre problème n'a pas été résolu ? Souhaitez-vous expliquer mieux votre retour ?",
+        ["admin_question_7"] = "Souhaitez-vous laisser votre avis pour améliorer la ville ?",
+        ["admin_question_8"] = "Souhaitez-vous laisser votre avis pour améliorer la ville ?",
+        ["admin_question_9"] = "Votre problème a-t-il été résolu ? Souhaitez-vous nous laisser un avis sur le service ?",
+        ["admin_question_10"] = "Votre problème a-t-il été résolu ? Souhaitez-vous nous laisser un avis sur le service ?",
+        ["default_question_1"] = "Qu'est-ce qui pourrait être amélioré dans la ville selon vous ?",
+        ["default_question_2"] = "Qu'est-ce qui pourrait être amélioré dans la ville selon vous ?",
+        ["default_question_3"] = "Qu'est-ce qui pourrait être amélioré dans la ville selon vous ?",
+        ["default_question_4"] = "Qu'est-ce qui pourrait être amélioré dans la ville selon vous ?",
+        ["default_question_5"] = "Qu'est-ce qui pourrait être amélioré dans la ville selon vous ?",
+        ["default_question_6"] = "Qu'est-ce qui pourrait être amélioré dans la ville selon vous ?",
+        ["default_question_7"] = "Souhaitez-vous laisser votre avis pour améliorer la ville ?",
+        ["default_question_8"] = "Souhaitez-vous laisser votre avis pour améliorer la ville ?",
+        ["default_question_9"] = "Qu'est-ce qui vous a fait rester définitivement en ville ?",
+        ["default_question_10"] = "Qu'est-ce qui vous a fait rester définitivement en ville ?",
+        ["rateCity"] = "Souhaitez-vous évaluer la ville ?",
+    },
+
+    ["pt-pt"] = {
+        ["admin_question_1"] = "O seu problema não foi resolvido? Que tal explicar melhor o seu feedback?",
+        ["admin_question_2"] = "O seu problema não foi resolvido? Que tal explicar melhor o seu feedback?",
+        ["admin_question_3"] = "O seu problema não foi resolvido? Que tal explicar melhor o seu feedback?",
+        ["admin_question_4"] = "O seu problema não foi resolvido? Que tal explicar melhor o seu feedback?",
+        ["admin_question_5"] = "O seu problema não foi resolvido? Que tal explicar melhor o seu feedback?",
+        ["admin_question_6"] = "O seu problema não foi resolvido? Que tal explicar melhor o seu feedback?",
+        ["admin_question_7"] = "Que tal deixar o seu feedback para a melhoria da cidade?",
+        ["admin_question_8"] = "Que tal deixar o seu feedback para a melhoria da cidade?",
+        ["admin_question_9"] = "O seu problema foi resolvido? Que tal nos deixar um feedback sobre o atendimento?",
+        ["admin_question_10"] = "O seu problema foi resolvido? Que tal nos deixar um feedback sobre o atendimento?",
+        ["default_question_1"] = "O que precisa melhorar na cidade, na sua opinião?",
+        ["default_question_2"] = "O que precisa melhorar na cidade, na sua opinião?",
+        ["default_question_3"] = "O que precisa melhorar na cidade, na sua opinião?",
+        ["default_question_4"] = "O que precisa melhorar na cidade, na sua opinião?",
+        ["default_question_5"] = "O que precisa melhorar na cidade, na sua opinião?",
+        ["default_question_6"] = "O que precisa melhorar na cidade, na sua opinião?",
+        ["default_question_7"] = "Que tal deixar o seu feedback para a melhoria da cidade?",
+        ["default_question_8"] = "Que tal deixar o seu feedback para a melhoria da cidade?",
+        ["default_question_9"] = "O que foi que o fez ficar definitivamente na cidade?",
+        ["default_question_10"] = "O que foi que o fez ficar definitivamente na cidade?",
+        ["rateCity"] = "Gostaria de avaliar a cidade?",
+    },
+    ["es-es"] = {
+        ["admin_question_1"] = "¿Tu problema no fue resuelto? ¿Qué tal si explicas mejor tu opinión?",
+        ["admin_question_2"] = "¿Tu problema no fue resuelto? ¿Qué tal si explicas mejor tu opinión?",
+        ["admin_question_3"] = "¿Tu problema no fue resuelto? ¿Qué tal si explicas mejor tu opinión?",
+        ["admin_question_4"] = "¿Tu problema no fue resuelto? ¿Qué tal si explicas mejor tu opinión?",
+        ["admin_question_5"] = "¿Tu problema no fue resuelto? ¿Qué tal si explicas mejor tu opinión?",
+        ["admin_question_6"] = "¿Tu problema no fue resuelto? ¿Qué tal si explicas mejor tu opinión?",
+        ["admin_question_7"] = "¿Qué tal si dejas tu opinión para mejorar la ciudad?",
+        ["admin_question_8"] = "¿Qué tal si dejas tu opinión para mejorar la ciudad?",
+        ["admin_question_9"] = "¿Tu problema fue resuelto? ¿Qué tal si nos dejas tu opinión sobre la atención?",
+        ["admin_question_10"] = "¿Tu problema fue resuelto? ¿Qué tal si nos dejas tu opinión sobre la atención?",
+        ["default_question_1"] = "¿Qué necesita mejorar en la ciudad en tu opinión?",
+        ["default_question_2"] = "¿Qué necesita mejorar en la ciudad en tu opinión?",
+        ["default_question_3"] = "¿Qué necesita mejorar en la ciudad en tu opinión?",
+        ["default_question_4"] = "¿Qué necesita mejorar en la ciudad en tu opinión?",
+        ["default_question_5"] = "¿Qué necesita mejorar en la ciudad en tu opinión?",
+        ["default_question_6"] = "¿Qué necesita mejorar en la ciudad en tu opinión?",
+        ["default_question_7"] = "¿Qué tal si dejas tu opinión para mejorar la ciudad?",
+        ["default_question_8"] = "¿Qué tal si dejas tu opinión para mejorar la ciudad?",
+        ["default_question_9"] = "¿Qué fue lo que te hizo quedarte definitivamente en la ciudad?",
+        ["default_question_10"] = "¿Qué fue lo que te hizo quedarte definitivamente en la ciudad?",
+        ["rateCity"] = "¿Te gustaría evaluar la ciudad?",
+    },
+
+    ["de-de"] = {
+        ["admin_question_1"] = "Dein Problem wurde nicht gelöst? Wie wäre es, dein Feedback genauer zu erklären?",
+        ["admin_question_2"] = "Dein Problem wurde nicht gelöst? Wie wäre es, dein Feedback genauer zu erklären?",
+        ["admin_question_3"] = "Dein Problem wurde nicht gelöst? Wie wäre es, dein Feedback genauer zu erklären?",
+        ["admin_question_4"] = "Dein Problem wurde nicht gelöst? Wie wäre es, dein Feedback genauer zu erklären?",
+        ["admin_question_5"] = "Dein Problem wurde nicht gelöst? Wie wäre es, dein Feedback genauer zu erklären?",
+        ["admin_question_6"] = "Dein Problem wurde nicht gelöst? Wie wäre es, dein Feedback genauer zu erklären?",
+        ["admin_question_7"] = "Wie wäre es mit deinem Feedback zur Verbesserung der Stadt?",
+        ["admin_question_8"] = "Wie wäre es mit deinem Feedback zur Verbesserung der Stadt?",
+        ["admin_question_9"] = "Wurde dein Problem gelöst? Wie wäre es mit Feedback zum Service?",
+        ["admin_question_10"] = "Wurde dein Problem gelöst? Wie wäre es mit Feedback zum Service?",
+        ["default_question_1"] = "Was könnte deiner Meinung nach in der Stadt verbessert werden?",
+        ["default_question_2"] = "Was könnte deiner Meinung nach in der Stadt verbessert werden?",
+        ["default_question_3"] = "Was könnte deiner Meinung nach in der Stadt verbessert werden?",
+        ["default_question_4"] = "Was könnte deiner Meinung nach in der Stadt verbessert werden?",
+        ["default_question_5"] = "Was könnte deiner Meinung nach in der Stadt verbessert werden?",
+        ["default_question_6"] = "Was könnte deiner Meinung nach in der Stadt verbessert werden?",
+        ["default_question_7"] = "Wie wäre es mit deinem Feedback zur Verbesserung der Stadt?",
+        ["default_question_8"] = "Wie wäre es mit deinem Feedback zur Verbesserung der Stadt?",
+        ["default_question_9"] = "Was hat dich dazu gebracht, in der Stadt zu bleiben?",
+        ["default_question_10"] = "Was hat dich dazu gebracht, in der Stadt zu bleiben?",
+        ["rateCity"] = "Möchtest du die Stadt bewerten?",
+    },
+
+    ["ar-sa"] = {
+        ["admin_question_1"] = "لم يتم حل مشكلتك؟ ما رأيك في شرح ملاحظاتك بشكل أفضل؟",
+        ["admin_question_2"] = "لم يتم حل مشكلتك؟ ما رأيك في شرح ملاحظاتك بشكل أفضل؟",
+        ["admin_question_3"] = "لم يتم حل مشكلتك؟ ما رأيك في شرح ملاحظاتك بشكل أفضل؟",
+        ["admin_question_4"] = "لم يتم حل مشكلتك؟ ما رأيك في شرح ملاحظاتك بشكل أفضل؟",
+        ["admin_question_5"] = "لم يتم حل مشكلتك؟ ما رأيك في شرح ملاحظاتك بشكل أفضل؟",
+        ["admin_question_6"] = "لم يتم حل مشكلتك؟ ما رأيك في شرح ملاحظاتك بشكل أفضل؟",
+        ["admin_question_7"] = "ما رأيك في ترك ملاحظاتك لتحسين المدينة؟",
+        ["admin_question_8"] = "ما رأيك في ترك ملاحظاتك لتحسين المدينة؟",
+        ["admin_question_9"] = "هل تم حل مشكلتك؟ ما رأيك في إعطائنا ملاحظات حول الخدمة؟",
+        ["admin_question_10"] = "هل تم حل مشكلتك؟ ما رأيك في إعطائنا ملاحظات حول الخدمة؟",
+        ["default_question_1"] = "ما الذي تعتقد أنه يحتاج إلى تحسين في المدينة؟",
+        ["default_question_2"] = "ما الذي تعتقد أنه يحتاج إلى تحسين في المدينة؟",
+        ["default_question_3"] = "ما الذي تعتقد أنه يحتاج إلى تحسين في المدينة؟",
+        ["default_question_4"] = "ما الذي تعتقد أنه يحتاج إلى تحسين في المدينة؟",
+        ["default_question_5"] = "ما الذي تعتقد أنه يحتاج إلى تحسين في المدينة؟",
+        ["default_question_6"] = "ما الذي تعتقد أنه يحتاج إلى تحسين في المدينة؟",
+        ["default_question_7"] = "ما رأيك في ترك ملاحظاتك لتحسين المدينة؟",
+        ["default_question_8"] = "ما رأيك في ترك ملاحظاتك لتحسين المدينة؟",
+        ["default_question_9"] = "ما الذي جعلك تقرر البقاء في المدينة؟",
+        ["default_question_10"] = "ما الذي جعلك تقرر البقاء في المدينة؟",
+        ["rateCity"] = "هل تود تقييم المدينة؟",
+    }
+}
+
+---@param key string The translation key to check
+---@return boolean Returns true if translation exists, false otherwise
+function CheckTranslation(key)
+    if translations[lang][key] then
+        return true
+    else
+        print("[DEBUG] Translation not found for key: " .. key.. " - Lang: " .. lang)
+        return false
+    end
+end
+
+---@param key string The translation key to retrieve
+---@return string Returns the translated string or error message
+function _t(key)
+    if CheckTranslation(key) then
+        return translations[lang][key]
+    else
+        return "Translation not found for key: " .. key.. " - Lang: " .. lang
+    end
+end

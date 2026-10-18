@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Tattoo Shop NUI - Browser Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: #1a1a1a;
+            color: white;
+        }
+        .demo-controls {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            background: rgba(0,0,0,0.8);
+            padding: 15px;
+            border-radius: 8px;
+            z-index: 10000;
+        }
+        .demo-controls h3 {
+            margin: 0 0 10px 0;
+            color: #3B82F6;
+        }
+        .demo-controls button {
+            background: #3B82F6;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            margin: 5px 0;
+            border-radius: 4px;
+            cursor: pointer;
+            display: block;
+            width: 100%;
+        }
+        .demo-controls button:hover {
+            background: #2563EB;
+        }
+        .resolution-info {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            background: rgba(0,0,0,0.8);
+            padding: 15px;
+            border-radius: 8px;
+            z-index: 10000;
+            font-family: monospace;
+            font-size: 12px;
+        }
+        iframe {
+            width: 100%;
+            height: 100vh;
+            border: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+        .viewport-simulator {
+            position: fixed;
+            bottom: 10px;
+            left: 10px;
+            background: rgba(0,0,0,0.8);
+            padding: 15px;
+            border-radius: 8px;
+            z-index: 10000;
+        }
+        .viewport-simulator select {
+            background: #333;
+            color: white;
+            border: 1px solid #555;
+            padding: 5px;
+            border-radius: 4px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="demo-controls">
+        <h3>🎮 NUI Demo</h3>
+        <button onclick="openNUI()">Abrir Interface</button>
+        <button onclick="closeNUI()">Fechar Interface</button>
+        <button onclick="resetNUI()">Reset Tatuagens</button>
+    </div>
+
+    <div class="resolution-info">
+        <strong>📊 Informações da Tela</strong><br>
+        Resolução: <span id="resolution">0x0</span><br>
+        Escala Base: <span id="baseScale">0</span><br>
+        Escala Wide: <span id="wideScale">0</span><br>
+        Fator Final: <span id="finalScale">0</span><br>
+        <br>
+        <strong>Responsive Units:</strong><br>
+        1vh = <span id="vhValue">0</span>px<br>
+        --unit-4 = <span id="unit4Value">0</span>px
+    </div>
+
+    <div class="viewport-simulator">
+        <strong>🖥️ Simular Resolução:</strong><br>
+        <select id="resolutionSelect" onchange="changeResolution()">
+            <option value="1920x1080">1920x1080 (Full HD)</option>
+            <option value="1366x768">1366x768 (HD)</option>
+            <option value="1280x720">1280x720 (HD Ready)</option>
+            <option value="2560x1440">2560x1440 (2K)</option>
+            <option value="3840x2160">3840x2160 (4K)</option>
+            <option value="1600x900">1600x900</option>
+            <option value="1440x900">1440x900</option>
+        </select>
+    </div>
+
+    <iframe id="nuiFrame" src="index.html"></iframe>
+
+    <script>
+        function updateResolutionInfo() {
+            const width = window.innerWidth;
+            const height = window.innerHeight;
+            const baseScale = height / 1080;
+            const wideScale = width / 1920;
+            const finalScale = Math.min(baseScale, wideScale);
+            const vhValue = height / 100;
+            const unit4Value = 4 * vhValue;
+
+            document.getElementById('resolution').textContent = `${width}x${height}`;
+            document.getElementById('baseScale').textContent = baseScale.toFixed(3);
+            document.getElementById('wideScale').textContent = wideScale.toFixed(3);
+            document.getElementById('finalScale').textContent = finalScale.toFixed(3);
+            document.getElementById('vhValue').textContent = vhValue.toFixed(2);
+            document.getElementById('unit4Value').textContent = unit4Value.toFixed(2);
+        }
+
+        function openNUI() {
+            const iframe = document.getElementById('nuiFrame');
+            iframe.contentWindow.postMessage({
+                open: true,
+                shop: {
+                    head: { tattoo: [
+                        { name: "head_tattoo_1" },
+                        { name: "head_tattoo_2" },
+                        { name: "head_tattoo_3" }
+                    ]},
+                    torso: { tattoo: [
+                        { name: "torso_tattoo_1" },
+                        { name: "torso_tattoo_2" },
+                        { name: "torso_tattoo_3" }
+                    ]},
+                    leftarm: { tattoo: [
+                        { name: "leftarm_tattoo_1" },
+                        { name: "leftarm_tattoo_2" }
+                    ]},
+                    rightarm: { tattoo: [
+                        { name: "rightarm_tattoo_1" },
+                        { name: "rightarm_tattoo_2" }
+                    ]},
+                    leftleg: { tattoo: [
+                        { name: "leftleg_tattoo_1" }
+                    ]},
+                    rightleg: { tattoo: [
+                        { name: "rightleg_tattoo_1" }
+                    ]},
+                    hair: { tattoo: [
+                        { name: "hair_tattoo_1" }
+                    ]}
+                },
+                tattoo: {}
+            }, '*');
+        }
+
+        function closeNUI() {
+            const iframe = document.getElementById('nuiFrame');
+            iframe.contentWindow.postMessage({
+                open: false
+            }, '*');
+        }
+
+        function resetNUI() {
+            const iframe = document.getElementById('nuiFrame');
+            // Simula o reset
+        }
+
+        function changeResolution() {
+            const select = document.getElementById('resolutionSelect');
+            const [width, height] = select.value.split('x').map(Number);
+
+            // Simula mudança de resolução redimensionando a janela
+            // Em um ambiente real, isso seria controlado pelo sistema
+            alert(`Resolução selecionada: ${width}x${height}\n\nEm um ambiente real, o sistema responsivo se adaptaria automaticamente a esta resolução.\n\nO sistema atual está calculando:\n- Base Scale: ${height/1080}\n- Wide Scale: ${width/1920}\n- Factor: ${Math.min(height/1080, width/1920)}`);
+        }
+
+        // Atualiza informações quando a janela redimensiona
+        window.addEventListener('resize', updateResolutionInfo);
+
+        // Atualiza informações iniciais
+        updateResolutionInfo();
+
+        // Auto-abre a NUI após 1 segundo
+        setTimeout(openNUI, 1000);
+    </script>
+</body>
+</html>

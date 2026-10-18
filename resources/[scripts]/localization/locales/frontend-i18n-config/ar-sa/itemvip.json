@@ -1,0 +1,11 @@
+{
+  "common": {
+    "closeLabel": "إغلاق", "backLabel": "رجوع", "slotSelected": "تم الاختيار", "quantityOne": "{amount}x وحدة", "quantityOther": "{amount}x وحدات", "badgePermanent": "دائم", "badgeTemporaryOne": "مؤقت لمدة {days} يوم", "badgeTemporaryOther": "مؤقت لمدة {days} أيام", "swapCountdown": "الوقت المتبقي للتبديل", "statusPermanent": "دائم", "statusTemporary": "مؤقت", "dialogTitle": "تنبيه", "dialogCancel": "إلغاء", "dialogConfirm": "تأكيد", "duplicateLine2": "سيتم جمع مدد الاستخدام.", "conflictTemporary": "مؤقت", "conflictAnd": " و", "conflictPermanent": "دائم", "testDrive": "تجربة قيادة", "successButton": "إنهاء", "emptyButton": "إنهاء"
+  },
+  "item": {
+    "slotsTitle": "استرداد العناصر", "slotsSubtitle": "استرد عنصر VIP الخاص بك هنا!", "slotLabel": "العنصر رقم {ordinal}", "slotButton": "اختيار العنصر", "slotSwap": "تبديل العنصر", "slotUnselected": "لم يتم اختيار عنصر", "confirmAll": "استرداد العناصر", "duplicateLine1": "لقد اخترت العنصر نفسه في عمليتي استرداد.", "duplicateNotice": "ستحصل على نسخة واحدة فقط من العنصر.", "conflictBefore": "لا يمكن اختيار العنصر نفسه كـ", "conflictAfter": ". غيّر العنصر في أحد الخيارات أعلاه.", "selectionTitle": "استرداد العنصر رقم {ordinal}", "selectionSubtitle": "اختر العنصر رقم {ordinalLower} الذي ترغب في استرداده", "confirmSelection": "تأكيد العنصر", "successTitle": "تم استرداد العناصر!", "successText": "تهانينا! لقد استرددت عناصر VIP الخاصة بك.\nاستمتع باستكشاف المدينة مع إنجازك الجديد!", "emptyTitle": "العناصر غير متاحة!", "emptyText": "لا توجد لديك عناصر VIP لاستردادها في الوقت الحالي."
+  },
+  "ordinals": ["١", "٢", "٣", "٤", "٥", "٦", "٧", "٨", "٩", "١٠"],
+  "ordinalsLower": ["١", "٢", "٣", "٤", "٥", "٦", "٧", "٨", "٩", "١٠"],
+  "ordinalFallback": "{n}"
+}

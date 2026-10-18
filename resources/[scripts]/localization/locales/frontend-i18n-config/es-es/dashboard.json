@@ -1,0 +1,2635 @@
+{
+    "matchPanel": {
+        "historyLoaded": "matches cargados",
+        "historyMore": "Cargar más",
+        "historyEnd": "Fin del historial de este filtro",
+        "title": "Panel del Match",
+        "subtitle": "Seguimiento en vivo · solo Admin 1 y Admin 2",
+        "tabs": {
+            "matches": "En match",
+            "queue": "En cola",
+            "history": "Historial"
+        },
+        "kinds": {
+            "iniciante": "Principiante",
+            "novato": "Novato",
+            "veterano": "Veterano",
+            "unknown": "Sin identificar"
+        },
+        "results": {
+            "completed": "Completado",
+            "skipped": "Saltado",
+            "expired": "Vencido",
+            "staff_cancel": "Cancelado por el equipo",
+            "legacy": "Registro anterior"
+        },
+        "genders": {
+            "male": "Masculino",
+            "female": "Femenino",
+            "unknown": "No informado"
+        },
+        "empty": {
+            "matches": "No hay parejas en match ahora",
+            "queue": "Nadie está buscando match ahora",
+            "history": "No hay matches en el historial"
+        },
+        "periods": {
+            "today": "Hoy",
+            "yesterday": "Ayer",
+            "week": "7 días",
+            "fortnight": "14 días",
+            "custom": "Personalizado"
+        },
+        "errors": {
+            "forbidden": "No tienes permiso para abrir el Panel del Match",
+            "unavailable": "Panel no disponible. Inténtalo de nuevo.",
+            "classification_unavailable": "Clasificación no disponible.",
+            "history_unavailable": "No se pudo cargar el historial.",
+            "narrow_period": "Demasiados resultados. Elige un período más corto.",
+            "target_unavailable": "El jugador o match ya no está disponible.",
+            "leave_minigame": "Sal de tu experiencia antes de usar TP o Espectar.",
+            "rate_limit": "Espera un momento e inténtalo de nuevo.",
+            "invalid_period": "Elige un período válido de hasta un año.",
+            "closed": "Panel cerrado. Abre /painelmatch de nuevo."
+        },
+        "search": "Buscar por nombre o ID...",
+        "close": "Cerrar panel",
+        "return": "Volver a mi posición",
+        "spec": "Espectar",
+        "stop": "Dejar de espectar",
+        "cancel": "Cancelar match",
+        "back": "Volver",
+        "confirm": "¿Cancelar este match?",
+        "confirmText": "Ambos vuelven al mundo normal, en sus posiciones anteriores, y el match termina.",
+        "visible": "Visible",
+        "hidden": "Oculto",
+        "new": "NUEVO",
+        "period": "PERÍODO",
+        "from": "Desde",
+        "until": "hasta",
+        "loading": "Cargando...",
+        "retry": "Reintentar",
+        "session": "sesión",
+        "actions": "Acciones",
+        "updated": "En vivo: actualizado hace",
+        "offline": "Actualización interrumpida",
+        "matchTime": "Tiempo en match",
+        "queueTime": "En cola",
+        "player": "Jugador",
+        "type": "Tipo",
+        "gender": "Género",
+        "card": "Carta",
+        "when": "Cuándo",
+        "duration": "Duración",
+        "result": "Resultado",
+        "inHouse": "Estás en la casa de",
+        "visiting": "Estás junto a",
+        "spectating": "Espectando",
+        "ended": "Match terminado.",
+        "returned": "volvieron al mundo",
+        "pairTotal": "parejas en match",
+        "queueTotal": "jugadores en cola",
+        "historyTotal": "matches en historial"
+    },
+
+    "ban": {
+        "common": {
+            "cancel": "Cancelar",
+            "continue": "Continuar",
+            "sending": "Enviando..."
+        },
+        "warnGate": {
+            "title": "Atención",
+            "bodyBefore": "Estás a punto de sancionar a un usuario",
+            "bodyHighlight": "muy relevante para la comunidad",
+            "bodyAfter": ". ¿Seguro que deseas continuar?",
+            "evidenceNotice": "Al continuar, deberás adjuntar las pruebas en {0}. La falta de pruebas supondrá una sanción para ti."
+        },
+        "modalStaff": {
+            "title": "Confirmar sanción",
+            "playerIdLabel": "ID DEL JUGADOR",
+            "playerIdPlaceholder": "Ej.: 152",
+            "reasonLabel": "MOTIVO",
+            "reasonPlaceholder": "Selecciona el motivo",
+            "descriptionLabel": "DESCRIPCIÓN DETALLADA",
+            "descriptionPlaceholder": "Describe lo ocurrido con el mayor detalle posible...",
+            "minChars": "Mínimo de {0} caracteres",
+            "evidenceNotice": "Deberás adjuntar las pruebas en suporte.santagroup.gg. La falta de pruebas supondrá una sanción para ti."
+        },
+        "acessoRestrito": {
+            "eyebrow": "SANCIÓN APLICADA",
+            "title": "ACCESO RESTRINGIDO",
+            "subtitle": "Tu acceso a la ciudad ha sido restringido. Introduce tu correo electrónico para generar el enlace de tu ticket y seguir el caso.",
+            "emailLabel": "INTRODUCE TU CORREO ELECTRÓNICO",
+            "emailPlaceholder": "tucorreo@ejemplo.com",
+            "generate": "Generar enlace del ticket",
+            "generating": "Generando...",
+            "invalidEmail": "Introduce un correo electrónico válido.",
+            "apiError": "No se pudo enviar el correo ahora. Inténtalo de nuevo en unos instantes.",
+            "errors": {
+                "TICKET_NOT_FOUND": "El ticket aún no se ha creado en el portal. Pide al equipo que revise la configuración del servidor.",
+                "UNREGISTERED_STAFF": "El miembro del equipo que aplicó la sanción no está registrado en el portal de soporte de esta ciudad.",
+                "ALREADY_LINKED": "Este baneo ya está vinculado a otro correo electrónico. Usa «Cambiar correo» para corregirlo.",
+                "UNKNOWN_CITY": "Esta ciudad no está configurada en el portal.",
+                "UNAUTHORIZED": "La clave de API (FIVEM_API_KEY) no existe o no es válida.",
+                "FIVEM_API_KEY_MISSING": "La clave de API (FIVEM_API_KEY) no está configurada en el servidor.",
+                "EMAIL_SEND_FAILED": "No se pudo enviar el correo de acceso. Inténtalo de nuevo en unos instantes.",
+                "CREATE_TICKET_FAILED": "No se pudo abrir el ticket en el portal. Inténtalo de nuevo en unos instantes.",
+                "BAN_CLAIM_FAILED": "No se pudo vincular tu correo al ticket. Inténtalo de nuevo en unos instantes.",
+                "VALIDATION_ERROR": "Los datos para abrir el ticket no son válidos. El equipo debe revisar la sanción.",
+                "INTERNAL_ERROR": "Error interno en el portal de soporte. Inténtalo de nuevo en unos instantes."
+            },
+            "checkEmailSubtitle": "Hemos enviado un enlace de acceso a tu correo. Ábrelo para entrar en el ticket y seguir la disputa.",
+            "checkEmailLabel": "REVISA TU CORREO",
+            "checkEmailBody": "Abre la bandeja de entrada (y la carpeta de spam) del correo indicado y pulsa el enlace mágico para acceder a tu ticket en el portal de soporte.",
+            "checkEmailNotice": "Este aviso solo desaparecerá cuando completes el inicio de sesión en el sitio web. No cierres el juego antes de abrir el enlace.",
+            "readyLabel": "TU TICKET ESTÁ LISTO",
+            "generatedForBefore": "Enlace de apelación generado para",
+            "generatedForAfter": ".",
+            "copy": "Copiar enlace del ticket",
+            "copied": "¡Enlace copiado!",
+            "wrongEmail": "¿Correo incorrecto?",
+            "changeEmail": "Cambiar correo",
+            "infoNotice": "Quien aplicó la sanción dispone de hasta 1 hora para adjuntar las pruebas. Puedes seguirlo todo desde el enlace de tu ticket."
+        },
+        "statusProvas": {
+            "aguardando": {
+                "badge": "Pendiente",
+                "title": "A LA ESPERA DE PRUEBAS",
+                "description": "El equipo todavía está adjuntando las pruebas. En cuanto se envíen, el ticket quedará disponible para la disputa. Si no se adjuntan en 60 minutos, se retirará la restricción."
+            },
+            "analise": {
+                "badge": "En revisión",
+                "title": "SANCIÓN EN REVISIÓN",
+                "description": "Las pruebas se han adjuntado y el ticket está en revisión. Presenta tu justificación y tus contrapruebas directamente en el ticket."
+            },
+            "mantido": {
+                "badge": "Baneo confirmado",
+                "title": "TU ACCESO ESTÁ RESTRINGIDO",
+                "description": "No puedes acceder a la ciudad, pero aún puedes abrir un nuevo ticket en el sitio web para presentar una apelación."
+            },
+            "restabelecido": {
+                "title": "ACCESO RESTABLECIDO",
+                "description": "Tu acceso ha sido restablecido. Haz clic en «Continuar» para ir al punto de aparición."
+            },
+            "countdownLabel": {
+                "aguardando": "TIEMPO ESTIMADO",
+                "analise": "TIEMPO ESTIMADO DE RESOLUCIÓN"
+            },
+            "goToTicket": "Ir al ticket"
+        }
+    },
+    "telagem": {
+        "common": {
+            "cancel": "Cancelar",
+            "sending": "Enviando..."
+        },
+        "modalStaff": {
+            "title": "Confirmar revisión",
+            "body": "Estás a punto de solicitar una revisión de la cuenta de este jugador. Confirma los datos antes de continuar.",
+            "playerIdLabel": "ID DEL JUGADOR",
+            "playerIdPlaceholder": "Ej.: 152",
+            "descriptionLabel": "DESCRIPCIÓN DETALLADA",
+            "descriptionPlaceholder": "Describe lo ocurrido con el mayor detalle posible...",
+            "minChars": "Mínimo de {0} caracteres",
+            "notice": "Nota: el jugador será convocado a una llamada de voz con el equipo. Si sale del juego, la cuenta se suspenderá temporalmente.",
+            "submit": "Solicitar revisión"
+        },
+        "revisaoSolicitada": {
+            "eyebrow": "CUENTA EN REVISIÓN",
+            "title": "REVISIÓN SOLICITADA",
+            "subtitle": "Debido a análisis internos recientes, tu cuenta ha sido marcada como sospechosa. Acude a una llamada de voz con nuestro equipo para presentar tus explicaciones.",
+            "cta": "Ir a la llamada de voz",
+            "noticeLabel": "ATENCIÓN:",
+            "notice": "Si sales del juego ahora, tu cuenta será suspendida temporalmente."
+        },
+        "secureQuit": {
+            "badge": "Salida segura",
+            "title": "PUEDES SALIR DEL JUEGO",
+            "description": "El procedimiento está en curso y puedes salir del juego de forma segura sin ningún tipo de sanción.",
+            "cta": "Ir al canal de atención"
+        }
+    },
+    "calls": {
+        "header": {
+            "title": "Central de Ayuda"
+        },
+        "current": {
+            "title": "Tu llamada",
+            "staffIsComing": "¡Un miembro del staff ya está en camino!",
+            "tryFinding": "Intenta buscar un lugar alejado de otras personas para ser atendido.",
+            "averageWaitingTime": "Tiempo medio de espera:",
+            "cancel": "Para cancelar la llamada",
+            "cancelConfirmation": "¿Realmente deseas cancelar esta llamada?",
+            "yes": "Sí",
+            "no": "No",
+            "accepted": "¡Tu llamada ha sido aceptada!",
+            "important": "Importante:",
+            "attention": "Activa y presta atención al audio del juego para escuchar las instrucciones."
+        },
+        "home": {
+            "notFound": "¿No encontraste lo que buscabas? Abre una llamada con nuestro equipo.",
+            "administration": "Administración",
+            "salesSupport": "Soporte de ventas",
+            "paramedic": "Paramédico",
+            "police": "Policía",
+            "mechanic": "Mecánico",
+            "lawyer": "Abogado",
+            "searchPlaceholder": "Buscar"
+        },
+        "new": {
+            "descriptionError": "Por favor, describe el problema antes de enviar",
+            "descriptionErrorLimit": "La descripción excede el límite de caracteres",
+            "title": "Nueva Llamada",
+            "description": "Selecciona el tipo de llamada que deseas abrir.",
+            "warning": "Aviso",
+            "descriptionPlaceholder": "Describe el problema",
+            "send": "Enviar solicitud",
+            "cancel": "Cancelar"
+        },
+        "review": {
+            "header": {
+                "title": "Evalúa el servicio"
+            },
+            "howWouldYouRate": "¿Cómo calificarías nuestro servicio?",
+            "howWouldYouRateDesc": "De 0 a 10, ¿qué probabilidad hay de que recomiendes nuestro servicio a otro jugador?",
+            "notSatisfied": "Nada satisfecho",
+            "satisfied": "Satisfecho",
+            "feedback": "¿Quieres dejar un comentario?",
+            "feedbackPlaceholder": "Describe el problema",
+            "send": "Enviar evaluación",
+            "cancel": "Cancelar"
+        }
+    },
+    "dashboard": {
+        "calendar": {
+            "clear": "Limpiar",
+            "apply": "Aplicar",
+            "weekdays": [
+                "Do",
+                "Lu",
+                "Ma",
+                "Mi",
+                "Ju",
+                "Vi",
+                "Sá"
+            ],
+            "months": [
+                "Enero",
+                "Febrero",
+                "Marzo",
+                "Abril",
+                "Mayo",
+                "Junio",
+                "Julio",
+                "Agosto",
+                "Septiembre",
+                "Octubre",
+                "Noviembre",
+                "Diciembre"
+            ]
+        },
+        "toast": {
+            "copied": "¡Copiado!",
+            "copyFailed": "Error al copiar"
+        },
+        "navbar": {
+            "wallstreet": "Wallstreet",
+            "tickets": {
+                "wallstreet": "Llamadas Wallstreet",
+                "admin": "Llamadas Admin",
+                "health": "Llamadas Paramédico",
+                "police": "Llamadas Policía",
+                "mechanic": "Llamadas Mecánico",
+                "lawyer": "Llamadas Abogado",
+                "purchases": "Llamadas Compras"
+            },
+            "groups": "Grupos",
+            "suspects": "Sospechosos",
+            "rdm": "RDM",
+            "retention": "Retención WS",
+            "purchases": "Compras",
+            "customers": "Clientes",
+            "ranking": {
+                "title": "Ranking",
+                "calls": "Llamadas",
+                "rdm": "RDM"
+            },
+            "affiliates": {
+                "title": "Afiliados",
+                "personal": "Ventas Personales",
+                "list": "Afiliados",
+                "management": "Gestión",
+                "customers": "Clientes"
+            }
+        },
+        "header": {
+            "rules": {
+                "wallstreet": "REGLAS WALLSTREET",
+                "folder": "REGLAS CARPETA"
+            }
+        },
+        "followers": {
+            "header": {
+                "title": "Wallstreet"
+            },
+            "subtitle": "Retención Wallstreet",
+            "searchPlaceholder": "Buscar por nombre, ID o grupo",
+            "table": {
+                "id": "ID",
+                "name": "Nombre",
+                "quantity": "Cantidad",
+                "after1day": "Después de 1 día",
+                "after2days": "Después de 2 días",
+                "after3days": "Después de 3 días"
+            }
+        },
+        "groups": {
+            "header": {
+                "title": "Grupos"
+            },
+            "worlds": {
+                "1": "NORMAL",
+                "2": "GUERRA",
+                "5": "TOXICO",
+                "6": "EVENTO",
+                "7": "SAFE",
+                "8": "DOMINACAO",
+                "9": "PRIMARIA",
+                "10": "SECUNDARIA",
+                "11": "TERCIARIA",
+                "12": "INVASAOFUZIL",
+                "13": "FOTOGRAFIA",
+                "20": "WORLDPVP",
+                "25": "ROYALE"
+            },
+            "tabs": {
+                "normal": "Grupos Normales",
+                "suspects": "Grupos Sospechosos"
+            },
+            "suspects": {
+                "title": "Grupos Sospechosos",
+                "status": { "new": "Nuevo", "suspect": "Sospechoso" },
+                "searchPlaceholder": "Buscar por nombre o ID",
+                "noResults": "No se encontraron grupos sospechosos",
+                "table": {
+                    "id": "ID",
+                    "name": "Nombre",
+                    "tracking": "Horas",
+                    "hoursPlayed": "Horas",
+                    "score": "Puntuación",
+                    "lastEvent": "Último Evento",
+                    "world": "Mundo",
+                    "discord": "Discord",
+                    "status": "Estado",
+                    "actions": "Acciones",
+                    "spectateAll": "Espectar Todos",
+                    "noSuspectsFound": "No se encontraron sospechosos",
+                    "toxicity": "Toxicidad",
+                    "punishment": "Sanción",
+                    "punishmentMute": "Mute {{minutes}} min",
+                    "punishmentIsland": "Isla, válida hasta {{date}}",
+                    "dayPoints": "día {{points}}"
+                },
+                "actions": {
+                    "teleport": "Teleportar",
+                    "view": "Espectar",
+                    "copyId": "Copiar ID",
+                    "cancel": "Eliminar",
+                    "ban": "Banear",
+                    "banConfirm": {
+                        "title": "¿Banear sospechoso?",
+                        "description": "El jugador será baneado automáticamente por \"No pasó la WL\". Esta acción no se puede deshacer.",
+                        "notice": "El baneo se registra con el motivo \"No pasó la WL\".",
+                        "confirm": "Banear",
+                        "cancel": "Cancelar"
+                    }
+                },
+                "row": {
+                    "none": "Ninguno",
+                    "na": "N/A",
+                    "noName": "Sin nombre",
+                    "noEvent": "Sin evento",
+                    "viewScore": "Ver Puntuación",
+                    "suspiciousDiscord": "Discord sospechoso",
+                    "yes": "Sí",
+                    "no": "No",
+                    "status": {
+                        "high": "Alto",
+                        "medium": "Medio",
+                        "low": "Bajo"
+                    },
+                    "tooltips": {
+                        "rdm": "Muerte de jugador desarmado",
+                        "early_kill": "Kills excesivas",
+                        "effort_none": "Sin personalización detectada",
+                        "effort_low": "Pocos cambios en la personalización",
+                        "vdm": "Atropelló/mató con vehículo",
+                        "collisions": "Colisiones excesivas",
+                        "shots_fired_streak": "Disparos excesivos",
+                        "reports": "Reportes excesivos",
+                        "in_discord_cheater_server": "Servidor de cheats",
+                        "banned_other_city": "Banido en otra ciudad",
+                        "new_discord": "Discord sospechoso",
+                        "none": "Sin eventos sospechosos detectados"
+                    },
+                    "eventLabels": {
+                        "toxicity_mute_1": "Silenciado por toxicidad",
+                        "toxicity_mute_2": "Silenciado por toxicidad",
+                        "toxicity_island": "Isla por toxicidad",
+                        "rdm": "RDM",
+                        "early_kill": "Kill",
+                        "effort_none": "Cust. ZERO",
+                        "effort_low": "Low Cust.",
+                        "vdm": "VDM",
+                        "collisions": "Collisions",
+                        "shots_fired_streak": "Shots",
+                        "reports": "Reports",
+                        "in_discord_cheater_server": "Servidor de cheats",
+                        "banned_other_city": "Banido en otra ciudad",
+                        "new_discord": "Discord sospechoso",
+                        "none": "Sin eventos sospechosos detectados",
+                        "good_behaviour": "Buen Comportamiento",
+                        "voice_discrimination": "Voz: discriminación",
+                        "voice_sexual": "Voz: sexual",
+                        "voice_harassment": "Voz: acoso",
+                        "voice_illicit": "Voz: ilícito",
+                        "voice_romantic": "Voz: romántico",
+                        "voice_profanity": "Voz: palabrotas",
+                        "warning_attention": "Aviso: atención",
+                        "warning_last": "Último aviso",
+                        "mute_1": "Mute 25 min (nivel 1)",
+                        "mute_2": "Mute 40 min (nivel 2)",
+                        "island_3": "Isla 12h (nivel 3)",
+                        "cap_island": "Tope del día: isla 12h",
+                        "cap_ban": "Tope del día: ban",
+                        "cleared": "Sanción eliminada",
+                        "revert_voice_stt_test": "Reversión (prueba de voz)",
+                        "addsalev1": "Venta realizada",
+                        "agentsalecompletedv1": "Venta realizada",
+                        "agentsale_completedv1": "Venta realizada",
+                        "leadagentagentsalecompletedv1": "Venta realizada por Agente",
+                        "leadagentagent_sale_completedv1": "Venta realizada por Afiliado",
+                        "agentsale_completed_price_gte_1500": "Venta por encima de R$1.500,00",
+                        "agentsale_completed_price_gte_2000": "Venta por encima de R$2.000,00",
+                        "agentsale_completed_price_gte_3000": "Venta por encima de R$3.000,00",
+                        "addsaleover500v1": "Venta superior a R$500",
+                        "addsaleover1000v1": "Venta superior a R$1.000",
+                        "addsaleover2000v1": "Venta superior a R$2.000",
+                        "addsaleover5000v1": "Venta superior a R$5.000",
+                        "addsale5ofdayv1": "Alcanzó 5 ventas en el día",
+                        "addsale10ofdayv1": "Alcanzó 10 ventas en el día",
+                        "addsalefirstofdayv1": "Primera venta del día",
+                        "addsalenewcustomerv1": "Venta a cliente nuevo",
+                        "addsalepreferentialcustomerv1": "Venta a cliente preferencial",
+                        "teleporttoclientv1": "Dar TP en compra por F1",
+                        "movimentedareav1": "Entró en área segura/movimentada",
+                        "notclientv1": "Nunca compró nada",
+                        "notclientv2": "Completó horas mínimas",
+                        "vipexpiringv1": "VIP a punto de vencer (≤ 3 días)",
+                        "addcustomersalebasev1": "Compra",
+                        "customersale_spent_less_than_or_equal_to_20_reaisv1": "Gastó hasta R$20",
+                        "customersale_spent_more_than_20_reaisv1": "Gastó más de R$20",
+                        "importedpurchased": "Gastos importados",
+                        "importedpurchasedonprofilesignedin": "Gastos importados al iniciar sesión",
+                        "customerscoredecaydaily": "Decaimiento diario",
+                        "agentscoredecaydelay": "Decaimiento de puntuación por retraso",
+                        "agentscoredecayweekly": "Decaimiento semanal",
+                        "leadagentaddsalev1": "Venta realizada por Afiliado",
+                        "leadagentaddsaleover500v1": "Venta superior a R$500 por Afiliado",
+                        "leadagentaddsaleover1000v1": "Venta superior a R$1.000 por Afiliado",
+                        "leadagentaddsaleover2000v1": "Venta superior a R$2.000 por Afiliado",
+                        "leadagentaddsaleover5000v1": "Venta superior a R$5.000 por Afiliado",
+                        "leadagentaddsalenewcustomerv1": "Venta a cliente nuevo por Afiliado",
+                        "createpurchaseticketv1": "Abrió ticket de ventas",
+                        "enterroyalev1": "Participó en evento importante",
+                        "enterorganizationv1": "Forma parte de organización activa",
+                        "salegreater20tebexv1": "Gastó hasta R$20 en la tienda",
+                        "salegreater20v1": "Gastó más de R$20",
+                        "openstorehubv1": "Hizo clic en la tienda desde el Hub",
+                        "trybuyvoucherhousev1": "Intentó comprar casa sin voucher",
+                        "subtractcustomerfirstpurchasev1": "Primera Compra",
+                        "activevipv1": "VIP activo",
+                        "activevipv2": "VIP activo (v2)",
+                        "addwarningv1": "Advertido",
+                        "leaveorganizationv1": "Salió de una organización",
+                        "promo_video_play_progress_dailyv1": "Vistió parte del video promocional",
+                        "customerweekly_playtime_gte_5_hours": "Tiempo de juego semanal ≥ 5 horas",
+                        "customerweekly_playtime_gte_15_hours": "Tiempo de juego semanal ≥ 15 horas",
+                        "customerweekly_playtime_gte_30_hours": "Tiempo de juego semanal ≥ 30 horas",
+                        "customerweekly_playtime_gte_45_hours": "Tiempo de juego semanal ≥ 45 horas",
+                        "customerweekly_playtime_gte_60_hours": "Tiempo de juego semanal ≥ 60 horas",
+                        "customerweekly_playtime_gte_5_hours_active_bonus": "Tiempo de juego semanal ≥ 5 horas (bonificación activa)",
+                        "customerweekly_playtime_gte_15_hours_active_bonus": "Tiempo de juego semanal ≥ 15 horas (bonificación activa)",
+                        "customerweekly_playtime_gte_30_hours_active_bonus": "Tiempo de juego semanal ≥ 30 horas (bonificación activa)",
+                        "customerweekly_playtime_gte_45_hours_active_bonus": "Tiempo de juego semanal ≥ 45 horas (bonificación activa)",
+                        "customerweekly_playtime_gte_60_hours_active_bonus": "Tiempo de juego semanal ≥ 60 horas (bonificación activa)",
+                        "customersale_spent_lte_20v1": "Compró MENOS de R$20.00",
+                        "customersale_spent_gte_20v1": "Compró MÁS de R$20.00",
+                        "customersale_spent_gte_100v1": "Compró MÁS de R$100.00",
+                        "customersale_spent_gte_500v1": "Compró MÁS de R$500.00",
+                        "customersale_spent_any_bonus_with_couponv1": "Bono de compra CON cupón",
+                        "customersale_spent_any_bonus_without_couponv1": "Bono de compra SIN cupón",
+                        "ticketcustomer_refused_offer": "Cliente rechazó la oferta",
+                        "customerscoreweeklysocial": "Puntuación social semanal",
+                        "customerscoreweeklysocialcontactsgte_5": "Más de 5 contactos en el móvil (semanal)",
+                        "customerscoreweeklysocialcontactsgte_20": "Más de 20 contactos en el móvil (semanal)",
+                        "customerscoreweeklysocialcontactsgte_40": "Más de 40 contactos en el móvil (semanal)",
+                        "customerscoreweeklysocialcontactsgte_14": "Más de 14 contactos en el móvil (semanal)",
+                        "customerscoreweeklyphone_contactsgte_41": "Más de 41 contactos en el móvil (semanal)",
+                        "customerscoreweeklyphone_contactsgte_20": "Más de 20 contactos en el móvil (semanal)",
+                        "customerscoreweeklyphone_contactsgte_5": "Más de 5 contactos en el móvil (semanal)",
+                        "customerscoreweeklysocialrelationshipgte_7": "Relación activa desde hace más de 7 días (semanal)",
+                        "customerscoreweeklysocialrelationshipgte_14": "Relación activa desde hace más de 14 días (semanal)",
+                        "customerscoreweekly_roi_tier_0": "ROI semanal Tier 0",
+                        "customerscoreweekly_roi_tier_1": "ROI semanal Tier 1",
+                        "customerscoreweekly_roi_tier_2": "ROI semanal Tier 2",
+                        "customerscoreweekly_roi_tier_3": "ROI semanal Tier 3",
+                        "customerscoreplayer_active_14_days": "Activo por más de 14 días",
+                        "customerscoreplayer_active_30_days": "Activo por más de 30 días",
+                        "customerscorenever_purchased_weekly": "Nunca compró (semanal)",
+                        "profileplaysession_socialarea_milestone": "Hito de sesión en área social",
+                        "playerentered_guerra_bucket": "Entró en el Mundo Guerra",
+                        "groupgamemode_game_lostrei_do_crime": "Juego perdido: Rei do Crime",
+                        "groupgamemode_game_lostguerra": "Juego perdido: Guerra",
+                        "enterroyalev1mandatory": "Entró en Royale (obligatorio)",
+                        "enterroyalev1optional": "Entró en Royale (opcional)",
+                        "profilegroup_membership_created_as_leadership_rolev1": "Entró en la organización como líder",
+                        "profilepromo_url_openedv1": "Abrió enlace promocional",
+                        "customerfirst_purchasev1": "Primera Compra",
+                        "customersalecombinationbonusleader_manager_spending_500": "Bono combo Líder/Gerente (gastos ≥ R$500)",
+                        "customersalecombinationbonusleader_manager_spending_1000": "Bono combo Líder/Gerente (gastos ≥ R$1.000)",
+                        "customerprofile_weekly_organization_membership_is_leader_1v1": "Líder de organización (semanal)",
+                        "customerprofile_weekly_organization_membership_is_leader_2v1": "Gerente/Sub de organización (semanal)",
+                        "customerweekly_sale_spent_gte500_profile_org_leadership_bonusv1": "Líder/Gerente de organización gastó +R$5.000,00 en la semana",
+                        "customerweekly_sale_spent_gte_1000_profile_org_leadership_bonusv1": "Líder/Gerente de organización gastó +R$1.000,00 en la semana",
+                        "salepayment_failed_gte_20v1": "Fallo en la compra por encima de R$20,00 CON CUPÓN (Temporal)",
+                        "salepayment_failed_gte_20_no_couponv1": "Fallo en la compra por encima de R$20,00 SIN CUPÓN (Temporal)",
+                        "salepayment_failed_gte_100v1": "Fallo en la compra por encima de R$100,00 CON CUPÓN (Temporal)",
+                        "salepayment_failed_gte_100_no_couponv1": "Fallo en la compra por encima de R$100,00 SIN CUPÓN (Temporal)",
+                        "salepayment_failed_gte_300v1": "Fallo en la compra por encima de R$300,00 CON CUPÓN (Temporal)",
+                        "salepayment_failed_gte_300_no_couponv1": "Fallo en la compra por encima de R$300,00 SIN CUPÓN (Temporal)",
+                        "salepayment_failed_gte_500v1": "Fallo en la compra por encima de R$500,00 CON CUPÓN (Temporal)",
+                        "salepayment_failed_gte_500_no_couponv1": "Fallo en la compra por encima de R$500,00 SIN CUPÓN (Temporal)",
+                        "salepayment_failed_gte_20_multiple_attemptsv1": "Fallo en varios intentos de compra por encima de R$20,00 el mismo día (Temporal)",
+                        "salepayment_failed_gte_100_multiple_attemptsv1": "Fallo en varios intentos de compra por encima de R$100,00 el mismo día (Temporal)",
+                        "salepayment_failed_gte_300_multiple_attemptsv1": "Fallo en varios intentos de compra por encima de R$300,00 el mismo día (Temporal)",
+                        "salepayment_failed_gte_500_multiple_attemptsv1": "Fallo en varios intentos de compra por encima de R$500,00 el mismo día (Temporal)",
+                        "salepayment_failedwith_ticket": "Fallo en la compra con apertura de ticket (Temporal)",
+                        "customerpurchase_ticket_created_after_payment_failedv1": "Fallo en la compra con apertura de ticket (Temporal)",
+                        "agentweekly_revenue_milestonev1": "Meta de facturación semanal alcanzada (≥ R$15K BR / ≥ R$20K Extranjero)",
+                        "agentweekly_inactivity_penaltyv1": "Penalización semanal por inactividad (< 5h en línea)"
+                    }
+                },
+                "scoreModal": {
+                    "recording": "Grabando",
+                    "viewClip": "Ver clip",
+                    "banManual": "Bloqueo manual · staff {{name}}",
+                    "banAutomatic": "Bloqueo automático",
+                    "title": "Puntuación",
+                    "subtitle": "Historial de eventos",
+                    "subtitleWithName": "Historial de {{name}}",
+                    "loading": "Cargando historial...",
+                    "error": "Error al cargar historial de puntuación",
+                    "noHistory": "No se encontró historial",
+                    "totalPoints": "Total: {{points}} puntos",
+                    "tabSuspect": "Sospechoso",
+                    "tabToxicity": "Toxicidad",
+                    "now": "Ahora mismo",
+                    "justNow": "Ahora mismo",
+                    "minutesAgo": "{{minutes}} min atrás",
+                    "hoursAgo": "{{hours}} horas atrás",
+                    "daysAgo": "{{days}} días atrás",
+                    "yesterday": "ayer"
+                }
+            },
+            "table": {
+                "country": "País",
+                "id": "ID",
+                "name": "Nombre",
+                "hours": "Horas",
+                "observations": "Observaciones",
+                "action": "Acción"
+            },
+            "observations": {
+                "retention": {
+                    "title": "Retención:",
+                    "notStarted": "No iniciada"
+                },
+                "spent": "Jugador aún no ha pasado la whitelist (-20 horas)",
+                "noSpent": "Jugador aún no ha virado cliente",
+                "banned": "Baneado: {{banned}}"
+            },
+            "list": {
+                "searchPlaceholder": "Buscar",
+                "sort": "Ordenar por cantidad",
+                "asc": "ascendente",
+                "desc": "descendente",
+                "suspectsGroup": "Suspechosos"
+            },
+            "modal": {
+                "title": "Configuración",
+                "description": "Gestiona la configuración del grupo",
+                "selectOption": "Selecciona una opción",
+                "roles": {
+                    "title": "Responsable por turno",
+                    "placeholder": "Elige el cargo",
+                    "sub": "Sub Responsable",
+                    "resp": "Responsable",
+                    "none": "Ninguno"
+                },
+                "shifts": {
+                    "placeholder": "Elige el turno",
+                    "dawn": "Madrugada",
+                    "morning": "Mañana",
+                    "afternoon": "Tarde",
+                    "night": "Noche",
+                    "none": "Ninguno"
+                },
+                "save": "Guardar"
+            },
+            "actions": {
+                "teleport": "TP",
+                "configure": "Gestionar",
+                "view": "Espectar",
+                "copyId": "Copiar ID",
+                "anotation": "Dejar una anotación",
+                "cancel": "Cancelar",
+                "discord": "Discord",
+                "whatsapp": "WhatsApp"
+            }
+        },
+        "rdm": {
+            "header": {
+                "title": "RDM"
+            },
+            "userActions": {
+                "teleport": "TP",
+                "view": "Espectar",
+                "copyId": "Copiar ID"
+            },
+            "row": {
+                "now": "Ahora mismo",
+                "minutes": "min atrás",
+                "hour": "hora atrás",
+                "hours": "horas atrás"
+            },
+            "table": {
+                "time": "Hora",
+                "id": "ID",
+                "killer": "Asesino",
+                "victim": "Víctima",
+                "actions": "Acción"
+            },
+            "actions": {
+                "attend": "Atender llamada",
+                "cancel": "Cancelar",
+                "cancelAttend": "Finalizar llamada"
+            }
+        },
+        "suspects": {
+            "header": {
+                "title": "Sospechosos"
+            },
+            "table": {
+                "id": "ID",
+                "name": "Nombre",
+                "reason": "Motivo",
+                "actions": "Acción",
+                "time": "Hora"
+            },
+            "row": {
+                "now": "Ahora mismo",
+                "minutes": "min atrás",
+                "hour": "hora atrás",
+                "hours": "horas atrás"
+            },
+            "actions": {
+                "teleport": "TP",
+                "view": "Espectar",
+                "copyId": "Copiar ID",
+                "cancel": "Cancelar"
+            }
+        },
+        "tickets": {
+            "header": {
+                "title": "Llamadas"
+            },
+            "table": {
+                "id": "ID",
+                "name": "Nombre",
+                "reason": "Motivo",
+                "actions": "Acción",
+                "time": "Hora",
+                "message": "Mensaje"
+            },
+            "actions": {
+                "teleport": "TP",
+                "view": "Espectar",
+                "copyId": "Copiar ID",
+                "cancel": "Cancelar",
+                "attend": "Atender llamada",
+                "finish": "Finalizar llamada",
+                "markOnMap": "Marcar en el mapa"
+            },
+            "row": {
+                "now": "Ahora mismo",
+                "minutes": "min atrás",
+                "hour": "hora atrás",
+                "hours": "horas atrás"
+            },
+            "mechanicModal": {
+                "title": "Nuevo Llamado de Mecánico",
+                "subtitle": "Un jugador necesita ayuda",
+                "player": "Jugador",
+                "message": "Mensaje",
+                "noMessage": "No se proporcionó ningún mensaje",
+                "accept": "Aceptar",
+                "reject": "Rechazar"
+            }
+        },
+        "wallstreet": {
+            "header": {
+                "title": "Wallstreet",
+                "button": {
+                    "dateSelector": "Seleccionar fecha",
+                    "7days": "7 días",
+                    "14days": "14 días",
+                    "30days": "30 días"
+                },
+                "categories": "Categorías",
+                "categoriesSelected": "categorías seleccionadas"
+            },
+            "retention": {
+                "title": "Retención",
+                "subtitle": "Aquí puedes seguir la retención del servidor"
+            },
+            "recruitment": {
+                "title": "Reclutamiento",
+                "subtitle": "Aquí puedes seguir el reclutamiento del servidor"
+            },
+            "metricCard": {
+                "onlineNow": "Online ahora",
+                "retentionNow": "Retención ahora",
+                "7daysAgo": "7 días atrás",
+                "result": "Resultado",
+                "growth": {
+                    "title": "Jugadores",
+                    "labelTitle": "Pico de Jugadores",
+                    "subtitle": "Hoy vs 7 días atrás"
+                },
+                "retention": {
+                    "title": "Retención",
+                    "labelTitle": "Retención",
+                    "subtitle": "Hoy vs 7 días atrás"
+                }
+            },
+            "topPasta": {
+                "title": "Top Pastas",
+                "subtitle": "¡Felicitaciones, estás entre los miembros más productivos del staff!",
+                "table": {
+                    "id": "ID",
+                    "name": "Nombre",
+                    "retention": "Retención",
+                    "members": "Miembros"
+                }
+            },
+            "statsCard": {
+                "whitelist": "Whitelist válidas",
+                "whitelistDescription": "Cantidad de jugadores que jugaron más de 30 minutos",
+                "contratados": "Contratados",
+                "banidos": "Baneados",
+                "ativados": "Activados",
+                "yesterday": "ayer",
+                "today": "hoy",
+                "7daysAgo": "7 días atrás"
+            },
+            "npsCard": {
+                "last14days": "há 14d",
+                "title": "NPS",
+                "subtitle": "Sigue y compara el NPS de la ciudad.",
+                "yesterday": "Ayer",
+                "today": "Hoy",
+                "detractor": "Detractores",
+                "neutral": "Neutrales",
+                "promoter": "Promotores",
+                "total": "Total"
+            },
+            "periodSelector": {
+                "day": "Día completo",
+                "dawn": "Madrugada",
+                "morning": "Mañana",
+                "afternoon": "Tarde",
+                "night": "Noche"
+            },
+            "progressBarRetention": {
+                "dawn": {
+                    "title": "Madrugada",
+                    "description": "00h a 06h"
+                },
+                "morning": {
+                    "title": "Mañana",
+                    "description": "06h a 12h"
+                },
+                "afternoon": {
+                    "title": "Tarde",
+                    "description": "12h a 18h"
+                },
+                "night": {
+                    "title": "Noche",
+                    "description": "18h a 00h"
+                },
+                "virada": {
+                    "title": "Virada",
+                    "description": "00h a 06h"
+                },
+                "delivery": "Entregó",
+                "generated": "Generó",
+                "total": "Total",
+                "meta": "Meta",
+                "missing": "Faltó",
+                "result": "Resultado",
+                "added": "Añadió",
+                "retention": "Retención",
+                "responsabile": "Resp:",
+                "subresponsabile": "Sub:"
+            }
+        },
+        "purchases": {
+            "header": {
+                "title": "Compras"
+            },
+            "table": {
+                "id": "ID",
+                "name": "Nombre",
+                "totalPurchases": "Total gastado",
+                "lastPurchase": "Última compra",
+                "dateLastBuy": "Fecha de la última compra",
+                "status": "Estado",
+                "coupon": "Cupón",
+                "actions": "Acción"
+            },
+            "actions": {
+                "teleport": "TP",
+                "view": "Espectar",
+                "copyId": "Copiar ID",
+                "attend": "Atender cliente",
+                "cancelAttend": "Finalizar llamada",
+                "configure": "Gestionar"
+            }
+        },
+        "customers": {
+            "currency": "€",
+            "header": {
+                "title": "Clientes"
+            },
+            "list": {
+                "general": "General",
+                "searchPlaceholder": "Buscar",
+                "sort": "Ordenar por ID",
+                "asc": "ascendente",
+                "desc": "descendente"
+            },
+            "table": {
+                "searchPlaceholder": "Buscar",
+                "filter": {
+                    "online": "Online ahora",
+                    "recurrent": "Recurrentes",
+                    "best": "Mejores compras",
+                    "recent": "Últimas compras"
+                },
+                "id": "ID",
+                "lastLogin": "Último login",
+                "name": "Nombre",
+                "lastPurchase": "Última compra",
+                "totalSpent": "Total gastado",
+                "actions": "Acciones"
+            },
+            "row": {
+                "never": "Nunca",
+                "now": "Ahora mismo",
+                "minutes": "min atrás",
+                "hour": "hora atrás",
+                "hours": "horas atrás",
+                "day": "día atrás",
+                "days": "días atrás",
+                "ago": "atrás",
+                "online": "Online"
+            },
+            "actions": {
+                "finish": "Continuar",
+                "attend": "Hablar con cliente",
+                "copyId": "Copiar ID",
+                "cancel": "Cancelar",
+                "discord": "Discord",
+                "anotation": "Dejar una anotación"
+            },
+            "modal": {
+                "description": {
+                    "title": "Descripción del cliente",
+                    "description": "Descripción del cliente",
+                    "error": {
+                        "other": "Error al enviar la descripción",
+                        "empty": "La descripción no puede estar vacía",
+                        "limit": "La descripción excede el límite de caracteres",
+                        "notFound": "No se pudieron cargar los datos del cliente"
+                    },
+                    "firstSpawn": "Llegó en:",
+                    "timePlayed": "Horas jugadas:",
+                    "warning": "Anotación",
+                    "warningPlaceholder": "Escribe la descripción del cliente...",
+                    "sending": "Enviando...",
+                    "send": "Enviar",
+                    "cancel": "Cancelar"
+                },
+                "user": {
+                    "firstSpawn": "Llegó en:",
+                    "timePlayed": "Horas jugadas:",
+                    "totalSpent": "Total gastado:",
+                    "product": "Producto",
+                    "price": "Valor",
+                    "error": {
+                        "notFound": "No se pudieron cargar los datos del cliente"
+                    }
+                }
+            }
+        },
+        "ranking": {
+            "header": {
+                "title": "Ranking"
+            },
+            "table": {
+                "noResults": "No se encontraron resultados.",
+                "searchPlaceholder": "Buscar",
+                "id": "ID",
+                "name": "Nombre",
+                "calls": "Llamadas",
+                "callsEvaluated": "Llamadas Evaluadas",
+                "evaluations": "Evaluaciones",
+                "pagination": {
+                    "previous": "Anterior",
+                    "next": "Siguiente"
+                }
+            },
+            "calls": {
+                "title": "Llamadas",
+                "description": "Ágil, educado y siempre bien recordado, el Favorito del Servicio conquista cada cliente",
+                "subdescription": "con excelencia en el soporte. ¡Si él asume una llamada, puedes estar seguro de que vendrá un elogio a continuación!"
+            },
+            "rdm": {
+                "title": "RDM",
+                "description": "Implacable, justo y siempre atento, el Pacificador de Conflictos llega para poner orden en el caos",
+                "subdescription": "¡Si él entra en escena, puedes apostar que el caos se convierte en armonía y el servidor respira en paz!"
+            }
+        },
+        "influencers": {
+            "header": {
+                "title": "Influencers"
+            },
+            "actions": {
+                "copyId": "Copiar ID",
+                "discord": "Discord",
+                "whatsapp": "WhatsApp"
+            }
+        },
+        "affiliates": {
+            "tier": {
+                "s": "S",
+                "1": "🔥 Ferviendo",
+                "2": "🥵 Caliente",
+                "3": "🌡️ Templado",
+                "4": "❄️ Frío",
+                "5": "🧊 Helado"
+            },
+            "header": {
+                "title": "Afiliados"
+            },
+            "dateSelector": {
+                "placeholder": "Seleccionar período"
+            },
+            "list": {
+                "especial": "💎 Especiales",
+                "selectTier": "Selecciona un tier para visualizar los afiliados",
+                "noAffiliatesFound": "No se encontraron afiliados"
+            },
+            "personal": {
+                "title": "Mis ventas",
+                "latestClients": "Últimos clientes",
+                "search": "Buscar",
+                "hoursPlayed": "Horas jugadas",
+                "lastPurchase": "Última compra",
+                "customerTotalSpent": "Total gastado"
+            },
+            "cards": {
+                "totalSellers": "Clientes atendidos",
+                "totalSales": "Total de ventas",
+                "lostClients": "Clientes perdidos",
+                "totalRevenue": "Total vendido",
+                "averageTicket": "Ticket medio",
+                "availableAffiliates": "Afiliados disponibles"
+            },
+            "userCard": {
+                "affiliateName": "Nombre del afiliado",
+                "id": "ID",
+                "attendances": "Atendimientos",
+                "evaluations": "Evaluaciones",
+                "totalSales": "Ventas totales",
+                "tier": "Tier",
+                "totalSalesValue": "Ventas totales",
+                "averageTicket": "Ticket medio",
+                "hiredAt": "Contratado en",
+                "hoursWorked": "Horas trabajadas",
+                "hoursPlayed": "Horas jugadas",
+                "startSearch": "Iniciar búsquedas",
+                "searching": "Buscando",
+                "searchingSubtitle": "Estamos localizando nuevos clientes en potencial",
+                "stopSearch": "Detener búsquedas",
+                "found": "¡Match!",
+                "notFound": "¡Sin Match!",
+                "redirectingMessage": "Aguarde, estamos redirigiendo al cliente.",
+                "noClientFoundMessage": "No se encontraron clientes potenciales en este momento.",
+                "stopSearchMessage": "Para parar la búsqueda",
+                "accept": "Aceptar",
+                "reject": "Rechazar",
+                "preferentialCustomer": "Cliente preferencial",
+                "events": "Eventos",
+                "sales": "Ventas",
+                "purchases": "Compras",
+                "lastSales": "Últimas Ventas",
+                "loading": "Cargando...",
+                "endTicket": "Finalizar Ticket",
+                "endServiceModal": {
+                    "title": "Afiliado",
+                    "finished": "El atendimiento fue finalizado.",
+                    "question": "¿Se completó la venta con éxito?",
+                    "yes": "Sí",
+                    "no": "No"
+                },
+                "hide": "Ocultar",
+                "viewMore": "Ver más"
+            },
+            "management": {
+                "title": "Ventas generales",
+                "loadingMore": "Cargando más...",
+                "filters": {
+                    "recentClients": "Últimos atendimientos",
+                    "availableAffiliates": "Afiliados disponibles",
+                    "expiringBenefits": "Beneficios expirando",
+                    "lostClients": "Clientes perdidos"
+                },
+                "table": {
+                    "columns": {
+                        "time": "Horario",
+                        "id": "ID",
+                        "name": "Cliente",
+                        "tier": "Tier",
+                        "temperature": "Temperatura",
+                        "score": "Score",
+                        "affiliate": "Afiliado",
+                        "lastSale": "Última venta",
+                        "lastPurchase": "Última compra",
+                        "saleValue": "Valor",
+                        "sellerId": "ID vendedor",
+                        "sellerName": "Vendedor",
+                        "source": "Origen",
+                        "customerId": "ID",
+                        "status": "Estado",
+                        "benefit": "Beneficio",
+                        "daysRemaining": "Días restantes",
+                        "paidValue": "Valor pagado",
+                        "totalSpent": "Gasto mensual",
+                        "online": "Online",
+                        "absent": "Ausente",
+                        "offline": "Offline",
+                        "action": "Acción",
+                        "role": "Cargo",
+                        "roleSeller": "Vendedor",
+                        "roleAffiliate": "Afiliado",
+                        "periodSalesNet": "Venta Mensual",
+                        "atendimentos": "Atenc."
+                    },
+                    "data": {
+                        "source": {
+                            "direct": "Manual",
+                            "matchmaking": "Automático",
+                            "unknown": "Desconocido"
+                        }
+                    }
+                },
+                "actions": {
+                    "teleport": "TP",
+                    "anotation": "Anotación",
+                    "view": "Visualizar",
+                    "copyId": "Copiar ID",
+                    "discord": "Discord",
+                    "whatsapp": "WhatsApp",
+                    "cancel": "Cancelar"
+                },
+                "buttons": {
+                    "expectAll": "Espectar todos"
+                }
+            },
+            "modal": {
+                "purchaseLabel": "Compra #{{id}}",
+                "saleLabel": "Venta #{{id}}",
+                "playerInfo": {
+                    "joinedOn": "Llegó en:",
+                    "hoursPlayed": "Horas jugadas:",
+                    "totalSpent": "Total gastos:",
+                    "averageTicket": "Ticket medio:",
+                    "tier": "Tier"
+                },
+                "purchases": {
+                    "title": "Compras",
+                    "columns": {
+                        "product": "Producto",
+                        "date": "Fecha",
+                        "value": "Valor"
+                    },
+                    "noPurchases": "No se encontraron compras."
+                },
+                "metricsSummary": {
+                    "clientsAttended": "Clientes Convertidos",
+                    "totalSales": "Mes Actual",
+                    "lostClients": "Clientes Perdidos"
+                },
+                "errors": {
+                    "notFound": "Afiliado no encontrado"
+                },
+                "reason": "Motivo",
+                "observation": "Observación",
+                "statusReasons": {
+                    "COMPLETED_SALE_CONFIRMED": "Venta confirmada",
+                    "CANCELED_CUSTOMER_ALREADY_HAS_PRODUCT": "Cliente ya tiene el producto",
+                    "CANCELED_CUSTOMER_NO_FUNDS": "Cliente sin fondos",
+                    "CANCELED_CUSTOMER_REFUSED_OFFER": "Cliente rechazó la oferta",
+                    "CANCELED_CUSTOMER_UNAVAILABLE": "Cliente no disponible",
+                    "CANCELED_CUSTOMER_CONNECTION_ISSUES": "Problemas de conexión del cliente",
+                    "CANCELED_CUSTOMER_WANTS_TO_BUY_LATER": "Cliente quiere comprar después",
+                    "CANCELED_CUSTOMER_BADCONDUCT": "Cliente con mal comportamiento",
+                    "CANCELED_AGENT_SIGNED_OUT": "Afiliado desconectado",
+                    "USERREASON_SALE_MADE": "Venta realizada"
+                }
+            },
+            "salesModal": {
+                "title": "Ventas",
+                "seller": "Vendedor",
+                "totalSales": "Total de ventas",
+                "product": "Producto",
+                "date": "Fecha",
+                "value": "Valor",
+                "loading": "Cargando...",
+                "noSalesFound": "No se encontraron ventas",
+                "noPurchasesFound": "No se encontraron compras",
+                "purchasesTitle": "Compras",
+                "customer": "Cliente",
+                "totalSpent": "Total gasto"
+            },
+            "atendimentosModal": {
+                "title": "Atenciones",
+                "seller": "Vendedor",
+                "totalAtendimentos": "Total de Atenciones",
+                "convertedSuffix": "Convertidas",
+                "avgTime": "Tiempo Medio de Atención",
+                "totalSales": "Ventas Totales",
+                "today": "Hoy",
+                "days7": "7 días",
+                "days14": "14 días",
+                "days30": "30 días",
+                "loading": "Cargando...",
+                "noData": "No se encontraron atenciones",
+                "columns": {
+                    "date": "Fecha",
+                    "time": "Hora",
+                    "customer": "Cliente",
+                    "temperature": "Temperatura",
+                    "duration": "Duración",
+                    "converted": "Convertida"
+                }
+            },
+            "filter": {
+                "converted": "Convertidas",
+                "notConverted": "No Convertidas",
+                "online": "En línea ahora",
+                "recurrent": "Recurrentes",
+                "bestSales": "Mejores Ventas",
+                "recentSales": "Últimas Ventas",
+                "advanced": "Filtros Avanzados"
+            }
+        }
+    },
+    "tags": {
+        "vip": {
+            "black": "VIP Black",
+            "gold": "VIP Gold",
+            "silver": "VIP Silver"
+        },
+        "account": {
+            "large": "Cuenta Grande",
+            "new": "Cuenta Nueva"
+        },
+        "status": {
+            "active": "Cliente Activo",
+            "churning": "En Riesgo"
+        }
+    },
+    "common": {
+        "live": "en vivo",
+        "perHour": "/h",
+        "yes": "Sí",
+        "no": "No",
+        "comingSoon": "Próximamente",
+        "loading": "Cargando…",
+        "loadingHint": "Obteniendo los datos más recientes del servidor.",
+        "errorTitle": "No se pudieron cargar los datos.",
+        "errorHint": "El servidor no respondió. La lista vuelve en la próxima actualización.",
+        "copyFailed": "No se pudo copiar."
+    },
+    "identity": {
+        "role": "Jefe de Reclutamiento"
+    },
+    "nav": {
+        "eyebrow": "MENÚ",
+        "recruitment": "Reclutamiento",
+        "tickets": "Tickets",
+        "groups": "Grupos",
+        "retention": "Retención",
+        "suspects": "Sospechosos",
+        "ranking": "Clasificación",
+        "purchases": "Compras",
+        "clients": "Clientes",
+        "affiliates": "Afiliados"
+    },
+    "page": {
+        "title": "Reclutamiento",
+        "subtitle": "Sigue el recorrido de los novatos y el crecimiento de la ciudad."
+    },
+    "period": {
+        "7d": "7 días",
+        "14d": "14 días",
+        "30d": "30 días"
+    },
+    "action": {
+        "rules": "Reglas",
+        "retention": "Retención",
+        "close": "Cerrar",
+        "selectDate": "Seleccionar fecha",
+        "clear": "Limpiar",
+        "apply": "Aplicar",
+        "cancel": "Cancelar"
+    },
+    "calendar": {
+        "previousMonth": "Mes anterior",
+        "nextMonth": "Mes siguiente"
+    },
+    "shift": {
+        "all": "Todo el día",
+        "dawn": "Madrugada",
+        "morning": "Mañana",
+        "afternoon": "Tarde",
+        "night": "Noche"
+    },
+    "hiring": {
+        "title": "WL × Contratación",
+        "subtitle": "por hora tiempo real",
+        "live": "EN VIVO",
+        "summary": "{{created}} WLs creadas {{recruited}} reclutadas {{lost}} perdidas hoy",
+        "now": "AHORA {{hour}}h",
+        "legend": {
+            "created": "WLs creadas",
+            "recruited": "Reclutadas",
+            "healthy": "80%+",
+            "unhealthy": "80%-"
+        },
+        "filterByHour": "Filtrar la lista por la hora {{hour}}"
+    },
+    "conversion": {
+        "title": "Conversión de WL",
+        "subtitle": "por hora termómetro",
+        "hint": "impulsa la conversión hacia arriba",
+        "target": "meta {{value}}%",
+        "done": "Realizadas",
+        "hired": "Contrataciones",
+        "lost": "Perdidas",
+        "viewLost": "Ver WL perdidas",
+        "level": {
+            "critical": "PÉSIMO",
+            "warning": "ATENCIÓN",
+            "good": "EXCELENTE"
+        }
+    },
+    "nps": {
+        "title": "NPS",
+        "subtitle": "Net Promoter Score 7 días",
+        "filter": "Filtro:",
+        "detractors": "Detractores",
+        "neutrals": "Neutros",
+        "promoters": "Promotores",
+        "total": "Total",
+        "survey": {
+            "indication": "Indicación",
+            "culture": "Cultura",
+            "staff_support": "Staff",
+            "wallstreet": "WS"
+        },
+        "audience": {
+            "general": "General",
+            "newbies": "Novatos",
+            "veterans": "Veteranos"
+        }
+    },
+    "players": {
+        "updatedAt": "Actualizado a las {{time}}",
+        "joined": "entró {{time}}",
+        "rerun": "volvió {{time}} repesca",
+        "online": "En línea",
+        "offline": "Desconectado",
+        "empty": "Ningún jugador en este filtro.",
+        "selection": {
+            "criminoso": "Criminal",
+            "policial": "Policía",
+            "mecanico": "Mecánico",
+            "paramedico": "Paramédico",
+            "empresario": "Empresario",
+            "produtor": "Productor"
+        },
+        "tab": {
+            "online": "En línea",
+            "recruiting": "En reclutamiento",
+            "offline": "Desconectado",
+            "notRecruited": "No reclutado",
+            "rerun": "Repesca"
+        },
+        "col": {
+            "faction": "Selección",
+            "player": "Jugador",
+            "id": "ID",
+            "time": "Tiempo",
+            "recruited": "Reclutado",
+            "activated": "Activó",
+            "status": "Estado",
+            "actions": "Acciones"
+        },
+        "action": {
+            "teleport": "Teletransportarse al jugador",
+            "teleportShort": "TP",
+            "spectate": "Espectar",
+            "discord": "Abrir en Discord",
+            "copyDiscord": "Copiar Discord"
+        },
+        "hourCut": {
+            "label": "WL de las {{hour}}h · {{date}}",
+            "clear": "Quitar el filtro por hora"
+        }
+    },
+    "kpi": {
+        "playersOnline": "Jugadores en línea",
+        "whitelist": "Whitelist",
+        "hired": "Contratados",
+        "banned": "Baneados",
+        "activated": "Activados"
+    },
+    "bans": {
+        "title": "Baneos",
+        "subtitle": "hoy impacto en la retención",
+        "today": "baneados hoy",
+        "newbies": "Novatos",
+        "veterans": "Veteranos",
+        "share": "{{percent}}% de los baneos",
+        "byCategory": "POR CATEGORÍA",
+        "variableReasons": "motivos variables",
+        "viewAll": "Ver usuarios baneados"
+    },
+    "tickets": {
+        "mode": {
+            "all": "Todos",
+            "admin": "Admin",
+            "health": "Paramédico",
+            "police": "Policía",
+            "wallstreet": "Wallstreet",
+            "mechanic": "Mecánico",
+            "lawyer": "Abogado",
+            "purchases": "Compras"
+        },
+        "title": "Tickets",
+        "subtitle": "Cola en vivo orden FIFO: quien más esperó aparece primero",
+        "searchPlaceholder": "Buscar por nombre o ID...",
+        "connectedFor": "conectado hace {{time}}",
+        "startedAgo": "iniciado hace {{time}}",
+        "take": "Atender ticket",
+        "sortLabel": "Ordenar:",
+        "empty": "Ningún ticket en la cola.",
+        "col": {
+            "wait": "Espera",
+            "id": "ID",
+            "player": "Jugador",
+            "message": "Mensaje",
+            "status": "Estado / Acción",
+            "actions": "Acciones"
+        },
+        "badge": {
+            "next": "SIGUIENTE EN LA COLA",
+            "new": "NUEVO"
+        },
+        "filter": {
+            "all": "Todos {{count}}",
+            "free": "Libres {{count}}",
+            "serving": "En atención {{count}}"
+        },
+        "sort": {
+            "fifo": "Espera más antiguo (FIFO)",
+            "recent": "Espera más reciente"
+        },
+        "action": {
+            "profile": "Ver perfil",
+            "discard": "Descartar ticket"
+        },
+        "dialog": {
+            "title": "Ticket {{id}}",
+            "openedAt": "esperando, abierto a las {{time}}",
+            "playerMeta": "ID {{id}}, conectado hace {{connected}}",
+            "viewPlayer": "Ver jugador",
+            "message": "Mensaje del jugador",
+            "discard": "Descartar ticket",
+            "take": "Atender ticket"
+        },
+        "discard": {
+            "title": "¿Descartar el ticket {{id}}?",
+            "subtitle": "{{player}}, esperando hace {{wait}}",
+            "description": "Se avisará al jugador de que el ticket se cerró sin atención y saldrá de la cola. Esta acción no se puede deshacer.",
+            "notice": "El descarte queda registrado en el log del staff con tu nombre y el motivo seleccionado.",
+            "reasonLabel": "Motivo del descarte:",
+            "confirm": "Descartar ticket",
+            "reason": {
+                "duplicate": "Ticket duplicado",
+                "resolved": "Ya resuelto",
+                "noResponse": "El jugador no respondió",
+                "offTopic": "Fuera de alcance"
+            }
+        },
+        "emptyHint": "Todos los jugadores fueron atendidos. La alerta sonora avisa en cuanto entre un ticket nuevo.",
+        "finish": "Cerrar ticket",
+        "toast": {
+            "idCopied": "ID {{id}} copiado al portapapeles"
+        }
+    },
+    "lostWls": {
+        "title": "WLs Perdidas",
+        "subtitle": "{{total}} WLs perdidas recupera jugadores que no convirtieron",
+        "empty": "Ninguna WL perdida en este filtro.",
+        "filter": {
+            "all": "Todos",
+            "notRecruited": "No reclutado",
+            "rerun": "Repesca",
+            "online": "En línea",
+            "offline": "Desconectado"
+        }
+    },
+    "bansModal": {
+        "title": "Baneos",
+        "subtitle": "{{total}} usuarios baneados origen, motivo y fecha",
+        "searchPlaceholder": "Buscar por nombre o ID...",
+        "banned": "baneado",
+        "updatedAgo": "Actualizado hace {{time}}",
+        "empty": "Ningún baneo en este filtro.",
+        "hoursValue": "{{hours}}h",
+        "toast": { "idCopied": "ID {{id}} copiado" },
+        "col": {
+            "user": "Usuario",
+            "origin": "Origen",
+            "staff": "Baneado por",
+            "hours": "Horas",
+            "reason": "Motivo",
+            "date": "Fecha"
+        },
+        "origin": {
+            "staff": "Staff",
+            "system": "Sistema",
+            "bot": "BOT"
+        },
+        "filter": {
+            "all": "Todos",
+            "staff": "Staff",
+            "system": "Sistema",
+            "bot": "BOT"
+        }
+    },
+    "groups": {
+        "title": "Grupos",
+        "subtitle": "{{players}} jugadores organizados en {{groups}} grupos, todos del servidor BR",
+        "listTitle": "GRUPOS",
+        "count": "{{count}} grupos",
+        "searchGroup": "Buscar grupo",
+        "searchPlayer": "Buscar jugador por nombre o ID",
+        "level": "Nv {{level}}",
+        "noDiscord": "sin Discord vinculado",
+        "note": {
+            "banned": "Baneado",
+            "noWhitelist": "Sin whitelist",
+            "repeatOffender": "Reincidente",
+            "vipExpired": "VIP caducado",
+            "noDiscord": "Discord no vinculado",
+            "notClient": "No es cliente"
+        },
+        "sortLabel": "Ordenar:",
+        "spectateAll": "Espectar todos ({{count}})",
+        "empty": "Ningún jugador en este grupo.",
+        "col": {
+            "id": "ID",
+            "player": "Jugador",
+            "hours": "Horas",
+            "notes": "Observaciones",
+            "action": "Acción",
+            "xpSocial": "XP Social"
+        },
+        "sort": {
+            "hoursDesc": "Horas, mayor primero",
+            "hoursAsc": "Horas, menor primero",
+            "nameAsc": "Nombre (A-Z)",
+            "levelDesc": "XP Social, mayor primero",
+            "levelAsc": "XP Social, menor primero"
+        },
+        "menu": {
+            "settings": "Configuración del jugador",
+            "copyId": "Copiar ID",
+            "copyDiscord": "Copiar Discord"
+        },
+        "action": {
+            "teleportTo": "Teletransportarse a {{name}}",
+            "more": "Más acciones"
+        },
+        "toast": {
+            "idCopied": "ID {{id}} copiado al portapapeles",
+            "discordCopied": "Discord {{tag}} copiado al portapapeles"
+        },
+        "spectateDialog": {
+            "title": "¿Espectar a todos los jugadores de {{group}}?",
+            "subtitle": "{{count}} jugadores en el grupo, ciclo automático",
+            "description": "Entras en modo espectador y el servidor cicla automáticamente entre los {{count}} jugadores del grupo. Sales cuando quieras con Esc.",
+            "notice": "Acción de alto impacto: espectar {{count}} jugadores en secuencia carga el servidor y queda registrada en el log del staff.",
+            "confirm": "Espectar {{count}} jugadores"
+        }
+    },
+    "retention": {
+        "title": "Retención",
+        "subtitle": "Ranking de reclutadores de WallStreet por retención D1, últimos 30 días, retención D1 = % de los iniciados que volvieron al día siguiente de la iniciación (solo cuenta iniciados con la ventana de 1 día ya cerrada, la misma regla del Growth)",
+        "searchPlaceholder": "Buscar reclutador...",
+        "sortLabel": "Ordenar:",
+        "audit": "Auditoría de remociones",
+        "empty": "Ningún reclutador en este filtro.",
+        "notice": "Franjas de estado (parámetro configurable): LEVE desde 80%, MEDIO de 60% a 79%, GRAVE por debajo de 60%. GRAVE solo se aplica desde 30 iniciados en el período, para no penalizar muestras pequeñas.",
+        "championRole": "{{role}}, {{count}} iniciados",
+        "severeTitle": "{{count}} reclutadores en situación grave",
+        "severeHint": "Retención por debajo del 60% con 30 o más iniciados en los últimos 30 días",
+        "seeSevere": "Ver los {{count}}",
+        "col": {
+            "rank": "#",
+            "recruiter": "Reclutador",
+            "recruited": "Iniciados",
+            "retention": "Retención",
+            "trend": "Tendencia",
+            "status": "Estado",
+            "actions": "Acciones",
+            "id": "ID"
+        },
+        "status": {
+            "light": "LEVE",
+            "medium": "MEDIO",
+            "severe": "GRAVE"
+        },
+        "filter": {
+            "all": "Todos {{count}}",
+            "light": "Leve {{count}}",
+            "medium": "Medio {{count}}",
+            "severe": "Grave {{count}}"
+        },
+        "sort": {
+            "bestFirst": "Mejor retención primero",
+            "worstFirst": "Peor retención primero",
+            "mostRecruited": "Más iniciados primero"
+        },
+        "action": {
+            "seeRecruits": "Ver iniciados",
+            "remove": "Quitar de WallStreet"
+        },
+        "prizeTitle": "Premio del 1er lugar",
+        "prizeHint": "Mantén el 1er lugar para conservarlo",
+        "severeBadge": "GRAVE {{count}}",
+        "sortBy": "Ordenar por {{column}}",
+        "sortState": {
+            "name": {
+                "asc": "Nombre (A-Z)",
+                "desc": "Nombre (Z-A)"
+            },
+            "recruited": {
+                "desc": "Más iniciados primero",
+                "asc": "Menos iniciados primero"
+            },
+            "retention": {
+                "desc": "Mejor retención primero",
+                "asc": "Peor retención primero"
+            },
+            "trend": {
+                "desc": "Mayor subida primero",
+                "asc": "Mayor caída primero"
+            },
+            "status": {
+                "asc": "Estado: mejor primero",
+                "desc": "Estado: peor primero"
+            }
+        },
+        "remove": {
+            "title": "¿Quitar a {{name}} de WallStreet?",
+            "subtitle": "#{{rank}} en el ranking, {{recruited}} iniciados, retención {{retention}}%, estado {{status}}, {{trend}} en 30 días",
+            "description": "El reclutador sale del grupo WallStreet y pierde el cargo: deja de abrir WLs y sale de este ranking. Los jugadores que ya inició no se ven afectados.",
+            "notice": "Queda registrado en la auditoría: quién lo quitó, fecha y hora, y la retención en ese momento ({{retention}}%, {{recruited}} iniciados).",
+            "reasonLabel": "Motivo de la remoción:",
+            "groupLevel": "nivel {{level}}",
+            "groupsTitle": "Cargos que se van a quitar ({{count}})",
+            "noGroups": "Este reclutador no tiene ningún cargo de WallStreet — no se quitará nada.",
+            "confirm": "Quitar de WallStreet",
+            "reason": {
+                "lowRetention": "Retención por debajo del mínimo",
+                "inactive": "Inactividad",
+                "misconduct": "Conducta inadecuada",
+                "ownRequest": "A petición propia"
+            }
+        },
+        "emptyHint": "Ajusta los filtros o la búsqueda para ver otros reclutadores.",
+        "auditModal": {
+            "subtitle": "Quién salió de WallStreet, quién lo eliminó y la retención en el momento",
+            "col": {
+                "removed": "Eliminado",
+                "removedBy": "Eliminado por",
+                "reason": "Motivo",
+                "when": "Cuándo",
+                "snapshot": "Retención en el momento"
+            },
+            "recruited": "{{count}} iniciados",
+            "count": "{{count}} eliminaciones registradas",
+            "empty": "Ninguna eliminación registrada."
+        },
+        "recruitsModal": {
+            "title": "Iniciados de {{name}}",
+            "subtitle": "Últimos {{days}} días, retenido (D1) = volvió al día siguiente de la iniciación",
+            "col": {
+                "player": "Jugador",
+                "start": "Inicio",
+                "status": "Estado"
+            },
+            "filter": {
+                "all": "Todos {{count}}",
+                "retained": "Retenidos {{count}}",
+                "lost": "Perdidos {{count}}",
+                "banned": "Baneados {{count}}"
+            },
+            "status": {
+                "retained": "Retenido",
+                "lost": "Perdido",
+                "banned": "Baneado"
+            },
+            "count": "{{count}} iniciados en el período",
+            "empty": "Ningún iniciado en este filtro."
+        },
+        "toast": {
+            "idCopied": "ID {{id}} copiado al portapapeles"
+        }
+    },
+    "suspects": {
+        "title": "Sospechosos",
+        "subtitle": "Registro de detecciones del anticheat, {{alerts}} alertas, {{players}} jugadores, últimas {{hours}}h, las alertas iguales del mismo jugador aparecen en una fila, con contador",
+        "searchPlaceholder": "Buscar por nombre o ID...",
+        "live": "EN VIVO {{seconds}}s",
+        "sortLabel": "Ordenar:",
+        "sortBy": "Ordenar por {{column}}",
+        "empty": "Ninguna alerta en este filtro.",
+        "copyId": "Copiar ID {{id}}",
+        "sessionAlerts": "{{count}} alertas en la sesión",
+        "timeTooltip": "hoy {{time}}, sesión {{session}}, alerta más reciente del grupo",
+        "detail": {
+            "removed": "{{count}} entidades eliminadas"
+        },
+        "col": {
+            "time": "Última alerta",
+            "id": "ID",
+            "player": "Jugador",
+            "reason": "Motivo y repeticiones",
+            "actions": "Acciones"
+        },
+        "severity": {
+            "critical": "CRÍTICO",
+            "suspect": "SOSPECHOSO",
+            "info": "INFORMATIVO"
+        },
+        "severityLabel": {
+            "critical": "Crítico",
+            "suspect": "Sospechoso",
+            "info": "Informativo"
+        },
+        "filter": {
+            "reason": "Motivo:",
+            "severity": "Severidad:",
+            "period": "Período:",
+            "allReasons": "Todos",
+            "allSeverities": "Todas",
+            "lastHours": "Últimas {{count}}h"
+        },
+        "reason": {
+            "weaponSpawn": "Spawn de arma no autorizada",
+            "menuBypass": "Bypass de menú de trampas",
+            "godmode": "Godmode, daño nulo",
+            "teleport": "Teletransporte anormal",
+            "crashEntity": "Posible entidad de crash",
+            "unknownResource": "Recurso desconocido cargado",
+            "handling": "Modificación de handling del vehículo",
+            "vehicleSpawn": "Spawn de vehículo no autorizado",
+            "ping": "Ping inestable, desync"
+        },
+        "sort": {
+            "newest": "Alerta más reciente",
+            "oldest": "Alerta más antigua",
+            "mostRepeats": "Más repeticiones",
+            "playerAsc": "Jugador (A-Z)"
+        },
+        "sortState": {
+            "time": {
+                "desc": "Alerta más reciente",
+                "asc": "Alerta más antigua"
+            },
+            "id": {
+                "asc": "ID ascendente",
+                "desc": "ID descendente"
+            },
+            "player": {
+                "asc": "Jugador (A-Z)",
+                "desc": "Jugador (Z-A)"
+            },
+            "reason": {
+                "desc": "Más repeticiones",
+                "asc": "Menos repeticiones"
+            }
+        },
+        "action": {
+            "history": "Historial",
+            "historyHint": "Ver historial de alertas de la sesión",
+            "copyAlert": "Copiar detalle de la alerta"
+        },
+        "time": {
+            "now": "ahora",
+            "minutes": "hace {{count}} min",
+            "hours": "hace {{count}} h"
+        },
+        "emptyHint": "Ninguna detección del anticheat en este recorte. Ajusta los filtros o el período.",
+        "history": {
+            "title": "Historial de la sesión",
+            "subtitle": "{{player}}, #{{id}}, sesión {{session}}, {{count}} alertas",
+            "col": {
+                "time": "Hora",
+                "alert": "Alerta y detalle técnico"
+            },
+            "filter": {
+                "all": "Todos {{count}}",
+                "critical": "Críticos {{count}}",
+                "suspect": "Sospechosos {{count}}",
+                "info": "Informativos {{count}}"
+            },
+            "minutes": "hace {{count}} min",
+            "hours": "hace {{count}} h",
+            "footer": "{{count}} alertas en esta sesión, orden cronológico, más reciente primero",
+            "updated": "Actualizado ahora",
+            "emptyTitle": "Ninguna alerta en esta franja",
+            "emptySubtitle": "Cambia el filtro de severidad para ver las demás alertas de la sesión."
+        }
+    },
+    "dialog": {
+        "escCancels": "Esc cancela",
+        "escCloses": "Esc cierra"
+    },
+    "purchases": {
+        "title": "Compras",
+        "subtitle": "Cola de compras de la tienda, {{count}} en cola y {{free}} sin atender, atiende al cliente, finaliza el ticket y sigue el historial de gastos",
+        "sortBy": "Ordenar por {{column}}",
+        "empty": "Ninguna compra en la cola.",
+        "col": {
+            "id": "ID",
+            "status": "Estado",
+            "name": "Nombre",
+            "totalSpent": "Gasto total",
+            "lastPurchase": "Última compra",
+            "coupon": "Cupón",
+            "lastPurchaseAt": "Fecha de la última compra",
+            "action": "Acción"
+        },
+        "presence": {
+            "online": "En línea",
+            "offline": "Desconectado"
+        },
+        "action": {
+            "attend": "Atender cliente",
+            "finish": "Finalizar ticket",
+            "attendant": "{{name}} #{{id}}",
+            "takenBy": "Atendido por {{name}}",
+            "spectate": "Espectar",
+            "profile": "Ver perfil"
+        },
+        "time": {
+            "now": "ahora",
+            "minute": "hace {{count}} min",
+            "minutes": "hace {{count}} min",
+            "hour": "hace {{count}} hora",
+            "hours": "hace {{count}} horas",
+            "day": "hace {{count}} día",
+            "days": "hace {{count}} días"
+        },
+        "toast": {
+            "finished": "Ticket de {{name}} finalizado"
+        },
+        "emptyHint": "La cola se vacía cuando todos los pedidos son atendidos."
+    },
+    "ranking": {
+        "title": "Clasificación de Tickets",
+        "flavor": "Ágil, educado y siempre recordado, el Favorito del Soporte conquista a cada cliente con excelencia. ¡Si asume un ticket, seguro que llega un elogio a continuación!",
+        "subtitle": "{{flavor}} {{summary}}",
+        "summary": "{{count}} reclutadores, actualizado hace {{minutes}} min",
+        "searchPlaceholder": "Buscar reclutador por nombre o ID...",
+        "sortBy": "Ordenar por {{column}}",
+        "position": "{{position}}º",
+        "empty": "Ningún reclutador encontrado.",
+        "col": {
+            "id": "ID",
+            "name": "Nombre",
+            "tickets": "Tickets",
+            "rated": "Tickets valorados",
+            "rating": "Valoraciones"
+        },
+        "medal": {
+            "gold": "1º puesto",
+            "silver": "2º puesto",
+            "bronze": "3º puesto"
+        },
+        "tier": {
+            "good": "Valoración alta",
+            "warn": "Valoración media",
+            "bad": "Valoración baja"
+        },
+        "score": {
+            "title": "Puntuación",
+            "subtitle": "Historial de eventos, {{name}} #{{id}}",
+            "open": "Ver la puntuación de {{name}}",
+            "total": "Total: {{points}} puntos",
+            "stamp": "{{date}} - {{time}}",
+            "empty": "Ningún evento de puntuación.",
+            "reason": {
+                "saleConfirmed": "Venta confirmada",
+                "buyLater": "El cliente comprará después",
+                "offerRefused": "El cliente rechazó la oferta",
+                "saleDone": "Venta realizada",
+                "affiliateLoggedOut": "El afiliado se desconectó",
+                "ticketRated": "Ticket bien valorado",
+                "ticketDropped": "Ticket abandonado",
+                "praiseReceived": "Elogio recibido"
+            }
+        }
+    },
+    "clients": {
+        "title": "Clientes",
+        "subtitle": "Base de clientes activos en los últimos {{days}} días, perfil, historial de compras y anotaciones, grupo {{group}}, {{shown}} de {{total}} clientes",
+        "searchPlaceholder": "Buscar por nombre o ID...",
+        "sortBy": "Ordenar por {{column}}",
+        "empty": "Ningún cliente en este filtro.",
+        "noValue": "—",
+        "col": {
+            "id": "ID",
+            "lastLogin": "Última conexión",
+            "name": "Nombre",
+            "lastPurchase": "Última compra",
+            "totalSpent": "Total gastado",
+            "actions": "Acciones"
+        },
+        "ago": {
+            "online": "En línea",
+            "never": "Nunca",
+            "minutes": "hace {{count}}min",
+            "hours": "hace {{count}}h",
+            "days": "hace {{count}}d"
+        },
+        "chip": {
+            "online": "En línea ahora",
+            "topSpenders": "Mejores compras"
+        },
+        "group": {
+            "all": "General",
+            "iniciante": "Principiante",
+            "bronze": "Bronce",
+            "prata": "Plata",
+            "ouro": "Oro",
+            "diamante": "Diamante",
+            "vip": "VIP"
+        },
+        "groups": {
+            "searchPlaceholder": "Buscar",
+            "sortBySize": "Ordenar por tamaño",
+            "sortByName": "Ordenar por nombre",
+            "empty": "Ningún grupo con ese nombre."
+        },
+        "action": {
+            "talk": "Hablar con cliente",
+            "note": "Anotación del cliente",
+            "profile": "Ver perfil y compras",
+            "chat": "Historial de conversaciones"
+        },
+        "toast": {
+            "talk": "Abriendo conversación con {{name}}",
+            "chat": "Historial de conversaciones de {{name}}",
+            "noteSaved": "Anotación de {{name}} guardada"
+        },
+        "profile": {
+            "subtitle": "ID: {{id}}, cliente desde {{since}}",
+            "arrived": "Llegó el:",
+            "hoursPlayed": "Horas jugadas:",
+            "hours": "{{count}}h",
+            "totalSpent": "Total gastado",
+            "empty": "Este cliente todavía no ha comprado nada.",
+            "col": {
+                "product": "Producto",
+                "value": "Valor"
+            }
+        },
+        "note": {
+            "title": "Anotación",
+            "subtitle": "{{name}}, #{{id}}",
+            "placeholder": "Escribe la descripción del cliente...",
+            "counter": "{{count}}/{{max}}",
+            "cancel": "Cancelar",
+            "submit": "Enviar"
+        },
+        "product": {
+            "boostXp7": "Boost de XP, 7 días",
+            "skinStreet": "Skin, Sudadera de calle",
+            "petCat": "Mascota, Gato siamés",
+            "garageSlot": "Plaza de garaje",
+            "petHusky": "Mascota, Husky",
+            "skinExecutive": "Skin, Traje ejecutivo",
+            "pistolDeagle": "Pistola Desert Eagle",
+            "smgMicro": "Subfusil Micro SMG",
+            "phonePremium": "Móvil premium",
+            "rifleAk47": "Fusil AK-47",
+            "vipBronze30": "Vip Bronce, 30 días",
+            "vipPrata30": "Vip Plata, 30 días",
+            "apartmentDelPerro": "Apartamento, Del Perro",
+            "businessLicense": "Licencia de negocio",
+            "vipOuro30": "Vip Oro, 30 días",
+            "vehicleCometSr": "Vehículo, Comet SR",
+            "vehicleSultanRs": "Vehículo, Sultan RS",
+            "houseMirrorPark": "Casa, Mirror Park",
+            "garageWorkshop": "Garaje taller",
+            "vehicleKuruma": "Vehículo, Kuruma blindado",
+            "vipDiamante30": "Vip Diamante, 30 días",
+            "houseVinewood": "Casa, Vinewood Hills"
+        }
+    },
+    "affiliates": {
+        "view": {
+            "personal": "Ventas Personales",
+            "management": "Gestión",
+            "list": "Afiliados",
+            "clients": "Clientes"
+        },
+        "personal": {
+            "title": "Afiliados, Ventas Personales",
+            "subtitle": "Sigue tus ventas, tu tier y los últimos clientes atendidos, {{count}} en el periodo",
+            "section": "Mis ventas",
+            "tableTitle": "Últimos clientes"
+        },
+        "management": {
+            "title": "Afiliados, Gestión",
+            "subtitle": "Ventas generales de la operación, {{count}} atenciones con temperatura del cliente y conversión",
+            "section": "Ventas Generales",
+            "tableTitle": "Últimas atenciones"
+        },
+        "list": {
+            "title": "Afiliados, Lista",
+            "subtitle": "Todos los afiliados por tier, {{shown}} de {{total}} con rendimiento, score y ventas del mes",
+            "allTiers": "Todos los tiers",
+            "noTier": "Ningún tier con ese nombre"
+        },
+        "clients": {
+            "title": "Afiliados, Clientes",
+            "subtitle": "Clientes por temperatura, {{shown}} de {{total}} con score, gasto mensual e historial de compras",
+            "allTemperatures": "Todas las temperaturas",
+            "noTemperature": "Ninguna temperatura con ese nombre"
+        },
+        "empty": "Sin resultados para los filtros actuales",
+        "searchClient": "Buscar cliente",
+        "searchAffiliate": "Buscar afiliado",
+        "searchBoth": "Buscar vendedor o cliente",
+        "searchTier": "Buscar",
+        "searchTemperature": "Buscar",
+        "orderByCount": "Ordenar por cantidad",
+        "sortBy": "Ordenar por {{column}}",
+        "hash": "#{{id}}",
+        "tagged": "#{{id}} {{name}}",
+        "hours": "{{hours}}h",
+        "tier": "Tier {{tier}}",
+        "noValue": "--",
+        "card": {
+            "id": "ID: {{id}}",
+            "attendances": "Atenciones",
+            "ratings": "Valoraciones",
+            "sales": "Ventas totales",
+            "tier": "Tier",
+            "totalSales": "Ventas totales",
+            "avgTicket": "Ticket Medio",
+            "hiredAt": "Contratado el",
+            "hoursWorked": "Horas Trabajadas",
+            "startSearch": "Iniciar búsquedas",
+            "stopSearch": "Parar búsquedas"
+        },
+        "kpi": {
+            "available": "Afiliados Disponibles",
+            "attended": "Clientes Atendidos",
+            "sales": "Total de Ventas",
+            "lost": "Clientes Perdidos",
+            "total": "Total Vendido",
+            "avgTicket": "Ticket Medio",
+            "vsPrevious": "vs periodo anterior"
+        },
+        "col": {
+            "time": "Hora",
+            "origin": "Origen",
+            "id": "ID",
+            "client": "Cliente",
+            "hoursPlayed": "Horas jugadas",
+            "totalSpent": "Total gastado",
+            "sellerId": "ID vendedor",
+            "seller": "Vendedor",
+            "temperature": "Temperatura",
+            "score": "Score",
+            "value": "Valor",
+            "status": "Estado",
+            "affiliate": "Afiliado",
+            "tier": "Tier",
+            "attendances": "Aten.",
+            "monthSales": "Ventas este mes",
+            "role": "Cargo",
+            "monthlySpend": "Gasto mensual",
+            "actions": "Acción"
+        },
+        "origin": {
+            "auto": "Automático",
+            "manual": "Manual"
+        },
+        "presence": {
+            "online": "En línea",
+            "away": "Ausente",
+            "offline": "Desconectado"
+        },
+        "role": {
+            "seller": "Vendedor",
+            "affiliate": "Afiliado"
+        },
+        "temperature": {
+            "special": "💎 Especial",
+            "boiling": "🔥 Hirviendo",
+            "hot": "🥵 Caliente",
+            "warm": "🌡️ Templado",
+            "cold": "❄️ Frío",
+            "frozen": "🧊 Helado"
+        },
+        "filter": {
+            "label": "Filtros:",
+            "all": "Todos",
+            "converted": "Convertidos",
+            "lost": "Sin conversión",
+            "auto": "Automáticos",
+            "manual": "Manuales"
+        },
+        "quick": {
+            "onlineNow": "En línea Ahora",
+            "recurring": "Recurrentes",
+            "bestSales": "Mejores Ventas",
+            "lastSales": "Últimas Ventas"
+        },
+        "clientQuick": {
+            "onlineNow": "En línea ahora",
+            "recurring": "Recurrente",
+            "bestPurchases": "Mejores compras",
+            "lastPurchases": "Últimas compras"
+        },
+        "action": {
+            "teleport": "Teletransportarse al jugador",
+            "teleportShort": "TP",
+            "spectate": "Espectar",
+            "spectateAll": "Espectar a Todos",
+            "sales": "Ver ventas",
+            "purchases": "Ver compras",
+            "services": "Ver atenciones",
+            "clientDetail": "Detalles del cliente",
+            "message": "Enviar mensaje",
+            "call": "Llamar",
+            "whatsapp": "Copiar WhatsApp"
+        },
+        "time": {
+            "seconds": "{{count}}s",
+            "minute": "hace {{count}} minuto",
+            "minutes": "hace {{count}} minutos",
+            "hour": "hace {{count}} hora",
+            "hours": "hace {{count}} horas",
+            "clock": "{{hour}}:{{minute}}",
+            "yesterday": "ayer, {{time}}",
+            "date": "{{date}}, {{time}}"
+        },
+        "modal": {
+            "stamp": "{{date}} - {{time}}",
+            "col": {
+                "product": "Producto",
+                "date": "Fecha",
+                "value": "Valor"
+            }
+        },
+        "sales": {
+            "title": "Ventas",
+            "subtitle": "Vendedor: #{{id}} {{name}}",
+            "total": "Total de Ventas",
+            "empty": "Ninguna venta registrada"
+        },
+        "purchases": {
+            "title": "Compras",
+            "subtitle": "Cliente: #{{id}} {{name}}",
+            "total": "Total Gastado",
+            "empty": "Ninguna compra registrada"
+        },
+        "services": {
+            "title": "Atenciones",
+            "subtitle": "Vendedor: #{{id}} {{name}}",
+            "attended": "Total de Atenciones",
+            "convertedOf": "/{{total}} Convertidas",
+            "avgDuration": "Tiempo Medio de Atención",
+            "total": "Ventas Totales",
+            "today": "Hoy",
+            "days": "{{count}} días",
+            "notConverted": "-- -- --",
+            "empty": "Ninguna atención en el periodo",
+            "col": {
+                "date": "Fecha",
+                "time": "Hora",
+                "client": "Cliente",
+                "temperature": "Temperatura",
+                "duration": "Duración",
+                "converted": "Convertido"
+            }
+        },
+        "client": {
+            "title": "Detalles de {{name}}",
+            "arrivedAt": "Llegó el:",
+            "hoursPlayed": "Horas jugadas:",
+            "totalSpent": "Total gastado:",
+            "reason": "Motivo",
+            "points": "Total: {{total}} puntos",
+            "tab": {
+                "events": "Eventos",
+                "purchases": "Compras"
+            }
+        },
+        "event": {
+            "saleConfirmed": "Venta confirmada",
+            "saleMade": "Venta realizada",
+            "wantsLater": "El cliente comprará después",
+            "returned": "El cliente volvió a la atención",
+            "firstContact": "Primer contacto",
+            "noAnswer": "El cliente no respondió",
+            "loggedOff": "El afiliado se desconectó",
+            "refusedOffer": "El cliente rechazó la oferta"
+        },
+        "search": {
+            "searching": {
+                "title": "Buscando",
+                "subtitle": "Estamos localizando nuevos clientes potenciales"
+            },
+            "found": {
+                "title": "¡Encontramos!",
+                "subtitle": "Espera, te estamos redirigiendo al cliente"
+            },
+            "nobody": {
+                "title": "¡Nadie!",
+                "subtitle": "No se encontró ningún cliente potencial en este momento."
+            }
+        },
+        "toast": {
+            "idCopied": "ID {{id}} copiado al portapapeles",
+            "discordCopied": "Discord {{tag}} copiado al portapapeles",
+            "whatsappCopied": "WhatsApp {{number}} copiado al portapapeles"
+        }
+    },
+    "profile": {
+        "subtitle": "Pasaporte #{{id}}",
+        "arrived": "Llegó el:",
+        "hoursPlayed": "Horas jugadas:",
+        "hours": "{{count}}h",
+        "totalSpent": "Total gastado",
+        "empty": "Este jugador todavía no ha comprado nada.",
+        "col": {
+            "product": "Producto",
+            "date": "Fecha",
+            "value": "Valor"
+        }
+    },
+    "activityPunishment": {
+        "badge": "SANCIÓN",
+        "title": "Atención: fuiste sancionado\npor baja actividad",
+        "reasonBefore": "Pasaste demasiado tiempo sin iniciar a los novatos.\nSe te retiraron los poderes y entraste en\n",
+        "reasonHighlight": "lista negra temporal",
+        "reasonAfter": ".",
+        "guidance": "Céntrate en mantenerte activo y usar tus poderes con calidad\npara no sufrir nuevas sanciones",
+        "acknowledge": "Entendido",
+        "lowRetention": {
+            "title": "Atención: fuiste castigado\npor baja retención",
+            "reasonBefore": "Los jugadores que iniciaste no se quedaron en la ciudad.\nTus poderes fueron removidos y entraste en\n",
+            "guidance": "Concéntrate en iniciar con calidad y acompañar a tus\niniciantes para no sufrir nuevos castigos"
+        }
+    },
+    "legalFocus": {
+        "leadership": {
+            "debugOpen": "Abrir Legal en Foco",
+            "debugClose": "Cerrar Legal en Foco",
+            "ariaLabel": "Legal en foco",
+            "title": "LEGAL EN FOCO",
+            "fallbackFaction": "Organización seleccionada",
+            "headline": "¡TU ORGANIZACIÓN ESTÁ EN FOCO!"
+        }
+    },
+    "factionFocus": {
+        "hint": {
+            "expand": "Ampliar Facción en Foco ({{hotkey}})"
+        },
+        "day": {
+            "anteontem": "anteayer",
+            "ontem": "ayer",
+            "hoje": "hoy"
+        },
+        "period": {
+            "ontem": "ayer",
+            "hoje": "hoy",
+            "7dias": "7 días"
+        },
+        "periodIn": {
+            "ontem": "ayer",
+            "hoje": "hoy",
+            "7dias": "en los 7 días"
+        },
+        "status": {
+            "foco": "EN FOCO",
+            "proxima": "SIGUIENTE",
+            "ok": "EN LA COLA",
+            "limite": "40 EN LÍNEA",
+            "bloqueio": "BLOQUEADA",
+            "qg": "NO ELEGIBLE",
+            "piso": "POCOS EN LÍNEA",
+            "ret": "NO ELEGIBLE",
+            "dados": "SIN DATOS",
+            "blacklist": "BLOQUEADA"
+        },
+        "elapsed": {
+            "none": "ninguno todavía",
+            "now": "ahora",
+            "minutes": "hace {{minutes}}min",
+            "hours": "hace {{hours}}h{{minutes}}"
+        },
+        "selectionReason": {
+            "best_eligible_retention": "mejor retención entre las facciones que cumplieron los criterios",
+            "best_eligible_activation": "mejor activación entre las facciones que cumplieron los criterios",
+            "retention_without_activation": "mejor retención; todavía no hay principiantes suficientes para medir la primera hora",
+            "fallback_most_active_members_in_hq": "ninguna facción cumplió los criterios, entró por tener más miembros activos en el CG",
+            "manual": "entrada manual, forzada por el staff"
+        },
+        "exitReason": {
+            "cheia": {
+                "short": "llegó a 40 en línea",
+                "full": "llegó a 40 en línea, no necesita más"
+            },
+            "leva": {
+                "short": "tanda completa",
+                "full": "recibió la tanda completa del foco"
+            },
+            "qg": {
+                "short": "perdió el CG",
+                "full": "se quedó sin 3 miembros activos en el CG o sin reclutador activo de nivel 3 o superior"
+            },
+            "afk": {
+                "short": "el reclutador quedó AFK",
+                "full": "el reclutador quedó AFK y no quedó ningún reclutador activo de nivel 3 o superior en el CG"
+            },
+            "online": {
+                "short": "cayó del mínimo",
+                "full": "cayó por debajo del mínimo de miembros en línea"
+            },
+            "staff": {
+                "short": "el staff la retiró",
+                "full": "retirada por el staff"
+            },
+            "low_conversion": {
+                "short": "contrató poco",
+                "full": "contrató menos del 45% de los que aparecieron en el CG"
+            }
+        },
+        "stateReason": {
+            "focusManual": "puesta en foco por el staff",
+            "focusFallback": "entró por el respaldo: más miembros activos en el CG entre las facciones por debajo de 40 en línea",
+            "focusActivationWithoutD1": "los reclutadores presentes sumaron menos de 3 contrataciones en las tres cohortes cerradas, entró por la activación ({{activation}}%)",
+            "focusActivationD1": "los reclutadores presentes retuvieron el {{d1}}% al día siguiente de cada contratación, la mejor entre las calificadas",
+            "focusLegacyRetention": "sin contrataciones en las últimas 48h, entró por la retención ({{d1}}%)",
+            "focusLegacyActivation": "mejor activación entre las elegibles ({{activation}}% se quedaron 1h hoy)",
+            "okActivation": "pasó el filtro: activación del {{activation}}%, tiene gente en el CG y todavía no está llena",
+            "okLegacy": "pasó el filtro: D1 del {{d1}}%, tiene gente en el CG y todavía no está llena",
+            "limite": "ya tiene 40 en línea, no necesita el foco",
+            "bloqueio": "ya recibió su tanda o llegó a 40 miembros en línea, vuelve en {{minutes}} min",
+            "qg": "menos de 3 miembros activos en el CG, o ningún reclutador activo de nivel 3 o superior",
+            "piso": "pocos miembros en línea para el volumen de la ciudad ahora",
+            "retActivation": "solo el {{activation}}% de los contratados de las últimas 48h se quedaron 1h, el mínimo es 20%",
+            "retLegacy": "retuvo el {{d1}}% en los últimos 7 días, el mínimo es 30%",
+            "dadosActivation": "no tiene contrataciones de más de 60 min en las últimas 48h",
+            "dadosLegacy": "no contrató el mínimo de principiantes en los últimos 7 días",
+            "blacklist": "salió del foco por contratar menos del 45% de los que aparecieron en el CG, vuelve en {{minutes}} min"
+        },
+        "next": {
+            "peakAriaLabel": "Próximas facciones en foco con la ciudad en pico",
+            "peakKicker": "PRÓXIMAS FACCIONES EN FOCO",
+            "peakCountdownLabel": "ENTRAN EN",
+            "peakSupport": "Aumentó la llegada de principiantes, el waypoint los repartirá entre {{count}} facciones",
+            "rank": "{{rank}}.º",
+            "ariaLabel": "Próxima facción en foco",
+            "alert": "¡ATENCIÓN!",
+            "kicker": "PRÓXIMA FACCIÓN EN FOCO",
+            "set": "set {{set}}",
+            "countdownLabel": "ENTRA EN FOCO EN",
+            "progressLabel": "Tiempo restante para entrar en foco"
+        },
+        "leadership": {
+            "debugOpen": "Abrir Facción en Foco",
+            "debugClose": "Cerrar Facción en Foco",
+            "ariaLabel": "Facción en foco",
+            "title": "FACCIÓN EN FOCO",
+            "fallbackFaction": "Facción seleccionada",
+            "nextCheck": "PRÓXIMA REVISIÓN",
+            "badge": "¡ATENTA, LIDERAZGO!",
+            "headline": "¡TU FACCIÓN ESTÁ EN FOCO!",
+            "tipNewcomers": "Aparecerán principiantes en tu CG",
+            "tipRecruiter": "Ten siempre un reclutador en la puerta",
+            "batch": "TANDA DE ESTE FOCO",
+            "arrived": "de hasta {{target}} llegaron",
+            "hired": "{{count}} contratados",
+            "progressLabel": "Principiantes que llegaron en esta tanda",
+            "onlineMembers": "{{online}}/{{limit}} miembros en línea",
+            "defaultReward": "TOP 1 DE LA CIUDAD",
+            "rewardTitle": "CONQUISTA EL {{reward}}",
+            "rewardBefore": "¡Recluta con ",
+            "rewardHighlight": "calidad",
+            "rewardAfter": " para ",
+            "hiredOne": "{{count}} contratado",
+            "hireBefore": "¡Contrata ",
+            "hireFast": "rápido",
+            "hireMiddle": " o ",
+            "hireLose": "pierdes el foco!",
+            "waiting": "esperando contratación: {{count}} principiantes",
+            "waitingOne": "esperando contratación: {{count}} principiante",
+            "rewardGoal": "mantener tu foco!",
+            "viewRanking": "Ver posición en el ranking",
+            "hide": "Ocultar"
+        },
+        "staff": {
+            "debugOpen": "Abrir Facción en Foco (staff)",
+            "debugClose": "Cerrar Facción en Foco (staff)",
+            "ariaLabel": "Facción en foco · staff",
+            "title": "FACCIÓN EN FOCO",
+            "subtitleSet": " · set {{set}} ({{qg}})",
+            "subtitleQg": " · {{qg}}",
+            "generalCycleTitle": "Tiempo hasta la próxima verificación general",
+            "generalCycle": "CICLO GENERAL",
+            "batch": "TANDA",
+            "subcycleTitle": "Tiempo hasta la próxima revisión de progreso",
+            "subcycle": "SUBCICLO",
+            "goalLine": "{{received}} de hasta {{target}} llegaron",
+            "peakAriaLabel": "Facción en foco · staff · ciudad en pico",
+            "peakLabel": "CIUDAD EN PICO",
+            "peakIntro": "¡La ciudad está en pico!",
+            "peakDescription": "Aumentó la llegada de principiantes, así que el reparto se dividió entre las {{count}} facciones mejor clasificadas, con 2 spawns por minuto para cada una.",
+            "peakArrived": "de hasta {{target}} llegaron",
+            "peakHiredOne": "{{count}} contratado",
+            "peakHiredOther": "{{count}} contratados",
+            "recruitersInHq": "RECLUTADORES EN EL CG",
+            "markAll": "Marcar todas en el mapa",
+            "alsoInFocus": "También en foco: {{faction}} · {{received}} de {{target}}",
+            "peakStarted": "La ciudad está en pico: {{factions}} están en foco y el waypoint está repartiendo a los principiantes.",
+            "peakEnded": "La ciudad salió del pico, el waypoint volvió a una sola facción.",
+            "hired": " · {{count}} contratados",
+            "progressLabel": "Llegadas de la tanda al CG",
+            "reasonTitle": "MOTIVO DE LA ENTRADA",
+            "online": "EN LÍNEA",
+            "onlineLimit": " / límite {{limit}}",
+            "recruitersAtWaypoint": "RECLUTADORES EN EL WAYPOINT",
+            "noWaypoint": "sin waypoint",
+            "recruiterOne": " reclutador",
+            "recruiterOther": " reclutadores",
+            "lastRecruited": "ÚLTIMO RECLUTADO",
+            "markLocation": "Marcar la ubicación de la facción",
+            "hide": "Ocultar"
+        },
+        "rules": {
+            "ariaLabel": "Reglas de Facción en Foco",
+            "eyebrow": "FACCIÓN EN FOCO",
+            "title": "Cómo funciona el orden",
+            "subtitle": "Reglas operativas del Waypoint 2.0 · versión 3",
+            "close": "Cerrar",
+            "queue": {
+                "title": "Cómo se arma la cola",
+                "bodyActivation": "Se reevalúa cada 15 min por el D1 de las tres cohortes cerradas de D−4 a D−2 de los reclutadores activos en cualquier parte del CG, sin AFK de 10 min. Suma los retenidos y los contratados y divide una vez. Empates: más retenidos absolutos, después más reclutadores en el waypoint. Con menos de 3 contrataciones sumadas queda por debajo de quien tiene muestra, por activación. La proximidad del reclutador al waypoint no se exige temporalmente.",
+                "bodyLegacy": "Se reevalúa cada 15 min. Los empates usan primero más reclutadores activos en el radio del waypoint y después el mayor número absoluto de retenidos, sin tumbar a quien ya está en foco.",
+                "example": "Reclutador es el miembro con rango de nivel 3 o superior en el panel de la facción."
+            },
+            "entry": {
+                "title": "Qué necesita la facción para entrar",
+                "bodyActivation": "Activación ≥ 20% de los principiantes contratados en las últimas 48h, con o sin waypoint. Solo cuentan las contrataciones de más de 60 min: al menos 1h en la primera sesión. Sin muestra mínima; sin contratación madura no califica. Exige el mínimo en línea, 3 miembros activos en el CG, menos de 40 en línea y ausencia de bloqueo o lista negra.",
+                "bodyLegacy": "10 contratados en los 7 días, D1 ≥ 30%, el mínimo en línea y 3 miembros activos en el CG; además de estar por debajo de 40 en línea y fuera del bloqueo o la lista negra.",
+                "example": "Un miembro por debajo del nivel 3 cuenta entre los 3 activos, pero no como reclutador."
+            },
+            "batch": {
+                "title": "Cuánto recibe",
+                "body": "Recibe hasta {{spawnLimit}} principiantes por foco o hasta llegar a 40 en línea, lo que ocurra primero.",
+                "example": "Ej.: entra con 10 en línea y recibe {{spawnLimit}}; entra con 38 y sale al llegar a 40. Al volver al foco, la tanda empieza de cero."
+            },
+            "exit": {
+                "title": "Por qué sale del foco",
+                "body": "El orden de las salidas es: conversión baja, {{spawnLimit}} apariciones o 40 en línea, pérdida del CG y pérdida del mínimo en línea. El conteo en línea se revisa cada 5 min.",
+                "example": "Conversión: solo se consulta con al menos {{sample}} principiantes que aparecieron en el CG hace más de {{maturity}} min. Por debajo del 45%, sale con lista negra de 45 min."
+            },
+            "cooldown": {
+                "title": "Después de recibir la tanda o llegar a 40",
+                "body": "Queda 30 minutos fuera del filtro, incluso al cruzar la medianoche. La conversión baja genera una lista negra de 45 minutos.",
+                "example": "No existe límite de apariciones por hora ni por día."
+            },
+            "fallback": {
+                "title": "Si nadie pasa el filtro",
+                "bodyActivation": "Entre las facciones por debajo de 40 en línea, entra la que tiene más miembros activos en el CG, ignorando activación, mínimo en línea, mínimo en el CG, bloqueo y lista negra. Empates: mayor activación, después menor cantidad en línea.",
+                "bodyLegacy": "Entre las facciones por debajo de 40 en línea, entra la que tiene más miembros activos en el CG, ignorando los demás filtros.",
+                "example": "El respaldo no sale por el mínimo en línea ni por el CG. Cada 5 min cede ante una facción calificada; sigue sujeto a la conversión, a las {{spawnLimit}} apariciones y a los 40 en línea. Tras una conversión baja prefiere otra facción; solo repite si es la única."
+            },
+            "cityLimit": {
+                "title": "Límite en todas las ciudades",
+                "body": "40 en línea en Grande, Santa y cualquier otra ciudad."
+            }
+        },
+        "history": {
+            "ariaLabel": "Historial de {{faction}}",
+            "eyebrow": "HISTORIAL DE FOCO",
+            "summary": "{{sessions}} sesiones en los últimos 3 días · {{contracted}} contratados en las sesiones · D1 del {{d1}}% {{window}}",
+            "windowActivation": "de los reclutadores presentes, al día siguiente de cada contratación",
+            "windowLegacy": "en la ventana de 7 días",
+            "emptyTitle": "Ninguna sesión de foco",
+            "inProgress": "en curso",
+            "entryManual": "ENTRADA MANUAL",
+            "entryAuto": "ENTRADA AUTOMÁTICA",
+            "inFocus": "EN FOCO",
+            "duration": "DURACIÓN",
+            "enteredBecause": "Entró porque:",
+            "enteredManual": "puesta en foco por el staff",
+            "enteredAuto": "mejor D1 entre las elegibles",
+            "exitedBecause": "Salió porque:",
+            "cityOnEntry": "CIUDAD AL ENTRAR",
+            "cityOnEntryNote": "facción llena en {{value}}",
+            "onlineOnEntry": "EN LÍNEA AL ENTRAR",
+            "onlineOnEntryNote": "miembros de la facción",
+            "targetOnEntry": "META AL ENTRAR",
+            "targetOnEntryNote": "hasta llenarse",
+            "spawned": "APARECIERON EN LA FACCIÓN",
+            "spawnedNote": "aparecieron en el CG",
+            "contracted": "CONTRATADOS",
+            "contractedNote": "principiantes de verdad",
+            "result": "RESULTADO",
+            "resultComplete": "recibió la tanda",
+            "resultIncomplete": "salió antes de completar la tanda"
+        },
+        "confirm": {
+            "titleRemove": "Retirar del foco",
+            "titlePlace": "Poner en foco",
+            "titleForce": "Forzar el foco",
+            "ariaLabel": "{{title}}: {{faction}}",
+            "eyebrow": "ACCIÓN DEL STAFF",
+            "close": "Cerrar",
+            "warningTitle": "Esta facción no pasó el filtro",
+            "warningBody": "{{reason}}. Forzar ignora los requisitos y puede salir en el próximo subciclo.",
+            "whatHappens": "Qué va a pasar",
+            "removeSession": "La sesión se cierra ahora con salida manual.",
+            "removeWaypoint": "El waypoint pasa a la siguiente de la cola o al respaldo.",
+            "removeQueue": "La facción vuelve a competir en la próxima verificación.",
+            "placeCurrentExits": "Quien está en foco sale con salida manual.",
+            "placeEnters": "{{faction}} entra para recibir hasta {{spawnLimit}} principiantes ({{online}} en línea, llena en {{fullAt}}).",
+            "placeSkipsQueue": "Se está saltando la cola; su posición oficial es la {{position}}.ª.",
+            "forceIgnoresFilter": "El filtro se ignorará en esta entrada.",
+            "justification": "JUSTIFICACIÓN",
+            "justificationRequired": "OBLIGATORIA",
+            "justificationPlaceholder": "ej.: nuevo foco, mantener la facción por encima de 40+",
+            "justificationHint": "Queda en el registro de sesiones junto con tu nombre. El liderazgo de la facción puede pedir esta explicación.",
+            "registeredBefore": "Registrado como ",
+            "registeredAfter": " · ahora",
+            "cancel": "Cancelar",
+            "submitRemove": "Confirmar retirar del foco",
+            "submitPlace": "Confirmar poner en foco",
+            "submitForce": "Confirmar forzar el foco"
+        },
+        "ranking": {
+            "breadcrumbParent": "RETENCIÓN",
+            "breadcrumbCurrent": "FACCIÓN EN FOCO",
+            "title": "Facción en Foco",
+            "subtitleActivation": "Activación mínima del 20%. Orden por el D1 de las tres cohortes cerradas de D−4 a D−2 de los reclutadores presentes en el CG.",
+            "subtitleLegacy": "Facciones ordenadas por activación, con corte de D1 de los 7 días cerrados.",
+            "subtitleSuffix": "La primera es la que está en foco.",
+            "generalCheck": "VERIFICACIÓN GENERAL",
+            "rulesButton": "Reglas",
+            "cityNow": "CIUDAD AHORA",
+            "online": "en línea",
+            "lockAfterBatch": "BLOQUEO TRAS LA TANDA",
+            "minutes": "minutos",
+            "fullAt": "FACCIÓN LLENA EN",
+            "factionOnline": "en línea de la facción",
+            "minOnline": "MÍN. EN LÍNEA",
+            "minOnlineNote": "miembros (1% de la ciudad, máx. 10)",
+            "minActivation": "ACTIVACIÓN MÍN.",
+            "minD1": "D1 MÍN.",
+            "minActivationNote": "primera sesión · 60 min",
+            "minD1Note": "10 contratados",
+            "engineVersion": "versión v3 en ejecución",
+            "engineNote": "verificación 15 min. · subciclo cada 5 min.",
+            "cardTitle": "Orden de las facciones",
+            "competing": "{{count}} compitiendo",
+            "outOfFilter": "{{count}} fuera del filtro",
+            "sessionsFrom": "SESIONES DE",
+            "searchPlaceholder": "Buscar por facción o set — ej.: Bahamas, Amarelos",
+            "clear": "limpiar",
+            "resultsOne": "{{count}} resultado",
+            "resultsOther": "{{count}} resultados",
+            "officialOrder": "orden oficial de la cola",
+            "sortedBy": "ordenado por {{key}}, {{direction}} primero",
+            "sortDescending": "mayor",
+            "sortAscending": "menor",
+            "colRank": "#",
+            "colFaction": "FACCIÓN",
+            "colD1Activation": "D1 · 3 COHORTES",
+            "colD1Legacy": "D1 · 7 DÍAS",
+            "colEntered": "ENTRÓ EN FOCO · EN LÍNEA",
+            "colOrigin": "ORIGEN",
+            "colSpawned": "APARECIERON",
+            "colContracted": "CONTRATADOS",
+            "colReason": "MOTIVO",
+            "colStatus": "ESTADO",
+            "colExited": "SALIÓ DEL FOCO · EN LÍNEA",
+            "colAction": "ACCIÓN",
+            "emptyTitle": "Ninguna facción encontrada",
+            "emptyHint": "La búsqueda acepta el nombre de la facción o del set.",
+            "copySetTitle": "Haz clic para copiar el set",
+            "setCopied": "set copiado",
+            "retainedOf": "{{retained}} de {{sample}}",
+            "sessionOnline": "· {{online}} en línea",
+            "noFocusIn": "sin foco {{period}}",
+            "originManual": "MANUAL",
+            "originAuto": "AUTOMÁTICA",
+            "receivedOf": "{{received}} de hasta {{spawnLimit}}",
+            "arrivedNote": "{{spawned}} llegaron",
+            "inProgress": "en curso",
+            "inProgressOnline": "· {{online}}/{{fullAt}} en línea",
+            "atWaypointFor": "hace {{duration}} en el waypoint",
+            "lastFocus": "último foco {{day}}",
+            "neverFocused": "nunca entró en foco",
+            "actionRemove": "Retirar del foco",
+            "actionPlace": "Poner en foco, saltando la cola",
+            "actionForce": "Forzar el foco, ignorando el filtro",
+            "actionHistory": "Ver historial de foco",
+            "footActivation": "Activación ≥ 20% · D1 de las tres cohortes cerradas de D−4 a D−2 de los reclutadores presentes",
+            "footLegacy": "D1 mínimo del 30% en la ventana de 7 días",
+            "footLimits": "hasta {{spawnLimit}} apariciones por foco o {{fullAt}} en línea · bloqueo de 30 min",
+            "footNotPunishment": "llenarse no es un castigo",
+            "loadError": "No se pudo cargar el panel",
+            "batch": "TANDA",
+            "batchValue": "hasta {{spawnLimit}}",
+            "batchNote": "principiantes por foco"
+        },
+        "sortKey": {
+            "official": "orden oficial",
+            "d1": "D1",
+            "entered": "entrada en foco",
+            "origin": "origen",
+            "spawned": "apariciones",
+            "contracted": "contratados",
+            "exited": "salida del foco"
+        }
+    },
+    "waypointSquare": {
+        "debugOpen": "Abrir modal · Ir a la plaza",
+        "title": "¡Hola, ciudadano!",
+        "description": "Notamos que todavía no has encontrado una facción en la ciudad.",
+        "invitation": "¿Quieres ir a la plaza? Ahí está la gente para conocer 🚀",
+        "decline": "No",
+        "accept": "Ir a la plaza",
+        "failed": "No se pudo confirmar. Intenta de nuevo con la opción elegida."
+    },
+    "_locale": "es-ES"
+}

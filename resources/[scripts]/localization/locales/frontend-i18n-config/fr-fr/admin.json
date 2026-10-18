@@ -1,0 +1,7 @@
+{
+  "ban": {
+    "reason": "Raison de l'interdiction",
+    "reason_for_ban": "Raison de l'interdiction",
+    "id": "IDENTIFIANT"
+  }
+}

@@ -1,0 +1,1 @@
+-- Clothing rules repository

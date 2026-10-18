@@ -1,0 +1,69 @@
+{
+    "ownpets": {
+        "header": {
+            "title": "Meus Pets",
+            "description": "Lista de pets disponíveis"
+        },
+        "counter": {
+            "pets": "pets"
+        },
+        "pagination": {
+            "previous": "Página anterior",
+            "next": "Próxima página"
+        },
+        "card": {
+            "age": "Idade",
+            "select": "Selecionar"
+        },
+        "time": {
+            "year": "ano",
+            "years": "anos",
+            "month": "mês",
+            "months": "meses",
+            "day": "dia",
+            "days": "dias",
+            "hour": "hora",
+            "hours": "horas",
+            "minute": "minuto",
+            "minutes": "minutos",
+            "justNow": "agora mesmo"
+        }
+    },
+    "petinfo": {
+        "header": {
+            "interactions": "Interações",
+            "close": "Fechar"
+        },
+        "stats": {
+            "hunger": "Fome",
+            "level": "Level"
+        },
+        "actions": {
+            "caresses": "Carinhos"
+        },
+        "interactions": {
+            "title": "Interações",
+            "description": "Brinque com seu pet"
+        },
+        "rename": {
+            "interaction": "Alterar nome",
+            "title": "Alterar nome do pet",
+            "description": "Escolha um novo nome para seu pet.",
+            "label": "Nome do pet",
+            "cancel": "Cancelar",
+            "confirm": "Confirmar",
+            "saving": "Salvando...",
+            "validation": {
+                "empty": "Informe um nome.",
+                "too_long": "O nome pode ter no máximo 50 caracteres.",
+                "invalid_characters": "O nome contém caracteres inválidos."
+            },
+            "errors": {
+                "invalid_name": "Este nome é inválido.",
+                "not_owner": "Somente o dono pode alterar o nome deste pet.",
+                "pet_not_found": "Pet não encontrado.",
+                "rename_failed": "Não foi possível alterar o nome do pet. Tente novamente."
+            }
+        }
+    }
+}

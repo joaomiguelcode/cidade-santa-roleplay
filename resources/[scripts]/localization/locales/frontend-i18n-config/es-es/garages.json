@@ -1,0 +1,37 @@
+{
+  "search": "Buscar un vehículo",
+  "categories": {
+    "null": "Todos",
+    "all": "Todos",
+    "cars": "Coches",
+    "bikes": "Motos",
+    "favorites": "Favoritos",
+    "favorite": "Favoritos",
+    "automobile": "Automóvil",
+    "bike": "Moto",
+    "boat": "Barco",
+    "plane": "Avión",
+    "heli": "Helicóptero",
+    "bicycle": "Bicicleta",
+    "quadbike": "Cuatrimoto"
+  },
+  "retire": "Sacar",
+  "keep": "Guardar",
+  "statistics": {
+    "chassis": "Chasis",
+    "engine": "Motor",
+    "gas": "Combustible",
+    "body": "Carrocería"
+  },
+  "chest": "Maletero",
+  "fee": "Tasa",
+  "feeCurrency": "€",
+  "vehPayTax": "Pagar tasas",
+  "vehSell": "Vender vehículo",
+  "vehTransfer": "Transferir vehículo",
+  "vehBuy": "Comprar",
+  "vehStoreItems": "Guardar objetos",
+  "vehExpired": "Caducado",
+  "vehExpires": "Expira en:",
+  "vehicleDisappeared": "Desaparece en:"
+}

@@ -1,0 +1,179 @@
+{
+  "title": {
+    "hotbar": "Hotbar",
+    "main": "Inventário",
+    "trunk": "Porta-malas",
+    "property": "Propriedade",
+    "inspect": "Inspecionar",
+    "shop": "Loja",
+    "ground": "Chão",
+    "chest": "Baú",
+    "preview": "Pré-visualização"
+  },
+
+  "use": "Usar",
+  "send": "Enviar",
+  "delivery": "Entregar",
+  "destroy": "Destruir",
+  "destruct": "Destruir",
+  "collection": "Coleção",
+
+  "loading": "Carregando...",
+
+  "chestPermission": {
+    "title": "Configurar baú",
+    "subtitle": "Defina quem pode retirar itens.",
+    "viewPermissions": "Ver permissões do baú",
+    "activePermissions": "Permissões ativas",
+    "loadingPermissions": "Carregando permissões...",
+    "noActivePermission": "Nenhuma permissão ativa.",
+    "removePermission": "Remover permissão de {0}",
+    "close": "Fechar",
+    "configureBy": "Configurar por",
+    "whoCanWithdraw": "Quem pode retirar",
+    "configureMember": "Configurar Membro",
+    "configureRole": "Configurar Cargo",
+    "member": "Membro",
+    "memberRole": "Cargo do membro",
+    "memberId": "ID do membro",
+    "noOptionAvailable": "Nenhuma opção disponível.",
+    "noOptionFound": "Nenhuma opção encontrada.",
+    "saleCommission": "Comissão por venda",
+    "saleCommissionDescription": "Percentual recebido pelo vendedor em cada negociação.",
+    "authorizeWithdraw": "Autorizar retirada de itens",
+    "authorizedToWithdraw": "Autorizado a retirar itens",
+    "authorizeConfigureChest": "Autorizar configuração do baú",
+    "authorizedToConfigureChest": "Autorizado a configurar baú",
+    "immediateChangesHint": "As alterações valem imediatamente para todos os afetados.",
+    "cancel": "Cancelar",
+    "saveChanges": "Salvar alterações"
+  },
+
+  "factionArsenal": {
+    "fallbackFactionName": "Facção Los Santos Vagos",
+    "howItWorks": "Como funciona?",
+    "helpSubtitle": "Entenda cada opção do arsenal",
+    "close": "Fechar",
+    "back": "Voltar",
+    "important": "IMPORTANTE",
+    "understood": "Entendi",
+    "stockNotice": "Todos os itens retirados pelos membros através do Arsenal serão descontados automaticamente do estoque do Baú do Líder.",
+    "helpTopics": {
+      "position": {
+        "title": "Posição do arsenal",
+        "description": "Define o ponto onde os membros acessam o arsenal. Deve ficar a no máximo 50 m do QG."
+      },
+      "roles": {
+        "title": "Configurar cargos",
+        "description": "Selecione o cargo que vai receber uma configuração própria."
+      },
+      "enable": {
+        "title": "Ativar arsenal",
+        "description": "Libera ou bloqueia o uso do arsenal para o cargo selecionado."
+      },
+      "cooldown": {
+        "title": "Cooldown",
+        "description": "Define quanto tempo o membro precisa esperar para retirar o kit de novo."
+      },
+      "kit": {
+        "title": "Itens do kit",
+        "description": "Define as armas, munições e outros itens e as quantidades entregues ao cargo."
+      },
+      "disable-all": {
+        "title": "Habilitar/Desabilitar todos os cargos",
+        "description": "Alterna o uso do arsenal para todos os cargos da facção de uma vez."
+      }
+    },
+    "roleArsenalSection": "1. Arsenal do cargo",
+    "activateArsenal": "Ativar arsenal",
+    "deactivateArsenal": "Desativar arsenal",
+    "enabled": "Ativado",
+    "disabled": "Desativado",
+    "withdrawRulesSection": "2. Regras de retirada",
+    "interval": "Intervalo",
+    "withdrawAgainHint": "Tempo para retirar novamente",
+    "kitItemsSection": "3. Itens do kit ({0})",
+    "emptyKit": "Nenhum item no kit deste cargo.",
+    "itemQuantity": "Quantidade de {0}",
+    "max": "Máx",
+    "removeItem": "Remover {0}",
+    "addItem": "Adicionar item",
+    "saveChanges": "Salvar alterações",
+    "itemPickerSubtitle": "Selecione um item para incluir no kit do cargo.",
+    "closeItemList": "Fechar lista de itens",
+    "searchItemPlaceholder": "Pesquisar item...",
+    "searchItem": "Pesquisar item",
+    "loadingItems": "Carregando itens...",
+    "noItemFound": "Nenhum item encontrado.",
+    "discardTitle": "Descartar alterações?",
+    "discardDescription": "Você fez alterações neste cargo. Se voltar agora, essas alterações não serão salvas.",
+    "continueEditing": "Continuar editando",
+    "discardAndBack": "Descartar e voltar",
+    "searchRolePlaceholder": "Pesquisar cargo...",
+    "searchRole": "Pesquisar cargo",
+    "rolesCount": "{0} cargos",
+    "noRoleFound": "Nenhum cargo encontrado.",
+    "itemsCount": "{0} itens",
+    "configureRoles": "Configurar cargos",
+    "setupPositionFirst": "Defina o ponto do arsenal primeiro",
+    "toggleAllRoles": "Habilitar/Desabilitar todos os cargos",
+    "toggleAllRolesDescription": "Ativa ou desativa o arsenal para todos os cargos da facção",
+    "configureRolesDescription": "Kit, quantidade, tempo de espera e ativar/desativar",
+    "editPosition": "Editar posição",
+    "markPosition": "Marcar posição do arsenal",
+    "editPositionDescription": "Salva sua posição atual como o novo ponto do arsenal",
+    "markPositionDescription": "Salva sua posição atual como ponto do arsenal (máx. 50 m do QG)",
+    "removePosition": "Remover posição",
+    "removePositionDescription": "Remove o ponto — ninguém consegue retirar o kit"
+  },
+
+  "utils": [
+    {
+      "button": "BOTÃO DIREITO",
+      "description": "Usar Item"
+    },
+    {
+      "button": "SHIFT + BOTÃO DIREITO",
+      "description": "Usar todos os itens"
+    },
+    {
+      "button": "BOTÃO ESQUERDO",
+      "description": "Arrastar Item"
+    },
+    {
+      "button": "SHIFT + BOTÃO ESQUERDO",
+      "description": "Arrastar Todos"
+    },
+    {
+      "button": "1 ao 5",
+      "description": "Atalhos Rápidos" 
+    }
+  ],
+  "getAll": "PEGAR TUDO",
+  "getIllegal": "PEGAR ILEGAIS",
+
+  "upgradeInventoryTitle": "Dê um upgrade no seu inventário",
+  "upgradeInventoryButton": "AUMENTAR ESPAÇO",
+
+  "noDescription": "Não há informações sobre este item.",
+  "priceDesc": "Preço",
+  "quantityDesc": "Quantidade",
+  "stockDesc": "Estoque",
+  "weightDesc": "Peso",
+  "economyDesc": "Economia",
+  "expiresInDesc": "Expira em",
+  "durabilityDesc": "Durável por",
+  "rechargeDesc": "Recarregável",
+  "nameDesc": "Nome",
+  "passportDesc": "Passaporte",
+  "ageDesc": "Idade",
+  "rolepassDesc": "Rolepass",
+  "keyDesc": "Chave",
+  "phoneDesc": "Telefone",
+  "premiumDesc": "Premium",
+  "suitcaseDesc": "Suitcase",
+  "collection": "Coleção",
+
+  "days": "dias",
+  "day": "dia"
+}

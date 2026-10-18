@@ -1,0 +1,102 @@
+{
+  "carEvent": {
+    "accessibility": {
+      "match": "Partie",
+      "currentRound": "Manche en cours",
+      "remainingTime": "Temps restant",
+      "ranking": "Classement de l'événement",
+      "waitingRoom": "Salle d'attente",
+      "lobbyCountdown": "Temps avant le départ",
+      "invitation": "Invitation à l'événement",
+      "invitationCountdown": "Temps restant de l'invitation",
+      "tutorial": "Tutoriel de l'événement"
+    },
+    "stats": {
+      "roundTime": "Temps de manche",
+      "round": "Manche",
+      "mode": "Mode",
+      "suddenDeath": "Mort subite"
+    },
+    "status": {
+      "findColor": "TROUVEZ LA COULEUR",
+      "findColors": "TROUVEZ LES COULEURS",
+      "timerLabel": "LES AUTRES COULEURS TOMBENT DANS",
+      "suddenDeathDescription": "Les couleurs affichées tombent et ne reviennent pas",
+      "defaultColor": "Jaune",
+      "secondsUnit": "s"
+    },
+    "ranking": {
+      "title": "CLASSEMENT",
+      "players": "{current}/{max} joueurs",
+      "points": "{points} pts"
+    },
+    "lobby": {
+      "startsIn": "Début dans",
+      "players": "Joueurs"
+    },
+    "common": {
+      "exit": "Quitter l'événement",
+      "player": "Joueur",
+      "color": "Couleur {index}"
+    },
+    "announce": {
+      "title": "CAR EVENT",
+      "sender": "Événement disponible",
+      "description": "Trouvez les bonnes couleurs, survivez aux manches et disputez le haut du classement",
+      "join": "Appuyez pour rejoindre l'événement !",
+      "pending": "En attente d'entrée...",
+      "error": "Impossible de rejoindre. Réessayez."
+    },
+    "tutorial": {
+      "name": "Chef de Jeu",
+      "skip": "pour passer le dialogue",
+      "text": "Vous conduisez sur une grille colorée. Les couleurs affichées sont celles qui resteront. Rejoignez-en une avant la chute des autres et soyez le dernier survivant !"
+    }
+  },
+  "eventHud": {
+    "rankingTitle": "CLASSEMENT",
+    "rankingSubtitle": "Score actuel de l'événement",
+    "roundsLabel": "Manches",
+    "exitUse": "Appuie",
+    "exitHint": "pour quitter le jeu",
+    "pointsSuffix": "pts",
+    "rankSuffix": "e",
+    "timeRemaining": "Temps Restant"
+  },
+  "cargame": {
+    "exitUse": "Appuie",
+    "exitHint": "pour quitter le jeu",
+    "logo": "Santa",
+    "rankSuffix": "e",
+    "lobby": {
+      "players": "Joueurs",
+      "startingIn": "démarrage dans"
+    },
+    "tutorial": {
+      "name": "Chef de Jeu",
+      "skip": "pour passer le dialogue",
+      "text": "Vous conduisez sur une grille colorée. Les couleurs affichées sont celles qui resteront. Rejoignez-en une avant la chute des autres et soyez le dernier survivant !"
+    },
+    "result": {
+      "title": "Colisão Cromática",
+      "subtitle": "Résultat final de tous les participants au Colisão Cromática.",
+      "close": "Fermer",
+      "colResult": "Résultat",
+      "colTime": "Temps"
+    },
+    "ranking": {
+      "title": "Classement Colisão Cromática",
+      "subtitle": "Suivez le classement Colisão Cromática en temps réel",
+      "best": "Meilleur Joueur",
+      "bestSub": "Meilleur joueur de Colisão Cromática",
+      "colId": "ID",
+      "colName": "Nom",
+      "colPoints": "Points",
+      "colTime": "Temps de Jeu",
+      "colWins": "Victoires",
+      "empty": "Aucun joueur dans le classement pour le moment",
+      "next": "Suivante",
+      "previous": "Précédente"
+    }
+  }
+}

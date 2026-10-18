@@ -1,0 +1,179 @@
+{
+  "title": {
+    "hotbar": "الشريط السريع",
+    "main": "المخزون",
+    "trunk": "الصندوق الخلفي",
+    "property": "الملكية",
+    "inspect": "فحص",
+    "shop": "المتجر",
+    "ground": "الأرض",
+    "chest": "الصندوق",
+    "preview": "معاينة"
+  },
+
+  "use": "استخدام",
+  "send": "إرسال",
+  "delivery": "تسليم",
+  "destroy": "تدمير",
+  "destruct": "تدمير",
+  "collection": "مجموعة",
+
+  "loading": "جاري التحميل...",
+
+  "chestPermission": {
+    "title": "إعداد الصندوق",
+    "subtitle": "حدد من يمكنه سحب العناصر.",
+    "viewPermissions": "عرض صلاحيات الصندوق",
+    "activePermissions": "الصلاحيات النشطة",
+    "loadingPermissions": "جارٍ تحميل الصلاحيات...",
+    "noActivePermission": "لا توجد صلاحيات نشطة.",
+    "removePermission": "إزالة صلاحية {0}",
+    "close": "إغلاق",
+    "configureBy": "الإعداد حسب",
+    "whoCanWithdraw": "من يمكنه السحب",
+    "configureMember": "إعداد عضو",
+    "configureRole": "إعداد رتبة",
+    "member": "عضو",
+    "memberRole": "رتبة العضو",
+    "memberId": "معرّف العضو",
+    "noOptionAvailable": "لا توجد خيارات متاحة.",
+    "noOptionFound": "لم يتم العثور على خيارات.",
+    "saleCommission": "عمولة البيع",
+    "saleCommissionDescription": "النسبة التي يتلقاها البائع عن كل معاملة.",
+    "authorizeWithdraw": "السماح بسحب العناصر",
+    "authorizedToWithdraw": "مصرّح له بسحب العناصر",
+    "authorizeConfigureChest": "السماح بإعداد الصندوق",
+    "authorizedToConfigureChest": "مصرّح له بإعداد الصندوق",
+    "immediateChangesHint": "تسري التغييرات فورًا على جميع المعنيين.",
+    "cancel": "إلغاء",
+    "saveChanges": "حفظ التغييرات"
+  },
+
+  "factionArsenal": {
+    "fallbackFactionName": "فصيل لوس سانتوس فاغوس",
+    "howItWorks": "كيف يعمل؟",
+    "helpSubtitle": "تعرّف على وظيفة كل خيار في الترسانة",
+    "close": "إغلاق",
+    "back": "رجوع",
+    "important": "مهم",
+    "understood": "فهمت",
+    "stockNotice": "تُخصم جميع العناصر التي يسحبها الأعضاء من الترسانة تلقائيًا من مخزون صندوق القائد.",
+    "helpTopics": {
+      "position": {
+        "title": "موقع الترسانة",
+        "description": "يحدد مكان وصول الأعضاء إلى الترسانة. يجب أن يكون ضمن مسافة 50 مترًا من مقر الفصيل."
+      },
+      "roles": {
+        "title": "إعداد الرتب",
+        "description": "اختر الرتبة التي ستُخصص لها إعدادات مستقلة."
+      },
+      "enable": {
+        "title": "تفعيل الترسانة",
+        "description": "يسمح للرتبة المحددة بالوصول إلى الترسانة أو يمنعها."
+      },
+      "cooldown": {
+        "title": "مدة الانتظار",
+        "description": "يحدد المدة التي يجب أن ينتظرها الأعضاء قبل سحب العدة مرة أخرى."
+      },
+      "kit": {
+        "title": "عناصر العدة",
+        "description": "يحدد الأسلحة والذخيرة والعناصر الأخرى والكميات المخصصة للرتبة."
+      },
+      "disable-all": {
+        "title": "تفعيل/تعطيل جميع الرتب",
+        "description": "يغيّر إمكانية الوصول إلى الترسانة لجميع رتب الفصيل دفعة واحدة."
+      }
+    },
+    "roleArsenalSection": "1. ترسانة الرتبة",
+    "activateArsenal": "تفعيل الترسانة",
+    "deactivateArsenal": "تعطيل الترسانة",
+    "enabled": "مفعّل",
+    "disabled": "معطّل",
+    "withdrawRulesSection": "2. قواعد السحب",
+    "interval": "الفاصل الزمني",
+    "withdrawAgainHint": "الوقت المتبقي قبل السحب مرة أخرى",
+    "kitItemsSection": "3. عناصر العدة ({0})",
+    "emptyKit": "لا تحتوي عدة هذه الرتبة على عناصر.",
+    "itemQuantity": "كمية {0}",
+    "max": "الحد الأقصى",
+    "removeItem": "إزالة {0}",
+    "addItem": "إضافة عنصر",
+    "saveChanges": "حفظ التغييرات",
+    "itemPickerSubtitle": "اختر عنصرًا لإضافته إلى عدة الرتبة.",
+    "closeItemList": "إغلاق قائمة العناصر",
+    "searchItemPlaceholder": "ابحث عن العناصر...",
+    "searchItem": "البحث عن العناصر",
+    "loadingItems": "جارٍ تحميل العناصر...",
+    "noItemFound": "لم يتم العثور على عناصر.",
+    "discardTitle": "تجاهل التغييرات؟",
+    "discardDescription": "لقد عدّلت هذه الرتبة. إذا رجعت الآن، فلن تُحفظ التغييرات.",
+    "continueEditing": "متابعة التعديل",
+    "discardAndBack": "تجاهل والرجوع",
+    "searchRolePlaceholder": "ابحث عن الرتب...",
+    "searchRole": "البحث عن الرتب",
+    "rolesCount": "{0} رتب",
+    "noRoleFound": "لم يتم العثور على رتب.",
+    "itemsCount": "{0} عناصر",
+    "configureRoles": "إعداد الرتب",
+    "setupPositionFirst": "حدد موقع الترسانة أولًا",
+    "toggleAllRoles": "تفعيل/تعطيل جميع الرتب",
+    "toggleAllRolesDescription": "يفعّل الترسانة أو يعطّلها لجميع رتب الفصيل",
+    "configureRolesDescription": "العدة والكميات ومدة الانتظار والتفعيل أو التعطيل",
+    "editPosition": "تعديل الموقع",
+    "markPosition": "تحديد موقع الترسانة",
+    "editPositionDescription": "يحفظ موقعك الحالي موقعًا جديدًا للترسانة",
+    "markPositionDescription": "يحفظ موقعك الحالي موقعًا للترسانة (بحد أقصى 50 مترًا من مقر الفصيل)",
+    "removePosition": "إزالة الموقع",
+    "removePositionDescription": "يزيل الموقع — لن يتمكن أحد من سحب العدة"
+  },
+
+  "utils": [
+    {
+      "button": "زر الفأرة الأيمن",
+      "description": "استخدام العنصر"
+    },
+    {
+      "button": "SHIFT + زر الفأرة الأيمن",
+      "description": "استخدام جميع العناصر"
+    },
+    {
+      "button": "زر الفأرة الأيسر",
+      "description": "سحب العنصر"
+    },
+    {
+      "button": "SHIFT + زر الفأرة الأيسر",
+      "description": "سحب الكل"
+    },
+    {
+      "button": "1 إلى 5",
+      "description": "اختصارات سريعة"
+    }
+  ],
+  "getAll": "أخذ الكل",
+  "getIllegal": "أخذ الممنوعات",
+
+  "upgradeInventoryTitle": "قم بترقية مخزونك",
+  "upgradeInventoryButton": "زيادة المساحة",
+
+  "noDescription": "لا توجد معلومات عن هذا العنصر.",
+  "priceDesc": "السعر",
+  "quantityDesc": "الكمية",
+  "stockDesc": "المخزون",
+  "weightDesc": "الوزن",
+  "economyDesc": "الاقتصاد",
+  "expiresInDesc": "ينتهي في",
+  "durabilityDesc": "متين لـ",
+  "rechargeDesc": "قابل لإعادة الشحن",
+  "nameDesc": "الاسم",
+  "passportDesc": "جواز السفر",
+  "ageDesc": "العمر",
+  "rolepassDesc": "باس الدور",
+  "keyDesc": "المفتاح",
+  "phoneDesc": "الهاتف",
+  "premiumDesc": "مميز",
+  "suitcaseDesc": "الحقيبة",
+  "collection": "مجموعة",
+
+  "days": "أيام",
+  "day": "يوم"
+}

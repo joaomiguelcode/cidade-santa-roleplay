@@ -1,0 +1,181 @@
+{
+  "tabs": {
+    "all": "Tous",
+    "information": "Information",
+    "interactions": "Interactions",
+    "control": "Contrôle"
+  },
+  "menu": {
+    "financial": "Financier",
+    "purchases": "Achats",
+    "loginList": "Liste de connexion",
+    "copyId": "Copier l'identifiant",
+    "discordId": "Identifiant de discorde",
+    "bans": "Interdictions",
+    "revivePlayer": "Réanimer le joueur",
+    "reviveLocations": "Faire revivre les emplacements",
+    "giveItem": "Donner l'article",
+    "openInventory": "Inventaire ouvert",
+    "addGroup": "Ajouter un groupe",
+    "groups": "Groupes",
+    "kickPlayer": "Joueur de coup de pied",
+    "banPlayer": "Interdire un joueur"
+  },
+  "playerCard": {
+    "openCloseMenu": "Ouvrir/Fermer le menu Adm",
+    "exitSpectator": "Quitter le spectateur",
+    "switchPlayer": "Changer de joueur",
+    "status": {
+      "low": "Faible",
+      "medium": "Moyen",
+      "high": "Haut"
+    }
+  },
+  "keys": {
+    "ban": "Interdire",
+    "reviveLocations": "Faire revivre les emplacements",
+    "openInventory": "Inventaire ouvert",
+    "copyId": "Copier l'identifiant"
+  },
+  "shortcut": {
+    "title": "Raccourci",
+    "description": "Placez le raccourci souhaité pour la fonction choisie.",
+    "placeholder": "Cliquez et sélectionnez un raccourci",
+    "cancel": "Annuler",
+    "confirm": "Finition",
+    "duplicateError": "Cette clé est déjà utilisée par une autre action.",
+    "blockedKeyError": "Cette combinaison de touches ne peut pas être utilisée."
+  },
+  "loginList": {
+    "login": "Se connecter",
+    "logout": "Déconnexion",
+    "totalTimePlayed": "Temps total joué",
+    "inProgress": "(en cours)",
+    "to": "à"
+  },
+  "bans": {
+    "banned": "Interdit",
+    "unbanned": "Non banni",
+    "bannedBy": "Interdit par :",
+    "unbannedBy": "Non banni par :"
+  },
+  "financial": {
+    "currency": "$",
+    "bankBalance": "Solde bancaire",
+    "cashInHand": "Encaisse",
+    "totalAssets": "Actif total"
+  },
+  "purchases": {
+    "totalSpent": "Dépenses totales de la ville",
+    "history": "Historique des achats"
+  },
+  "headers": {
+    "spectators": {
+      "title": "Spectateurs",
+      "subtitle": "Liste actuelle des spectateurs"
+    },
+    "purchases": {
+      "title": "Achats",
+      "subtitle": "Historique des achats"
+    },
+    "groups": {
+      "title": "{identifiant} | {nom}",
+      "subtitle": "Menus d'action pour les spectateurs"
+    },
+    "financial": {
+      "title": "{identifiant} | {nom}",
+      "subtitle": "Menus d'action pour les spectateurs"
+    },
+    "loginList": {
+      "title": "{identifiant} | {nom}",
+      "subtitle": "Menus d'action pour les spectateurs"
+    },
+    "bans": {
+      "title": "{identifiant} | {nom}",
+      "subtitle": "Menus d'action pour les spectateurs"
+    },
+    "menu": {
+      "subtitle": "Menus d'action pour les spectateurs"
+    }
+  },
+  "modals": {
+    "addGroup": {
+      "title": "Ajouter un groupe",
+      "description": "Ajoutez le groupe souhaité à l'ID du joueur",
+      "playerIdLabel": "Passeport",
+      "playerIdPlaceholder": "Entrez le passeport",
+      "groupLabel": "Groupe",
+      "groupPlaceholder": "Entrez le nom du groupe",
+      "levelLabel": "Niveau",
+      "levelPlaceholder": "Entrez le niveau",
+      "submitText": "Ajouter"
+    },
+    "reviveLocation": {
+      "title": "Raviver l'emplacement",
+      "description": "Choisissez l'emplacement souhaité pour faire revivre le joueur",
+      "locationPlaceholder": "Emplacement",
+      "submitText": "Relancer",
+      "locations": {
+        "praca": "Carré",
+        "pier-sul": "Jetée sud",
+        "pier-norte": "Jetée Nord",
+        "hp-sul": "HP Sud",
+        "hp-norte": "HP Nord",
+        "mecanica": "Mécanicien",
+        "dp1": "PD1",
+        "dp2": "PD2",
+        "dp3": "PD3"
+      }
+    },
+    "removeGroup": {
+      "title": "Supprimer le groupe",
+      "message": "Êtes-vous sûr de vouloir supprimer le groupe {group} de l'ID {id} ?",
+      "confirmText": "Retirer",
+      "cancelText": "Annuler"
+    },
+    "kickPlayer": {
+      "title": "Coup",
+      "description": "Entrez la raison du coup de pied dans le champ ci-dessous.",
+      "playerIdLabel": "Passeport",
+      "playerIdPlaceholder": "Identifiant du joueur",
+      "reasonLabel": "Raison",
+      "reasonPlaceholder": "Entrez la raison du coup de pied",
+      "submitText": "Coup"
+    },
+    "banPlayer": {
+      "title": "Interdire",
+      "description": "Entrez la raison de l'interdiction dans le champ ci-dessous.",
+      "playerIdLabel": "Passeport",
+      "playerIdPlaceholder": "Identifiant du joueur",
+      "reasonLabel": "Raison",
+      "reasonPlaceholder": "Entrez la raison de l'interdiction",
+      "tagLabel": "Balises",
+      "tagPlaceholder": "Sélectionnez une balise",
+      "submitText": "Interdire",
+      "tags": {
+        "zaralho": "Désordre",
+        "desrespeito": "Manque de respect à la ville/au Staff",
+        "prog_ilicitos": "Programmes illicites/Refus partage écran",
+        "dark_rp": "Propos Injures",
+        "hacker": "Hacker",
+        "comercial": "Commercial"
+      }
+    },
+    "giveItem": {
+      "title": "Donner l'article",
+      "description": "Choisissez l'article et la quantité que vous souhaitez offrir au joueur",
+      "playerIdLabel": "Passeport",
+      "playerIdPlaceholder": "Entrez le passeport",
+      "itemLabel": "Article",
+      "itemPlaceholder": "Nom de l'article",
+      "addButton": "Ajouter",
+      "submitText": "Donner l'article",
+      "itemNotFound": "L'article n'existe pas",
+      "checkItemError": "Erreur lors de la vérification de l'élément",
+      "consumable": "Consommable"
+    }
+  },
+  "search": {
+    "placeholder": "Recherche"
+  }
+}

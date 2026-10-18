@@ -1,0 +1,68 @@
+{
+    "search_placeholder": "Pesquisar",
+    "title": "Minhas Skins",
+    "description": "Escolha entre diferentes modelos",
+    "tab_humanos": "Humanos",
+    "tab_animais": "Animais",
+    "tab_personagens": "Personagens",
+    "equip_skin": "Equipar Skin",
+    "unequip_skin": "Desequipar Skin",
+    "rotate_label": "Girar Personagem",
+    "pedshop": {
+        "ordinals": [
+            "Primeiro",
+            "Segundo",
+            "Terceiro",
+            "Quarto",
+            "Quinto",
+            "Sexto",
+            "Sétimo",
+            "Oitavo",
+            "Nono",
+            "Décimo"
+        ],
+        "common": {
+            "close": "Fechar",
+            "back": "Voltar"
+        },
+        "status": {
+            "permanent": "Permanente",
+            "temporary": "Temporário",
+            "daysRemaining": "Restam {days} {unit}",
+            "day": "dia",
+            "days": "dias"
+        },
+        "slots": {
+            "title": "Resgatar Peds",
+            "subtitle": "Resgate o seu ped VIP aqui!",
+            "slotLabel": "{ordinal} Ped",
+            "unselected": "Ped não selecionado",
+            "select": "Selecionar Ped",
+            "swap": "Trocar Ped",
+            "swapCountdown": "Troca disponível por",
+            "remove": "Remover Ped",
+            "redeem": "Resgatar Peds"
+        },
+        "selection": {
+            "title": "Selecionar {ordinal} Ped",
+            "subtitle": "Escolha um dos peds disponíveis para ocupar este espaço",
+            "alreadySelected": "Selecionado noutro espaço",
+            "confirm": "Confirmar Ped",
+            "clear": "Remover deste espaço"
+        },
+        "confirmation": {
+            "title": "Confirmar Resgate",
+            "subtitle": "Reveja os peds selecionados antes de concluir o resgate.",
+            "notice": "Pode resgatar menos peds do que o limite disponível.",
+            "back": "Voltar",
+            "submit": "Confirmar Resgate",
+            "submitting": "A resgatar...",
+            "error": "Não foi possível concluir o resgate. Tente novamente."
+        },
+        "unavailable": {
+            "title": "Peds Indisponíveis!",
+            "text": "Não tem peds para resgatar neste momento.",
+            "button": "Concluir"
+        }
+    }
+}

@@ -1,0 +1,2 @@
+-- txAdmin sv_resources.lua
+-- Resource status provider for txAdmin

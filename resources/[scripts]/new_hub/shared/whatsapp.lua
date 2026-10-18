@@ -1,0 +1,17 @@
+WhatsAppGroups = {
+    ["Malta"] = "https://chat.whatsapp.com/GoRi6VxThAiLqrRzVEy0Lp?mode=ems_copy_c",
+    ["Universo"] = "https://chat.whatsapp.com/Jr7pwGRrQ7t6KHwxrOgkt2",
+    ["Grande"] = "https://chat.whatsapp.com/CNsbVXeBhyW1Ayomgq631R?mode=ems_copy_c",
+    ["CidadeNobre"] = "https://chat.whatsapp.com/Dn93dsqG0fiAnAFl3UI91e",
+    ["Santa"] = "https://chat.whatsapp.com/C9c06EW6lQ1AKCnEIe2Zmc",
+    ["Maresia"] = "https://chat.whatsapp.com/EYfVkFoCLLMGzIpQMowhnh",
+    ["Alexandria"] = "https://chat.whatsapp.com/J7LmzTOL9giBjC3FxFEPsh?mode=ems_copy_t",
+    ["Kingdom"] = "https://chat.whatsapp.com/LoTG6FqUZ6rAjWIlye2iYr?mode=wwt",
+    ["Imperium"] = "https://chat.whatsapp.com/LoTG6FqUZ6rAjWIlye2iYr?mode=wwt",
+    ["GoatRP"] = "https://chat.whatsapp.com/LoTG6FqUZ6rAjWIlye2iYr?mode=wwt",
+    ["District99"] = "https://chat.whatsapp.com/BQeeQiIF3lGIRaZMFlbIvk",
+    ["Krown"] = "",
+    ["Orizon"] = "",
+    ["Royal"] = "https://chat.whatsapp.com/DMEpdrCclym617cjNDzIhd",
+    ["Boomerang"] = "https://chat.whatsapp.com/GEhtU0KAPFWA6CpQqzeAZZ",
+}

@@ -1,0 +1,25 @@
+{
+  "next_weapon": "السلاح التالي",
+  "factions_ranking": "تصنيف العصابات",
+  "type_to_hide": "اكتب /ranking",
+  "time_played_ranking": "تصنيف وقت اللعب",
+  "money_ranking": "تصنيف المال",
+  "countdown_ranking": "تصنيف العد التنازلي",
+  "domination_ranking": "تصنيف السيطرة",
+  "floor_arena_ranking": "تصنيف أرينا المسار",
+  "alive": "على قيد الحياة",
+  "hours": "الساعات",
+  "kills": "القتل",
+  "faction_01": "العصابة 1",
+  "faction_02": "العصابة 2",
+  "use_command": "استخدم الأمر",
+  "to_exit": "للخروج",
+  "exit_pista": "/sairpista",
+
+  "you_are_in_queue": "أنت في طابور ",
+  "players_left": "يتبقى {0} لاعبين",
+  "to_be_start": "للبدء",
+  "press": " اضغط",
+  "to_cancel": "للإلغاء",
+  "starting_at": "يبدأ في"
+}

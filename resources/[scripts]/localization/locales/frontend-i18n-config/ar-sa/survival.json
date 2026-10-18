@@ -1,0 +1,23 @@
+{
+  "callMedic": "استدعاء المسعف",
+  "cancel": "إلغاء",
+  "confirm": "تأكيد",
+  "reportPlayer": "الإبلاغ",
+  "reportPlayerText": "هل تريد حقًا الإبلاغ عن هذا اللاعب",
+  "reportPlayerText2": "لقتله بدون سبب",
+  "reportPlayerText3": "قد تؤدي التقارير الكاذبة إلى عقابك",
+  "youDied": "لقد مت",
+  "by": "بواسطة",
+  "playerReported": "تم الإبلاغ عن اللاعب",
+
+  "timeLeft": "يتبقى",
+  "timeLeft2": "ثواني",
+  "timeLeft3": "لتولدك من جديد",
+
+  "pressF2": "اضغط F2 لتحرير الفأرة",
+
+  "chooseLocation": "اختر الموقع",
+
+  "spawnLabelVip": "متاح في VIP FAC PREMIUM",
+  "spawnLabelPremium": "متاح في VIP فضي"
+}

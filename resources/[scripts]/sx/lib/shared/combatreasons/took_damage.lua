@@ -1,0 +1,6 @@
+COMBATREASON_TOOK_DAMAGE = DEFINE_COMBATREASON 'took_damage' {
+
+    addDuration = 60,
+}
+
+eCombatReasons.TOOK_DAMAGE = COMBATREASON_TOOK_DAMAGE

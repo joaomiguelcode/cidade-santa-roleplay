@@ -1,0 +1,200 @@
+{
+    "common": {
+        "cancel": "Cancel",
+        "confirm": "Confirm",
+        "close": "Close",
+        "search": "Search",
+        "loading": "Loading...",
+        "error": "Error",
+        "people": "people",
+        "furnished": "Furnished",
+        "unfurnished": "Unfurnished",
+        "rooms": "rooms",
+        "days": "days",
+        "permanent": "Permanent"
+    },
+    "home": {
+        "title": "Real Estate",
+        "selectProperty": "Select a penthouse to see details",
+        "tour": "Take a penthouse tour",
+        "buyNow": "Buy Now",
+        "callHelp": "Call Help",
+        "helpModal": {
+            "title": "Call Help",
+            "description": "Need help with your penthouse? Our team is ready to assist you!",
+            "confirm": "Call Help"
+        },
+        "level": "Level",
+        "buyModal": {
+            "title": "Confirm Purchase",
+            "description": "Do you want to acquire this penthouse for {duration}? A matching voucher will be consumed.",
+            "descriptionNoDuration": "Do you want to acquire this penthouse? A matching voucher will be consumed.",
+            "confirm": "Buy Now"
+        },
+        "buySuccess": {
+            "title": "Purchase Complete",
+            "description": "You can easily access your Penthouse using the elevator available on site."
+        }
+    },
+    "edit": {
+        "title": "Edit Penthouse",
+        "openStore": "Open store",
+        "houseName": "Penthouse Name",
+        "houseNamePlaceholder": "Penthouse name",
+        "maxVisitors": "Maximum Number of Visitors",
+        "houseAccess": "Penthouse Access",
+        "accessTypes": {
+            "open": "Open",
+            "invisible": "Invisible",
+            "locked": "Locked",
+            "lockedWithDoorbell": "Locked with doorbell"
+        },
+        "visitors": "Visitors",
+        "banned": "Banned",
+        "noVisitors": "No visitors at the moment",
+        "noBanned": "No banned players",
+        "ban": "Ban",
+        "kick": "Kick",
+        "unban": "Unban",
+        "owner": "Owner",
+        "level": "Level",
+        "timeRemaining": "Time remaining",
+        "expired": "Expired",
+        "permanentLegacy": "Permanent (Legacy)",
+        "renew": "Renew Penthouse",
+        "upgrade": "Upgrade Penthouse",
+        "renewModal": {
+            "title": "Renew Penthouse",
+            "description": "Do you want to renew this penthouse for another 30 days? A matching voucher will be consumed.",
+            "confirm": "Renew"
+        },
+        "upgradeIdModal": {
+            "title": "Upgrade Penthouse",
+            "description": "Enter the ID of the penthouse you want to upgrade.",
+            "placeholder": "Penthouse ID",
+            "confirm": "Continue",
+            "invalidId": "Invalid ID or the penthouse does not belong to you."
+        },
+        "upgradeSelectModal": {
+            "title": "Upgrade Penthouse",
+            "description": "View information and update your Penthouse",
+            "levelLabel": "Level",
+            "nameLabel": "Name",
+            "totalTimeLabel": "Total Time",
+            "changeOptionLabel": "Which option do you want to change?",
+            "infoTitle": "Information",
+            "infoPoint1": "Voucher for the desired level required",
+            "infoPoint2": "Your items will be moved automatically to the new home chest.",
+            "infoPoint3": "The remaining time on your Penthouse will be properly converted to the Desired Level.",
+            "current": "Current",
+            "timeRemaining": "Time remaining",
+            "selectLevel": "Select the new level",
+            "newTime": "New estimated time",
+            "confirm": "Upgrade",
+            "noOptions": "No higher level available for upgrade."
+        },
+        "banModal": {
+            "title": "Ban",
+            "description": "Are you sure you want to ban {playerName} from your apartment?",
+            "confirm": "Ban"
+        },
+        "kickModal": {
+            "title": "Kick",
+            "description": "Are you sure you want to kick {playerName} from your apartment?",
+            "confirm": "Kick"
+        },
+        "unbanModal": {
+            "title": "Unban",
+            "description": "Are you sure you want to unban {playerName} from your apartment?",
+            "confirm": "Unban"
+        },
+        "upgradeSuccess": {
+            "title": "Penthouse Updated",
+            "description": "You must enter your penthouse again for the changes to be applied."
+        }
+    },
+    "elevator": {
+        "title": "Elevator",
+        "neighbors": "Neighbors",
+        "myProperties": "My penthouses",
+        "searchNeighbors": "Search Neighbors...",
+        "searchProperties": "Search Penthouses",
+        "pending": "Pending",
+        "overdue": "Overdue",
+        "permanent": "Permanent",
+        "doorbellModal": {
+            "title": "Doorbell",
+            "description": "Locked penthouse. Ring the doorbell to request entry. Once accepted, you will be teleported to the apartment.",
+            "confirm": "Ring Doorbell"
+        },
+        "renewModal": {
+            "title": "Renew Penthouse",
+            "description": "Your Penthouse has expired. Do you want to renew it?",
+            "confirm": "Renew"
+        }
+    },
+    "wallpapers": {
+        "title": "Decoration Store",
+        "visualize": "Visualize",
+        "buy": "Buy",
+        "helpModal": {
+            "title": "Call Help",
+            "description": "Are you sure you want to call for help from an affiliate?",
+            "confirm": "Call Help"
+        }
+    },
+    "properties": {
+        "imobiliaria": "Real Estate",
+        "sem_mobilias": "Unfurnished",
+        "ver_detalhes": "View Details"
+    },
+    "doorbellModal": {
+        "title": "Doorbell",
+        "description": "Press the doorbell to open the door",
+        "cobertura_trancada_desc": "Locked penthouse. Ring the doorbell to request entry. When you ring, you will be teleported to the apartment.",
+        "close": "Close",
+        "cancel": "Cancel",
+        "ringing": "Ringing...",
+        "ring_doorbell": "Ring Doorbell"
+    },
+    "editPenthouseModal": {
+        "title": "Edit Penthouse",
+        "close": "Close",
+        "nome_da_cobertura": "Penthouse Name",
+        "numero_maximo_visitantes": "Maximum number of visitors",
+        "acesso_cobertura": "Penthouse access",
+        "tipo_de_acesso": "Access Type",
+        "aberto": "Open",
+        "invisivel": "Invisible",
+        "trancado": "Locked",
+        "trancado_com_campainha": "Locked with Doorbell",
+        "salvar": "Save",
+        "cancelar": "Cancel",
+        "people_wanting_access": "People wanting to access the penthouse",
+        "no_pending_requests": "No pending requests",
+        "approve": "Approve",
+        "reject": "Reject"
+    },
+    "penthouseList": {
+        "title": "Penthouses",
+        "search_coberturas": "Search penthouses",
+        "edit": "Edit",
+        "ring_doorbell": "Ring Doorbell"
+    },
+    "aberto": "Open",
+    "acesso_cobertura": "Penthouse Access",
+    "aprovar": "Approve",
+    "campainha_tocada": "Doorbell rang!",
+    "editar_cobertura": "Edit Penthouse",
+    "erro_tocar_campainha": "Error ringing the doorbell",
+    "invisivel": "Invisible",
+    "nome_da_cobertura": "Penthouse Name",
+    "numero_maximo_visitantes": "Maximum Number of Visitors",
+    "pessoas_querendo_acessar_cobertura": "People wanting to access the penthouse",
+    "rejeitar": "Reject",
+    "salvando": "Saving",
+    "salvar_configuracoes": "Save Settings",
+    "sem_resposta": "No response",
+    "trancado": "Locked",
+    "trancado_com_campainha": "Locked with Doorbell"
+}

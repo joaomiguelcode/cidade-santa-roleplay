@@ -1,0 +1,174 @@
+{
+  "title": {
+    "hotbar": "Barre de raccourcis",
+    "main": "Inventaire",
+    "trunk": "Tronc",
+    "property": "Propriété",
+    "inspect": "Inspecter",
+    "shop": "Boutique",
+    "ground": "Sol",
+    "chest": "Coffre",
+    "preview": "Aperçu"
+  },
+  "use": "Utiliser",
+  "send": "Envoyer",
+  "delivery": "Livrer",
+  "destroy": "Détruire",
+  "destruct": "Détruire",
+  "collection": "Exclusivités",
+  "loading": "Chargement...",
+  "chestPermission": {
+    "title": "Configurer le coffre",
+    "subtitle": "Définissez qui peut retirer des objets.",
+    "viewPermissions": "Voir les autorisations du coffre",
+    "activePermissions": "Autorisations actives",
+    "loadingPermissions": "Chargement des autorisations...",
+    "noActivePermission": "Aucune autorisation active.",
+    "removePermission": "Retirer l'autorisation de {0}",
+    "close": "Fermer",
+    "configureBy": "Configurer par",
+    "whoCanWithdraw": "Qui peut retirer",
+    "configureMember": "Configurer un membre",
+    "configureRole": "Configurer un grade",
+    "member": "Membre",
+    "memberRole": "Grade du membre",
+    "memberId": "ID du membre",
+    "noOptionAvailable": "Aucune option disponible.",
+    "noOptionFound": "Aucune option trouvée.",
+    "saleCommission": "Commission sur les ventes",
+    "saleCommissionDescription": "Pourcentage reçu par le vendeur pour chaque transaction.",
+    "authorizeWithdraw": "Autoriser le retrait d'objets",
+    "authorizedToWithdraw": "Autorisé à retirer des objets",
+    "authorizeConfigureChest": "Autoriser la configuration du coffre",
+    "authorizedToConfigureChest": "Autorisé à configurer le coffre",
+    "immediateChangesHint": "Les modifications prennent effet immédiatement pour toutes les personnes concernées.",
+    "cancel": "Annuler",
+    "saveChanges": "Enregistrer les modifications"
+  },
+  "factionArsenal": {
+    "fallbackFactionName": "Faction Los Santos Vagos",
+    "howItWorks": "Comment ça marche ?",
+    "helpSubtitle": "Découvrez le rôle de chaque option de l'arsenal",
+    "close": "Fermer",
+    "back": "Retour",
+    "important": "IMPORTANT",
+    "understood": "Compris",
+    "stockNotice": "Tous les objets retirés par les membres via l'Arsenal sont automatiquement déduits du stock du Coffre du chef.",
+    "helpTopics": {
+      "position": {
+        "title": "Emplacement de l'arsenal",
+        "description": "Définit où les membres accèdent à l'arsenal. Il doit se trouver à 50 m maximum du QG."
+      },
+      "roles": {
+        "title": "Configurer les grades",
+        "description": "Sélectionnez le grade qui aura sa propre configuration."
+      },
+      "enable": {
+        "title": "Activer l'arsenal",
+        "description": "Autorise ou bloque l'accès à l'arsenal pour le grade sélectionné."
+      },
+      "cooldown": {
+        "title": "Temps d'attente",
+        "description": "Définit le temps que les membres doivent attendre avant de reprendre le kit."
+      },
+      "kit": {
+        "title": "Objets du kit",
+        "description": "Définit les armes, les munitions, les autres objets et les quantités attribués au grade."
+      },
+      "disable-all": {
+        "title": "Activer/Désactiver tous les grades",
+        "description": "Modifie l'accès à l'arsenal pour tous les grades de la faction à la fois."
+      }
+    },
+    "roleArsenalSection": "1. Arsenal du grade",
+    "activateArsenal": "Activer l'arsenal",
+    "deactivateArsenal": "Désactiver l'arsenal",
+    "enabled": "Activé",
+    "disabled": "Désactivé",
+    "withdrawRulesSection": "2. Règles de retrait",
+    "interval": "Intervalle",
+    "withdrawAgainHint": "Temps avant le prochain retrait",
+    "kitItemsSection": "3. Objets du kit ({0})",
+    "emptyKit": "Le kit de ce grade ne contient aucun objet.",
+    "itemQuantity": "Quantité de {0}",
+    "max": "Max.",
+    "removeItem": "Retirer {0}",
+    "addItem": "Ajouter un objet",
+    "saveChanges": "Enregistrer les modifications",
+    "itemPickerSubtitle": "Sélectionnez un objet à ajouter au kit du grade.",
+    "closeItemList": "Fermer la liste des objets",
+    "searchItemPlaceholder": "Rechercher des objets...",
+    "searchItem": "Rechercher des objets",
+    "loadingItems": "Chargement des objets...",
+    "noItemFound": "Aucun objet trouvé.",
+    "discardTitle": "Ignorer les modifications ?",
+    "discardDescription": "Vous avez modifié ce grade. Si vous revenez en arrière, ces modifications ne seront pas enregistrées.",
+    "continueEditing": "Continuer à modifier",
+    "discardAndBack": "Ignorer et revenir",
+    "searchRolePlaceholder": "Rechercher des grades...",
+    "searchRole": "Rechercher des grades",
+    "rolesCount": "{0} grades",
+    "noRoleFound": "Aucun grade trouvé.",
+    "itemsCount": "{0} objets",
+    "configureRoles": "Configurer les grades",
+    "setupPositionFirst": "Définissez d'abord l'emplacement de l'arsenal",
+    "toggleAllRoles": "Activer/Désactiver tous les grades",
+    "toggleAllRolesDescription": "Active ou désactive l'arsenal pour tous les grades de la faction",
+    "configureRolesDescription": "Kit, quantités, temps d'attente et activation/désactivation",
+    "editPosition": "Modifier l'emplacement",
+    "markPosition": "Définir l'emplacement de l'arsenal",
+    "editPositionDescription": "Enregistre votre position actuelle comme nouvel emplacement de l'arsenal",
+    "markPositionDescription": "Enregistre votre position actuelle comme emplacement de l'arsenal (50 m max. du QG)",
+    "removePosition": "Supprimer l'emplacement",
+    "removePositionDescription": "Supprime l'emplacement — personne ne pourra retirer le kit"
+  },
+  "utils": [
+    {
+      "button": "CLIC DROIT",
+      "description": "Utiliser l'article"
+    },
+    {
+      "button": "MAJ + CLIC DROIT",
+      "description": "Utiliser l'article"
+    },
+    {
+      "button": "MAJ + CLIC DROIT",
+      "description": "Utiliser tous les objets"
+    },
+    {
+      "button": "BOUTON GAUCHE",
+      "description": "Faites glisser 1 élément"
+    },
+    {
+      "button": "BOUTON GAUCHE + MAJ",
+      "description": "Faites glisser tout"
+    },
+    {
+      "button": "1 à 5",
+      "description": "Raccourcis rapides"
+    }
+  ],
+  "getAll": "OBTENEZ TOUT",
+  "getIllegal": "ÊTRE ILLÉGAL",
+  "upgradeInventoryTitle": "Améliorez votre inventaire",
+  "upgradeInventoryButton": "AUGMENTER L'ESPACE",
+  "noDescription": "Aucune information disponible sur cet article.",
+  "priceDesc": "Prix",
+  "quantityDesc": "Quantité",
+  "stockDesc": "Action",
+  "weightDesc": "Poids",
+  "economyDesc": "Économie",
+  "expiresInDesc": "Expire dans",
+  "durabilityDesc": "Durable pour",
+  "rechargeDesc": "Rechargeable",
+  "nameDesc": "Nom",
+  "passportDesc": "Passeport",
+  "ageDesc": "Âge",
+  "rolepassDesc": "Passe-rôle",
+  "keyDesc": "Clé",
+  "phoneDesc": "Téléphone",
+  "premiumDesc": "Prime",
+  "suitcaseDesc": "Valise",
+  "days": "jours",
+  "day": "jour"
+}

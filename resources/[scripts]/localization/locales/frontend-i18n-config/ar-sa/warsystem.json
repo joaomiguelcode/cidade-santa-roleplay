@@ -1,0 +1,61 @@
+{
+  "countdown": {
+    "invasion": "غزو",
+    "event": "حدث",
+    "starting_in": "يبدأ في "
+  },
+  "form_domination": {
+    "groups_not_selected": "لم يتم اختيار أي مجموعة",
+    "area_not_selected": "المنطقة غير محددة",
+    "points_invalid": "نقاط غير صالحة",
+    "players_invalid": "لاعبون غير صالحون",
+    "success": "نجاح",
+    "groups": "المجموعة",
+    "points": "النقاط",
+    "players": "اللاعبون",
+    "start_time": "وقت البدء",
+    "cancel": "إلغاء",
+    "save": "حفظ"
+  },
+  "form_invasion": {
+    "invalid_date": "تاريخ غير صالح",
+    "groups_not_selected": "لم يتم اختيار أي مجموعة",
+    "area_not_selected": "المنطقة غير محددة",
+    "points_invalid": "نقاط غير صالحة",
+    "players_invalid": "لاعبون غير صالحون",
+    "success": "نجاح",
+    "groups": "المجموعات",
+    "genneral": "عام",
+    "points": "النقاط",
+    "players": "اللاعبون",
+    "start_time": "وقت البدء",
+    "cancel": "إلغاء",
+    "save": "حفظ"
+  },
+  "form_war": {
+    "inputDate": "ar-sa",
+    "general": "عام",
+    "invalid_date": "تاريخ غير صالح",
+    "groups_not_selected": "لم يتم اختيار أي مجموعة",
+    "area_not_selected": "المنطقة غير محددة",
+    "points_invalid": "نقاط غير صالحة",
+    "players_invalid": "لاعبون غير صالحون",
+    "success": "نجاح",
+    "groups": "المجموعات",
+    "points": "النقاط",
+    "defense_groups": "مجموعات الدفاع",
+    "attack_groups": "مجموعات الهجوم",
+    "start_time": "وقت البدء",
+    "end_time": "وقت الانتهاء",
+    "cancel": "إلغاء",
+    "save": "حفظ"
+  },
+  "spectate": {
+    "spectating": "مراقبة"
+  },
+  "versus_queue": {
+    "you_are_in_queue": "أنت في طابور الـ x1",
+    "your_place_in_queue": "مكانك في الطابور هو",
+    "press_e_to_cancel": "اضغط E للإلغاء"
+  }
+}

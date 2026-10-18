@@ -1,0 +1,68 @@
+{
+  "search_placeholder": "Recherche",
+  "title": "Mes skins",
+  "description": "Choisissez entre différents modèles",
+  "tab_humanos": "Les humains",
+  "tab_animais": "Animaux",
+  "tab_personagens": "Personnages",
+  "equip_skin": "Équiper la peau",
+  "unequip_skin": "Déséquiper la peau",
+  "rotate_label": "Faire pivoter le personnage",
+  "pedshop": {
+    "ordinals": [
+      "Premier",
+      "Deuxième",
+      "Troisième",
+      "Quatrième",
+      "Cinquième",
+      "Sixième",
+      "Septième",
+      "Huitième",
+      "Neuvième",
+      "Dixième"
+    ],
+    "common": {
+      "close": "Fermer",
+      "back": "Retour"
+    },
+    "status": {
+      "permanent": "Permanent",
+      "temporary": "Temporaire",
+      "daysRemaining": "Il reste {days} {unit}",
+      "day": "jour",
+      "days": "jours"
+    },
+    "slots": {
+      "title": "Récupérer des Peds",
+      "subtitle": "Récupérez votre ped VIP ici !",
+      "slotLabel": "{ordinal} Ped",
+      "unselected": "Aucun ped sélectionné",
+      "select": "Sélectionner un Ped",
+      "swap": "Changer de Ped",
+      "swapCountdown": "Échange disponible pendant",
+      "remove": "Retirer le Ped",
+      "redeem": "Récupérer les Peds"
+    },
+    "selection": {
+      "title": "Sélectionner le {ordinal} Ped",
+      "subtitle": "Choisissez l'un des peds disponibles pour cet emplacement",
+      "alreadySelected": "Sélectionné dans un autre emplacement",
+      "confirm": "Confirmer le Ped",
+      "clear": "Retirer de cet emplacement"
+    },
+    "confirmation": {
+      "title": "Confirmer la Récupération",
+      "subtitle": "Vérifiez les peds sélectionnés avant de terminer la récupération.",
+      "notice": "Vous pouvez récupérer moins de peds que la limite disponible.",
+      "back": "Retour",
+      "submit": "Confirmer la Récupération",
+      "submitting": "Récupération...",
+      "error": "La récupération n'a pas pu être effectuée. Réessayez."
+    },
+    "unavailable": {
+      "title": "Peds Indisponibles !",
+      "text": "Vous n'avez actuellement aucun ped à récupérer.",
+      "button": "Terminer"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+    "petinfo": {
+        "header": {
+            "interactions": "التفاعلات"
+        },
+        "interactions": {
+            "title": "التفاعلات",
+            "description": "التفاعلات مع حيوانك الأليف"
+        },
+        "actions": {
+            "caresses": "دلع",
+            "play": "اللعب",
+            "feed": "إطعام",
+            "walk": "المشي",
+            "groom": "التنظيف",
+            "bath": "الاستحمام"
+        },
+        "stats": {
+            "hunger": "الجوع",
+            "level": "المستوى"
+        }
+    },
+    "savePet": "حفظ الحيوان الأليف",
+    "callPet": "استدعاء الحيوان الأليف",
+    "yourPets": "حيواناتك الأليفة المتبناة",
+    "yearsOld": "سنوات"
+}

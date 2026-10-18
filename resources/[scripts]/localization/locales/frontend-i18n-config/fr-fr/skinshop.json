@@ -1,0 +1,30 @@
+{
+  "home": {
+    "primary": "Primaire",
+    "secondary": "Secondaire",
+    "cancel": "Annuler",
+    "save": "Sauvegarder"
+  },
+  "clothes": {
+    "back": "DOS",
+    "vip": "UNIQUEMENT VIP",
+    "number": "Nombre"
+  },
+  "category": {
+    "torso": "Vestes",
+    "pants": "Pantalon",
+    "shoes": "Chaussures",
+    "tshirt": "T-shirts",
+    "arms": "Mains",
+    "hat": "Chapeau",
+    "glass": "Lunettes",
+    "accessory": "Accessoires",
+    "backpack": "Sacs à dos",
+    "mask": "Masque",
+    "vest": "Gilets",
+    "decals": "Décalcomanies",
+    "ear": "Boucles d'oreilles",
+    "bracelet": "Bracelets",
+    "watch": "Montres"
+  }
+}

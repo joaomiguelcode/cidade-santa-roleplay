@@ -1,0 +1,15 @@
+{
+  "kick_of_city": "طرد من المدينة",
+  "kick_message": "رسالة الطرد:",
+  "choose_option": "اختر خيارًا",
+  "cancel": "إلغاء",
+  "fill_field": "املأ الحقل",
+  "confirm": "تأكيد",
+
+  "min_bandit": "حد أدنى اللص:",
+  "max_bandit": "حد أقصى اللص:",
+  "min_police": "حد أدنى الشرطي:",
+  "max_police": "حد أقصى الشرطي:",
+  "estimated_time": "التقدير:",
+  "weapons_allowed": "الأسلحة المسموح بها:"
+}

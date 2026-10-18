@@ -1,0 +1,25 @@
+{
+  "next_weapon": "Próxima arma",
+  "factions_ranking": "RANKING DE FACciones",
+  "type_to_hide": "Escribe /ranking",
+  "time_played_ranking": "RANKING DE TIEMPO JUGADO",
+  "money_ranking": "RANKING DE DINERO",
+  "countdown_ranking": "RANKING DE CUENTA REGRESIVA",
+  "domination_ranking": "RANKING DE DOMINACIÓN",
+  "floor_arena_ranking": "Ranking Arena Pista",
+  "alive": "VIVOS",
+  "hours": "HORAS",
+  "kills": "KILLS",
+  "faction_01": "FACCIÓN 1",
+  "faction_02": "FACCIÓN 2",
+  "use_command": "Usa el comando",
+  "to_exit": "para salir",
+  "exit_pista": "/salirpista",
+
+  "you_are_in_queue": "estás en la cola de la ",
+  "players_left": "faltan {0} jugadores",
+  "to_be_start": "para iniciar",
+  "press": " presiona",
+  "to_cancel": "para cancelar",
+  "starting_at": "INICIANDO EN"
+}

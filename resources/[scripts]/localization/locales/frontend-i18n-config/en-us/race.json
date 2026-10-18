@@ -1,0 +1,9 @@
+{
+  "title": "Race Ranking",
+   "legend": "Is it between the 5 best in the circuit?",
+   "progress": "Progress",
+   "timer": "Time",
+   "ranking": "RANKING",
+   "instruction": "Press the key",
+   "instruction_2": "to close the ranking"
+}

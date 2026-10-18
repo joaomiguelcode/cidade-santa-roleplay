@@ -1,0 +1,20 @@
+hudConfiguration = {
+    version = "1.0.0",
+    hideCompleteHud = false,
+    speedometerUpdate = 120, -- in frames
+    minimapStyle = 0,
+    cinemaMode = false,
+    hideSpeedometer = false,
+    hideOrgWaypoints = false,
+    selectedWeather = "EXTRASUNNY",
+    currentTime = 12,
+    weatherSync = true,
+    timeSync = true,
+    chatModeration = true,
+    chatArenaCombat = true,
+    chatWarDomination = true,
+    chatItems = true,
+    chatSocial = "dating",
+    chatOrganization = true,
+    chatDealership = true,
+}

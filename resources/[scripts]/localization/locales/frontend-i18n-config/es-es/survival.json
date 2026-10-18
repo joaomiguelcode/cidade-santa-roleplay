@@ -1,0 +1,23 @@
+{
+  "callMedic": "Llamar Médico",
+  "cancel": "CANCELAR",
+  "confirm": "CONFIRMAR",
+  "reportPlayer": "Denunciar",
+  "reportPlayerText": "¿Realmente quieres denunciar a este jugador",
+  "reportPlayerText2": "por haberte matado sin motivo?",
+  "reportPlayerText3": "Las denuncias falsas pueden resultar en una sanción para ti",
+  "youDied": "Has muerto",
+  "by": "por",
+  "playerReported": "Jugador denunciado",
+
+  "timeLeft": "FALTAN",
+  "timeLeft2": "SEGUNDOS",
+  "timeLeft3": "PARA QUE RENAZCAS",
+
+  "pressF2": "PRESIONA F2 PARA LIBERAR EL RATÓN",
+
+  "chooseLocation": "Elige el lugar",
+
+  "spawnLabelVip": "DISPONIBLE EN VIP FAC PREMIUM",
+  "spawnLabelPremium": "DISPONIBLE EN VIP PLATA"
+}

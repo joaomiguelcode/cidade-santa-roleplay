@@ -1,0 +1,61 @@
+{
+  "countdown": {
+    "invasion": "INVASIÓN",
+    "event": "EVENTO",
+    "starting_in": "INICIANDO EN "
+  },
+  "form_domination": {
+    "groups_not_selected": "NINGÚN GRUPO SELECCIONADO",
+    "area_not_selected": "ÁREA NO SELECCIONADA",
+    "points_invalid": "PUNTOS INVÁLIDOS",
+    "players_invalid": "JUGADORES INVÁLIDOS",
+    "success": "ÉXITO",
+    "groups": "GRUPO",
+    "points": "PUNTOS",
+    "players": "JUGADORES",
+    "start_time": "HORARIO DE INICIO",
+    "cancel": "CANCELAR",
+    "save": "GUARDAR"
+  },
+  "form_invasion": {
+    "invalid_date": "FECHA INVÁLIDA",
+    "groups_not_selected": "NINGÚN GRUPO SELECCIONADO",
+    "area_not_selected": "ÁREA NO SELECCIONADA",
+    "points_invalid": "PUNTOS INVÁLIDOS",
+    "players_invalid": "JUGADORES INVÁLIDOS",
+    "success": "ÉXITO",
+    "groups": "GRUPOS",
+    "genneral": "GENERAL",
+    "points": "PUNTOS",
+    "players": "JUGADORES",
+    "start_time": "HORARIO DE INICIO",
+    "cancel": "CANCELAR",
+    "save": "GUARDAR"
+  }, 
+  "form_war": {
+    "inputDate": "en-es",
+    "general": "EN GENERAL",
+    "invalid_date": "FECHA INVÁLIDA",
+    "groups_not_selected": "NINGÚN GRUPO SELECCIONADO",
+    "area_not_selected": "ÁREA NO SELECCIONADA",
+    "points_invalid": "PUNTOS INVÁLIDOS",
+    "players_invalid": "JUGADORES INVÁLIDOS",
+    "success": "ÉXITO",
+    "groups": "GRUPOS",
+    "points": "PUNTOS",
+    "defense_groups": "GRUPOS DE DEFENSA",
+    "attack_groups": "GRUPOS DE ATAQUE",
+    "start_time": "HORARIO DE INICIO",
+    "end_time": "HORARIO DE FIN",
+    "cancel": "CANCELAR",
+    "save": "GUARDAR"
+  },
+  "spectate": {
+    "spectating": "ESPECTANDO"
+  },
+  "versus_queue": {
+    "you_are_in_queue": "ESTÁS EN LA COLA DEL 1V1",
+    "your_place_in_queue": "TU POSICIÓN EN LA COLA ES",
+    "press_e_to_cancel": "PRESIONA E PARA CANCELAR"
+  }
+}

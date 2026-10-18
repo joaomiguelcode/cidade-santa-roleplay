@@ -1,0 +1,38 @@
+{
+  "search": "البحث عن مركبة",
+  "categories": {
+    "null": "الكل",
+    "all": "الكل",
+    "cars": "السيارات",
+    "bikes": "الدراجات النارية",
+    "favorites": "المفضلة",
+    "favorite": "المفضلة",
+    "automobile": "سيارة",
+    "bike": "دراجة نارية",
+    "boat": "قارب",
+    "plane": "طائرة",
+    "heli": "مروحية",
+    "bicycle": "دراجة هوائية",
+    "quadbike": "دراجة رباعية"
+  },
+  "retire": "سحب",
+  "keep": "حفظ",
+
+  "statistics": {
+    "chassis": "الهيكل",
+    "engine": "المحرك",
+    "gas": "الوقود",
+    "body": "الهيكل الخارجي"
+  },
+  "chest": "الصندوق",
+  "fee": "الرسوم",
+  "feeCurrency": "ر.س",
+  "vehPayTax": "دفع الرسوم",
+  "vehSell": "بيع المركبة",
+  "vehTransfer": "نقل المركبة",
+  "vehBuy": "شراء",
+  "vehStoreItems": "تخزين العناصر",
+  "vehExpired": "منتهية الصلاحية",
+  "vehExpires": "تنتهي في:",
+  "vehicleDisappeared": "تختفي في:"
+}

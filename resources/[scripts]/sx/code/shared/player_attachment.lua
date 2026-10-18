@@ -1,0 +1,12 @@
+---A logica do sistema é relativamente simples;
+---O servidor envia o state de attachment para os dois clients, definindo a relação
+---entre um player e outro ( pai ou filho )
+---o filha tem a responsabilidade de dar attach do seu ped no seu parent
+---e o parente liberar attachments desativando *OnesyncEnableRemoteAttachmentSanitization* em sí mesmo
+---aguarda o filho estar devidamente attached e ativa *OnesyncEnableRemoteAttachmentSanitization*
+
+---@class PlayerAttachment
+---@field relationKind ePlayerAttachmentRelationKind
+---@field otherSource  Source
+---@field flags        number
+---@field createdAt    ServerTime

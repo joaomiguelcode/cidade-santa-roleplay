@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Domination loot</title>
+  <style>
+    * { box-sizing: border-box; }
+    html, body { margin: 0; width: 1024px; height: 1024px; overflow: hidden; background: transparent; }
+    .pile { position: absolute; width: 512px; height: 512px; overflow: hidden; }
+    .item { position: absolute; width: 96px; height: 96px; display: grid; place-items: center; transform: translate(-50%, -50%); }
+    .item img { max-width: 96px; max-height: 96px; width: auto; height: auto; object-fit: contain; }
+    .fallback { position: absolute; width: 38px; height: 38px; color: #ddd; }
+    .loaded .fallback { display: none; }
+    .floating { animation: float 2.8s ease-in-out infinite; }
+    @keyframes float { 0%,100% { transform: translate(-50%, -50%); } 50% { transform: translate(-50%, calc(-50% - 4px)); } }
+    @media (prefers-reduced-motion: reduce) { .floating { animation: none; } }
+  </style>
+</head>
+<body><script src="domination-loot.js"></script></body>
+</html>

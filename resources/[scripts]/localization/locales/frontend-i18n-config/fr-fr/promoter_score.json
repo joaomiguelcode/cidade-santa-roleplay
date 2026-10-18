@@ -1,0 +1,27 @@
+{
+  "old": {
+    "title": "Sur une échelle de 1 à 10, combien recommanderiez-vous la ville <br/> à un ami ou un membre de votre famille ?"
+  },
+  "org": {
+    "title": "Sur une échelle de 1 à 10, dans quelle mesure recommanderiez-vous cette <br/> organisation/faction à un ami ou un membre de votre famille ?"
+  },
+  "player": {
+    "title": "Sur une échelle de 1 à 10, combien recommanderiez-vous la ville <br/> à un ami ou un membre de votre famille ?"
+  },
+  "title": "Quelle note donneriez-vous à ce service ?",
+  "feedbackShort": "Laissez vos impressions sur le service ici",
+  "send": "Envoyer",
+  "thanks": "Merci d'avoir répondu !",
+  "thenQuestion": "Justifiez votre note pour le joueur",
+  "question": "De 1 à 10, quelle est la qualité de ce joueur ?",
+  "because": "Pourquoi avez-vous donné cette note ?",
+  "page": {
+    "counter": "Question"
+  },
+  "navigation": {
+    "cancel": "Annuler",
+    "back": "Dos",
+    "nextStep": "Question suivante",
+    "complete": "Soumettre l'évaluation"
+  }
+}

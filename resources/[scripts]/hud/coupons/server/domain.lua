@@ -1,0 +1,1 @@
+-- HUD module: coupons/server/domain.lua

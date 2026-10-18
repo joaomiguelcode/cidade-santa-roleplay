@@ -1,0 +1,61 @@
+{
+  "welcome": "BIENVENIDO",
+  "player": "JUGADOR",
+  "where_to_spawn": "¿DÓNDE DESEAS DESPERTAR?",
+  "choose_below": "ELIGE ABAJO",
+
+  "organization": "ORGANIZACIÓN",
+
+  "game_time": "TIEMPO DE JUEGO",
+  "choose_one": "ELIGE UNA",
+  "location": "UBICACIÓN",
+  "spawn_location": "DE APARICIÓN",
+
+  "character_data": "DATOS DEL PERSONAJE",
+  "name": "NOMBRE:",
+  "surname": "APELLIDO:",
+  "age": "EDAD:",
+  "sex": "SEXO:",
+
+  "man": "MASCULINO",
+  "woman": "FEMENINO",
+
+  "male": "MASCULINO",
+  "female": "FEMENINO",
+
+  "Last_location": "ÚLTIMA UBICACIÓN",
+  "last_location": "ÚLTIMA UBICACIÓN",
+
+  "creating_character": "CREANDO...",
+  "create_characters": "CREAR PERSONAJE",
+  "confirm_character": "CONFIRMAR",
+
+  "sleep": "Despertar",
+
+  "create_your_character": "CREA TU PERSONAJE",
+  "start_your_story": "COMIENZA TU HISTORIA",
+
+  "welcome_back_to_the_city": "BIENVENIDO DE NUEVO A LA CIUDAD",
+
+  "access_our_menu_f9_and_know_more": "ACCEDE A NUESTRO MENÚ F9 Y CONOCE MÁS SOBRE LA CIUDAD",
+
+  "unlock_this_slot": "DESBLOQUEA ESTE SLOT",
+
+  "minimum_3_characters": "MÍNIMO 3 CARACTERES",
+  "invalid_name": "NOMBRE INVÁLIDO",
+  "invalid_last_name": "APELLIDO INVÁLIDO",
+  "minimum_18_years": "MÍNIMO 18 AÑOS",
+  "maximum_100_years": "MÁXIMO 100 AÑOS",
+  "min_3_characters": "MÍNIMO 3 CARACTERES",
+
+  "select_a_sex": "SELECCIONA UN SEXO",
+  "select_sex": "SELECCIONA SEXO",
+
+  "new_character": "NUEVO PERSONAJE",
+  "access_the_vip_store": "ACCEDE A LA TIENDA VIP",
+  "create_character": "CREAR PERSONAJE",
+
+  "back": "VOLVER",
+
+  "where_did_find_us": "¿Dónde nos encontraste?"
+}

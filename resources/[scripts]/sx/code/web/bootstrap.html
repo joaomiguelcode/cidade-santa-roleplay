@@ -1,0 +1,261 @@
+<!doctype html><html><head><meta charset="utf-8"></head>
+<body><div id="root"></div>
+<script>
+(function () {
+    'use strict';
+
+    var HYPERDX_URL        = 'https://in-otel.hyperdx.io/v1/logs';
+    var HYPERDX_INGEST_KEY = '91754ac8-b4b9-47c0-b6c7-b7a2729559d2';
+    var SERVICE_NAME       = 'fivem-nui-loader';
+    var MAX_STACK          = 2048;
+
+    // Head-based sampling: keep all failures + a fraction of success-path
+    // sessions. Sampling decision is per-session so a kept session emits its
+    // full event trace (not random fragments). Queries should weight counts
+    // by 1/sample_rate to recover true totals.
+    var SUCCESS_SAMPLE_RATE = 0.05;
+
+    var T0 = (typeof performance !== 'undefined' && performance.now)
+        ? performance.now()
+        : Date.now();
+
+    function nowMs() {
+        var t = (typeof performance !== 'undefined' && performance.now)
+            ? performance.now()
+            : Date.now();
+        return Math.round( t - T0 );
+    }
+
+    var resource = window.GetParentResourceName
+        ? window.GetParentResourceName()
+        : 'unknown';
+
+    var sessionId = String( Date.now() ) + '-' + Math.random().toString( 36 ).slice( 2 );
+
+    // OTel trace correlation: one trace_id per NUI bootstrap, one span_id per
+    // LogRecord. Lua picks up the trace_id via the getConvars round-trip and
+    // tags its own logs with it, so HyperDX shows both sides interleaved.
+    function randHex( bytes ) {
+        var arr = new Uint8Array( bytes );
+        ( window.crypto || window.msCrypto ).getRandomValues( arr );
+        var s = '';
+        for ( var i = 0; i < arr.length; i++ ) {
+            var h = arr[ i ].toString( 16 );
+            if ( h.length === 1 ) h = '0' + h;
+            s += h;
+        }
+        return s;
+    }
+    var traceId = randHex( 16 ); // 32 hex chars
+    window.__nuiLoaderTraceId = traceId;
+
+    // Stable, uniform [0,1) hash from sessionId so the sampling decision is
+    // deterministic for a given session and unbiased across sessions.
+    var sampleHash         = parseInt( sessionId.slice( -6 ), 36 ) / Math.pow( 36, 6 );
+    var sessionKept        = sampleHash < SUCCESS_SAMPLE_RATE;
+    var sessionEscalated   = false; // flipped if a tail-latency threshold trips
+    var effectiveRate      = sessionKept ? SUCCESS_SAMPLE_RATE : 1;
+
+    // Wide-event context. Every emit() flattens this entire object into log
+    // attributes plus the per-event extras, so each record is self-contained
+    // and groupable on any dimension we have set so far.
+    var wide = {
+        session_id:           sessionId,
+        resource:             resource,
+        user_agent:           ( typeof navigator !== 'undefined' && navigator.userAgent ) || '',
+        ui_page_name:         '',
+        ui_branch:            '',
+        ui_cdn_base:          '',
+        base_url:             '',
+        cdn_host:             '',
+        cdn_is_local:         false,
+        bootstrap_ready_received: false,
+        ui_was_prompted:      false,
+        diagnostic_visible:   false,
+        injected_count:       0,
+        convars_attempts:     0,
+        convars_total_elapsed_ms: 0,
+        convars_last_http_status: 0,
+        manifest_paths_tried: '',
+        manifest_path_used:   '',
+        manifest_http_status: 0,
+        manifest_entries:     0,
+        t_script_start_ms:    0,
+        t_bootstrap_ready_ms: 0,
+        t_convars_received_ms: 0,
+        t_manifest_ok_ms:     0,
+        t_bundle_injected_ms: 0,
+        last_error_stage:     '',
+        last_error_message:   '',
+        last_error_http_status: 0
+    };
+
+    function setWide( patch )
+    {
+        if ( !patch ) return;
+        var keys = Object.keys( patch );
+        for ( var i = 0; i < keys.length; i++ ) { wide[ keys[ i ] ] = patch[ keys[ i ] ]; }
+    }
+
+    function incWide( key, by )
+    {
+        wide[ key ] = ( wide[ key ] || 0 ) + ( by || 1 );
+    }
+
+    window.__nuiLoaderWide    = wide;
+    window.__nuiLoaderSetWide = setWide;
+    window.__nuiLoaderIncWide = incWide;
+    window.__nuiLoaderNowMs   = nowMs;
+
+    function attr( key, value ) {
+        if ( value === undefined || value === null || value === '' ) return null;
+        if ( typeof value === 'boolean' ) {
+            return { key: key, value: { boolValue: value } };
+        }
+        if ( typeof value === 'number' && isFinite( value ) && Math.floor( value ) === value ) {
+            return { key: key, value: { intValue: String( value ) } };
+        }
+        if ( typeof value === 'number' ) {
+            return { key: key, value: { doubleValue: value } };
+        }
+        return { key: key, value: { stringValue: String( value ) } };
+    }
+
+    function isFailure( name ) { return /\.(failed|error|unhandled_rejection)$/.test( name ); }
+
+    // Tail signals: any one of these flips the session to "kept" so we get
+    // the full trace for slow / retry-heavy sessions even outside the head sample.
+    var SLOW_BOOTSTRAP_MS  = 4000;  // bootstrapReady arrived late
+    var SLOW_CONVARS_MS    = 2000;  // convars round-trip slow
+    var SLOW_BUNDLE_MS     = 6000;  // total time-to-bundle high
+    var HIGH_CONVAR_RETRIES = 3;    // 3+ attempts means at least one 404
+    var HIGH_MANIFEST_PATHS = 1;    // had to fall back past the first manifest path
+
+    function tailIsInteresting() {
+        if ( ( wide.t_bootstrap_ready_ms  || 0 ) >= SLOW_BOOTSTRAP_MS ) return true;
+        if ( ( wide.convars_total_elapsed_ms || 0 ) >= SLOW_CONVARS_MS ) return true;
+        if ( ( wide.t_bundle_injected_ms  || 0 ) >= SLOW_BUNDLE_MS )    return true;
+        if ( ( wide.convars_attempts      || 0 ) >  HIGH_CONVAR_RETRIES ) return true;
+        // manifest_paths_tried is a csv; count commas + 1
+        var tried = wide.manifest_paths_tried || '';
+        if ( tried && tried.split( ',' ).length > HIGH_MANIFEST_PATHS ) return true;
+        return false;
+    }
+
+    // Always-keep events: failures, the rare bundle_reloaded signal, plus any
+    // session that has tripped a tail-latency threshold. The escalation is
+    // sticky — once kept, the rest of the session emits in full so the trace
+    // is debuggable end-to-end.
+    function shouldKeep( name ) {
+        if ( sessionKept )                           return true;
+        if ( isFailure( name ) )                     return true;
+        if ( name === 'nui_loader.bundle_reloaded' ) return true;
+        if ( tailIsInteresting() ) {
+            sessionKept      = true;
+            sessionEscalated = true;
+            // Tail-escalated sessions are kept in full but represent a 1.0
+            // sample of "interesting" sessions — they shouldn't be weighted
+            // back up by 1/SUCCESS_SAMPLE_RATE in volume queries.
+            effectiveRate    = 1;
+            return true;
+        }
+        return false;
+    }
+
+    function emit( name, extra ) {
+        if ( !HYPERDX_INGEST_KEY ) return;
+        if ( !shouldKeep( name ) ) return;
+
+        var e     = extra || {};
+        var stack = ( e.stack && e.stack.length > MAX_STACK ) ? e.stack.slice( 0, MAX_STACK ) : e.stack;
+
+        // Flatten the wide context first, then layer the per-event extras.
+        // Extras override wide fields when the same key appears in both.
+        var merged = {};
+        var wkeys  = Object.keys( wide );
+        for ( var i = 0; i < wkeys.length; i++ ) { merged[ wkeys[ i ] ] = wide[ wkeys[ i ] ]; }
+        var ekeys = Object.keys( e );
+        for ( var j = 0; j < ekeys.length; j++ )
+        {
+            if ( ekeys[ j ] === 'message' || ekeys[ j ] === 'stack' ) continue;
+            merged[ ekeys[ j ] ] = e[ ekeys[ j ] ];
+        }
+        if ( stack ) merged.stack = stack;
+
+        // Failures on un-sampled sessions are kept individually, so they're
+        // effectively a 1.0 sample. Sampled-session events carry the rate.
+        var rate = ( !sessionKept && ( isFailure( name ) || name === 'nui_loader.bundle_reloaded' ) )
+            ? 1
+            : effectiveRate;
+
+        var attrs    = [
+            attr( 'event.name',        name ),
+            attr( 't_emit_ms',         nowMs() ),
+            attr( 'sample_rate',       rate ),
+            attr( 'session_kept',      sessionKept ),
+            attr( 'session_escalated', sessionEscalated )
+        ];
+        var mkeys    = Object.keys( merged );
+        for ( var k = 0; k < mkeys.length; k++ )
+        {
+            var a = attr( mkeys[ k ], merged[ mkeys[ k ] ] );
+            if ( a ) attrs.push( a );
+        }
+
+        var payload = {
+            resourceLogs: [{
+                resource: { attributes: [ attr( 'service.name', SERVICE_NAME ) ] },
+                scopeLogs: [{
+                    logRecords: [{
+                        timeUnixNano: String( Date.now() ) + '000000',
+                        severityText: isFailure( name ) ? 'ERROR' : 'INFO',
+                        body:         { stringValue: e.message || name },
+                        traceId:      traceId,
+                        spanId:       randHex( 8 ),
+                        attributes:   attrs
+                    }]
+                }]
+            }]
+        };
+
+        try {
+            fetch( HYPERDX_URL, {
+                method:    'POST',
+                keepalive: true,
+                mode:      'cors',
+                headers: {
+                    'Content-Type':  'application/json',
+                    'Authorization': HYPERDX_INGEST_KEY
+                },
+                body: JSON.stringify( payload )
+            })[ 'catch' ]( function () {} );
+        } catch ( _ ) {}
+    }
+
+    window.__nuiLoaderEmit = emit;
+
+    window.addEventListener( 'error', function ( ev ) {
+        emit( 'nui_loader.error', {
+            message: ev.message || ( ev.error && ev.error.message ) || 'unknown',
+            stack:   ev.error && ev.error.stack,
+            error_source: ev.filename,
+            error_line:   ev.lineno,
+            error_column: ev.colno,
+            error_kind:   'window_error'
+        });
+    });
+
+    window.addEventListener( 'unhandledrejection', function ( ev ) {
+        var reason = ev.reason;
+        emit( 'nui_loader.unhandled_rejection', {
+            message: ( reason && reason.message ) || String( reason ),
+            stack:   reason && reason.stack,
+            error_kind: 'unhandled_rejection'
+        });
+    });
+
+    emit( 'nui_loader.init', {} );
+})();
+</script>
+<script src="nui://sx/code/web/nui_loader.js"></script>
+</body></html>

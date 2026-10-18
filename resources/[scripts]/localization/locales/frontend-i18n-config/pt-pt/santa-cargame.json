@@ -1,0 +1,102 @@
+{
+  "carEvent": {
+    "accessibility": {
+      "match": "Partida",
+      "currentRound": "Ronda atual",
+      "remainingTime": "Tempo restante",
+      "ranking": "Ranking do evento",
+      "waitingRoom": "Sala de espera",
+      "lobbyCountdown": "Tempo para começar",
+      "invitation": "Convite para o evento",
+      "invitationCountdown": "Tempo restante do convite",
+      "tutorial": "Tutorial do evento"
+    },
+    "stats": {
+      "roundTime": "Tempo de ronda",
+      "round": "Ronda",
+      "mode": "Modo",
+      "suddenDeath": "Morte súbita"
+    },
+    "status": {
+      "findColor": "ENCONTRA A COR",
+      "findColors": "ENCONTRA AS CORES",
+      "timerLabel": "AS OUTRAS CORES CAEM EM",
+      "suddenDeathDescription": "As cores desaparecem e não voltam",
+      "defaultColor": "Amarelo",
+      "secondsUnit": "s"
+    },
+    "ranking": {
+      "title": "RANKING",
+      "players": "{current}/{max} jogadores",
+      "points": "{points} pts"
+    },
+    "lobby": {
+      "startsIn": "A iniciar em",
+      "players": "Jogadores"
+    },
+    "common": {
+      "exit": "Sair do evento",
+      "player": "Jogador",
+      "color": "Cor {index}"
+    },
+    "announce": {
+      "title": "CAR EVENT",
+      "sender": "Evento disponível",
+      "description": "Encontra as cores certas, sobrevive às rondas e disputa o topo do ranking",
+      "join": "Carrega para ir ao evento!",
+      "pending": "A aguardar entrada...",
+      "error": "Não foi possível entrar. Tenta novamente."
+    },
+    "tutorial": {
+      "name": "Líder do Jogo",
+      "skip": "para saltar o diálogo",
+      "text": "Conduzes sobre uma grelha colorida. As cores apresentadas são as que vão permanecer. Chega a uma delas antes de as outras caírem e sê o último sobrevivente!"
+    }
+  },
+  "eventHud": {
+    "rankingTitle": "RANKING",
+    "rankingSubtitle": "Pontuação atual do evento",
+    "roundsLabel": "Rondas",
+    "exitUse": "Usa",
+    "exitHint": "para sair do jogo",
+    "pointsSuffix": "pts",
+    "rankSuffix": "º",
+    "timeRemaining": "Tempo Restante"
+  },
+  "cargame": {
+    "exitUse": "Usa",
+    "exitHint": "para sair do jogo",
+    "logo": "Santa",
+    "rankSuffix": "º",
+    "lobby": {
+      "players": "Jogadores",
+      "startingIn": "a iniciar em"
+    },
+    "tutorial": {
+      "name": "Líder do Jogo",
+      "skip": "para saltar diálogo",
+      "text": "Conduzes sobre uma grelha colorida. As cores apresentadas são as que vão permanecer. Chega a uma delas antes de as outras caírem e sê o último sobrevivente!"
+    },
+    "result": {
+      "title": "Colisão Cromática",
+      "subtitle": "Resultado final dos participantes do Colisão Cromática.",
+      "close": "Fechar",
+      "colResult": "Resultado",
+      "colTime": "Tempo"
+    },
+    "ranking": {
+      "title": "Ranking Colisão Cromática",
+      "subtitle": "Acompanha o ranking do Colisão Cromática em tempo real",
+      "best": "Melhor Jogador",
+      "bestSub": "Melhor jogador de Colisão Cromática",
+      "colId": "ID",
+      "colName": "Nome",
+      "colPoints": "Pontos",
+      "colTime": "Tempo de Jogo",
+      "colWins": "Vitórias",
+      "empty": "Ainda não há jogadores no ranking",
+      "next": "Seguinte",
+      "previous": "Anterior"
+    }
+  }
+}

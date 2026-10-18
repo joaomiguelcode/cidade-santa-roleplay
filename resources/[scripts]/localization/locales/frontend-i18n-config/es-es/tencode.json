@@ -1,0 +1,8 @@
+{
+    "loading": "CARGANDO",
+    "frontRadar": "RADAR DELANTERO",
+    "rearRadar": "RADAR TRASERO",
+    "plate": "MATRÍCULA:",
+    "model": "MODELO:",
+    "speed": "VELOCIDAD:"
+}

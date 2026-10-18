@@ -1,0 +1,19 @@
+{
+  "notification_menu_title": "Menu de notifications",
+  "notification_menu_subtitle": "Centre de notifications",
+  "notifications_alerts": "Alertes",
+  "notifications_alerts_desc": "Définissez la visibilité des notifications.",
+  "notifications_sounds": "Sons d'alerte",
+  "notifications_sounds_desc": "Réglez le son de l'alerte.",
+  "clear_notifications": "Effacer les notifications",
+  "time_ago_prefix": "Il y a",
+  "time_now": "Maintenant",
+  "time_second": "deuxième",
+  "time_seconds": "secondes",
+  "time_minute": "minute",
+  "time_minutes": "minutes",
+  "time_hour": "heure",
+  "time_hours": "heures",
+  "time_day": "jour",
+  "time_days": "jours"
+}

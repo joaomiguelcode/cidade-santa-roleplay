@@ -1,0 +1,27 @@
+{
+    "Santa": {
+        "16": {
+            "adv": {
+                "notify": true
+            },
+            "ban": {
+                "notify": true
+            },
+            "bansource": {
+                "notify": false
+            },
+            "carry": {
+                "notify": true
+            },
+            "kick": {
+                "notify": true
+            },
+            "kicksource": {
+                "notify": false
+            },
+            "ney": {
+                "notify": true
+            }
+        }
+    }
+}

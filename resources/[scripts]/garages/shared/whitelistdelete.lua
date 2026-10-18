@@ -1,0 +1,5 @@
+WhitelistedDelete = {
+    `rvbatmanbau`,
+    `rvbatman`,
+    `graintrailer`
+}

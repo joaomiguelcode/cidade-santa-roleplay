@@ -1,0 +1,1105 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            overflow: hidden;
+            background: transparent;
+        }
+
+        canvas {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+
+        body.preview-map {
+            background: #17191c;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="zone"></canvas>
+    <script>
+        const canvas = document.getElementById('zone');
+        canvas.width = Math.max(window.innerWidth, 1);
+        canvas.height = Math.max(window.innerHeight, 1);
+
+        const context = canvas.getContext('2d');
+        context.imageSmoothingEnabled = true;
+        context.imageSmoothingQuality = 'high';
+
+        const ACTIVE_FRAME_INTERVAL_MS = 1000 / 12;
+        const DECORATIVE_FRAME_INTERVAL_MS = 1000 / 8;
+        const CIRCLE_MOTION_FRAME_INTERVAL_MS = 1000 / 24;
+        const LABEL_WORLD_HEIGHT = 30;
+        const LABEL_STATUS_WORLD_HEIGHT = 13;
+        const LABEL_STATUS_ZOOM_GAIN = 0.18;
+        const LABEL_WORLD_OFFSET = 30;
+        const LABEL_SCALE_MIN = 1;
+        const LABEL_SCALE_MAX = 2.5;
+        const LABEL_MAX_WIDTH_RATIO = 0.88;
+        const animationState = {
+            entries: [],
+            visible: false,
+            frameRequest: null,
+            lastFrameAt: 0,
+            labelScale: LABEL_SCALE_MIN,
+            targetLabelScale: LABEL_SCALE_MIN,
+            sharedViewport: false,
+            animationIntervalMs: 0,
+        };
+        const safeCrossSpriteCache = new Map();
+
+        function ClampLabelScale(scale) {
+            return Math.min(LABEL_SCALE_MAX, Math.max(LABEL_SCALE_MIN, Number(scale) || LABEL_SCALE_MIN));
+        }
+
+        // Densidade de pixels por metro do visual aprovado (slot 1024px sobre
+        // ~465m de zona). Efeitos definidos em pixels de canvas sao escalados
+        // por (densidade atual / referencia) para manterem o mesmo tamanho em
+        // metros no mapa, independente da janela projetada.
+        const REFERENCE_PIXELS_PER_WORLD_UNIT = 2.2;
+
+        function GetWorldPixelScale(bounds, viewport) {
+            const worldWidth = Math.max(bounds.maxX - bounds.minX, 1);
+            const worldHeight = Math.max(bounds.maxY - bounds.minY, 1);
+            const x = viewport.width / worldWidth / REFERENCE_PIXELS_PER_WORLD_UNIT;
+            const y = viewport.height / worldHeight / REFERENCE_PIXELS_PER_WORLD_UNIT;
+
+            return { x, y, uniform: Math.sqrt(x * y) };
+        }
+
+        function ProjectPoint(point, bounds, viewport) {
+            const worldWidth = Math.max(bounds.maxX - bounds.minX, 1);
+            const worldHeight = Math.max(bounds.maxY - bounds.minY, 1);
+
+            return {
+                x: viewport.x + (point[0] - bounds.minX) / worldWidth * viewport.width,
+                y: viewport.y + (bounds.maxY - point[1]) / worldHeight * viewport.height,
+            };
+        }
+
+        function NormalizeCircleMotion(motion, syncedAt) {
+            const validCircle = (circle) => circle && circle.center
+                && Number.isFinite(circle.center.x) && Number.isFinite(circle.center.y)
+                && Number.isFinite(circle.center.z) && Number.isFinite(circle.radius) && circle.radius >= 0;
+
+            if (!motion || !validCircle(motion.from) || !validCircle(motion.target)
+                || !Number.isFinite(motion.durationMs) || motion.durationMs < 0
+                || !Number.isFinite(motion.elapsedMs) || motion.elapsedMs < 0
+                || typeof motion.paused !== 'boolean'
+                || !['waiting', 'closing', 'finished'].includes(motion.phase)) {
+                return null;
+            }
+
+            const normalized = { ...motion, elapsedMs: Math.min(motion.elapsedMs, motion.durationMs), syncedAt };
+            normalized.moving = motion.phase === 'closing' && !motion.paused
+                && normalized.elapsedMs < motion.durationMs
+                && (motion.from.radius !== motion.target.radius || motion.from.center.x !== motion.target.center.x
+                    || motion.from.center.y !== motion.target.center.y);
+            return normalized;
+        }
+
+        function DrawCircleMotionZone(zone, bounds, viewport, time) {
+            const motion = zone.circleMotion;
+            const elapsedMs = motion.elapsedMs + (motion.phase === 'closing' && !motion.paused
+                ? Math.max(0, time - motion.syncedAt) : 0);
+            const progress = motion.phase === 'waiting' ? 0 : motion.phase === 'finished' || motion.durationMs === 0
+                ? 1 : Math.min(1, Math.max(0, elapsedMs / motion.durationMs));
+            const from = motion.from;
+            const target = motion.target;
+            const x = from.center.x + (target.center.x - from.center.x) * progress;
+            const y = from.center.y + (target.center.y - from.center.y) * progress;
+            const radius = from.radius + (target.radius - from.radius) * progress;
+            const center = ProjectPoint([x, y], bounds, viewport);
+            const color = GetZoneColor(zone);
+            const controlled = zone.state === 'controlled';
+            const worldScale = GetWorldPixelScale(bounds, viewport).uniform;
+            const radiusX = radius / Math.max(bounds.maxX - bounds.minX, 1) * viewport.width;
+            const radiusY = radius / Math.max(bounds.maxY - bounds.minY, 1) * viewport.height;
+
+            if (zone.fillOutside) {
+                context.beginPath();
+                context.rect(viewport.x, viewport.y, viewport.width, viewport.height);
+                context.ellipse(center.x, center.y, radiusX, radiusY, 0, 0, Math.PI * 2);
+                context.fillStyle = ToRgba(color, controlled ? 0.38 : 0.12);
+                context.fill('evenodd');
+
+                if (progress >= 1) motion.moving = false;
+                return;
+            }
+
+            // Preenchimento e borda da zona dominada, sem blur/sprites na superficie quilometrica.
+            context.beginPath();
+            context.ellipse(center.x, center.y, radiusX, radiusY, 0, 0, Math.PI * 2);
+            context.fillStyle = ToRgba(color, controlled ? 0.38 : 0.12);
+            context.fill();
+            context.save();
+            context.clip();
+
+            if (controlled) {
+                context.lineWidth = Math.max(3, 26 * worldScale);
+                context.strokeStyle = ToRgba(LightenColor(color, 0.46), 0.16);
+                context.stroke();
+            }
+
+            context.lineWidth = Math.max(1.25, 8 * worldScale);
+            context.strokeStyle = ToRgba(controlled ? LightenColor(color, 0.12) : color, 0.94);
+            context.stroke();
+            context.restore();
+
+            if (progress >= 1) motion.moving = false;
+        }
+
+        function GetZonePath(zone, bounds, viewport) {
+            const points = zone.points;
+
+            if (points.length < 3) {
+                return null;
+            }
+
+            if (zone.renderPath) {
+                return zone.renderPath;
+            }
+
+            const path = new Path2D();
+
+            points.forEach((point, index) => {
+                const projected = ProjectPoint(point, bounds, viewport);
+
+                if (index === 0) {
+                    path.moveTo(projected.x, projected.y);
+                    return;
+                }
+
+                path.lineTo(projected.x, projected.y);
+            });
+
+            path.closePath();
+            zone.renderPath = path;
+            return path;
+        }
+
+        function GetZoneColor(zone) {
+            if (zone.state === 'contested') {
+                return { r: 184, g: 104, b: 20 };
+            }
+
+            if (zone.state === 'cooldown' && !zone.color) {
+                return COOLDOWN_FALLBACK_COLOR;
+            }
+
+            const color = zone.color || [225, 45, 67];
+
+            return {
+                r: Number(color[0] ?? color.r ?? 225),
+                g: Number(color[1] ?? color.g ?? 45),
+                b: Number(color[2] ?? color.b ?? 67),
+            };
+        }
+
+        function ToRgba(color, alpha) {
+            return `rgba(${color.r}, ${color.g}, ${color.b}, ${alpha})`;
+        }
+
+        function LightenColor(color, amount) {
+            return {
+                r: Math.round(color.r + (255 - color.r) * amount),
+                g: Math.round(color.g + (255 - color.g) * amount),
+                b: Math.round(color.b + (255 - color.b) * amount),
+            };
+        }
+
+        function GetAccentColor(zone, color) {
+            if (zone.type === 'safe') {
+                return LightenColor(color, 0.18);
+            }
+
+            if (zone.state === 'contested') {
+                return { r: 255, g: 184, b: 56 };
+            }
+
+            if (zone.state === 'neutral') {
+                return LightenColor(color, 0.28);
+            }
+
+            if (zone.state === 'cooldown') {
+                return LightenColor(color, 0.28);
+            }
+
+            return color;
+        }
+
+        function GetSafeCrossSprite(accentColor, size, alpha) {
+            const roundedSize = Math.round(size * 10) / 10;
+            const key = `${accentColor.r}:${accentColor.g}:${accentColor.b}:${roundedSize}:${alpha}`;
+            const cached = safeCrossSpriteCache.get(key);
+
+            if (cached) {
+                return cached;
+            }
+
+            const padding = Math.ceil(size * 1.05);
+            const dimension = Math.ceil(size + padding * 2);
+            const sprite = document.createElement('canvas');
+            sprite.width = dimension;
+            sprite.height = dimension;
+
+            const spriteContext = sprite.getContext('2d');
+            const center = dimension / 2;
+            const thickness = size * 0.34;
+            const coreColor = LightenColor(accentColor, 0.62);
+
+            spriteContext.shadowColor = ToRgba(accentColor, alpha * 0.9);
+            spriteContext.shadowBlur = size * 0.78;
+            spriteContext.fillStyle = ToRgba(accentColor, alpha * 0.55);
+            spriteContext.fillRect(center - thickness * 0.75, center - size * 0.58, thickness * 1.5, size * 1.16);
+            spriteContext.fillRect(center - size * 0.58, center - thickness * 0.75, size * 1.16, thickness * 1.5);
+
+            spriteContext.shadowBlur = size * 0.18;
+            spriteContext.fillStyle = ToRgba(coreColor, Math.min(alpha + 0.24, 1));
+            spriteContext.fillRect(center - thickness * 0.5, center - size * 0.5, thickness, size);
+            spriteContext.fillRect(center - size * 0.5, center - thickness * 0.5, size, thickness);
+
+            safeCrossSpriteCache.set(key, sprite);
+            return sprite;
+        }
+
+        function GetZoneTitle(zone) {
+            if (zone.name) {
+                return zone.name;
+            }
+
+            const prefix = zone.type === 'safe' ? 'BASE' : 'ZONA';
+
+            return `${prefix} ${zone.label}`;
+        }
+
+        function GetPolygonCentroid(points) {
+            let crossSum = 0;
+            let xSum = 0;
+            let ySum = 0;
+
+            points.forEach((point, index) => {
+                const nextPoint = points[(index + 1) % points.length];
+                const cross = point[0] * nextPoint[1] - nextPoint[0] * point[1];
+
+                crossSum += cross;
+                xSum += (point[0] + nextPoint[0]) * cross;
+                ySum += (point[1] + nextPoint[1]) * cross;
+            });
+
+            if (Math.abs(crossSum) < 0.001) {
+                const totals = points.reduce((result, point) => {
+                    result.x += point[0];
+                    result.y += point[1];
+                    return result;
+                }, { x: 0, y: 0 });
+
+                return [totals.x / points.length, totals.y / points.length];
+            }
+
+            return [xSum / (3 * crossSum), ySum / (3 * crossSum)];
+        }
+
+        function GetZoneLabelPosition(points, labelScale) {
+            const centroid = GetPolygonCentroid(points);
+            const yValues = points.map((point) => point[1]);
+            const maxY = Math.max(...yValues);
+            const scaledOffset = LABEL_WORLD_OFFSET + (labelScale - LABEL_SCALE_MIN) * 8;
+
+            return [centroid[0], maxY + scaledOffset];
+        }
+
+        function FormatRemainingTime(remainingMs) {
+            const totalSeconds = Math.max(0, Math.ceil(remainingMs / 1000));
+            const minutes = Math.floor(totalSeconds / 60);
+            const seconds = totalSeconds % 60;
+
+            return `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`;
+        }
+
+        function GetZoneTimerText(zone, time) {
+            const countingDown = zone.state === 'capturing' || zone.state === 'cooldown';
+
+            if (!countingDown && zone.state !== 'contested') {
+                return '';
+            }
+
+            const remainingMs = Number(zone.remainingMs);
+
+            if (!Number.isFinite(remainingMs)) {
+                return '';
+            }
+
+            const elapsedMs = countingDown
+                ? Math.max(0, time - (zone.remainingSyncedAt || time))
+                : 0;
+
+            return FormatRemainingTime(Math.max(0, remainingMs) - elapsedMs);
+        }
+
+        function GetFittedLabelSizes(title, status, worldHeight, horizontalCorrection, viewport) {
+            let labelFontSize = LABEL_WORLD_HEIGHT / worldHeight * viewport.height * animationState.labelScale;
+            const statusScale = animationState.labelScale
+                * (1 + (animationState.labelScale - LABEL_SCALE_MIN) * LABEL_STATUS_ZOOM_GAIN);
+            let statusFontSize = LABEL_STATUS_WORLD_HEIGHT / worldHeight * viewport.height * statusScale;
+            const maxTextWidth = viewport.width * LABEL_MAX_WIDTH_RATIO;
+
+            context.save();
+            context.font = `800 ${labelFontSize}px Arial, sans-serif`;
+
+            const titleWidth = context.measureText(title).width * horizontalCorrection;
+
+            if (titleWidth > maxTextWidth) {
+                labelFontSize *= maxTextWidth / titleWidth;
+            }
+
+            if (status) {
+                context.font = `900 ${statusFontSize}px Arial, sans-serif`;
+
+                const statusWidth = context.measureText(status).width * horizontalCorrection;
+
+                if (statusWidth > maxTextWidth) {
+                    statusFontSize *= maxTextWidth / statusWidth;
+                }
+            }
+
+            context.restore();
+
+            return { labelFontSize, statusFontSize };
+        }
+
+        function GetZoneLabelLayout(zone, bounds, viewport, time) {
+            const timer = GetZoneTimerText(zone, time);
+
+            if (zone.labelLayout
+                && zone.labelLayout.scale === animationState.labelScale
+                && zone.labelLayout.timer === timer) {
+                return zone.labelLayout;
+            }
+
+            const position = GetZoneLabelPosition(zone.points, animationState.labelScale);
+            const projected = ProjectPoint(position, bounds, viewport);
+            const worldWidth = Math.max(bounds.maxX - bounds.minX, 1);
+            const worldHeight = Math.max(bounds.maxY - bounds.minY, 1);
+            const horizontalCorrection = worldHeight / worldWidth;
+            const title = GetZoneTitle(zone);
+            const status = [zone.status || '', timer].filter(Boolean).join('  ·  ');
+            const labelSizes = GetFittedLabelSizes(title, status, worldHeight, horizontalCorrection, viewport);
+            const labelFontSize = labelSizes.labelFontSize;
+            const statusFontSize = labelSizes.statusFontSize;
+            const color = GetZoneColor(zone);
+            const accentColor = GetAccentColor(zone, color);
+            const statusY = labelFontSize * 0.42 + statusFontSize * 0.52;
+
+            zone.labelLayout = {
+                scale: animationState.labelScale, timer, projected, horizontalCorrection,
+                title, status, labelFontSize, statusFontSize, accentColor, statusY,
+            };
+            return zone.labelLayout;
+        }
+
+        function DrawZoneLabel(zone, bounds, viewport, time) {
+            if (!zone.label && !zone.name) {
+                return;
+            }
+
+            const {
+                projected, horizontalCorrection, title, status,
+                labelFontSize, statusFontSize, accentColor, statusY,
+            } = GetZoneLabelLayout(zone, bounds, viewport, time);
+
+            context.save();
+            context.translate(projected.x, projected.y);
+            context.scale(horizontalCorrection, 1);
+            context.font = `800 ${labelFontSize}px Arial, sans-serif`;
+            context.textAlign = 'center';
+            context.textBaseline = 'middle';
+            context.lineJoin = 'round';
+            context.shadowColor = 'rgba(0, 0, 0, 0.82)';
+            context.shadowBlur = labelFontSize * 0.16;
+            context.lineWidth = labelFontSize * 0.17;
+            context.strokeStyle = 'rgba(6, 8, 10, 0.94)';
+            context.fillStyle = 'rgba(255, 255, 255, 1)';
+            if (zone.hideTitle !== true) {
+                context.strokeText(title, 0, -labelFontSize * 0.12);
+                context.fillText(title, 0, -labelFontSize * 0.12);
+            }
+
+            if (status) {
+                context.shadowBlur = statusFontSize * 0.24;
+                context.font = `900 ${statusFontSize}px Arial, sans-serif`;
+                context.lineWidth = statusFontSize * 0.24;
+                context.strokeText(status, 0, statusY);
+                context.fillStyle = ToRgba(accentColor, 1);
+                context.fillText(status, 0, statusY);
+            }
+
+            context.restore();
+        }
+
+        function DrawPerimeterFlow(zone, bounds, viewport, time, zoneIndex, accentColor) {
+            const worldXValues = zone.points.map((point) => point[0]);
+            const worldYValues = zone.points.map((point) => point[1]);
+            const zoneWorldWidth = Math.max(...worldXValues) - Math.min(...worldXValues);
+            const zoneWorldHeight = Math.max(...worldYValues) - Math.min(...worldYValues);
+            const smallZone = Math.min(zoneWorldWidth, zoneWorldHeight) < 80;
+            const contested = zone.state === 'contested';
+            const worldScale = GetWorldPixelScale(bounds, viewport).uniform;
+            const dashLength = (contested ? (smallZone ? 36 : 54) : (smallZone ? 64 : 86)) * worldScale;
+            const gapLength = (contested ? (smallZone ? 62 : 94) : (smallZone ? 46 : 62)) * worldScale;
+            const speed = (contested ? 0.2 : 0.085) * worldScale;
+            const phase = time * speed + zoneIndex * (dashLength + gapLength) * 0.31;
+            const flowColor = LightenColor(accentColor, contested ? 0.28 : 0.38);
+
+            context.save();
+            const path = GetZonePath(zone, bounds, viewport);
+            context.clip(path);
+            context.lineJoin = 'round';
+            context.lineCap = 'round';
+            context.globalCompositeOperation = 'lighter';
+            context.setLineDash([dashLength, gapLength]);
+            context.lineDashOffset = -phase;
+
+            context.lineWidth = (contested ? 14 : 11) * worldScale;
+            context.shadowColor = ToRgba(flowColor, contested ? 0.8 : 0.64);
+            context.shadowBlur = (contested ? 18 : 14) * worldScale;
+            context.strokeStyle = ToRgba(flowColor, contested ? 0.18 : 0.13);
+            context.stroke(path);
+
+            context.lineWidth = (contested ? 3.6 : 3) * worldScale;
+            context.shadowBlur = (contested ? 6 : 5) * worldScale;
+            context.strokeStyle = ToRgba(flowColor, contested ? 0.96 : 0.88);
+            context.stroke(path);
+
+            if (contested) {
+                const counterColor = LightenColor(accentColor, 0.72);
+                context.setLineDash([(smallZone ? 14 : 20) * worldScale, (smallZone ? 105 : 152) * worldScale]);
+                context.lineDashOffset = phase * 0.74;
+                context.lineWidth = 2.2 * worldScale;
+                context.shadowColor = ToRgba(counterColor, 0.82);
+                context.shadowBlur = 7 * worldScale;
+                context.strokeStyle = ToRgba(counterColor, 0.92);
+                context.stroke(path);
+            }
+
+            context.setLineDash([]);
+            context.restore();
+        }
+
+        function DrawControlledPulse(zone, bounds, viewport, pulse, accentColor) {
+            const pulseColor = LightenColor(accentColor, 0.46);
+            const worldScale = GetWorldPixelScale(bounds, viewport).uniform;
+
+            context.save();
+            const path = GetZonePath(zone, bounds, viewport);
+            context.clip(path);
+            context.globalCompositeOperation = 'lighter';
+            context.lineJoin = 'round';
+            context.lineCap = 'round';
+
+            context.lineWidth = (18 + pulse * 14) * worldScale;
+            context.shadowColor = ToRgba(pulseColor, 0.42 + pulse * 0.34);
+            context.shadowBlur = (14 + pulse * 18) * worldScale;
+            context.strokeStyle = ToRgba(pulseColor, 0.05 + pulse * 0.11);
+            context.stroke(path);
+
+            context.lineWidth = (2.6 + pulse * 1.8) * worldScale;
+            context.shadowBlur = (5 + pulse * 7) * worldScale;
+            context.strokeStyle = ToRgba(pulseColor, 0.54 + pulse * 0.4);
+            context.stroke(path);
+            context.restore();
+        }
+
+        function DrawSafeCrosses(zone, bounds, viewport, time, zoneIndex, accentColor) {
+            if (!zone.safeCrossLayout) {
+                let minX = Infinity;
+                let maxX = -Infinity;
+                let minY = Infinity;
+                let maxY = -Infinity;
+
+                zone.points.forEach((point) => {
+                    const projected = ProjectPoint(point, bounds, viewport);
+                    minX = Math.min(minX, projected.x);
+                    maxX = Math.max(maxX, projected.x);
+                    minY = Math.min(minY, projected.y);
+                    maxY = Math.max(maxY, projected.y);
+                });
+
+                const worldScale = GetWorldPixelScale(bounds, viewport);
+                const spacingBase = Math.max(58, Math.min(92, Math.min(viewport.width, viewport.height) * 0.082));
+                const crossSize = Math.max(16, Math.min(22, spacingBase * 0.23));
+                const spacingX = Math.max(spacingBase * worldScale.x, 8);
+                const spacingY = Math.max(spacingBase * worldScale.y, 8);
+                const sprite = GetSafeCrossSprite(accentColor, crossSize, 0.68);
+
+                zone.safeCrossLayout = {
+                    spacingX,
+                    spacingY,
+                    spriteWidth: sprite.width * worldScale.x,
+                    spriteHeight: sprite.height * worldScale.y,
+                    startX: Math.floor((minX - spacingX) / spacingX) * spacingX,
+                    startY: Math.floor((minY - spacingY) / spacingY) * spacingY,
+                    endX: maxX + spacingX,
+                    endY: maxY + spacingY,
+                    sprite,
+                };
+            }
+
+            const layout = zone.safeCrossLayout;
+            const progress = (time / 2400 + zoneIndex * 0.17) % 1;
+            const travelX = progress * layout.spacingX;
+            const travelY = progress * layout.spacingY;
+
+            context.save();
+            context.clip(GetZonePath(zone, bounds, viewport));
+            context.globalCompositeOperation = 'lighter';
+
+            for (let y = layout.startY; y <= layout.endY; y += layout.spacingY) {
+                for (let x = layout.startX; x <= layout.endX; x += layout.spacingX) {
+                    const crossX = x + travelX;
+                    const crossY = y - travelY;
+                    context.drawImage(
+                        layout.sprite,
+                        crossX - layout.spriteWidth / 2,
+                        crossY - layout.spriteHeight / 2,
+                        layout.spriteWidth,
+                        layout.spriteHeight
+                    );
+                }
+            }
+
+            context.restore();
+        }
+
+        function DrawVisibilityBand(zone, bounds, viewport, accentColor, pulse) {
+            const safe = zone.type === 'safe';
+            const contested = zone.state === 'contested';
+            const neutral = zone.state === 'neutral';
+            const worldScale = GetWorldPixelScale(bounds, viewport).uniform;
+
+            context.save();
+            const path = GetZonePath(zone, bounds, viewport);
+            context.clip(path);
+            context.globalCompositeOperation = 'lighter';
+            context.lineJoin = 'round';
+            context.lineWidth = (safe ? 28 : neutral ? 24 : contested ? 32 : 26) * worldScale;
+            context.shadowColor = ToRgba(accentColor, safe ? 0.62 : neutral ? 0.76 : contested ? 0.72 : 0.58);
+            context.shadowBlur = (safe ? 18 : neutral ? 18 : contested ? 22 : 18) * worldScale;
+            context.strokeStyle = ToRgba(accentColor, safe
+                ? 0.13
+                : neutral
+                    ? 0.17
+                    : contested
+                        ? 0.12 + pulse * 0.08
+                        : 0.1 + pulse * 0.06);
+            context.stroke(path);
+            context.restore();
+        }
+
+        // Zona dominada em recarga: fica indisponivel para captura ate o timer zerar.
+        // Desenho proprio (hachura de bloqueio, borda tracejada estatica, cadeado e barra
+        // de recarga); nao reaproveita nem altera as formulas dos outros estados. A cor e
+        // a da neutra (a zona fica sem dono), enviada pelo servidor; esta e so a reserva.
+        const COOLDOWN_FALLBACK_COLOR = { r: 145, g: 156, b: 170 };
+        const COOLDOWN_LOCK_WORLD_HEIGHT = 48;
+
+        function GetCooldownProgress(zone, time) {
+            const durationMs = Number(zone.cooldownDurationMs);
+            const remainingMs = Number(zone.remainingMs);
+
+            if (!Number.isFinite(durationMs) || durationMs <= 0 || !Number.isFinite(remainingMs)) {
+                return null;
+            }
+
+            const elapsedMs = Math.max(0, time - (zone.remainingSyncedAt || time));
+            const leftMs = Math.max(0, remainingMs - elapsedMs);
+
+            return 1 - Math.min(1, leftMs / durationMs);
+        }
+
+        function GetZoneScreenBox(zone, bounds, viewport) {
+            if (!zone.screenBox) {
+                const box = { minX: Infinity, minY: Infinity, maxX: -Infinity, maxY: -Infinity };
+
+                zone.points.forEach((point) => {
+                    const projected = ProjectPoint(point, bounds, viewport);
+                    box.minX = Math.min(box.minX, projected.x);
+                    box.maxX = Math.max(box.maxX, projected.x);
+                    box.minY = Math.min(box.minY, projected.y);
+                    box.maxY = Math.max(box.maxY, projected.y);
+                });
+
+                zone.screenBox = box;
+            }
+
+            return zone.screenBox;
+        }
+
+        function DrawCooldownHatch(path, box, worldScale, color, alpha) {
+            const spacing = 26 * worldScale.uniform;
+            const height = box.maxY - box.minY;
+            // 45 graus no mundo, mesmo com escala x/y diferente na janela projetada.
+            const run = height * (worldScale.x / worldScale.y);
+
+            context.save();
+            context.clip(path);
+            context.lineCap = 'butt';
+            context.lineWidth = 6 * worldScale.uniform;
+            context.strokeStyle = ToRgba(color, alpha);
+            context.beginPath();
+
+            for (let x = box.minX - run; x <= box.maxX; x += spacing) {
+                context.moveTo(x, box.maxY);
+                context.lineTo(x + run, box.minY);
+            }
+
+            context.stroke();
+            context.restore();
+        }
+
+        function TraceRoundedRect(x, y, width, height, radius) {
+            context.beginPath();
+            context.moveTo(x + radius, y);
+            context.lineTo(x + width - radius, y);
+            context.quadraticCurveTo(x + width, y, x + width, y + radius);
+            context.lineTo(x + width, y + height - radius);
+            context.quadraticCurveTo(x + width, y + height, x + width - radius, y + height);
+            context.lineTo(x + radius, y + height);
+            context.quadraticCurveTo(x, y + height, x, y + height - radius);
+            context.lineTo(x, y + radius);
+            context.quadraticCurveTo(x, y, x + radius, y);
+            context.closePath();
+        }
+
+        function DrawCooldownLock(zone, bounds, viewport, accentColor) {
+            const worldWidth = Math.max(bounds.maxX - bounds.minX, 1);
+            const worldHeight = Math.max(bounds.maxY - bounds.minY, 1);
+            const size = COOLDOWN_LOCK_WORLD_HEIGHT / worldHeight * viewport.height;
+            const center = ProjectPoint(GetPolygonCentroid(zone.points), bounds, viewport);
+            const bodyWidth = size * 0.78;
+            const bodyHeight = size * 0.56;
+            const bodyTop = -size * 0.06;
+            const shackleRadius = size * 0.24;
+            const bodyColor = LightenColor(accentColor, 0.55);
+
+            context.save();
+            context.translate(center.x, center.y);
+            // Mesma correcao horizontal dos rotulos: o cadeado fica proporcional no mundo.
+            context.scale(worldHeight / worldWidth, 1);
+            context.lineJoin = 'round';
+            context.lineCap = 'round';
+            context.shadowColor = ToRgba(accentColor, 0.9);
+            context.shadowBlur = size * 0.35;
+
+            context.beginPath();
+            context.arc(0, bodyTop, shackleRadius, Math.PI, 0);
+            context.lineWidth = size * 0.2;
+            context.strokeStyle = 'rgba(6, 8, 10, 0.92)';
+            context.stroke();
+            context.lineWidth = size * 0.11;
+            context.strokeStyle = ToRgba(bodyColor, 1);
+            context.stroke();
+
+            TraceRoundedRect(-bodyWidth / 2, bodyTop, bodyWidth, bodyHeight, size * 0.1);
+            context.lineWidth = size * 0.09;
+            context.strokeStyle = 'rgba(6, 8, 10, 0.92)';
+            context.stroke();
+            context.fillStyle = ToRgba(bodyColor, 1);
+            context.fill();
+
+            context.shadowBlur = 0;
+            context.fillStyle = 'rgba(28, 26, 44, 0.95)';
+            context.beginPath();
+            context.arc(0, bodyTop + bodyHeight * 0.42, size * 0.075, 0, Math.PI * 2);
+            context.fill();
+            context.fillRect(-size * 0.03, bodyTop + bodyHeight * 0.42, size * 0.06, bodyHeight * 0.34);
+            context.restore();
+        }
+
+        function DrawCooldownZone(zone, path, bounds, viewport, time) {
+            const color = GetZoneColor(zone);
+            const accentColor = GetAccentColor(zone, color);
+            const worldScale = GetWorldPixelScale(bounds, viewport);
+            const box = GetZoneScreenBox(zone, bounds, viewport);
+            const progress = GetCooldownProgress(zone, time);
+
+            context.fillStyle = ToRgba(color, 0.26);
+            context.fill(path);
+            DrawCooldownHatch(path, box, worldScale, accentColor, 0.16);
+
+            if (progress !== null && progress > 0) {
+                // Barra de recarga: a zona acende de baixo para cima ate liberar.
+                const levelY = box.maxY - (box.maxY - box.minY) * progress;
+
+                context.save();
+                context.clip(path);
+                context.beginPath();
+                context.rect(box.minX - 2, levelY, box.maxX - box.minX + 4, box.maxY - levelY + 2);
+                context.clip();
+                context.fillStyle = ToRgba(accentColor, 0.14);
+                context.fillRect(box.minX - 2, levelY, box.maxX - box.minX + 4, box.maxY - levelY + 2);
+                DrawCooldownHatch(path, box, worldScale, LightenColor(accentColor, 0.2), 0.26);
+                context.restore();
+
+                context.save();
+                context.clip(path);
+                context.globalCompositeOperation = 'lighter';
+                context.lineCap = 'round';
+                context.lineWidth = 2.6 * worldScale.uniform;
+                context.shadowColor = ToRgba(accentColor, 0.9);
+                context.shadowBlur = 9 * worldScale.uniform;
+                context.strokeStyle = ToRgba(LightenColor(accentColor, 0.45), 0.92);
+                context.beginPath();
+                context.moveTo(box.minX, levelY);
+                context.lineTo(box.maxX, levelY);
+                context.stroke();
+                context.restore();
+            }
+
+            context.save();
+            context.clip(path);
+            context.lineJoin = 'round';
+            context.setLineDash([22 * worldScale.uniform, 14 * worldScale.uniform]);
+            context.lineWidth = 7 * worldScale.uniform;
+            context.shadowColor = ToRgba(accentColor, 0.7);
+            context.shadowBlur = 10 * worldScale.uniform;
+            context.strokeStyle = ToRgba(LightenColor(accentColor, 0.15), 0.92);
+            context.stroke(path);
+            context.setLineDash([]);
+            context.restore();
+
+            DrawCooldownLock(zone, bounds, viewport, accentColor);
+        }
+
+        function DrawZone(zone, bounds, viewport, time, zoneIndex) {
+            if (zone.circleMotion) {
+                DrawCircleMotionZone(zone, bounds, viewport, time);
+                return;
+            }
+
+            const path = GetZonePath(zone, bounds, viewport);
+
+            if (!path) {
+                return;
+            }
+
+            if (zone.state === 'cooldown') {
+                DrawCooldownZone(zone, path, bounds, viewport, time);
+                DrawZoneLabel(zone, bounds, viewport, time);
+                return;
+            }
+
+            const color = GetZoneColor(zone);
+            const accentColor = GetAccentColor(zone, color);
+            const safe = zone.type === 'safe';
+            const contested = zone.state === 'contested';
+            const neutral = zone.state === 'neutral';
+            const pulseSpeed = contested ? 190 : 400;
+            const pulse = safe || neutral
+                ? 0.6
+                : (Math.sin(time / pulseSpeed + zoneIndex * 1.4) + 1) / 2;
+            const fillAlpha = safe ? 0.24 : neutral ? 0.4 : contested ? 0.36 : 0.38;
+            const pulseFillAlpha = safe
+                ? 0.07
+                : neutral
+                    ? 0.14
+                    : contested
+                        ? 0.1 + pulse * 0.17
+                        : 0.05 + pulse * 0.16;
+
+            context.fillStyle = ToRgba(color, fillAlpha);
+            context.fill(path);
+
+            context.save();
+            context.clip(path);
+            context.fillStyle = ToRgba(accentColor, pulseFillAlpha);
+            context.fillRect(viewport.x, viewport.y, viewport.width, viewport.height);
+            context.restore();
+
+            DrawVisibilityBand(zone, bounds, viewport, accentColor, pulse);
+
+            if (safe) {
+                DrawSafeCrosses(zone, bounds, viewport, time, zoneIndex, accentColor);
+            }
+
+            context.save();
+            context.clip(path);
+            context.lineJoin = 'round';
+            context.lineWidth = (safe ? 8 : neutral ? 8 : contested ? 10 : 8) * GetWorldPixelScale(bounds, viewport).uniform;
+            context.shadowColor = ToRgba(accentColor, safe ? 0.78 : neutral ? 0.86 : contested ? 0.9 : 0.76);
+            context.shadowBlur = (safe ? 13 : neutral ? 13 : contested ? 15 : 12) * GetWorldPixelScale(bounds, viewport).uniform;
+            context.strokeStyle = ToRgba(LightenColor(accentColor, safe ? 0.18 : neutral ? 0.2 : contested ? 0.18 : 0.12),
+                safe
+                    ? 0.94
+                    : neutral
+                        ? 0.98
+                        : contested
+                            ? 0.84 + pulse * 0.16
+                            : 0.88 + pulse * 0.12);
+            context.stroke(path);
+            context.restore();
+
+            if (contested) {
+                DrawPerimeterFlow(zone, bounds, viewport, time, zoneIndex, accentColor);
+            } else if (!safe && !neutral) {
+                DrawControlledPulse(zone, bounds, viewport, pulse, accentColor);
+            }
+
+            DrawZoneLabel(zone, bounds, viewport, time);
+        }
+
+        function IsActiveAnimationZone(zone) {
+            return !zone.circleMotion && (zone.state === 'capturing' || zone.state === 'contested');
+        }
+
+        function IsDecorativeAnimationZone(zone) {
+            return !zone.circleMotion && (zone.type === 'safe' || zone.state === 'controlled' || zone.state === 'cooldown');
+        }
+
+        function IsAnimatedZone(zone) {
+            return zone.circleMotion ? zone.circleMotion.moving
+                : IsActiveAnimationZone(zone) || IsDecorativeAnimationZone(zone);
+        }
+
+        function ResolveAnimationInterval(entries) {
+            const movingCircles = entries.filter((entry) => entry.zone.circleMotion?.moving);
+
+            if (movingCircles.length > 0) {
+                return movingCircles.reduce((interval, entry) => {
+                    const requested = Number(entry.zone.circleMotionFrameIntervalMs);
+                    const valid = Number.isFinite(requested)
+                        && requested >= CIRCLE_MOTION_FRAME_INTERVAL_MS && requested <= 1000;
+                    return Math.min(interval, valid ? requested : CIRCLE_MOTION_FRAME_INTERVAL_MS);
+                }, Infinity);
+            }
+
+            if (entries.some((entry) => IsActiveAnimationZone(entry.zone))) {
+                return ACTIVE_FRAME_INTERVAL_MS;
+            }
+
+            if (entries.some((entry) => IsDecorativeAnimationZone(entry.zone))) {
+                return DECORATIVE_FRAME_INTERVAL_MS;
+            }
+
+            return 0;
+        }
+
+        function DrawZones(time, forceAll = false) {
+            if (animationState.entries.length === 0) {
+                context.clearRect(0, 0, canvas.width, canvas.height);
+                return;
+            }
+
+            const labelScaleDifference = animationState.targetLabelScale - animationState.labelScale;
+            const labelScaleChanged = animationState.labelScale !== animationState.targetLabelScale;
+
+            if (Math.abs(labelScaleDifference) < 0.002) {
+                animationState.labelScale = animationState.targetLabelScale;
+            } else {
+                animationState.labelScale += labelScaleDifference * 0.28;
+            }
+
+            const hasAnimatedEntry = animationState.animationIntervalMs > 0;
+
+            if (!forceAll && animationState.sharedViewport && !labelScaleChanged && !hasAnimatedEntry) {
+                return;
+            }
+
+            if (forceAll || animationState.sharedViewport) {
+                context.clearRect(0, 0, canvas.width, canvas.height);
+            }
+
+            animationState.entries.forEach((entry, zoneIndex) => {
+                const viewport = entry.viewport;
+                const animated = IsAnimatedZone(entry.zone);
+
+                if (!forceAll && !animationState.sharedViewport && !labelScaleChanged && !animated) {
+                    return;
+                }
+
+                if (!forceAll && !animationState.sharedViewport) {
+                    context.clearRect(viewport.x, viewport.y, viewport.width, viewport.height);
+                }
+
+                context.save();
+                context.beginPath();
+                context.rect(viewport.x, viewport.y, viewport.width, viewport.height);
+                context.clip();
+                DrawZone(entry.zone, entry.bounds, viewport, time, zoneIndex);
+                context.restore();
+            });
+
+            // O ultimo frame pinta o destino antes de encerrar a animacao geometrica.
+            animationState.animationIntervalMs = ResolveAnimationInterval(animationState.entries);
+        }
+
+        function NeedsAnimation() {
+            return animationState.visible && animationState.entries.length > 0 && (
+                animationState.animationIntervalMs > 0
+                || (animationState.entries.some((entry) => !entry.zone.circleMotion)
+                    && Math.abs(animationState.targetLabelScale - animationState.labelScale) >= 0.002)
+            );
+        }
+
+        function Animate(time) {
+            animationState.frameRequest = null;
+
+            if (!animationState.visible) {
+                return;
+            }
+
+            const frameIntervalMs = animationState.animationIntervalMs > 0
+                ? animationState.animationIntervalMs
+                : ACTIVE_FRAME_INTERVAL_MS;
+
+            if (animationState.visible && time - animationState.lastFrameAt >= frameIntervalMs) {
+                animationState.lastFrameAt = time;
+                DrawZones(time);
+            }
+
+            if (NeedsAnimation()) {
+                animationState.frameRequest = window.requestAnimationFrame(Animate);
+            }
+        }
+
+        function SyncAnimationLoop() {
+            if (NeedsAnimation()) {
+                if (animationState.frameRequest === null) {
+                    animationState.lastFrameAt = animationState.entries.some((entry) => entry.zone.circleMotion?.moving)
+                        ? performance.now() : 0;
+                    animationState.frameRequest = window.requestAnimationFrame(Animate);
+                }
+
+                return;
+            }
+
+            if (animationState.frameRequest !== null) {
+                window.cancelAnimationFrame(animationState.frameRequest);
+                animationState.frameRequest = null;
+            }
+        }
+
+        function SetVisible(visible) {
+            const becameVisible = visible && !animationState.visible;
+            animationState.visible = visible;
+
+            if (becameVisible) {
+                // Aplica os dados recebidos enquanto oculta, inclusive zonas estaticas.
+                DrawZones(performance.now(), true);
+            }
+
+            SyncAnimationLoop();
+        }
+
+        function ScaleAtlasViewport(viewport, atlasWidth, atlasHeight) {
+            const sourceWidth = Math.max(Number(atlasWidth) || canvas.width, 1);
+            const sourceHeight = Math.max(Number(atlasHeight) || canvas.height, 1);
+
+            return {
+                x: Number(viewport.x || 0) / sourceWidth * canvas.width,
+                y: Number(viewport.y || 0) / sourceHeight * canvas.height,
+                width: Number(viewport.width || 0) / sourceWidth * canvas.width,
+                height: Number(viewport.height || 0) / sourceHeight * canvas.height,
+            };
+        }
+
+        window.addEventListener('message', (event) => {
+            const data = event.data || {};
+
+            if (data.action === 'drawZones') {
+                const viewport = { x: 0, y: 0, width: canvas.width, height: canvas.height };
+                const remainingSyncedAt = performance.now();
+                animationState.sharedViewport = true;
+                animationState.entries = (data.zones || []).map((zone) => ({
+                    zone: { ...zone, points: zone.points || [], remainingSyncedAt,
+                        circleMotion: NormalizeCircleMotion(zone.circleMotion, remainingSyncedAt) },
+                    bounds: data.bounds,
+                    viewport,
+                }));
+                animationState.animationIntervalMs = ResolveAnimationInterval(animationState.entries);
+                animationState.labelScale = ClampLabelScale(data.labelScale);
+                animationState.targetLabelScale = animationState.labelScale;
+                // Atualizar dados nao pode desfazer um setVisible(false) do Lua.
+                if (animationState.visible) {
+                    DrawZones(performance.now(), true);
+                }
+                SyncAnimationLoop();
+                return;
+            }
+
+            if (data.action === 'drawAtlas') {
+                const remainingSyncedAt = performance.now();
+                animationState.sharedViewport = false;
+                animationState.entries = (data.entries || []).map((entry) => ({
+                    zone: {
+                        ...entry.zone,
+                        points: (entry.zone && entry.zone.points) || [],
+                        remainingSyncedAt,
+                        circleMotion: NormalizeCircleMotion(entry.zone?.circleMotion, remainingSyncedAt),
+                    },
+                    bounds: entry.bounds,
+                    viewport: ScaleAtlasViewport(entry.viewport, data.atlasWidth, data.atlasHeight),
+                }));
+                animationState.animationIntervalMs = ResolveAnimationInterval(animationState.entries);
+                animationState.labelScale = ClampLabelScale(data.labelScale);
+                animationState.targetLabelScale = animationState.labelScale;
+                if (animationState.visible) {
+                    DrawZones(performance.now(), true);
+                }
+                SyncAnimationLoop();
+                return;
+            }
+
+            if (data.action === 'setLabelScale') {
+                animationState.targetLabelScale = ClampLabelScale(data.scale);
+                SyncAnimationLoop();
+                return;
+            }
+
+            if (data.action === 'setVisible') {
+                SetVisible(data.visible === true);
+            }
+        });
+
+        const previewMode = new URLSearchParams(window.location.search).get('preview');
+
+        if (previewMode === 'timer') {
+            document.body.classList.add('preview-map');
+            window.postMessage({
+                action: 'drawZones',
+                bounds: { minX: 0, minY: 0, maxX: 600, maxY: 500 },
+                labelScale: 1.15,
+                zones: [{
+                    id: 'preview-timer',
+                    label: 'A',
+                    name: 'ZONA A',
+                    status: 'SENDO DOMINADA - LOS SANTOS',
+                    state: 'capturing',
+                    type: 'capture',
+                    color: [225, 45, 67],
+                    remainingMs: 7 * 60 * 1000 + 42 * 1000,
+                    points: [
+                        [95, 120],
+                        [265, 90],
+                        [430, 145],
+                        [500, 260],
+                        [405, 360],
+                        [210, 390],
+                        [75, 275],
+                    ],
+                }],
+            }, '*');
+            window.postMessage({ action: 'setVisible', visible: true }, '*');
+        }
+    </script>
+</body>
+</html>

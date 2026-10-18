@@ -1,0 +1,1 @@
+CompX1InviteManager = {}

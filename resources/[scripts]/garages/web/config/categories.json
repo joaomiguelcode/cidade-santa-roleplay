@@ -1,0 +1,5 @@
+[
+    { "id": 1, "type": null },
+    { "id": 2, "type": "cars" },
+    { "id": 3, "type": "bikes" }
+]

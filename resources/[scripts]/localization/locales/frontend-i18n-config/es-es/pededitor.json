@@ -1,0 +1,68 @@
+{
+    "search_placeholder": "Buscar",
+    "title": "Mis Skins",
+    "description": "Elige entre diferentes modelos",
+    "tab_humanos": "Humanos",
+    "tab_animais": "Animales",
+    "tab_personagens": "Personajes",
+    "equip_skin": "Equipar Skin",
+    "unequip_skin": "Desequipar Skin",
+    "rotate_label": "Girar Personaje",
+    "pedshop": {
+        "ordinals": [
+            "Primero",
+            "Segundo",
+            "Tercero",
+            "Cuarto",
+            "Quinto",
+            "Sexto",
+            "Séptimo",
+            "Octavo",
+            "Noveno",
+            "Décimo"
+        ],
+        "common": {
+            "close": "Cerrar",
+            "back": "Volver"
+        },
+        "status": {
+            "permanent": "Permanente",
+            "temporary": "Temporal",
+            "daysRemaining": "Quedan {days} {unit}",
+            "day": "día",
+            "days": "días"
+        },
+        "slots": {
+            "title": "Canjear Peds",
+            "subtitle": "¡Canjea aquí tu ped VIP!",
+            "slotLabel": "{ordinal} Ped",
+            "unselected": "Ped no seleccionado",
+            "select": "Seleccionar Ped",
+            "swap": "Cambiar Ped",
+            "swapCountdown": "Cambio disponible durante",
+            "remove": "Quitar Ped",
+            "redeem": "Canjear Peds"
+        },
+        "selection": {
+            "title": "Seleccionar {ordinal} Ped",
+            "subtitle": "Elige uno de los peds disponibles para ocupar esta ranura",
+            "alreadySelected": "Seleccionado en otra ranura",
+            "confirm": "Confirmar Ped",
+            "clear": "Quitar de esta ranura"
+        },
+        "confirmation": {
+            "title": "Confirmar Canje",
+            "subtitle": "Revisa los peds seleccionados antes de completar el canje.",
+            "notice": "Puedes canjear menos peds que el límite disponible.",
+            "back": "Volver",
+            "submit": "Confirmar Canje",
+            "submitting": "Canjeando...",
+            "error": "No se pudo completar el canje. Inténtalo de nuevo."
+        },
+        "unavailable": {
+            "title": "¡Peds no disponibles!",
+            "text": "No tienes peds para canjear en este momento.",
+            "button": "Finalizar"
+        }
+    }
+}

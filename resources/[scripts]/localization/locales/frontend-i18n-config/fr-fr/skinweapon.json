@@ -1,0 +1,21 @@
+{
+  "skinweapon_title": "Marché de la peau",
+  "skinweapon_subtitle": "Obtenez votre peau",
+  "skinweapon_category_pistol": "Pistolets",
+  "skinweapon_category_my": "Possédé",
+  "skinweapon_category_rifle": "Fusils",
+  "skinweapon_input_placeholder": "Rechercher un skin...",
+  "skinweapon_selected_skin": "Peau sélectionnée",
+  "skinweapon_price": "Prix",
+  "skinweapon_stock": "Action",
+  "skinweapon_rarity": "Rareté",
+  "skinweapon_buy": "Acheter",
+  "skinweapon_transfer": "Transfert",
+  "skinweapon_equip_try": "Équiper/Déséquiper",
+  "skinweapon_equip": "Équiper",
+  "skinweapon_modes": {
+    "Pistol": "Pistolets",
+    "Possuidas": "Possédé",
+    "Rifle": "Fusils"
+  }
+}

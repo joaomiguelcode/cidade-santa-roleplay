@@ -1,0 +1,102 @@
+{
+  "carEvent": {
+    "accessibility": {
+      "match": "المباراة",
+      "currentRound": "الجولة الحالية",
+      "remainingTime": "الوقت المتبقي",
+      "ranking": "ترتيب الحدث",
+      "waitingRoom": "غرفة الانتظار",
+      "lobbyCountdown": "الوقت حتى البدء",
+      "invitation": "دعوة الحدث",
+      "invitationCountdown": "الوقت المتبقي للدعوة",
+      "tutorial": "شرح الحدث"
+    },
+    "stats": {
+      "roundTime": "وقت الجولة",
+      "round": "الجولة",
+      "mode": "الوضع",
+      "suddenDeath": "موت مفاجئ"
+    },
+    "status": {
+      "findColor": "اعثر على اللون",
+      "findColors": "اعثر على الألوان",
+      "timerLabel": "تسقط الألوان الأخرى خلال",
+      "suddenDeathDescription": "الألوان المعروضة تسقط ولا تعود",
+      "defaultColor": "أصفر",
+      "secondsUnit": "ث"
+    },
+    "ranking": {
+      "title": "الترتيب",
+      "players": "{current}/{max} لاعبين",
+      "points": "{points} نقطة"
+    },
+    "lobby": {
+      "startsIn": "يبدأ خلال",
+      "players": "اللاعبون"
+    },
+    "common": {
+      "exit": "مغادرة الحدث",
+      "player": "لاعب",
+      "color": "لون {index}"
+    },
+    "announce": {
+      "title": "CAR EVENT",
+      "sender": "حدث متاح",
+      "description": "اعثر على الألوان الصحيحة، واصمد في الجولات، ونافس على صدارة الترتيب",
+      "join": "اضغط للانضمام إلى الحدث!",
+      "pending": "بانتظار الدخول...",
+      "error": "تعذر الدخول. حاول مرة أخرى."
+    },
+    "tutorial": {
+      "name": "قائد اللعبة",
+      "skip": "لتخطي الحوار",
+      "text": "أنت تقود فوق شبكة ملونة. الألوان المعروضة هي التي ستبقى. انتقل إلى أحدها قبل سقوط بقية الألوان وكن آخر ناجٍ!"
+    }
+  },
+  "eventHud": {
+    "rankingTitle": "الترتيب",
+    "rankingSubtitle": "نتيجة الحدث الحالية",
+    "roundsLabel": "الجولات",
+    "exitUse": "اضغط",
+    "exitHint": "للخروج من اللعبة",
+    "pointsSuffix": "نقطة",
+    "rankSuffix": "#",
+    "timeRemaining": "الوقت المتبقي"
+  },
+  "cargame": {
+    "exitUse": "اضغط",
+    "exitHint": "للخروج من اللعبة",
+    "logo": "Santa",
+    "rankSuffix": "#",
+    "lobby": {
+      "players": "اللاعبون",
+      "startingIn": "يبدأ خلال"
+    },
+    "tutorial": {
+      "name": "قائد اللعبة",
+      "skip": "لتخطي الحوار",
+      "text": "أنت تقود فوق شبكة ملونة. الألوان المعروضة هي التي ستبقى. انتقل إلى أحدها قبل سقوط بقية الألوان وكن آخر ناجٍ!"
+    },
+    "result": {
+      "title": "Colisão Cromática",
+      "subtitle": "النتيجة النهائية لجميع المشاركين في Colisão Cromática.",
+      "close": "إغلاق",
+      "colResult": "النتيجة",
+      "colTime": "الوقت"
+    },
+    "ranking": {
+      "title": "ترتيب Colisão Cromática",
+      "subtitle": "تابع ترتيب Colisão Cromática في الوقت الفعلي",
+      "best": "أفضل لاعب",
+      "bestSub": "أفضل لاعب في Colisão Cromática",
+      "colId": "المعرف",
+      "colName": "الاسم",
+      "colPoints": "النقاط",
+      "colTime": "وقت اللعب",
+      "colWins": "الانتصارات",
+      "empty": "لا يوجد لاعبون في الترتيب بعد",
+      "next": "التالي",
+      "previous": "السابق"
+    }
+  }
+}

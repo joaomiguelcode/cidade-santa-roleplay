@@ -1,0 +1,97 @@
+{
+    "use": "Usar",
+    "to_leave_the_game": "para salir del juego",
+    "game_time": "Tiempo de Juego",
+    "overtime": "TIEMPO EXTRA",
+    "team_full": "Equipo lleno",
+    "choose_team": "Elegir Equipo",
+    "killstreak_bonus": "Bonificación de Racha",
+    "player_killed": "Jugador eliminado",
+    "points": "Puntos",
+    "point": "Punto",
+    "open_shop": "Ver tienda",
+    "open_ranking": "Ver ranking",
+    "winner": "¡Ganador!",
+    "next_game_in": "Próximo juego en",
+    "seconds": "Segundos",
+    "most_falls": "Más caídas",
+    "most_hits": "Más aciertos",
+    "rules": "Reglas",
+    "actions": {
+        "take_snow": "Tomar Nieve"
+    },
+    "taking_snowball": {
+        "description": "Tomando bola de nieve..."
+    },
+    "ranking": {
+        "title": "Ranking Guerra de Nieve",
+        "description": "Sigue el ranking de la guerra de nieve en tiempo real",
+        "best": {
+            "title": "Mejor de las nieves",
+            "subtitle": "Mejor guerrero de la nieve",
+            "points": "Puntos",
+            "victories": "Victorias"
+        },
+        "table": {
+            "position": "Posición",
+            "id": "ID",
+            "name": "Nombre",
+            "points": "Puntos",
+            "wins": "Victorias",
+            "time_played": "Tiempo jugado"
+        }
+    },
+    "ui": {
+        "previous": "Anterior",
+        "next": "Siguiente"
+    },
+    "team": {
+        "red": "Equipo Rojo",
+        "blue": "Equipo Azul"
+    },
+    "shop": {
+        "title": "Eventos de temporada",
+        "description": "Intercambia tus monedas por premios",
+        "header": {
+            "title": "Guerra de bolas de nieve",
+            "description": "¡Únete a nuestra guerra de bolas de nieve y disfruta de los mejores premios!",
+            "button": "Jugar ahora"
+        },
+        "error": {
+            "not_enough_coins": "No tienes suficientes monedas",
+            "purchase_failed": "Error al comprar artículo"
+        }
+    },
+    "store": {
+        "not": {
+            "enough": {
+                "quantity": "No tienes cantidad suficiente"
+            },
+            "buy": {
+                "because": {
+                    "limit": "Has alcanzado el límite de este artículo",
+                    "collectible": "Ya posees este coleccionable"
+                }
+            }
+        }
+    },
+    "leave_game_modal": {
+        "title": "Dejar Partida",
+        "description": "¿Estás seguro de que deseas dejar la partida?",
+        "no": "No",
+        "yes": "Sí"
+    },
+    "combat": {
+        "hits": "Aciertos",
+        "falls": "Caídas",
+        "points": "Puntos"
+    },
+    "countdown": {
+        "be_ready": "¡Prepárate!",
+        "starting_in": "Iniciando en",
+        "starting": "¡INICIANDO!"
+    },
+    "data_table": {
+        "no_results": "Sin resultados"
+    }
+}

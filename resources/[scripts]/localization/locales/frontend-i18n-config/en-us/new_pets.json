@@ -1,0 +1,70 @@
+{
+    "ownpets": {
+        "header": {
+            "title": "My Pets",
+            "description": "Available pets list"
+        },
+        "counter": {
+            "pets": "pets"
+        },
+        "pagination": {
+            "previous": "Previous page",
+            "next": "Next page"
+        },
+        "card": {
+            "age": "Age",
+            "select": "Select"
+        },
+
+        "time": {
+            "year": "year",
+            "years": "years",
+            "month": "month",
+            "months": "months",
+            "day": "day",
+            "days": "days",
+            "hour": "hour",
+            "hours": "hours",
+            "minute": "minute",
+            "minutes": "minutes",
+            "justNow": "just now"
+        }
+    },
+    "petinfo": {
+        "header": {
+            "interactions": "Interactions",
+            "close": "Close"
+        },
+        "stats": {
+            "hunger": "Hunger",
+            "level": "Level"
+        },
+        "actions": {
+            "caresses": "Petting"
+        },
+        "interactions": {
+            "title": "Interactions",
+            "description": "Play with your pet"
+        },
+        "rename": {
+            "interaction": "Rename",
+            "title": "Rename pet",
+            "description": "Choose a new name for your pet.",
+            "label": "Pet name",
+            "cancel": "Cancel",
+            "confirm": "Confirm",
+            "saving": "Saving...",
+            "validation": {
+                "empty": "Enter a name.",
+                "too_long": "The name can have at most 50 characters.",
+                "invalid_characters": "The name contains invalid characters."
+            },
+            "errors": {
+                "invalid_name": "This name is invalid.",
+                "not_owner": "Only the owner can rename this pet.",
+                "pet_not_found": "Pet not found.",
+                "rename_failed": "Unable to rename the pet. Please try again."
+            }
+        }
+    }
+}

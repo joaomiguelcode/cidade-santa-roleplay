@@ -1,0 +1,14 @@
+{
+  "kick_of_city": "COUP DE PIED DE LA VILLE",
+  "kick_message": "Message de coup de pied :",
+  "choose_option": "Choisissez une option",
+  "cancel": "ANNULER",
+  "fill_field": "REMPLIR LE CHAMP",
+  "confirm": "CONFIRMER",
+  "min_bandit": "Min. Criminels :",
+  "max_bandit": "Max. Criminels :",
+  "min_police": "Min. Police:",
+  "max_police": "Max. Police:",
+  "estimated_time": "Estimé:",
+  "weapons_allowed": "Armes autorisées :"
+}

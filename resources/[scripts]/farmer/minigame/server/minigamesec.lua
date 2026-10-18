@@ -1,0 +1,2 @@
+-- farmer minigame security server-side
+-- Anti-exploit checks for minigame rates and cooldowns

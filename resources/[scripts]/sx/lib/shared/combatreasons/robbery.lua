@@ -1,0 +1,6 @@
+COMBATREASON_ROBBERY = DEFINE_COMBATREASON 'robbery' {
+
+    addDuration = 60,
+}
+
+eCombatReasons.ROBBERY = COMBATREASON_ROBBERY

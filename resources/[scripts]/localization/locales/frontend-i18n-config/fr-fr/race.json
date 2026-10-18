@@ -1,0 +1,9 @@
+{
+  "title": "Classement des courses",
+  "legend": "Est-ce parmi les 5 meilleurs du circuit ?",
+  "progress": "Progrès",
+  "timer": "Temps",
+  "ranking": "CLASSEMENT",
+  "instruction": "Appuyez sur la touche",
+  "instruction_2": "pour clôturer le classement"
+}

@@ -1,0 +1,181 @@
+{
+    "tabs": {
+        "all": "Todos",
+        "information": "Informações",
+        "interactions": "Interações",
+        "control": "Controlo"
+    },
+    "menu": {
+        "financial": "Financeiro",
+        "purchases": "Compras",
+        "loginList": "Lista de Início de Sessão",
+        "copyId": "Copiar ID",
+        "discordId": "Discord ID",
+        "bans": "Baneamentos",
+        "revivePlayer": "Reviver Jogador",
+        "reviveLocations": "Locais de Reviver",
+        "giveItem": "Dar Item",
+        "openInventory": "Abrir Inventário",
+        "addGroup": "Adicionar Grupo",
+        "groups": "Grupos",
+        "kickPlayer": "Expulsar Jogador",
+        "banPlayer": "Banir Jogador"
+    },
+    "playerCard": {
+        "openCloseMenu": "Abrir/Fechar Menu Adm",
+        "exitSpectator": "Sair do Espectador",
+        "switchPlayer": "Alternar Jogador",
+        "status": {
+            "low": "Leve",
+            "medium": "Médio",
+            "high": "Grave"
+        }
+    },
+    "keys": {
+        "ban": "Banir",
+        "reviveLocations": "Locais de Reviver",
+        "openInventory": "Abrir Inventário",
+        "copyId": "Copiar ID"
+    },
+    "shortcut": {
+        "title": "Atalho",
+        "description": "Coloque o atalho desejado na função escolhida.",
+        "placeholder": "Clique e selecione um atalho",
+        "cancel": "Cancelar",
+        "confirm": "Concluir",
+        "duplicateError": "Esta tecla já está a ser usada por outra ação.",
+        "blockedKeyError": "Esta combinação de teclas não pode ser usada."
+    },
+    "loginList": {
+        "login": "Iniciou Sessão",
+        "logout": "Terminou Sessão",
+        "totalTimePlayed": "Tempo Total de Jogo",
+        "inProgress": "(em progresso)",
+        "to": "às"
+    },
+    "bans": {
+        "banned": "Banido",
+        "unbanned": "Desbanido",
+        "bannedBy": "Banido por:",
+        "unbannedBy": "Desbanido por:"
+    },
+    "financial": {
+        "currency": "€",
+        "bankBalance": "Saldo Bancário",
+        "cashInHand": "Dinheiro em Mão",
+        "totalAssets": "Património Total"
+    },
+    "purchases": {
+        "totalSpent": "Gasto total na cidade",
+        "history": "Histórico de compras"
+    },
+    "headers": {
+        "spectators": {
+            "title": "Espectadores",
+            "subtitle": "Lista de espectadores atuais"
+        },
+        "purchases": {
+            "title": "Compras",
+            "subtitle": "Histórico de compras"
+        },
+        "groups": {
+            "title": "{id} | {name}",
+            "subtitle": "Menus de ações do administrador"
+        },
+        "financial": {
+            "title": "{id} | {name}",
+            "subtitle": "Menus de ações do administrador"
+        },
+        "loginList": {
+            "title": "{id} | {name}",
+            "subtitle": "Menus de ações do administrador"
+        },
+        "bans": {
+            "title": "{id} | {name}",
+            "subtitle": "Menus de ações do administrador"
+        },
+        "menu": {
+            "subtitle": "Menus de ações do administrador"
+        }
+    },
+    "modals": {
+        "addGroup": {
+            "title": "Adicionar Grupo",
+            "description": "Adicione o grupo desejado ao ID do jogador",
+            "playerIdLabel": "Passaporte",
+            "playerIdPlaceholder": "Introduza o passaporte",
+            "groupLabel": "Grupo",
+            "groupPlaceholder": "Introduza o nome do grupo",
+            "levelLabel": "Nível",
+            "levelPlaceholder": "Introduza o nível",
+            "submitText": "Adicionar"
+        },
+        "reviveLocation": {
+            "title": "Local de Reviver",
+            "description": "Escolha o local desejado para reviver o jogador",
+            "locationPlaceholder": "Localização",
+            "submitText": "Reviver",
+            "locations": {
+                "praca": "Praça",
+                "pier-sul": "Cais Sul",
+                "pier-norte": "Cais Norte",
+                "hp-sul": "HP Sul",
+                "hp-norte": "HP Norte",
+                "mecanica": "Mecânica",
+                "dp1": "DP 1",
+                "dp2": "DP 2",
+                "dp3": "DP 3"
+            }
+        },
+        "removeGroup": {
+            "title": "Remover Grupo",
+            "message": "Tem a certeza que deseja remover o grupo {group} do ID {id}?",
+            "confirmText": "Remover",
+            "cancelText": "Cancelar"
+        },
+        "kickPlayer": {
+            "title": "Expulsar",
+            "description": "Introduza o motivo da expulsão no campo abaixo.",
+            "playerIdLabel": "Passaporte",
+            "playerIdPlaceholder": "ID do Jogador",
+            "reasonLabel": "Motivo",
+            "reasonPlaceholder": "Introduza o motivo da expulsão",
+            "submitText": "Expulsar"
+        },
+        "banPlayer": {
+            "title": "Banir",
+            "description": "Introduza o motivo do baneamento no campo abaixo.",
+            "playerIdLabel": "Passaporte",
+            "playerIdPlaceholder": "ID do Jogador",
+            "reasonLabel": "Motivo",
+            "reasonPlaceholder": "Introduza o motivo do baneamento",
+            "tagLabel": "Etiquetas",
+            "tagPlaceholder": "Selecione uma etiqueta",
+            "submitText": "Banir",
+            "tags": {
+                "zaralho": "Zaralho",
+                "desrespeito": "Falta de Respeito Cidade/Staff",
+                "prog_ilicitos": "Programas Ilícitos/Recusou Verificação",
+                "dark_rp": "Dark RP",
+                "hacker": "Hacker",
+                "comercial": "Comercial"
+            }
+        },
+        "giveItem": {
+            "title": "Dar Item",
+            "description": "Escolha o item e a quantidade que deseja entregar ao jogador",
+            "playerIdLabel": "Passaporte",
+            "playerIdPlaceholder": "Introduza o passaporte",
+            "itemLabel": "Item",
+            "itemPlaceholder": "Nome do item",
+            "addButton": "Adicionar",
+            "submitText": "Dar Item",
+            "itemNotFound": "Item não existe",
+            "checkItemError": "Erro ao verificar item",
+            "consumable": "Consumível"
+        }
+    },
+    "search": {
+        "placeholder": "Procurar"
+    }
+}

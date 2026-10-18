@@ -1,0 +1,11 @@
+{
+  "common": {
+    "closeLabel": "Cerrar", "backLabel": "Volver", "slotSelected": "Seleccionado", "quantityOne": "{amount}x unidad", "quantityOther": "{amount}x unidades", "badgePermanent": "Permanente", "badgeTemporaryOne": "Temporal durante {days} día", "badgeTemporaryOther": "Temporal durante {days} días", "swapCountdown": "Tiempo restante para el cambio", "statusPermanent": "Permanente", "statusTemporary": "Temporal", "dialogTitle": "Atención", "dialogCancel": "Cancelar", "dialogConfirm": "Confirmar", "duplicateLine2": "Los períodos de uso se acumularán.", "conflictTemporary": "temporal", "conflictAnd": " y ", "conflictPermanent": "permanente", "testDrive": "Prueba de conducción", "successButton": "Finalizar", "emptyButton": "Finalizar"
+  },
+  "item": {
+    "slotsTitle": "Canjear objetos", "slotsSubtitle": "¡Canjea aquí tu objeto VIP!", "slotLabel": "{ordinal} objeto", "slotButton": "Seleccionar objeto", "slotSwap": "Cambiar objeto", "slotUnselected": "Objeto no seleccionado", "confirmAll": "Canjear objetos", "duplicateLine1": "Has seleccionado el mismo objeto en dos canjes.", "duplicateNotice": "Solo recibirás una unidad del objeto.", "conflictBefore": "No se puede seleccionar el mismo objeto como ", "conflictAfter": ". Cambia el objeto de una de las opciones anteriores.", "selectionTitle": "Canjear {ordinal} objeto", "selectionSubtitle": "Selecciona el {ordinalLower} objeto que deseas canjear", "confirmSelection": "Confirmar objeto", "successTitle": "¡Objetos canjeados!", "successText": "¡Enhorabuena! Acabas de canjear tus objetos VIP.\n¡Disfruta explorando la ciudad con tu nueva adquisición!", "emptyTitle": "¡Objetos no disponibles!", "emptyText": "No tienes objetos VIP para canjear en este momento."
+  },
+  "ordinals": ["Primer", "Segundo", "Tercer", "Cuarto", "Quinto", "Sexto", "Séptimo", "Octavo", "Noveno", "Décimo"],
+  "ordinalsLower": ["primer", "segundo", "tercer", "cuarto", "quinto", "sexto", "séptimo", "octavo", "noveno", "décimo"],
+  "ordinalFallback": "{n}º"
+}

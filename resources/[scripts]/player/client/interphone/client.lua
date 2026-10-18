@@ -1,0 +1,44 @@
+-- CreateThread(function()
+--     local Table = {}
+--     for i=1, #InterphoneCoords do
+--         Table[i] = {
+--             InterphoneCoords[i][1].x,
+--             InterphoneCoords[i][1].y,
+--             InterphoneCoords[i][1].z,
+--             2.0,
+--             "E",
+--             "Interfone",
+--             "Pressione para abrir",
+--         }
+--     end
+--     TriggerEvent("hoverfy:Insert",Table)
+--     while true do 
+--         local idle = 2500
+--         local Ped = PlayerPedId()
+--         local Coords = GetEntityCoords(Ped)
+--         for i=1, #InterphoneCoords do
+--             local Distance = #(Coords - InterphoneCoords[i][1])
+--             local _,Ground = GetGroundZFor_3dCoord(InterphoneCoords[i][1].x,InterphoneCoords[i][1].y,InterphoneCoords[i][1].z)
+--             if Distance <= 50.0 then
+--                 idle = 1
+--                 DrawMarker(29,InterphoneCoords[i][1].x,InterphoneCoords[i][1].y,InterphoneCoords[i][1].z-0.10, 0, 0, 0, 0, 0, 0, 1.0, 1.0, 1.0,THEME.rgb.r, THEME.rgb.g, THEME.rgb.b, 100, 0, 0, 0, 1)
+--                 DrawMarker(23, InterphoneCoords[i][1].x,InterphoneCoords[i][1].y, Ground + 0.03, 0, 0, 0, 0, 0, 0, 1.0, 1.0, 0.5,THEME.rgb.r, THEME.rgb.g, THEME.rgb.b, 100, 0, 0, 0, 0)
+--             end
+--             if Distance <= 2.0 then
+--                 idle = 1
+--                 if IsControlJustPressed(0,38) then
+--                     TriggerServerEvent("interfone:Call",i)
+--                     LastCoord = Coords
+--                 end
+--             end
+--         end
+--         Wait(idle)
+--     end
+-- end)
+
+
+
+-- RegisterNetEvent("Interphone:CallNumber")
+-- AddEventHandler("Interphone:CallNumber",function(Number)
+--     exports.smartphone:callPlayer(Number)
+-- end)

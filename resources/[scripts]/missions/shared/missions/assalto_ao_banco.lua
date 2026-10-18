@@ -1,0 +1,20 @@
+-- DEFINE_MISSION 'assalto_ao_banco' {
+--     group = eMissionGroup.Criminal,
+--     order = 15,
+--     name = _t("mission.assalto_ao_banco.name"),
+--     description = _t("mission.assalto_ao_banco.description"),
+--     dependencies = {},
+--     flags = eMissionFlags.NONE,
+--     auto_activate = true,
+--     coords = {
+--         vec3(229.77,214.17,105.55),
+--     },
+--     rewards = {
+--         skills = { crime = 300, shooting = 200, social = 100 },
+--         title = _t("mission.assalto_ao_banco.reward.title"),
+--     },
+--     metadata = {
+--         hook = "missions:hook:central_bank_heist_completed",
+--         min_players = 2,
+--     },
+-- }

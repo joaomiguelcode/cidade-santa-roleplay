@@ -1,0 +1,19 @@
+{
+  "notification_menu_title": "قائمة الإشعارات",
+  "notification_menu_subtitle": "مركز الإشعارات",
+  "notifications_alerts": "التنبيهات",
+  "notifications_alerts_desc": "تحديد رؤية الإشعارات.",
+  "notifications_sounds": "أصوات التنبيه",
+  "notifications_sounds_desc": "تحديد صوت التنبيه.",
+  "clear_notifications": "مسح الإشعارات",
+  "time_ago_prefix": "منذ",
+  "time_now": "الآن",
+  "time_second": "ثانية",
+  "time_seconds": "ثواني",
+  "time_minute": "دقيقة",
+  "time_minutes": "دقائق",
+  "time_hour": "ساعة",
+  "time_hours": "ساعات",
+  "time_day": "يوم",
+  "time_days": "أيام"
+}

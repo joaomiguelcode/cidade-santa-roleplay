@@ -1,0 +1,527 @@
+{
+  "vipBenefits": {
+    "subtitle": "VIP-exclusive command",
+    "noAccess": "No access",
+    "viewPlans": "View VIP plans",
+    "opening": "Opening store...",
+    "storeError": "Unable to open the store right now. Please try again.",
+    "validFor": "Valid for",
+    "days": "Days",
+    "insufficientBalance": "Insufficient gem balance.",
+    "unavailable": "Offer currently unavailable.",
+    "rgbc": {
+      "title": "RGB vehicle colors",
+      "description": "You need an active VIP to use this command. Subscribe to a plan to unlock custom colors and other benefits.",
+      "purchaseDescription": "Exterior colors in any RGB shade, on all your vehicles.",
+      "feature1": "Neon and headlights in any RGB color",
+      "feature2": "Change colors whenever you want, at no cost",
+      "feature3": "Available for all your vehicles"
+    },
+    "barbershop": {
+      "title": "Barbershop anywhere",
+      "description": "You need an active VIP to use this command. Subscribe to a plan and change your look without visiting the barbershop.",
+      "purchaseDescription": "Change hair, beard and makeup instantly, anywhere.",
+      "feature1": "Change hair, beard and makeup instantly",
+      "feature2": "No cost and no travel required",
+      "feature3": "Use it as often as you want"
+    },
+    "attachs": {
+      "title": "Weapon attachments",
+      "description": "You need an active VIP to use this command. Subscribe to a plan and manage your weapon attachments whenever you want.",
+      "purchaseDescription": "Install and remove sights, silencers and magazines with the command.",
+      "feature1": "Install and remove attachments with the command",
+      "feature2": "Sights, silencers, magazines and more",
+      "feature3": "No gunsmith required"
+    },
+    "kit": {
+      "title": "VIP item kit",
+      "description": "You need an active VIP to use this command. Subscribe to a plan and claim your exclusive item kit.",
+      "purchaseDescription": "Claim exclusive items every week, directly in your inventory.",
+      "feature1": "Claim exclusive items every week",
+      "feature2": "Delivered directly to your inventory",
+      "feature3": "Extra items on special dates"
+    },
+    "customspawn": {
+      "title": "Custom spawn",
+      "description": "You need an active VIP to use this command. Subscribe to a plan and choose where you spawn when joining the city.",
+      "purchaseDescription": "Set your favorite spawn point when joining the city.",
+      "feature1": "Set your favorite spawn point",
+      "feature2": "Return straight to where you left off",
+      "feature3": "Change the location whenever you want"
+    }
+  },
+  "vipPurchase": {
+    "cancel": "Cancel",
+    "close": "Close",
+    "buying": "Buying...",
+    "balanceAfter": "Your balance after purchase will be",
+    "error": "Unable to complete the purchase.",
+    "numberLocale": "en-US",
+    "question": "Would you like to unlock \"{title}\"?"
+  },
+  "genteBoaRanking": {
+    "heading": "CONGRATULATIONS!",
+    "message": "You've reached the **TOP {0}** of the Gente Boa Ranking.",
+    "notePrefix": "Keep ",
+    "noteHighlight": "recruiting with quality",
+    "noteSuffix": " to climb even higher.",
+    "button": "View my ranking",
+    "description": {
+      "100": "You're among the city's **100 best recruiters**.",
+      "75": "You're past **three quarters of the top 100**. Keep climbing!",
+      "50": "You're in the **upper half** of the top 100.",
+      "30": "You're close to reaching the ranking's **first page**.",
+      "15": "The **top 10** is right there: one more push!",
+      "10": "You show up on the ranking's **first page** for the whole city.",
+      "3": "You're on the **plaza podium**, with a title and the Gente Boa aura."
+    }
+  },
+  "solo": "You are in solo mode. Upgrade support immediately to regularize your character!",
+  "warning": "Warning",
+  "sentBy": "Sent by:",
+  "wanted": "YOU ARE WANTED",
+  "remaining": "REMAINING",
+  "youAreIn": "YOU ARE IN",
+  "safezone": "SAFEZONE",
+  "combate": "COMBAT",
+  "beCareful": "BE CAREFUL WITH",
+  "assaultNorth": "North",
+  "assaultSouth": "South",
+  "safeMode": "SAFE MODE",
+  "beHired": "BE HIRED TO LEAVE",
+  "riskArea": "RISK AREA",
+  "attention": "Attention",
+  "accept": "ACCEPT",
+  "decline": "DECLINE",
+  "progress": "PROGRESS",
+  "level": "LEVEL",
+  "writeMessage": "Write a message here...",
+  "locale": "en",
+  "low": "LOW",
+  "medium": "MEDIUM",
+  "high": "HIGH",
+  "interact": "Interact",
+  "holdToTalk": "Hold to talk",
+  "openChat": "Open chat",
+  "inventory": "Inventory",
+  "personal": "Personal",
+  "help": "Help",
+  "unlockVehicle": "Unlock vehicle",
+  "putOnSeatbelt": "Put on seatbelt",
+  "cancelAnimation": "Cancel animation",
+  "closeMenu": "Close menu",
+  "openMenu": "Open menu",
+  "all": "ALL",
+  "factionFocus": {
+    "title": "GANG FOCUS",
+    "set": "set",
+    "todayBatch": "TODAY'S BATCH",
+    "remainingRecruitments": "{count} recruitments remaining",
+    "target": "target",
+    "entryReason": "ENTRY REASON",
+    "online": "ONLINE",
+    "minimumOnline": " / minimum {minimum}",
+    "recruitersAtQG": "RECRUITERS AT HQ",
+    "recruiters": " recruiters",
+    "dailyLimit": "DAILY LIMIT",
+    "lastRecruit": "LAST RECRUIT",
+    "markLocation": "Mark gang location",
+    "hide": "Hide",
+    "progressAria": "Today's recruitment progress",
+    "metricsAria": "Gang indicators"
+  },
+  "adCupons": {
+    "title": "WELCOME BACK!",
+    "subtitle": "Don't miss these amazing offers!",
+    "buyNow": "Buy Now!",
+    "category": "STORE",
+    "useNow": "Use Now",
+    "copied": "Copied!",
+    "limited": "Limited Coupon",
+    "unit": "Unit",
+    "units": "Units",
+    "min": "Min",
+    "floatingLabel": "Offers",
+    "confirmClose": {
+      "title": "Lose Offers",
+      "text": "Are you sure you want to close and lose these offers?",
+      "cancel": "Cancel",
+      "confirm": "Confirm"
+    }
+  },
+  "expiresIn": "Expires in",
+  "hidePromo": "Type /hidepromo to close",
+  "pressF3ToGo": "PRESS F3 TO GO",
+  "in_safezone": "YOU ARE IN THE",
+  "janeiro": "January",
+  "fevereiro": "February",
+  "marco": "March",
+  "abril": "April",
+  "maio": "May",
+  "junho": "June",
+  "julho": "July",
+  "agosto": "August",
+  "setembro": "September",
+  "outubro": "October",
+  "novembro": "November",
+  "dezembro": "December",
+  "settings": {
+    "title": "Settings",
+    "subtitle": "Advanced HUD Settings",
+    "tabs": {
+      "interface": "Interface",
+      "weather": "Weather",
+      "sound": "Sound",
+      "chat": "Chat"
+    },
+    "interface": {
+      "hideCompleteHud": {
+        "title": "Hide Complete HUD",
+        "description": "Hides all HUD elements from the screen."
+      },
+      "speedometerUpdate": {
+        "title": "Speedometer FPS",
+        "description": "Adjusts the speedometer update rate."
+      },
+      "showMinimap": {
+        "title": "Show Minimap",
+        "description": "Displays the minimap on screen."
+      },
+      "cinemaMode": {
+        "title": "Cinema Mode",
+        "description": "Shows black bars to give a film effect."
+      },
+      "hideSpeedometer": {
+        "title": "Hide Speedometer",
+        "description": "Hides the speedometer from the screen."
+      },
+      "hideOrgWaypoints": {
+        "title": "Hide organization waypoints",
+        "description": "Hides the organization chest waypoints."
+      }
+    },
+    "weather": {
+      "weatherSync": {
+        "title": "Sync Weather",
+        "description": "Sync with the server's weather."
+      },
+      "timeSync": {
+        "title": "Sync Time",
+        "description": "Sync with the server's time."
+      },
+      "time": {
+        "title": "Schedule",
+        "description": "Timeline synchronization"
+      },
+      "reset": "Reset",
+      "timeLabels": {
+        "start": "00:00",
+        "end": "23:59"
+      }
+    },
+    "sound": {
+      "volumePrincipal": {
+        "title": "Main Volume",
+        "description": "Change the main volume"
+      },
+      "volumeRadio": {
+        "title": "Radio Volume",
+        "description": "Change the radio volume"
+      },
+      "volumeMusica": {
+        "title": "Music Volume",
+        "description": "Change the music volume"
+      }
+    },
+    "weatherOptions": {
+      "EXTRASUNNY": {
+        "title": "Extra Sunny",
+        "subtitle": "Extra Sunny"
+      },
+      "CLEAR": {
+        "title": "Clear",
+        "subtitle": "Clear"
+      },
+      "CLOUDS": {
+        "title": "Clouds",
+        "subtitle": "Clouds"
+      },
+      "SNOW": {
+        "title": "Snow",
+        "subtitle": "Snow"
+      },
+      "THUNDER": {
+        "title": "Thunder",
+        "subtitle": "Thunder"
+      },
+      "RAIN": {
+        "title": "Rain",
+        "subtitle": "Rain"
+      }
+    },
+    "dropdownOptions": {
+      "fps": {
+        "30": "30 FPS",
+        "60": "60 FPS",
+        "120": "120 FPS"
+      },
+      "minimap": {
+        "always": "Always",
+        "carOnly": "Car Only"
+      },
+      "chatSocial": {
+        "all": "All",
+        "dating": "Beginnings only",
+        "none": "None"
+      }
+    },
+    "chat": {
+      "moderation": {
+        "title": "Moderation",
+        "description": "Announcements for bans, warnings, and admin calls"
+      },
+      "arenaCombat": {
+        "title": "Arena / Combat",
+        "description": "Kill Streak and FFA event announcements"
+      },
+      "warDomination": {
+        "title": "War / Domination",
+        "description": "Scoreboard, war event, and domination announcements"
+      },
+      "items": {
+        "title": "Items",
+        "description": "Announcements for used items: megaphone, etc"
+      },
+      "social": {
+        "title": "Social",
+        "description": "Relationship announcements"
+      },
+      "organization": {
+        "title": "Organization",
+        "description": "Recruitment and organization announcements"
+      },
+      "dealership": {
+        "title": "Dealership",
+        "description": "Vehicle purchase announcements at the dealership"
+      }
+    }
+  },
+  "content": {
+    "restricted_area": {
+      "warning": "You are in a restricted area, only staffs are allowed here."
+    }
+  },
+  "halloween": {
+    "title": "PUMPKIN HUNT",
+    "description": "Pumpkins spawned, run and get your surprise!"
+  },
+  "christmas": {
+    "title": "GIFT HUNT",
+    "description": "🎄 Gifts have just appeared everywhere! Run as fast as you can and grab yours!"
+  },
+  "newyear": {
+    "title": "FIREWORKS HUNT!",
+    "description": "Fireworks boxes have appeared around the city. Run, find and claim your New Year prizes!"
+  },
+  "valentine": {
+    "title": "FIND THE CUPIDS!",
+    "description": "The cupids have just appeared around the city! Run and get your love gift before they run out!"
+  },
+  "carnival": {
+    "title": "FIND THE REVELERS!",
+    "description": "The revelers have just appeared around the city! Run and get your bag before they run out!"
+  },
+  "easter": {
+    "title": "Easter Egg Hunt",
+    "description": "Easter egg baskets have appeared around the city! Run and collect your eggs before they disappear!"
+  },
+  "egg": {
+    "closeUse": "Press",
+    "forClose": "to close"
+  },
+  "pvp": {
+    "killNotification": {
+      "eliminated": "Eliminated",
+      "headshot": "Headshot"
+    },
+    "countdown": {
+      "label": "Starting...",
+      "start": "START!",
+      "go": "GO!"
+    },
+    "teamSelection": {
+      "title": "Choose a team",
+      "subtitle": "Choose one of the four available teams to join the game mode.",
+      "play": "Play",
+      "blue": "Blue Team",
+      "green": "Green Team",
+      "yellow": "Yellow Team",
+      "red": "Red Team"
+    },
+    "mapVote": {
+      "title": "Vote for the next map",
+      "votes": "Votes",
+      "nextMatchIn": "Next match starting in",
+      "seconds": "Seconds",
+      "exitMatch": "Leave match"
+    },
+    "matchStart": {
+      "defaultMap": "Central Bank",
+      "defaultMode": "Team vs Team"
+    },
+    "scoreboard": {
+      "player": "Player",
+      "kills": "Kills",
+      "assists": "Assists",
+      "deaths": "Deaths",
+      "ping": "Ping",
+      "connection": "Connection",
+      "packetLossLabel": "PL"
+    },
+    "latencyWarning": {
+      "eyebrow": "Latency warning",
+      "title": "Unstable connection",
+      "description": "Another player's latency is above the ideal range and may cause delays during the match.",
+      "descriptionDuel": "The latency gap between players is above the ideal range and may affect the match.",
+      "descriptionGroup": "One player in the match has a higher ping than the others. This may delay inputs and affect match responsiveness.",
+      "prompt": "Do you want to continue anyway?",
+      "playerLabel": "Your ping",
+      "opponentLabel": "Other player",
+      "highestPingLabel": "Highest ping in match",
+      "packetLossLabel": "PL",
+      "disparityLabel": "Difference",
+      "leave": "Leave",
+      "continue": "Continue"
+    },
+    "royaleResult": {
+      "mode": "Battle Royale",
+      "factionWinner": "Winning gang",
+      "description": "The last gang standing."
+    },
+    "matchResult": {
+      "victory": "VICTORY",
+      "defeat": "DEFEAT",
+      "kills": "Kills",
+      "deaths": "Deaths",
+      "assists": "Assists",
+      "headshot": "Headshot",
+      "points": "Points"
+    },
+    "levelUp": {
+      "title": "Leveled Up",
+      "subtitle": "Level"
+    },
+    "hud": {
+      "exitHint": "Leave game",
+      "pauseHint": "Request pause",
+      "spawnsHint": "Spawns",
+      "storeHint": "Store",
+      "vehiclesHint": "Vehicles",
+      "personalChestHint": "Personal chest"
+    },
+    "pause": {
+      "activeTitle": "Match Paused",
+      "voteStartTitle": "Vote - Pause Match",
+      "voteResumeTitle": "Vote - Resume Match",
+      "startRequestedSuffix": "requested a pause!",
+      "resumeRequestedSuffix": "requested to resume the match!",
+      "activeBy": "Match paused by",
+      "opponentActive": "Match paused by the opposing team! Wait for the opposing team to resume",
+      "resumeHint": "Vote to resume",
+      "accept": "Accept",
+      "reject": "Reject",
+      "errorAction": "Could not complete the action.",
+      "errorRequest": "Could not request pause."
+    },
+    "exitMatch": {
+      "title": "Leave Match",
+      "description": "Are you sure you want to leave the match?",
+      "confirm": "Confirm",
+      "cancel": "Cancel"
+    },
+    "tournamentBracket": {
+      "victory": "VICTORY",
+      "defeat": "DEFEAT",
+      "backToLobby": "Back to lobby",
+      "defaultStage": "Qualifier"
+    }
+  },
+  "afiliado": {
+    "shortcuts": {
+      "catalog": "Open catalog",
+      "call": "Call affiliate",
+      "exit": "Leave World"
+    }
+  },
+  "recruitmentPunishment": {
+    "title": "Quality Recruiting",
+    "factsTitle": "What you need to know",
+    "gain": {
+      "title": "What you get",
+      "text": "Every newcomer who stays in the city is worth over <b>+3,000 XP</b> to you. And when more than half of your newcomers come back, each return is worth <b>double XP</b>. Recruit well and you secure your special effects and your character on the plaza podium!"
+    },
+    "subtitle": {
+      "timed": "WARNING: this is your <r>FINAL WARNING!</r>",
+      "permanent": "WARNING: you're at <r>RISK!</r>"
+    },
+    "banner": {
+      "timed": "<r>🚨 WARNING</r>\n<r>THIS IS YOUR FINAL WARNING!</r>\nYou <b>can still recruit</b>.\nBut on the <r>next day of recruiting without quality</r> your permission gets suspended.",
+      "permanent": "<r>⚠️ WARNING</r>\n<r>AT RISK!</r>\nYou <b>can still recruit</b>.\nBut if you keep having <r>days without quality</r>, your permission gets suspended."
+    },
+    "facts": {
+      "qualityDay": {
+        "title": "QUALITY DAY",
+        "text": "The more newcomers come back the next day, the more you earn a <b>Quality Day</b> and get <v>double XP!</v>"
+      },
+      "sequence": {
+        "title": "STREAK",
+        "text": "The more <b>Quality Days in a row</b> you get, the more XP you earn and the closer you get to the <g>top of the ranking!</g>"
+      },
+      "noQualityDay": {
+        "title": "DAY WITHOUT QUALITY",
+        "text": "When many newcomers don't come back the next day, you get a <b>Day without Quality</b> and <r>lose XP</r>."
+      },
+      "punishment": {
+        "title": "PENALTY",
+        "text": "Several Days without Quality in a row <r>block your recruiting permission</r>. Each new penalty will be <b>longer than the last!</b>"
+      }
+    },
+    "tips": {
+      "welcome": {
+        "title": "WELCOME THEM",
+        "text": "Greet them well and <b>don't leave the newcomer stranded</b>. Help them take their first steps."
+      },
+      "connect": {
+        "title": "CONNECT THEM",
+        "text": "Introduce them to your organization's crew and <b>make them feel part of the family!</b>"
+      },
+      "include": {
+        "title": "INCLUDE THEM",
+        "text": "Invite them to <b>activities, events or hangouts</b>. Get them enjoying the city!"
+      },
+      "bringBack": {
+        "title": "BRING THEM BACK",
+        "text": "Stay close in the first days. <b>Build a bond so they come back and stay in the city!</b>"
+      }
+    },
+    "accept": "I understand that not <b>recruiting with quality</b> leaves me <r>without permission to recruit</r>, and that the penalty <b>grows each time</b>.",
+    "finalCheck": "I understand that <b>recruiting without quality</b> can <r>suspend my permission</r> and that new penalties will be <b>longer</b>.",
+    "finalCheckHint": "Confirm the four points above to unlock this acknowledgement.",
+    "confirm": {
+      "timed": "I understand",
+      "permanent": "Got it"
+    },
+    "footer": {
+      "timed": "Your permission returns <b>automatically</b> when the time is up.",
+      "permanent": "Recruit with quality and the alert goes away on its own."
+    },
+    "tipsTitle": "How to recruit with quality"
+  },
+  "waypointV3": {
+    "title": "Hey there, citizen!",
+    "description": "We noticed you have not found a gang in the city yet.",
+    "invitation": "Want to head to the square? Everyone hangs out there 🚀",
+    "decline": "No",
+    "accept": "Go to the square"
+  }
+}

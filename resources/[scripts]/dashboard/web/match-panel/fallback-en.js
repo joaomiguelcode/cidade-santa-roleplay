@@ -1,0 +1,92 @@
+export const fallbackEnglish = {
+  "historyLoaded": "matches loaded",
+  "historyMore": "Load more",
+  "historyEnd": "End of history for this filter",
+  "title": "Match Panel",
+  "subtitle": "Live monitoring · Admin 1 and Admin 2 only",
+  "tabs": {
+    "matches": "In match",
+    "queue": "In queue",
+    "history": "History"
+  },
+  "kinds": {
+    "iniciante": "Beginner",
+    "novato": "Newcomer",
+    "veterano": "Veteran",
+    "unknown": "Unidentified"
+  },
+  "results": {
+    "completed": "Completed",
+    "skipped": "Skipped",
+    "expired": "Expired",
+    "staff_cancel": "Cancelled by staff",
+    "legacy": "Previous record"
+  },
+  "genders": {
+    "male": "Male",
+    "female": "Female",
+    "unknown": "Not provided"
+  },
+  "empty": {
+    "matches": "No pairs in a match now",
+    "queue": "No one is looking for a match now",
+    "history": "No matches in history"
+  },
+  "periods": {
+    "today": "Today",
+    "yesterday": "Yesterday",
+    "week": "7 days",
+    "fortnight": "14 days",
+    "custom": "Custom"
+  },
+  "errors": {
+    "forbidden": "You cannot open the Match Panel",
+    "unavailable": "Panel unavailable. Try again.",
+    "classification_unavailable": "Classification unavailable.",
+    "history_unavailable": "Could not load history.",
+    "narrow_period": "Too many results. Choose a shorter period.",
+    "target_unavailable": "Player or match is no longer available.",
+    "leave_minigame": "Leave your experience before using TP or Spectate.",
+    "rate_limit": "Wait a moment and try again.",
+    "invalid_period": "Choose a valid period of up to one year.",
+    "closed": "Panel closed. Open /painelmatch again."
+  },
+  "search": "Search by name or ID...",
+  "close": "Close panel",
+  "return": "Return to my position",
+  "spec": "Spectate",
+  "stop": "Stop spectating",
+  "cancel": "Cancel match",
+  "back": "Back",
+  "confirm": "Cancel this match?",
+  "confirmText": "Both players return to the normal world at their previous positions and the match ends.",
+  "visible": "Visible",
+  "hidden": "Hidden",
+  "new": "NEW",
+  "period": "PERIOD",
+  "from": "From",
+  "until": "until",
+  "loading": "Loading...",
+  "retry": "Try again",
+  "session": "session",
+  "actions": "Actions",
+  "updated": "Live: updated",
+  "offline": "Updates interrupted",
+  "matchTime": "Time in match",
+  "queueTime": "In queue",
+  "player": "Player",
+  "type": "Type",
+  "gender": "Gender",
+  "card": "Card",
+  "when": "When",
+  "duration": "Duration",
+  "result": "Result",
+  "inHouse": "You are in the house of",
+  "visiting": "You are with",
+  "spectating": "Spectating",
+  "ended": "Match ended.",
+  "returned": "returned to the world",
+  "pairTotal": "pairs in match",
+  "queueTotal": "players in queue",
+  "historyTotal": "matches in history"
+};

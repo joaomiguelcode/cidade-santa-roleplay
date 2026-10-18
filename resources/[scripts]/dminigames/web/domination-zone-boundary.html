@@ -1,0 +1,567 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Domination Zone Boundary Atlas</title>
+    <style>
+        :root {
+            color-scheme: dark;
+            font-family: Inter, "Segoe UI", system-ui, sans-serif;
+            background: transparent;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            overflow: hidden;
+            background: transparent;
+        }
+
+        canvas {
+            display: block;
+        }
+
+        #atlas {
+            width: 100%;
+            height: 100%;
+        }
+
+        #atlas[hidden] {
+            display: none;
+        }
+
+        body.preview {
+            overflow: auto;
+            background:
+                linear-gradient(rgba(106, 128, 145, 0.08) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(106, 128, 145, 0.08) 1px, transparent 1px),
+                #0d1114;
+            background-size: 32px 32px;
+            color: #e9f1f5;
+        }
+
+        .preview-shell {
+            width: min(1480px, calc(100% - 48px));
+            margin: 0 auto;
+            padding: 40px 0 56px;
+        }
+
+        .preview-header {
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+            gap: 32px;
+            margin-bottom: 24px;
+        }
+
+        .preview-title {
+            margin: 0;
+            font-size: 26px;
+            line-height: 1.1;
+            font-weight: 750;
+            letter-spacing: 0;
+        }
+
+        .preview-copy {
+            max-width: 620px;
+            margin: 8px 0 0;
+            color: #8fa0aa;
+            font-size: 13px;
+            line-height: 1.55;
+        }
+
+        .atlas-badge {
+            flex: 0 0 auto;
+            padding: 8px 10px;
+            border: 1px solid rgba(219, 236, 245, 0.12);
+            border-radius: 5px;
+            background: rgba(17, 23, 27, 0.88);
+            color: #aab8c0;
+            font: 600 11px/1.1 ui-monospace, SFMono-Regular, Consolas, monospace;
+        }
+
+        .effect-list {
+            display: grid;
+            gap: 12px;
+        }
+
+        .effect-row {
+            position: relative;
+            height: 178px;
+            overflow: hidden;
+            border: 1px solid rgba(219, 236, 245, 0.12);
+            border-radius: 6px;
+            background: #090d0f;
+        }
+
+        .effect-row::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            pointer-events: none;
+            box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.025);
+        }
+
+        .effect-canvas {
+            width: 100%;
+            height: 100%;
+        }
+
+        .effect-meta {
+            position: absolute;
+            z-index: 2;
+            top: 14px;
+            left: 16px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            pointer-events: none;
+        }
+
+        .effect-index {
+            color: rgba(234, 244, 249, 0.45);
+            font: 700 10px/1 ui-monospace, SFMono-Regular, Consolas, monospace;
+        }
+
+        .effect-name {
+            margin: 0;
+            font-size: 13px;
+            line-height: 1;
+            font-weight: 750;
+            letter-spacing: 0;
+            text-transform: uppercase;
+        }
+
+        .effect-state {
+            margin-top: 5px;
+            color: rgba(226, 239, 245, 0.58);
+            font-size: 10px;
+            line-height: 1;
+            font-weight: 650;
+            text-transform: uppercase;
+        }
+
+        .atlas-preview {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) 184px;
+            gap: 16px;
+            margin-top: 22px;
+            padding-top: 22px;
+            border-top: 1px solid rgba(219, 236, 245, 0.1);
+        }
+
+        .atlas-description {
+            margin: 0;
+            color: #788a94;
+            font-size: 12px;
+            line-height: 1.6;
+        }
+
+        #atlasMiniature {
+            width: 184px;
+            height: 184px;
+            border: 1px solid rgba(219, 236, 245, 0.14);
+            border-radius: 5px;
+            background: #070a0c;
+        }
+
+        @media (max-width: 760px) {
+            .preview-shell {
+                width: calc(100% - 24px);
+                padding-top: 24px;
+            }
+
+            .preview-header {
+                align-items: flex-start;
+                flex-direction: column;
+            }
+
+            .effect-row {
+                height: 152px;
+            }
+
+            .atlas-preview {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <canvas id="atlas" width="2048" height="2048"></canvas>
+
+    <script>
+        const urlParameters = new URLSearchParams(window.location.search);
+        const isPreview = urlParameters.has('preview');
+        const ATLAS_SIZE = 2 * Math.floor(Math.max(256, parseInt(urlParameters.get('atlasSize'), 10) || 2048) / 2);
+        // Metros de mundo cobertos por um modulo/ciclo da textura (mesmo valor nos dois
+        // eixos: o Lua repete a imagem inteira na horizontal pelo perimetro e na vertical
+        // pela altura da parede). Todos os elementos abaixo sao definidos em metros, entao
+        // reduzir slotMeters aumenta a densidade de texels sem mudar o tamanho fisico
+        // aparente de cada elemento no mundo.
+        const SLOT_METERS = Math.max(10, parseFloat(urlParameters.get('slotMeters')) || 100);
+        const PX_PER_METER = ATLAS_SIZE / SLOT_METERS;
+        const PREVIEW_WALL_ALPHA = Math.min(
+            255,
+            Math.max(0, parseInt(urlParameters.get('wallAlpha'), 10) || 210)
+        );
+        const GRID_MINOR_SPACING_METERS = 1.25;
+        const GRID_MAJOR_SPACING_METERS = 5.0;
+        const CONTESTED_WAVELENGTH_METERS = 50.0;
+        const CONTROLLED_SPACING_METERS = 8.0;
+        const atlasCanvas = document.getElementById('atlas');
+        atlasCanvas.width = ATLAS_SIZE;
+        atlasCanvas.height = ATLAS_SIZE;
+        const atlasContext = atlasCanvas.getContext('2d', { alpha: true });
+        const stateOrder = ['safe', 'neutral', 'contested', 'controlled'];
+        const stateConfig = {
+            safe: {
+                title: 'Spawn seguro',
+                subtitle: 'Fluxo de recuperacao',
+                color: [42, 236, 190],
+            },
+            neutral: {
+                title: 'Zona neutra',
+                subtitle: 'Campo inativo',
+                color: [166, 178, 190],
+            },
+            contested: {
+                title: 'Zona contestada',
+                subtitle: 'Interferencia ativa',
+                color: [255, 177, 50],
+            },
+            controlled: {
+                title: 'Zona dominada',
+                subtitle: 'Pulso de controle',
+                color: [241, 52, 79],
+            },
+        };
+        const previewSurfaces = [];
+
+        atlasContext.imageSmoothingEnabled = true;
+
+        function SmoothStep(edgeA, edgeB, value) {
+            const normalized = Math.min(1, Math.max(0, (value - edgeA) / (edgeB - edgeA)));
+            return normalized * normalized * (3 - 2 * normalized);
+        }
+
+        function Wrap(value, length) {
+            return ((value % length) + length) % length;
+        }
+
+        function Meters(value) {
+            return value * PX_PER_METER;
+        }
+
+        function FitCycles(targetMeters) {
+            return Math.max(1, Math.round(SLOT_METERS / targetMeters));
+        }
+
+        function DrawBase(context, width, height, alpha) {
+            // A textura repete verticalmente ao longo da parede, entao o gradiente precisa
+            // ser ciclico (mesmo valor nas duas bordas) para nao criar linhas de emenda.
+            const gradient = context.createLinearGradient(0, 0, 0, height);
+            gradient.addColorStop(0, `rgba(255, 255, 255, ${alpha * 0.28})`);
+            gradient.addColorStop(0.25, `rgba(255, 255, 255, ${alpha * 0.2})`);
+            gradient.addColorStop(0.5, `rgba(255, 255, 255, ${alpha * 0.13})`);
+            gradient.addColorStop(0.75, `rgba(255, 255, 255, ${alpha * 0.2})`);
+            gradient.addColorStop(1, `rgba(255, 255, 255, ${alpha * 0.28})`);
+            context.fillStyle = gradient;
+            context.fillRect(0, 0, width, height);
+        }
+
+        function DrawNeutral(context, width, height) {
+            DrawBase(context, width, height, 0.22);
+
+            const DrawGrid = (spacingMeters, opacity, lineWidthMeters) => {
+                const horizontalCycles = FitCycles(spacingMeters);
+                const verticalCycles = FitCycles(spacingMeters);
+                const horizontalSpacing = width / horizontalCycles;
+                const verticalSpacing = height / verticalCycles;
+
+                context.beginPath();
+
+                for (let column = 0; column < horizontalCycles; column += 1) {
+                    const x = column * horizontalSpacing;
+                    context.moveTo(x, 0);
+                    context.lineTo(x, height);
+                }
+
+                for (let row = 0; row < verticalCycles; row += 1) {
+                    const y = row * verticalSpacing;
+                    context.moveTo(0, y);
+                    context.lineTo(width, y);
+                }
+
+                context.lineWidth = Math.max(1, Meters(lineWidthMeters));
+                context.strokeStyle = `rgba(255,255,255,${opacity})`;
+                context.stroke();
+            };
+
+            DrawGrid(GRID_MINOR_SPACING_METERS, 0.18, 0.06);
+            DrawGrid(GRID_MAJOR_SPACING_METERS, 0.4, 0.14);
+
+            const majorCycles = FitCycles(GRID_MAJOR_SPACING_METERS);
+            const majorHorizontalSpacing = width / majorCycles;
+            const majorVerticalSpacing = height / majorCycles;
+            const nodeRadius = Math.max(1, Meters(0.16));
+
+            context.fillStyle = 'rgba(255,255,255,0.46)';
+
+            for (let column = 0; column < majorCycles; column += 1) {
+                for (let row = 0; row < majorCycles; row += 1) {
+                    context.beginPath();
+                    context.arc(
+                        column * majorHorizontalSpacing,
+                        row * majorVerticalSpacing,
+                        nodeRadius,
+                        0,
+                        Math.PI * 2
+                    );
+                    context.fill();
+                }
+            }
+
+            const coreY = height * 0.5;
+            const coreThickness = Math.max(1, Meters(0.18));
+            context.fillStyle = 'rgba(255,255,255,0.3)';
+            context.fillRect(0, coreY - coreThickness * 0.5, width, coreThickness);
+        }
+
+        function DrawContested(context, width, height, time) {
+            const pulse = 0.5 + Math.sin(time * 2.8) * 0.5;
+            const centerY = height * 0.5;
+            const amplitude = Math.min(Meters(3.6), height * 0.036);
+            const wavelength = width / FitCycles(CONTESTED_WAVELENGTH_METERS);
+            const phaseSpeed = 2.15;
+            const gradientExtent = Math.min(Meters(56), height * 0.48);
+            const nearOffset = Math.min(Meters(10), height * 0.1);
+            const farOffset = Math.min(Meters(34), height * 0.34);
+
+            DrawBase(context, width, height, 0.36 + pulse * 0.05);
+
+            const collisionGradient = context.createLinearGradient(
+                0,
+                centerY - gradientExtent,
+                0,
+                centerY + gradientExtent
+            );
+            collisionGradient.addColorStop(0, 'rgba(255,255,255,0)');
+            collisionGradient.addColorStop(0.42, `rgba(255,255,255,${0.035 + pulse * 0.035})`);
+            collisionGradient.addColorStop(0.5, `rgba(255,255,255,${0.11 + pulse * 0.08})`);
+            collisionGradient.addColorStop(0.58, `rgba(255,255,255,${0.035 + pulse * 0.035})`);
+            collisionGradient.addColorStop(1, 'rgba(255,255,255,0)');
+            context.fillStyle = collisionGradient;
+            context.fillRect(0, centerY - gradientExtent, width, gradientExtent * 2);
+
+            context.lineCap = 'round';
+            context.lineJoin = 'round';
+
+            const DrawWave = (baseY, direction, phaseOffset, opacity) => {
+                const DrawPath = () => {
+                    context.beginPath();
+
+                    for (let x = -8; x <= width + 8; x += 8) {
+                        const phase = x / wavelength * Math.PI * 2
+                            + time * phaseSpeed * direction
+                            + phaseOffset;
+                        const secondaryPhase = x / wavelength * Math.PI * 4
+                            - time * phaseSpeed * 0.36 * direction
+                            + phaseOffset * 0.7;
+                        const y = baseY
+                            + Math.sin(phase) * amplitude
+                            + Math.sin(secondaryPhase) * amplitude * 0.2;
+
+                        if (x === -8) {
+                            context.moveTo(x, y);
+                        } else {
+                            context.lineTo(x, y);
+                        }
+                    }
+                };
+
+                DrawPath();
+                context.lineWidth = Math.max(2, Meters(1.4));
+                context.strokeStyle = `rgba(255,255,255,${opacity * 0.16})`;
+                context.stroke();
+
+                DrawPath();
+                context.lineWidth = Math.max(1, Meters(0.5));
+                context.strokeStyle = `rgba(255,255,255,${opacity})`;
+                context.stroke();
+            };
+
+            DrawWave(centerY - farOffset, 1, 0, 0.48);
+            DrawWave(centerY - nearOffset, 1, Math.PI * 0.72, 0.3);
+            DrawWave(centerY + nearOffset, -1, Math.PI * 1.12, 0.3);
+            DrawWave(centerY + farOffset, -1, Math.PI * 1.84, 0.48);
+
+            const coreThickness = Math.max(2, Meters(2.4));
+            context.fillStyle = `rgba(255,255,255,${0.22 + pulse * 0.18})`;
+            context.fillRect(0, centerY - coreThickness * 0.5, width, coreThickness);
+        }
+
+        function DrawControlled(context, width, height, time) {
+            const pulse = 0.5 + Math.sin(time * 2.15) * 0.5;
+            DrawBase(context, width, height, 0.36 + pulse * 0.08);
+
+            const spacing = width / FitCycles(CONTROLLED_SPACING_METERS);
+            const drift = Wrap(time * Meters(1.36), spacing);
+            context.lineWidth = Math.max(1, Meters(0.6));
+            context.strokeStyle = `rgba(255,255,255,${0.25 + pulse * 0.22})`;
+
+            for (let x = -height; x < width + height; x += spacing) {
+                context.beginPath();
+                context.moveTo(x + drift, height);
+                context.lineTo(x + height * 0.55 + drift, height * 0.5);
+                context.lineTo(x + drift, 0);
+                context.stroke();
+            }
+
+            const coreY = height * 0.5;
+            const coreExtent = Math.min(Meters(44), height * 0.48);
+            const coreGradient = context.createLinearGradient(0, coreY - coreExtent, 0, coreY + coreExtent);
+            coreGradient.addColorStop(0, 'rgba(255,255,255,0)');
+            coreGradient.addColorStop(0.5, `rgba(255,255,255,${0.18 + pulse * 0.18})`);
+            coreGradient.addColorStop(1, 'rgba(255,255,255,0)');
+            context.fillStyle = coreGradient;
+            context.fillRect(0, coreY - coreExtent, width, coreExtent * 2);
+        }
+
+        function DrawState(context, state, x, y, width, height, time) {
+            context.save();
+            context.beginPath();
+            context.rect(x, y, width, height);
+            context.clip();
+            context.translate(x, y);
+
+            DrawNeutral(context, width, height);
+
+            context.restore();
+        }
+
+        function DrawAtlas(time) {
+            atlasContext.clearRect(0, 0, ATLAS_SIZE, ATLAS_SIZE);
+
+            DrawState(atlasContext, 'neutral', 0, 0, ATLAS_SIZE, ATLAS_SIZE, time);
+        }
+
+        function DrawTintedSlot(surface, state, slotIndex) {
+            const context = surface.context;
+            const width = surface.canvas.width;
+            const height = surface.canvas.height;
+            const color = stateConfig[state].color;
+            context.clearRect(0, 0, width, height);
+            context.save();
+            context.globalAlpha = PREVIEW_WALL_ALPHA / 255;
+
+            for (let x = 0; x < width; x += height) {
+                context.drawImage(
+                    atlasCanvas,
+                    0,
+                    0,
+                    ATLAS_SIZE,
+                    ATLAS_SIZE,
+                    x,
+                    0,
+                    height,
+                    height
+                );
+            }
+
+            context.restore();
+
+            context.globalCompositeOperation = 'source-in';
+            context.fillStyle = `rgb(${color[0]}, ${color[1]}, ${color[2]})`;
+            context.fillRect(0, 0, width, height);
+            context.globalCompositeOperation = 'source-over';
+        }
+
+        function BuildPreview() {
+            document.body.classList.add('preview');
+            atlasCanvas.hidden = true;
+            document.body.insertAdjacentHTML('beforeend', `
+                <main class="preview-shell">
+                    <header class="preview-header">
+                        <div>
+                            <h1 class="preview-title">Boundary effects</h1>
+                            <p class="preview-copy">Atlas para as paredes 3D do modo Dominacao. Todos os estados usam a mesma malha modular; apenas a cor aplicada no jogo muda.</p>
+                        </div>
+                        <div class="atlas-badge">${ATLAS_SIZE} x ${ATLAS_SIZE} / grid 1.25 / 5 m / alpha ${PREVIEW_WALL_ALPHA}</div>
+                    </header>
+                    <section class="effect-list" id="effectList"></section>
+                    <section class="atlas-preview">
+                        <p class="atlas-description">A textura de producao e branca e transparente para ser colorida pela native. Esta pagina aplica uma cor representativa em cada faixa apenas para simular o resultado final no mundo.</p>
+                        <canvas id="atlasMiniature" width="368" height="368"></canvas>
+                    </section>
+                </main>
+            `);
+
+            const effectList = document.getElementById('effectList');
+
+            stateOrder.forEach((state, index) => {
+                const config = stateConfig[state];
+                const row = document.createElement('article');
+                row.className = 'effect-row';
+                row.innerHTML = `
+                    <canvas class="effect-canvas" width="1400" height="356"></canvas>
+                    <div class="effect-meta">
+                        <span class="effect-index">0${index + 1}</span>
+                        <div>
+                            <h2 class="effect-name">${config.title}</h2>
+                            <div class="effect-state">${config.subtitle}</div>
+                        </div>
+                    </div>
+                `;
+                effectList.appendChild(row);
+
+                const canvas = row.querySelector('canvas');
+                previewSurfaces.push({
+                    state,
+                    slotIndex: index,
+                    canvas,
+                    context: canvas.getContext('2d', { alpha: true }),
+                });
+            });
+        }
+
+        function DrawPreview() {
+            previewSurfaces.forEach((surface) => {
+                DrawTintedSlot(surface, surface.state, surface.slotIndex);
+            });
+
+            const miniature = document.getElementById('atlasMiniature');
+
+            if (miniature) {
+                const miniatureContext = miniature.getContext('2d');
+                miniatureContext.clearRect(0, 0, miniature.width, miniature.height);
+                miniatureContext.drawImage(atlasCanvas, 0, 0, miniature.width, miniature.height);
+            }
+        }
+
+        function Render() {
+            DrawAtlas(0);
+
+            if (isPreview) DrawPreview();
+        }
+
+        window.addEventListener('message', (event) => {
+            const payload = event.data || {};
+
+            if (payload.action === 'setVisible' && payload.visible) Render();
+        });
+
+        if (isPreview) {
+            BuildPreview();
+        }
+
+        Render();
+    </script>
+</body>
+</html>

@@ -1,0 +1,1 @@
+-- Server module: player/server/customspawn/main.lua

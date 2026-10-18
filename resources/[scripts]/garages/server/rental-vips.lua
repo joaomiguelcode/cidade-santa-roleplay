@@ -1,0 +1,1 @@
+-- Garages module: rental-vips.lua

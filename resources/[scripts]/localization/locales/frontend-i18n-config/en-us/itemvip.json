@@ -1,0 +1,12 @@
+{
+  "common": {
+    "closeLabel": "Close", "backLabel": "Back", "slotSelected": "Selected", "quantityOne": "{amount}x Unit", "quantityOther": "{amount}x Units", "badgePermanent": "Permanent",
+    "badgeTemporaryOne": "Temporary for {days} Day", "badgeTemporaryOther": "Temporary for {days} Days", "swapCountdown": "Time remaining to swap", "statusPermanent": "Permanent", "statusTemporary": "Temporary", "dialogTitle": "Attention", "dialogCancel": "Cancel", "dialogConfirm": "Confirm", "duplicateLine2": "The usage periods will be combined.", "conflictTemporary": "temporary", "conflictAnd": " and ", "conflictPermanent": "permanent", "testDrive": "Test Drive", "successButton": "Finish", "emptyButton": "Finish"
+  },
+  "item": {
+    "slotsTitle": "Redeem Items", "slotsSubtitle": "Redeem your VIP item here!", "slotLabel": "{ordinal} Item", "slotButton": "Select Item", "slotSwap": "Swap Item", "slotUnselected": "Item not selected", "confirmAll": "Redeem Items", "duplicateLine1": "You selected the same item in two redemptions.", "duplicateNotice": "You will receive only one unit of the item.", "conflictBefore": "The same item cannot be selected as both ", "conflictAfter": ". Change the item in one of the options above.", "selectionTitle": "Redeem {ordinal} Item", "selectionSubtitle": "Select the {ordinalLower} item you want to redeem", "confirmSelection": "Confirm Item", "successTitle": "Items Redeemed!", "successText": "Congratulations! You have just redeemed your VIP items.\nEnjoy exploring the city with your new achievement!", "emptyTitle": "Items Unavailable!", "emptyText": "You do not have any VIP items to redeem at the moment."
+  },
+  "ordinals": ["First", "Second", "Third", "Fourth", "Fifth", "Sixth", "Seventh", "Eighth", "Ninth", "Tenth"],
+  "ordinalsLower": ["first", "second", "third", "fourth", "fifth", "sixth", "seventh", "eighth", "ninth", "tenth"],
+  "ordinalFallback": "{n}th"
+}

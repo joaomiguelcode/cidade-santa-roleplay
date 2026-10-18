@@ -1,0 +1,116 @@
+{
+  "vipvehicle": {
+  "common": {
+    "processing": "Procesando…",
+    "redeemError": "No se pudo confirmar el canje. Vuelve a abrir la pantalla para consultar tus vehículos antes de intentarlo de nuevo.",
+    "closeLabel": "Cerrar",
+    "backLabel": "Volver",
+    "slotSelected": "Seleccionado",
+    "badgePermanent": "Permanente",
+    "badgeTemporaryOne": "Temporal durante {days} día",
+    "badgeTemporaryOther": "Temporal durante {days} días",
+    "swapCountdown": "Tiempo restante para el cambio",
+    "statusPermanent": "Permanente",
+    "statusTemporary": "Temporal",
+    "dialogTitle": "Atención",
+    "dialogCancel": "Cancelar",
+    "dialogConfirm": "Confirmar",
+    "duplicateLine2": "Los períodos de uso se acumularán.",
+    "conflictTemporary": "temporal",
+    "conflictAnd": " y ",
+    "conflictPermanent": "permanente",
+    "testDrive": "Prueba de conducción",
+    "successButton": "Finalizar",
+    "emptyButton": "Finalizar"
+  },
+  "vehicle": {
+    "slotsTitle": "Canjear vehículo",
+    "slotsSubtitle": "¡Canjea aquí tu vehículo VIP!",
+    "slotLabel": "{ordinal} vehículo",
+    "slotButton": "Seleccionar vehículo",
+    "slotSwap": "Cambiar vehículo",
+    "slotUnselected": "Vehículo no seleccionado",
+    "confirmAll": "Canjear vehículo",
+    "duplicateLine1": "Has seleccionado el mismo vehículo en dos canjes.",
+    "duplicateNotice": "Solo recibirás una unidad del vehículo.",
+    "conflictBefore": "No se puede seleccionar el mismo vehículo como ",
+    "conflictAfter": ". Cambia el vehículo de una de las opciones anteriores.",
+    "selectionTitle": "Canjear {ordinal} vehículo",
+    "selectionSubtitle": "Selecciona el {ordinalLower} vehículo que deseas canjear",
+    "confirmSelection": "Confirmar vehículo",
+    "successTitle": "¡Vehículos canjeados!",
+    "successText": "¡Enhorabuena! Acabas de canjear tus vehículos VIP.\n¡Disfruta explorando la ciudad con tu nueva adquisición!",
+    "emptyTitle": "¡Vehículos no disponibles!",
+    "emptyText": "No tienes vehículos VIP para canjear en este momento."
+  },
+  "item": {
+    "slotsTitle": "Canjear objetos",
+    "slotsSubtitle": "¡Canjea aquí tu objeto VIP!",
+    "slotLabel": "{ordinal} objeto",
+    "slotButton": "Seleccionar objeto",
+    "slotSwap": "Cambiar objeto",
+    "slotUnselected": "Objeto no seleccionado",
+    "confirmAll": "Canjear objetos",
+    "duplicateLine1": "Has seleccionado el mismo objeto en dos canjes.",
+    "duplicateNotice": "Solo recibirás una unidad del objeto.",
+    "conflictBefore": "No se puede seleccionar el mismo objeto como ",
+    "conflictAfter": ". Cambia el objeto de una de las opciones anteriores.",
+    "selectionTitle": "Canjear {ordinal} objeto",
+    "selectionSubtitle": "Selecciona el {ordinalLower} objeto que deseas canjear",
+    "confirmSelection": "Confirmar objeto",
+    "successTitle": "¡Objetos canjeados!",
+    "successText": "¡Enhorabuena! Acabas de canjear tus objetos VIP.\n¡Disfruta explorando la ciudad con tu nueva adquisición!",
+    "emptyTitle": "¡Objetos no disponibles!",
+    "emptyText": "No tienes objetos VIP para canjear en este momento."
+  },
+  "ordinals": [
+    "Primer",
+    "Segundo",
+    "Tercer",
+    "Cuarto",
+    "Quinto",
+    "Sexto",
+    "Séptimo",
+    "Octavo",
+    "Noveno",
+    "Décimo"
+  ],
+  "ordinalsLower": [
+    "primer",
+    "segundo",
+    "tercer",
+    "cuarto",
+    "quinto",
+    "sexto",
+    "séptimo",
+    "octavo",
+    "noveno",
+    "décimo"
+  ],
+  "ordinalFallback": "{n}º",
+  "home": {
+    "redeem": {
+      "title": "CANJEAR VEHÍCULOS",
+      "button": "CANJEAR AHORA",
+      "select": "Selecciona tus vehículos",
+      "close": "CERRAR"
+    },
+    "success": {
+      "title": "¡Gracias por apoyarnos con tu donación!",
+      "close": "CERRAR"
+    }
+  },
+  "redeem": {
+    "title": "CANJEAR VEHÍCULOS",
+    "button": "CANJEAR AHORA",
+    "select": "Selecciona tus vehículos",
+    "close": "CERRAR",
+    "confirmed": "Confirmado",
+    "notSelected": "No seleccionado"
+  },
+  "success": {
+    "title": "¡Gracias por apoyarnos con tu donación!",
+    "close": "CERRAR"
+  }
+  }
+}

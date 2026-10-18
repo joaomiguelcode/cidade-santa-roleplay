@@ -1,0 +1,209 @@
+{
+  "audio": {
+    "title": "Schedule audio",
+    "step_of": "Step {current} of {total}",
+    "common": {
+      "continue": "Continue",
+      "back": "Back",
+      "close": "Close"
+    },
+    "type": {
+      "question": "What type of announcement is it?",
+      "rules": "City rules",
+      "culture": "Culture",
+      "operation": "Operation",
+      "actions": "Actions",
+      "free_factions": "Free factions",
+      "sales": "Commercial",
+      "vip_launch": "VIP launch",
+      "event": "Event"
+    },
+    "link": {
+      "title": "Paste the audio link",
+      "description": "Paste the audio file link from the Santa CDN.",
+      "placeholder": "https://cdn.santagroup.gg/...",
+      "listen": "Listen",
+      "stop": "Stop",
+      "invalid": "Paste a valid cdn.santagroup.gg link."
+    },
+    "duration": {
+      "hint": "The audio can be at most {max} seconds long.",
+      "checking": "Checking the audio duration...",
+      "ok": "Audio duration: {n} seconds.",
+      "too_long": "The audio is {n} seconds long. The maximum allowed is {max} seconds.",
+      "error": "Could not load the audio. Check the link."
+    },
+    "audience": {
+      "question": {
+        "default": "Who will hear it?",
+        "world": "World"
+      },
+      "description": {
+        "default": "Based on how long the person has played in the city.",
+        "world": "Choose which world the audio will play in."
+      },
+      "new_players": {
+        "title": "New players",
+        "description": "With up to 100 hours played",
+        "short": "up to 100 hours"
+      },
+      "veterans": {
+        "title": "Veteran players",
+        "description": "With more than 100 hours played",
+        "short": "more than 100 hours"
+      },
+      "primary": {
+        "title": "Primary world",
+        "description": "New players"
+      },
+      "secondary": {
+        "title": "Secondary world",
+        "description": "Veteran players"
+      },
+      "tertiary": {
+        "title": "Tertiary world",
+        "description": "Other players"
+      },
+      "event": {
+        "title": "Event",
+        "description": "Event world"
+      },
+      "royale": {
+        "title": "Royale",
+        "description": "Royale world"
+      },
+      "war": {
+        "title": "War",
+        "description": "War world"
+      },
+      "affiliated": {
+        "title": "Affiliate"
+      },
+      "default": {
+        "title": "Default"
+      },
+      "all_players": {
+        "title": "All players",
+        "description": "All players, regardless of hours played"
+      }
+    },
+    "frequency": {
+      "question": "When will it play?",
+      "once": {
+        "title": "Just once",
+        "description": "On a day and time of your choice"
+      },
+      "daily": {
+        "title": "Every day",
+        "description": "Always at the same time"
+      },
+      "instant": {
+        "title": "Instant",
+        "description": "Plays now, as soon as you confirm"
+      }
+    },
+    "schedule": {
+      "title_once": "Choose the day and time",
+      "title_daily": "Choose the time",
+      "description_daily": "The audio will play every day at the selected times. Click again to deselect.",
+      "slots_of": "Times for {weekday}, {date}",
+      "free_slots": "Available times",
+      "pick_day": "Choose a day on the calendar",
+      "busy": "Busy",
+      "full_day": "Fully booked, no time available",
+      "loading": "Loading times...",
+      "weekdays": {
+        "short": {
+          "mon": "Mon",
+          "tue": "Tue",
+          "wed": "Wed",
+          "thu": "Thu",
+          "fri": "Fri",
+          "sat": "Sat",
+          "sun": "Sun"
+        },
+        "long": {
+          "mon": "Monday",
+          "tue": "Tuesday",
+          "wed": "Wednesday",
+          "thu": "Thursday",
+          "fri": "Friday",
+          "sat": "Saturday",
+          "sun": "Sunday"
+        }
+      },
+      "months": {
+        "1": "January",
+        "2": "February",
+        "3": "March",
+        "4": "April",
+        "5": "May",
+        "6": "June",
+        "7": "July",
+        "8": "August",
+        "9": "September",
+        "10": "October",
+        "11": "November",
+        "12": "December"
+      },
+      "selection_hint": "Select one or more times. Click again to deselect."
+    },
+    "confirm": {
+      "title": "Review and book",
+      "type": "Type",
+      "link": "Link",
+      "duration": "Duration",
+      "audience": "Who will hear it",
+      "when": "When",
+      "duration_value": "{n} seconds",
+      "when_once": "{weekday}, {date}, at {time}",
+      "when_daily": "Every day at {time}",
+      "submit": "Book time",
+      "error": "Could not book it. Please try again.",
+      "when_instant": "Now, as soon as you confirm",
+      "title_instant": "Review and play now",
+      "submit_instant": "Play now",
+      "error_instant": "Could not play the audio. Please try again.",
+      "world": "World",
+      "submit_multiple": "Reserve times"
+    },
+    "success": {
+      "title": "Time booked",
+      "description_once": "Your audio plays on {weekday}, {date}, at {time}.",
+      "description_daily": "Your audio plays every day at {time}.",
+      "close": "Close",
+      "title_instant": "Audio sent",
+      "description_instant": "Your audio is playing in the city now.",
+      "title_multiple": "Times reserved"
+    },
+    "list": {
+      "title": "Scheduled audios",
+      "open": "View scheduled audios",
+      "refresh": "Refresh",
+      "loading": "Loading schedules...",
+      "error": "Could not load the schedules.",
+      "retry": "Try again",
+      "empty": "No audio scheduled yet.",
+      "subtitle_one": "{n} audio in the city schedule",
+      "subtitle_other": "{n} audios in the city schedule",
+      "daily_at": "Every day, {time}",
+      "once_at": "{weekday}, {date}, {time}",
+      "cancel": "Cancel audio",
+      "confirm": "Cancel it?",
+      "confirm_yes": "Yes, cancel",
+      "confirm_no": "No",
+      "cancel_error": "Could not cancel. Please try again.",
+      "search_placeholder": "Search by file, type, person or time",
+      "clear_search": "Clear search",
+      "filter_all": "All",
+      "filter_daily": "Daily",
+      "filter_once": "Once",
+      "clear_filters": "Clear filters",
+      "no_results": "No audio found with this filter.",
+      "showing": "Showing {shown} of {total} audios.",
+      "copy": "Copy link",
+      "copied": "Link copied",
+      "copy_error": "Could not copy"
+    }
+  }
+}

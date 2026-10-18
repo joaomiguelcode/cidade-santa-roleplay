@@ -1,0 +1,27 @@
+{
+  "headerTitle": "المعرض",
+  "headerSubtitle": "المركبات",
+
+  "cars": "السيارات",
+  "motorcycles": "الدراجات النارية",
+  "store": "متجر VIP",
+  "vips": "مركبات بالماس 💎",
+
+  "discount": "VIP نشط <b>خصم 50%</b> على جميع المركبات",
+  "testDrive": "تجربة القيادة",
+
+  "vipTag": "مركبة VIP",
+  "newTag": "جديدة",
+  "priceTag": "القيمة {0}",
+  "decendingTag": "تنازلي",
+  "ascendingTag": "تصاعدي",
+  "alphabeticalTag": "ترتيب أبجدي",
+
+  "modalTitle": "تأكيد عملية الشراء",
+  "modalSubtitle": "المركبة",
+  "modalConfirm": "تأكيد",
+  "modalClose": "إغلاق",
+  "modalPrice": "المبلغ المطلوب دفعه",
+
+  "currency": "ر.س"
+}

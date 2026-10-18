@@ -1,0 +1,22 @@
+{
+    "skinweapon_title": "Mercado de Skins",
+    "skinweapon_subtitle": "Adquiere tu skin",
+    "skinweapon_category_pistol": "Pistolas",
+    "skinweapon_category_my": "Poseídas",
+    "skinweapon_category_rifle": "Rifles",
+    "skinweapon_input_placeholder": "Buscar skin...",
+    "skinweapon_selected_skin": "Skin seleccionada",
+    "skinweapon_price": "Precio",
+    "skinweapon_stock": "Stock",
+    "skinweapon_rarity": "Rareza",
+    "skinweapon_buy": "Comprar",
+    "skinweapon_transfer": "Transferir",
+    "skinweapon_equip_try": "Equipar/Desequipar",
+    "skinweapon_equip": "Equipar",
+    "skinweapon_modes": {
+        "Pistol": "Pistolas",
+        "Possuidas": "Poseídas",
+        "Rifle": "Rifles"
+    }
+}
+

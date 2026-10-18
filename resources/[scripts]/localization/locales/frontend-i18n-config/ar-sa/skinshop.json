@@ -1,0 +1,31 @@
+{
+  "home": {
+    "primary": "أولية",
+    "secondary": "ثانوية",
+
+    "cancel": "إلغاء",
+    "save": "حفظ"
+  },
+  "clothes": {
+    "back": "رجوع",
+    "number": "الرقم",
+    "vip": "VIP فقط"
+  },
+  "category": {
+    "torso": "سترات",
+    "pants": "سراويل",
+    "shoes": "أحذية",
+    "tshirt": "تيشيرتات",
+    "arms": "أيدي",
+    "hat": "قبعات",
+    "glass": "نظارات",
+    "accessory": "إكسسوارات",
+    "backpack": "حقائب ظهر",
+    "mask": "أقنعة",
+    "vest": "سترات واقية",
+    "decals": "ملصقات",
+    "ear": "أقراط",
+    "bracelet": "أساور",
+    "watch": "ساعات"
+  }
+}

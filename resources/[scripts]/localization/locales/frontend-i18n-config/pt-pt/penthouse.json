@@ -1,0 +1,200 @@
+{
+    "common": {
+        "cancel": "Cancelar",
+        "confirm": "Confirmar",
+        "close": "Fechar",
+        "search": "Procurar",
+        "loading": "A carregar...",
+        "error": "Erro",
+        "people": "pessoas",
+        "furnished": "Mobilado",
+        "unfurnished": "Sem mobília",
+        "rooms": "divisões",
+        "days": "dias",
+        "permanent": "Permanente"
+    },
+    "home": {
+        "title": "Imobiliária",
+        "selectProperty": "Selecione uma cobertura para ver os detalhes",
+        "tour": "Fazer tour pela cobertura",
+        "buyNow": "Comprar agora",
+        "callHelp": "Chamar ajuda",
+        "helpModal": {
+            "title": "Chamar ajuda",
+            "description": "Precisa de ajuda com a sua cobertura? A nossa equipa está pronta para ajudar!",
+            "confirm": "Chamar ajuda"
+        },
+        "level": "Nível",
+        "buyModal": {
+            "title": "Confirmar compra",
+            "description": "Deseja adquirir esta cobertura por {duration}? Será consumido um voucher correspondente.",
+            "descriptionNoDuration": "Deseja adquirir esta cobertura? Será consumido um voucher correspondente.",
+            "confirm": "Comprar agora"
+        },
+        "buySuccess": {
+            "title": "Compra concluída",
+            "description": "Pode aceder facilmente à sua cobertura utilizando o elevador disponível no local."
+        }
+    },
+    "edit": {
+        "title": "Editar Cobertura",
+        "openStore": "Abrir loja",
+        "houseName": "Nome da Cobertura",
+        "houseNamePlaceholder": "Nome da cobertura",
+        "maxVisitors": "Número máximo de visitantes",
+        "houseAccess": "Acesso à Cobertura",
+        "accessTypes": {
+            "open": "Aberto",
+            "invisible": "Invisível",
+            "locked": "Trancado",
+            "lockedWithDoorbell": "Trancado com campainha"
+        },
+        "visitors": "Visitantes",
+        "banned": "Banidos",
+        "noVisitors": "Nenhum visitante no momento",
+        "noBanned": "Nenhum jogador banido",
+        "ban": "Banir",
+        "kick": "Expulsar",
+        "unban": "Desbanir",
+        "owner": "Dono",
+        "level": "Nível",
+        "timeRemaining": "Tempo restante",
+        "expired": "Expirada",
+        "permanentLegacy": "Permanente (Legado)",
+        "renew": "Renovar Cobertura",
+        "upgrade": "Atualizar Cobertura",
+        "renewModal": {
+            "title": "Renovar Cobertura",
+            "description": "Deseja renovar esta cobertura por mais 30 dias? Será consumido um voucher correspondente.",
+            "confirm": "Renovar"
+        },
+        "upgradeIdModal": {
+            "title": "Atualizar Cobertura",
+            "description": "Introduza o ID da cobertura que deseja atualizar.",
+            "placeholder": "ID da cobertura",
+            "confirm": "Continuar",
+            "invalidId": "ID inválido ou a cobertura não lhe pertence."
+        },
+        "upgradeSelectModal": {
+            "title": "Atualizar Cobertura",
+            "description": "Veja informações e atualize a sua Cobertura",
+            "levelLabel": "Nível",
+            "nameLabel": "Nome",
+            "totalTimeLabel": "Tempo Total",
+            "changeOptionLabel": "Qual opção deseja alterar?",
+            "infoTitle": "Informações",
+            "infoPoint1": "Voucher do nível desejado necessário",
+            "infoPoint2": "Os seus itens serão movidos para o baú da nova casa automaticamente.",
+            "infoPoint3": "O tempo restante da sua Cobertura será devidamente convertido para o do Nível Desejado.",
+            "current": "Atual",
+            "timeRemaining": "Tempo restante",
+            "selectLevel": "Selecione o novo nível",
+            "newTime": "Novo tempo estimado",
+            "confirm": "Atualizar",
+            "noOptions": "Nenhum nível superior disponível para upgrade."
+        },
+        "banModal": {
+            "title": "Banimento",
+            "description": "Tem a certeza de que deseja banir {playerName} do seu apartamento?",
+            "confirm": "Banir"
+        },
+        "kickModal": {
+            "title": "Expulsar",
+            "description": "Tem a certeza de que deseja expulsar {playerName} do seu apartamento?",
+            "confirm": "Expulsar"
+        },
+        "unbanModal": {
+            "title": "Desbanimento",
+            "description": "Tem a certeza de que deseja desbanir {playerName} do seu apartamento?",
+            "confirm": "Desbanir"
+        },
+        "upgradeSuccess": {
+            "title": "Cobertura Atualizada",
+            "description": "Deve entrar novamente na sua cobertura para que as alterações sejam aplicadas."
+        }
+    },
+    "elevator": {
+        "title": "Elevador",
+        "neighbors": "Vizinhos",
+        "myProperties": "Minhas coberturas",
+        "searchNeighbors": "Procurar Vizinhos...",
+        "searchProperties": "Procurar Coberturas",
+        "pending": "Pendente",
+        "overdue": "Atrasado",
+        "permanent": "Permanente",
+        "doorbellModal": {
+            "title": "Campainha",
+            "description": "Cobertura trancada. Toque a campainha para solicitar a entrada. Ao ser aceite, será teletransportado para o apartamento.",
+            "confirm": "Tocar campainha"
+        },
+        "renewModal": {
+            "title": "Renovar Cobertura",
+            "description": "A sua cobertura expirou. Deseja renová-la?",
+            "confirm": "Renovar"
+        }
+    },
+    "wallpapers": {
+        "title": "Loja de Decorações",
+        "visualize": "Visualizar",
+        "buy": "Comprar",
+        "helpModal": {
+            "title": "Chamar ajuda",
+            "description": "Tem a certeza de que deseja chamar a ajuda de um afiliado?",
+            "confirm": "Chamar ajuda"
+        }
+    },
+    "properties": {
+        "imobiliaria": "Imobiliária",
+        "sem_mobilias": "Sem Mobília",
+        "ver_detalhes": "Ver Detalhes"
+    },
+    "doorbellModal": {
+        "title": "Campainha",
+        "description": "Tocar a campainha para abrir a porta",
+        "cobertura_trancada_desc": "Cobertura trancada. Toque a campainha para solicitar entrada. Ao tocar, será teletransportado para o apartamento.",
+        "close": "Fechar",
+        "cancel": "Cancelar",
+        "ringing": "A tocar...",
+        "ring_doorbell": "Tocar Campainha"
+    },
+    "editPenthouseModal": {
+        "title": "Editar Cobertura",
+        "close": "Fechar",
+        "nome_da_cobertura": "Nome da Cobertura",
+        "numero_maximo_visitantes": "Número máximo de visitantes",
+        "acesso_cobertura": "Acesso à cobertura",
+        "tipo_de_acesso": "Tipo de Acesso",
+        "aberto": "Aberto",
+        "invisivel": "Invisível",
+        "trancado": "Trancado",
+        "trancado_com_campainha": "Trancado com Campainha",
+        "salvar": "Guardar",
+        "cancelar": "Cancelar",
+        "people_wanting_access": "Pessoas a tentar aceder à cobertura",
+        "no_pending_requests": "Nenhum pedido pendente",
+        "approve": "Aprovar",
+        "reject": "Rejeitar"
+    },
+    "penthouseList": {
+        "title": "Coberturas",
+        "search_coberturas": "Procurar coberturas",
+        "edit": "Editar",
+        "ring_doorbell": "Tocar Campainha"
+    },
+    "aberto": "Aberto",
+    "acesso_cobertura": "Acesso à Cobertura",
+    "aprovar": "Aprovar",
+    "campainha_tocada": "Campainha tocada!",
+    "editar_cobertura": "Editar Cobertura",
+    "erro_tocar_campainha": "Erro ao tocar a campainha",
+    "invisivel": "Invisível",
+    "nome_da_cobertura": "Nome da Cobertura",
+    "numero_maximo_visitantes": "Número máximo de Visitantes",
+    "pessoas_querendo_acessar_cobertura": "Pessoas a tentar aceder à cobertura",
+    "rejeitar": "Rejeitar",
+    "salvando": "A guardar",
+    "salvar_configuracoes": "Guardar Configurações",
+    "sem_resposta": "Sem resposta",
+    "trancado": "Trancado",
+    "trancado_com_campainha": "Trancado com Campainha"
+}

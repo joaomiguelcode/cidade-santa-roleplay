@@ -1,0 +1,24 @@
+{
+  "select": "SELECCIONAR",
+  "room": "SALA",
+
+  "search": "BUSCAR SALA...",
+  "password": "INTRODUCE LA CONTRASEÑA",
+  "enter": "ENTRAR EN LA SALA",
+
+  "selectRoom": "SELECCIONAR SALA",
+
+  "createRoom": "CREAR SALA",
+
+  "roomName": "NOMBRE DE LA SALA",
+  "roomPassword": "CONTRASEÑA DE LA SALA",
+
+  "public": "PÚBLICA",
+  "private": "PRIVADA",
+
+  "create": "CREAR SALA",
+
+  "currentRoom": "SALA ACTUAL",
+
+  "exit": "SALIR"
+}

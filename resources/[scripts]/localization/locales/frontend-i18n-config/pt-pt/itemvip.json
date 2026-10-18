@@ -1,0 +1,11 @@
+{
+  "common": {
+    "closeLabel": "Fechar", "backLabel": "Voltar", "slotSelected": "Selecionado", "quantityOne": "{amount}x Unidade", "quantityOther": "{amount}x Unidades", "badgePermanent": "Permanente", "badgeTemporaryOne": "Temporário durante {days} dia", "badgeTemporaryOther": "Temporário durante {days} dias", "swapCountdown": "Tempo restante para a troca", "statusPermanent": "Permanente", "statusTemporary": "Temporário", "dialogTitle": "Atenção", "dialogCancel": "Cancelar", "dialogConfirm": "Confirmar", "duplicateLine2": "Os períodos de utilização serão acumulados.", "conflictTemporary": "temporário", "conflictAnd": " e ", "conflictPermanent": "permanente", "testDrive": "Test-Drive", "successButton": "Concluir", "emptyButton": "Concluir"
+  },
+  "item": {
+    "slotsTitle": "Resgatar itens", "slotsSubtitle": "Resgate aqui o seu item VIP!", "slotLabel": "{ordinal} item", "slotButton": "Selecionar item", "slotSwap": "Trocar item", "slotUnselected": "Item não selecionado", "confirmAll": "Resgatar itens", "duplicateLine1": "Selecionou o mesmo item em dois resgates.", "duplicateNotice": "Receberá apenas uma unidade do item.", "conflictBefore": "Não é possível selecionar o mesmo item como ", "conflictAfter": ". Altere o item numa das opções acima.", "selectionTitle": "Resgatar {ordinal} item", "selectionSubtitle": "Selecione o {ordinalLower} item que pretende resgatar", "confirmSelection": "Confirmar item", "successTitle": "Itens resgatados!", "successText": "Parabéns! Acabou de resgatar os seus itens VIP.\nAproveite para explorar a cidade com a sua nova conquista!", "emptyTitle": "Itens indisponíveis!", "emptyText": "Não tem itens VIP para resgatar neste momento."
+  },
+  "ordinals": ["Primeiro", "Segundo", "Terceiro", "Quarto", "Quinto", "Sexto", "Sétimo", "Oitavo", "Nono", "Décimo"],
+  "ordinalsLower": ["primeiro", "segundo", "terceiro", "quarto", "quinto", "sexto", "sétimo", "oitavo", "nono", "décimo"],
+  "ordinalFallback": "{n}º"
+}

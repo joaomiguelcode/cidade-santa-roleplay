@@ -1,0 +1,168 @@
+{
+  "welcome": "Accueillir",
+  "create_your_character": "Créez votre personnage",
+  "name": "Nom",
+  "last_name": "Nom de famille",
+  "age": "Âge",
+  "character_gender": "Genre du personnage",
+  "male": "Mâle",
+  "female": "Femelle",
+  "creating": "Création...",
+  "next": "Suivant",
+  "where_did_find_us": "Où nous as-tu trouvé ?",
+  "which_social_media": "Quelle réseau social ?",
+  "friend_id_optional": "ID d'ami (facultatif)",
+  "error_creating_character": "Erreur lors de la création du personnage",
+  "cancel": "Annuler",
+  "apply": "Appliquer",
+  "finish": "Terminer",
+  "loading": "Chargement...",
+  "previous": "Retour",
+  "rotate_character": "Faire pivoter le personnage",
+  "action": {
+    "zoom_in_out": "Zoomer/Dézoomer"
+  },
+  "appearance": {
+    "export": {
+      "generating_code": "Génération du code...",
+      "title": "Exporter l'apparence",
+      "description": "Copiez le code du preset actuel"
+    },
+    "finish": {
+      "title": "Créer le personnage",
+      "description": "Voulez-vous vraiment terminer la création du personnage ? Vous pouvez aussi copier le code d'apparence du personnage."
+    },
+    "import": {
+      "code": "Code du preset",
+      "title": "Importer l'apparence",
+      "description": "Collez le code du preset souhaité",
+      "code_placeholder": "Saisissez le code du preset"
+    },
+    "title": {
+      "creating": "Création du personnage",
+      "editing": "Modification du personnage"
+    },
+    "groups": {
+      "aspect": "Aspect",
+      "bodySpots": "Taches du corps",
+      "cheek": "Joues",
+      "chin": "Menton",
+      "eyebrows": "Sourcils",
+      "eyes": "Yeux",
+      "fur": "Pilosité",
+      "gender": "Genre",
+      "jaw": "Mâchoire",
+      "kinship": "Parenté",
+      "makeup": "Maquillage",
+      "mouth": "Bouche",
+      "nose": "Nez",
+      "options": "Options",
+      "parentColors": "Couleurs des parents"
+    },
+    "options": {
+      "ageing": "Vieillissement",
+      "beard": "Barbe",
+      "blemishes": "Imperfections de la peau",
+      "blush": "Blush",
+      "bodyHair": "Pilosité corporelle",
+      "bodySpot1": "Tache",
+      "cheekBonesHeight": "Hauteur des pommettes",
+      "cheekBonesWidth": "Largeur des pommettes",
+      "chinFormat": "Forme du menton",
+      "chinLength": "Longueur du menton",
+      "chinPosition": "Position du menton",
+      "chinWidth": "Largeur du menton",
+      "eyebrows": "Sourcils",
+      "eyebrowsDepth": "Profondeur des sourcils",
+      "eyebrowsHeight": "Hauteur des sourcils",
+      "eyeColor": "Couleur des yeux",
+      "eyeGap": "Écartement des yeux",
+      "hair": "Cheveux",
+      "hairSecondary": "Couleur secondaire des cheveux",
+      "jawBoneHeight": "Hauteur de la mâchoire",
+      "jawBoneWidth": "Largeur de la mâchoire",
+      "lipstick": "Rouge à lèvres",
+      "lipThickness": "Épaisseur des lèvres",
+      "makeup": "Maquillage",
+      "molesFreckles": "Grains de beauté et taches de rousseur",
+      "noseCurve": "Courbure du nez",
+      "noseHeight": "Hauteur du nez",
+      "noseLength": "Longueur du nez",
+      "noseTip": "Pointe du nez",
+      "noseWidth": "Largeur du nez",
+      "parent1Color": "Couleur du parent 1",
+      "parent2Color": "Couleur du parent 2",
+      "similarity": "Ressemblance",
+      "skinTone": "Teint de peau",
+      "sunDamage": "Dommages du soleil"
+    },
+    "description": {
+      "creating": "Créez votre personnage comme vous le souhaitez",
+      "editing": "Modifiez votre personnage comme vous le souhaitez"
+    }
+  },
+  "colorSelector": {
+    "description": "Sélectionnez la couleur souhaitée",
+    "opacity": "Opacité",
+    "title": "Couleurs"
+  },
+  "kinship": {
+    "select_father": "Sélectionner le père",
+    "select_mother": "Sélectionner la mère",
+    "selector": {
+      "description": "Sélectionnez le premier parent",
+      "title": "Parenté"
+    }
+  },
+  "presets": {
+    "description": "Sélectionnez le preset souhaité",
+    "randomize": "Personnage aléatoire",
+    "title": "Presets d'apparence"
+  },
+  "criminal_spawn": {
+    "title": "Voie criminelle",
+    "subtitle": "Où veux-tu commencer ?",
+    "faction": {
+      "title": "Directement dans la faction",
+      "description": "Tu commences à l'entrée du QG de la faction qui recrute en ce moment",
+      "badge": "DÉPART PLUS RAPIDE"
+    },
+    "pier": {
+      "title": "Sur le quai",
+      "description": "Tu commences sur le quai principal et tu rencontres ceux qui peuvent t'accueillir"
+    },
+    "confirm": "Confirmer",
+    "close": "Fermer"
+  },
+  "validation": {
+    "firstNameMin": "Le prénom doit avoir au moins 3 caractères.",
+    "firstNameMax": "Le prénom doit avoir au maximum {0} caractères.",
+    "firstNameNoSpaces": "Le champ Prénom ne peut pas contenir d'espaces.",
+    "firstNameLettersOnly": "Utilisez uniquement des lettres.",
+    "firstNameRepeat": "Le prénom contient trop de lettres répétées.",
+    "firstNameInvalid": "Saisissez un prénom valide.",
+    "lastNameMin": "Le nom doit avoir au moins 3 caractères.",
+    "lastNameMax": "Le nom doit avoir au maximum {0} caractères.",
+    "lastNameLettersOnly": "Le nom doit contenir uniquement des lettres.",
+    "lastNameRepeat": "Le nom contient trop de lettres répétées.",
+    "lastNameInvalid": "Saisissez un nom valide.",
+    "duplicateNames": "Le prénom et le nom ne peuvent pas être identiques.",
+    "nameNoSymbols": "N'utilisez ni chiffres ni symboles.",
+    "ageRequired": "L'âge est obligatoire.",
+    "ageOnlyNumbers": "Utilisez uniquement des chiffres.",
+    "ageMin": "L'âge minimum est de 18 ans.",
+    "ageMax": "L'âge doit être inférieur à 100 ans.",
+    "ageMaxChars": "Maximum 2 caractères.",
+    "influencerCouponMax": "Maximum 20 caractères.",
+    "influencerCouponFormat": "Seulement lettres et chiffres, sans espaces ni caractères spéciaux.",
+    "influencerCouponInvalid": "Coupon d'influenceur invalide."
+  },
+  "origin_options": {
+    "fivem_list": "Liste FiveM",
+    "influencer": "Influenceur",
+    "friend_referral": "Recommandation d'ami",
+    "social_media": "Réseaux sociaux",
+    "other": "Autres"
+  },
+  "influencer_coupon_optional": "Coupon de Influencer (facultatif)"
+}

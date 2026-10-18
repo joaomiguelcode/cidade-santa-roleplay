@@ -1,0 +1,97 @@
+{
+  "use": "Utiliser",
+  "to_leave_the_game": "quitter le jeu",
+  "game_time": "Temps de jeu",
+  "overtime": "AU FIL DU TEMPS",
+  "team_full": "Équipe au complet",
+  "choose_team": "Choisissez une équipe",
+  "killstreak_bonus": "Bonus de série d'éliminations",
+  "player_killed": "Joueur tué",
+  "points": "Points",
+  "point": "Indiquer",
+  "open_shop": "Voir la boutique",
+  "open_ranking": "Voir le classement",
+  "winner": "Gagnant!",
+  "next_game_in": "Prochain match dans",
+  "seconds": "Secondes",
+  "most_falls": "La plupart des chutes",
+  "most_hits": "La plupart des succès",
+  "rules": "Règles",
+  "actions": {
+    "take_snow": "Prendre de la neige"
+  },
+  "taking_snowball": {
+    "description": "Prendre une boule de neige..."
+  },
+  "ranking": {
+    "title": "Classement de la guerre des neiges",
+    "description": "Suivez le classement de la guerre des neiges en temps réel",
+    "best": {
+      "title": "Le meilleur des neiges",
+      "subtitle": "Meilleur guerrier des neiges",
+      "points": "Points",
+      "victories": "Victoires"
+    },
+    "table": {
+      "position": "Position",
+      "id": "IDENTIFIANT",
+      "name": "Nom",
+      "points": "Points",
+      "wins": "Victoires",
+      "time_played": "Temps joué"
+    }
+  },
+  "ui": {
+    "previous": "Précédent",
+    "next": "Suivant"
+  },
+  "team": {
+    "red": "Équipe rouge",
+    "blue": "Équipe bleue"
+  },
+  "shop": {
+    "title": "Événements de la saison",
+    "description": "Échangez vos pièces contre des prix",
+    "header": {
+      "title": "Guerre de boules de neige",
+      "description": "Rejoignez notre guerre de boules de neige et profitez des meilleurs prix !",
+      "button": "Jouez maintenant"
+    },
+    "error": {
+      "not_enough_coins": "Vous n'avez pas assez de pièces",
+      "purchase_failed": "Échec de l'achat de l'article"
+    }
+  },
+  "store": {
+    "not": {
+      "enough": {
+        "quantity": "Vous n'avez pas assez de quantité"
+      },
+      "buy": {
+        "because": {
+          "limit": "Vous avez atteint la limite de cet article",
+          "collectible": "Vous possédez déjà cet objet de collection"
+        }
+      }
+    }
+  },
+  "leave_game_modal": {
+    "title": "Quitter le match",
+    "description": "Êtes-vous sûr de vouloir quitter le match ?",
+    "no": "Non",
+    "yes": "Oui"
+  },
+  "combat": {
+    "hits": "Clics",
+    "falls": "Chutes",
+    "points": "Points"
+  },
+  "countdown": {
+    "be_ready": "Soyez prêt !",
+    "starting_in": "À partir de",
+    "starting": "DÉPART!"
+  },
+  "data_table": {
+    "no_results": "Aucun résultat"
+  }
+}

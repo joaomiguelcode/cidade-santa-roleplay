@@ -1,0 +1,116 @@
+{
+  "vipvehicle": {
+  "common": {
+    "processing": "Processando…",
+    "redeemError": "Não foi possível confirmar o resgate. Reabra a tela para consultar seus veículos antes de tentar novamente.",
+    "closeLabel": "Fechar",
+    "backLabel": "Voltar",
+    "slotSelected": "Selecionado",
+    "badgePermanent": "Permanente",
+    "badgeTemporaryOne": "Temporário {days} Dia",
+    "badgeTemporaryOther": "Temporário {days} Dias",
+    "swapCountdown": "Restantes para troca",
+    "statusPermanent": "Permanente",
+    "statusTemporary": "Temporário",
+    "dialogTitle": "Atenção",
+    "dialogCancel": "Cancelar",
+    "dialogConfirm": "Confirmar",
+    "duplicateLine2": "Os tempos de uso serão acumulados.",
+    "conflictTemporary": "temporário",
+    "conflictAnd": " e ",
+    "conflictPermanent": "permanente",
+    "testDrive": "Test-Drive",
+    "successButton": "Concluir",
+    "emptyButton": "Concluir"
+  },
+  "vehicle": {
+    "slotsTitle": "Resgatar Veículo",
+    "slotsSubtitle": "Resgate o seu veículo vip aqui!",
+    "slotLabel": "{ordinal} Veículo",
+    "slotButton": "Selecionar Veículo",
+    "slotSwap": "Trocar Veículo",
+    "slotUnselected": "Veículo não selecionado",
+    "confirmAll": "Resgatar Veículo",
+    "duplicateLine1": "Você selecionou o mesmo veículo em dois resgates.",
+    "duplicateNotice": "Você receberá apenas uma unidade do veículo.",
+    "conflictBefore": "Não foi possível selecionar o mesmo veículo como ",
+    "conflictAfter": ". Altere o veículo de uma das opções acima.",
+    "selectionTitle": "Resgatar Veículo {ordinal}",
+    "selectionSubtitle": "Selecione o {ordinalLower} veículo que deseja resgatar",
+    "confirmSelection": "Confirmar Veículo",
+    "successTitle": "Veículos Resgatados!",
+    "successText": "Parabéns! Você acaba de resgatar seus veículos VIP.\nAproveite para explorar a cidade com sua nova conquista!",
+    "emptyTitle": "Veículos Indisponíveis!",
+    "emptyText": "Você não tem veículos VIP para resgatar no momento."
+  },
+  "item": {
+    "slotsTitle": "Resgatar Itens",
+    "slotsSubtitle": "Resgate o seu item vip aqui!",
+    "slotLabel": "{ordinal} Item",
+    "slotButton": "Selecionar Item",
+    "slotSwap": "Trocar Item",
+    "slotUnselected": "Item não selecionado",
+    "confirmAll": "Resgatar Itens",
+    "duplicateLine1": "Você selecionou o mesmo item em dois resgates.",
+    "duplicateNotice": "Você receberá apenas uma unidade do item.",
+    "conflictBefore": "Não foi possível selecionar o mesmo item como ",
+    "conflictAfter": ". Altere o item de uma das opções acima.",
+    "selectionTitle": "Resgatar Item {ordinal}",
+    "selectionSubtitle": "Selecione o {ordinalLower} item que deseja resgatar",
+    "confirmSelection": "Confirmar Item",
+    "successTitle": "Itens Resgatados!",
+    "successText": "Parabéns! Você acaba de resgatar seus itens VIP.\nAproveite para explorar a cidade com sua nova conquista!",
+    "emptyTitle": "Itens Indisponíveis!",
+    "emptyText": "Você não tem itens VIP para resgatar no momento."
+  },
+  "ordinals": [
+    "Primeiro",
+    "Segundo",
+    "Terceiro",
+    "Quarto",
+    "Quinto",
+    "Sexto",
+    "Sétimo",
+    "Oitavo",
+    "Nono",
+    "Décimo"
+  ],
+  "ordinalsLower": [
+    "primeiro",
+    "segundo",
+    "terceiro",
+    "quarto",
+    "quinto",
+    "sexto",
+    "sétimo",
+    "oitavo",
+    "nono",
+    "décimo"
+  ],
+  "ordinalFallback": "{n}º",
+  "home": {
+    "redeem": {
+      "title": "RESGATAR VEÍCULOS",
+      "button": "RESGATAR AGORA",
+      "select": "Selecione seus veículos",
+      "close": "FECHAR"
+    },
+    "success": {
+      "title": "Obrigado por nos apoiar com sua doação!",
+      "close": "FECHAR"
+    }
+  },
+  "redeem": {
+    "title": "REDEEM VEHICLES",
+    "button": "REDEEM NOW",
+    "select": "Select your vehicles",
+    "close": "CLOSE",
+    "confirmed": "Confirmado",
+    "notSelected": "Não selecionado"
+  },
+  "success": {
+    "title": "Obrigado por nos apoiar com sua doação!",
+    "close": "FECHAR"
+  }
+  }
+}

@@ -1,0 +1,19 @@
+-- DEFINE_MISSION "ramo_primeiro_negocio" {
+-- 	group = eMissionGroup.Ramo,
+-- 	order = 1,
+-- 	name = _t("mission.ramo_primeiro_negocio.name"),
+-- 	description = _t("mission.ramo_primeiro_negocio.description"),
+-- 	icon = "https://cdn.santagroup.gg/onboarding/miss_o_do_ramo.svg",
+-- 	rewardIcon = "https://cdn.santagroup.gg/6aa09679-3ce7-4755-8dd2-d83ecd676c4a-missao.png",
+-- 	dependencies = {},
+-- 	flags = eMissionFlags.NONE,
+-- 	auto_activate = true,
+-- 	rewards = {
+-- 		skills = { social = 200 },
+-- 		title = _t("mission.ramo_primeiro_negocio.reward.title"),
+-- 	},
+-- 	metadata = {
+-- 		required_ramo = "empresario",
+-- 		hook = "missions:hook:bank_deposit_completed",
+-- 	},
+-- }

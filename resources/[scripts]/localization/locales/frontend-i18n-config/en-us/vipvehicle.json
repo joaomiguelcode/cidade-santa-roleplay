@@ -1,0 +1,116 @@
+{
+  "vipvehicle": {
+  "common": {
+    "processing": "Processing…",
+    "redeemError": "Could not confirm the redemption. Reopen the screen to check your vehicles before trying again.",
+    "closeLabel": "Close",
+    "backLabel": "Back",
+    "slotSelected": "Selected",
+    "badgePermanent": "Permanent",
+    "badgeTemporaryOne": "Temporary for {days} Day",
+    "badgeTemporaryOther": "Temporary for {days} Days",
+    "swapCountdown": "Time remaining to swap",
+    "statusPermanent": "Permanent",
+    "statusTemporary": "Temporary",
+    "dialogTitle": "Attention",
+    "dialogCancel": "Cancel",
+    "dialogConfirm": "Confirm",
+    "duplicateLine2": "The usage periods will be combined.",
+    "conflictTemporary": "temporary",
+    "conflictAnd": " and ",
+    "conflictPermanent": "permanent",
+    "testDrive": "Test Drive",
+    "successButton": "Finish",
+    "emptyButton": "Finish"
+  },
+  "vehicle": {
+    "slotsTitle": "Redeem Vehicle",
+    "slotsSubtitle": "Redeem your VIP vehicle here!",
+    "slotLabel": "{ordinal} Vehicle",
+    "slotButton": "Select Vehicle",
+    "slotSwap": "Swap Vehicle",
+    "slotUnselected": "Vehicle not selected",
+    "confirmAll": "Redeem Vehicle",
+    "duplicateLine1": "You selected the same vehicle in two redemptions.",
+    "duplicateNotice": "You will receive only one unit of the vehicle.",
+    "conflictBefore": "The same vehicle cannot be selected as both ",
+    "conflictAfter": ". Change the vehicle in one of the options above.",
+    "selectionTitle": "Redeem {ordinal} Vehicle",
+    "selectionSubtitle": "Select the {ordinalLower} vehicle you want to redeem",
+    "confirmSelection": "Confirm Vehicle",
+    "successTitle": "Vehicles Redeemed!",
+    "successText": "Congratulations! You have just redeemed your VIP vehicles.\nEnjoy exploring the city with your new achievement!",
+    "emptyTitle": "Vehicles Unavailable!",
+    "emptyText": "You do not have any VIP vehicles to redeem at the moment."
+  },
+  "item": {
+    "slotsTitle": "Redeem Items",
+    "slotsSubtitle": "Redeem your VIP item here!",
+    "slotLabel": "{ordinal} Item",
+    "slotButton": "Select Item",
+    "slotSwap": "Swap Item",
+    "slotUnselected": "Item not selected",
+    "confirmAll": "Redeem Items",
+    "duplicateLine1": "You selected the same item in two redemptions.",
+    "duplicateNotice": "You will receive only one unit of the item.",
+    "conflictBefore": "The same item cannot be selected as both ",
+    "conflictAfter": ". Change the item in one of the options above.",
+    "selectionTitle": "Redeem {ordinal} Item",
+    "selectionSubtitle": "Select the {ordinalLower} item you want to redeem",
+    "confirmSelection": "Confirm Item",
+    "successTitle": "Items Redeemed!",
+    "successText": "Congratulations! You have just redeemed your VIP items.\nEnjoy exploring the city with your new achievement!",
+    "emptyTitle": "Items Unavailable!",
+    "emptyText": "You do not have any VIP items to redeem at the moment."
+  },
+  "ordinals": [
+    "First",
+    "Second",
+    "Third",
+    "Fourth",
+    "Fifth",
+    "Sixth",
+    "Seventh",
+    "Eighth",
+    "Ninth",
+    "Tenth"
+  ],
+  "ordinalsLower": [
+    "first",
+    "second",
+    "third",
+    "fourth",
+    "fifth",
+    "sixth",
+    "seventh",
+    "eighth",
+    "ninth",
+    "tenth"
+  ],
+  "ordinalFallback": "{n}th",
+  "home": {
+    "redeem": {
+      "title": "REDEEM VEHICLES",
+      "button": "REDEEM NOW",
+      "select": "Select your vehicles",
+      "close": "CLOSE"
+    },
+    "success": {
+      "title": "Thank you for supporting us with your donation!",
+      "close": "CLOSE"
+    }
+  },
+  "redeem": {
+    "title": "REDEEM VEHICLES",
+    "button": "REDEEM NOW",
+    "select": "Select your vehicles",
+    "close": "CLOSE",
+    "confirmed": "Confirmed",
+    "notSelected": "Not Selected"
+  },
+  "success": {
+    "title": "Thank you for supporting us with your donation!",
+    "close": "CLOSE"
+  }
+  }
+}

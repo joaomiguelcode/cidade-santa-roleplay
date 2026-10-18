@@ -1,0 +1,1 @@
+CURRENT_CITY_NAME = GetConvar( 'cityName', '' )

@@ -1,0 +1,11 @@
+{
+  "common": {
+    "closeLabel": "Fermer", "backLabel": "Retour", "slotSelected": "Sélectionné", "quantityOne": "{amount}x unité", "quantityOther": "{amount}x unités", "badgePermanent": "Permanent", "badgeTemporaryOne": "Temporaire pendant {days} jour", "badgeTemporaryOther": "Temporaire pendant {days} jours", "swapCountdown": "Temps restant pour l'échange", "statusPermanent": "Permanent", "statusTemporary": "Temporaire", "dialogTitle": "Attention", "dialogCancel": "Annuler", "dialogConfirm": "Confirmer", "duplicateLine2": "Les durées d'utilisation seront cumulées.", "conflictTemporary": "temporaire", "conflictAnd": " et ", "conflictPermanent": "permanent", "testDrive": "Essai routier", "successButton": "Terminer", "emptyButton": "Terminer"
+  },
+  "item": {
+    "slotsTitle": "Récupérer des objets", "slotsSubtitle": "Récupérez votre objet VIP ici !", "slotLabel": "{ordinal} objet", "slotButton": "Sélectionner l'objet", "slotSwap": "Changer d'objet", "slotUnselected": "Objet non sélectionné", "confirmAll": "Récupérer les objets", "duplicateLine1": "Vous avez sélectionné le même objet dans deux récupérations.", "duplicateNotice": "Vous ne recevrez qu'un seul exemplaire de l'objet.", "conflictBefore": "Le même objet ne peut pas être sélectionné comme ", "conflictAfter": ". Modifiez l'objet dans l'une des options ci-dessus.", "selectionTitle": "Récupérer le {ordinal} objet", "selectionSubtitle": "Sélectionnez le {ordinalLower} objet que vous souhaitez récupérer", "confirmSelection": "Confirmer l'objet", "successTitle": "Objets récupérés !", "successText": "Félicitations ! Vous venez de récupérer vos objets VIP.\nProfitez-en pour explorer la ville avec votre nouvelle acquisition !", "emptyTitle": "Objets indisponibles !", "emptyText": "Vous n'avez aucun objet VIP à récupérer pour le moment."
+  },
+  "ordinals": ["Premier", "Deuxième", "Troisième", "Quatrième", "Cinquième", "Sixième", "Septième", "Huitième", "Neuvième", "Dixième"],
+  "ordinalsLower": ["premier", "deuxième", "troisième", "quatrième", "cinquième", "sixième", "septième", "huitième", "neuvième", "dixième"],
+  "ordinalFallback": "{n}e"
+}

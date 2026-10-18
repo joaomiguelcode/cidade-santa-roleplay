@@ -1,0 +1,530 @@
+{
+  "vipBenefits": {
+    "subtitle": "Comando exclusivo para VIP",
+    "noAccess": "Sem acesso",
+    "viewPlans": "Ver planos VIP",
+    "opening": "Abrindo loja...",
+    "storeError": "Não foi possível abrir a loja agora. Tente novamente.",
+    "validFor": "Válido por",
+    "days": "Dias",
+    "insufficientBalance": "Saldo de gemas insuficiente.",
+    "unavailable": "Oferta indisponível no momento.",
+    "rgbc": {
+      "title": "Cores RGB no veículo",
+      "description": "Você precisa de um VIP ativo para usar este comando. Assine um plano e libere a personalização de cores junto com os outros benefícios.",
+      "purchaseDescription": "Cor exterior em qualquer cor RGB, em todos os seus veículos.",
+      "feature1": "Neon e faróis em qualquer cor RGB",
+      "feature2": "Troque a cor quando quiser, sem custo",
+      "feature3": "Vale para todos os seus veículos"
+    },
+    "barbershop": {
+      "title": "Barbearia em qualquer lugar",
+      "description": "Você precisa de um VIP ativo para usar este comando. Assine um plano e mude seu visual sem precisar ir até a barbearia.",
+      "purchaseDescription": "Troque cabelo, barba e maquiagem na hora, onde estiver.",
+      "feature1": "Troque cabelo, barba e maquiagem na hora",
+      "feature2": "Sem custo e sem precisar se deslocar",
+      "feature3": "Use quantas vezes quiser"
+    },
+    "attachs": {
+      "title": "Acessórios de arma",
+      "description": "Você precisa de um VIP ativo para usar este comando. Assine um plano e gerencie os acessórios das suas armas quando quiser.",
+      "purchaseDescription": "Instale e remova mira, silenciador e carregador pelo comando.",
+      "feature1": "Instale e remova acessórios pelo comando",
+      "feature2": "Mira, silenciador, carregador e mais",
+      "feature3": "Sem depender de um armeiro"
+    },
+    "kit": {
+      "title": "Kit VIP de itens",
+      "description": "Você precisa de um VIP ativo para usar este comando. Assine um plano e resgate seu kit de itens exclusivo.",
+      "purchaseDescription": "Resgate itens exclusivos toda semana direto no inventário.",
+      "feature1": "Resgate itens exclusivos toda semana",
+      "feature2": "Entrega direta no seu inventário",
+      "feature3": "Itens extras em datas especiais"
+    },
+    "customspawn": {
+      "title": "Spawn personalizado",
+      "description": "Você precisa de um VIP ativo para usar este comando. Assine um plano e escolha onde você nasce ao entrar na cidade.",
+      "purchaseDescription": "Defina seu ponto de nascimento favorito ao entrar na cidade.",
+      "feature1": "Defina seu ponto de nascimento favorito",
+      "feature2": "Volte direto para onde você parou",
+      "feature3": "Troque o local quando quiser"
+    }
+  },
+  "vipPurchase": {
+    "defaultTitle": "Cores RGB no veículo",
+    "subtitle": "Comando exclusivo para VIP",
+    "defaultDescription": "Neon e faróis em qualquer cor RGB, em todos os seus veículos.",
+    "question": "Deseja desbloquear \"{title}\"?",
+    "cancel": "Cancelar",
+    "close": "Fechar",
+    "buying": "Comprando...",
+    "balanceAfter": "Seu saldo após a compra será",
+    "error": "Não foi possível concluir a compra.",
+    "numberLocale": "pt-BR"
+  },
+  "genteBoaRanking": {
+    "heading": "PARABÉNS!",
+    "message": "Você entrou no **TOP {0}** do Ranking Gente Boa.",
+    "notePrefix": "Continue ",
+    "noteHighlight": "recrutando com qualidade",
+    "noteSuffix": " pra subir ainda mais.",
+    "button": "Ver meu ranking",
+    "description": {
+      "100": "Você está entre os **100 melhores recrutadores** da cidade.",
+      "75": "Você passou de **três quartos do top 100**. Segue subindo!",
+      "50": "Você está na **metade de cima** do top 100.",
+      "30": "Falta pouco pra você aparecer na **primeira página** do ranking.",
+      "15": "O **top 10** tá logo ali: mais um empurrão!",
+      "10": "Você aparece na **primeira página** do ranking pra cidade inteira.",
+      "3": "Você está no **pódio da praça**, com título e aura de Gente Boa."
+    }
+  },
+  "solo": "Você está em mundo solo. Suba suporte imediatamente para regularizar seu personagem!",
+  "warning": "Atenção",
+  "sentBy": "Enviado por:",
+  "wanted": "VOCÊ ESTÁ PROCURADO",
+  "remaining": "RESTANTES",
+  "youAreIn": "VOCÊ ESTÁ EM",
+  "safezone": "SAFEZONE",
+  "combate": "COMBATE",
+  "beCareful": "CUIDADO COM",
+  "assaultNorth": "Norte",
+  "assaultSouth": "Sul",
+  "safeMode": "SAFEMODE",
+  "beHired": "SEJA CONTRATADO PARA SAIR",
+  "riskArea": "ÁREA DE RISCO",
+  "attention": "Atenção",
+  "accept": "ACEITAR",
+  "decline": "REJEITAR",
+  "all": "TODOS",
+  "locale": "pt",
+  "low": "BAIXO",
+  "medium": "MÉDIO",
+  "high": "ALTO",
+  "progress": "PROGRESSO",
+  "level": "NÍVEL",
+  "writeMessage": "Digite uma mensagem aqui...",
+  "factionFocus": {
+    "title": "FAC EM FOCO",
+    "set": "set",
+    "todayBatch": "LEVA DE HOJE",
+    "remainingRecruitments": "faltam {count} recrutamentos",
+    "target": "meta",
+    "entryReason": "MOTIVO DA ENTRADA",
+    "online": "ONLINE",
+    "minimumOnline": " / mínimo {minimum}",
+    "recruitersAtQG": "RECRUTADORES NO QG",
+    "recruiters": " recrutadores",
+    "dailyLimit": "TETO DO DIA",
+    "lastRecruit": "ÚLTIMO RECRUTADO",
+    "markLocation": "Marcar a localização da fac",
+    "hide": "Ocultar",
+    "progressAria": "Progresso de recrutamentos do dia",
+    "metricsAria": "Indicadores da facção"
+  },
+  "adCupons": {
+    "title": "BEM VINDO DE VOLTA!",
+    "subtitle": "Acompanhe essas ofertas imperdíveis!",
+    "buyNow": "Comprar Agora!",
+    "category": "LOJA",
+    "useNow": "Usar Agora",
+    "copied": "Copiado!",
+    "limited": "Cupom Limitado",
+    "unit": "Unidade",
+    "units": "Unidades",
+    "min": "Min",
+    "floatingLabel": "Ofertas",
+    "confirmClose": {
+      "title": "Perder Ofertas",
+      "text": "Tem certeza de que deseja fechar e perder essas ofertas?",
+      "cancel": "Cancelar",
+      "confirm": "Confirmar"
+    }
+  },
+  "expiresIn": "Expira em",
+  "hidePromo": "Digite /hidepromo para fechar",
+  "interact": "Interagir",
+  "holdToTalk": "Pressione para falar",
+  "openChat": "Abrir chat",
+  "inventory": "Inventário",
+  "personal": "Pessoal",
+  "help": "Ajuda",
+  "unlockVehicle": "Desbloquear veículo",
+  "putOnSeatbelt": "Colocar cinto de segurança",
+  "cancelAnimation": "Cancelar animação",
+  "closeMenu": "Fechar menu",
+  "openMenu": "Abrir menu",
+  "pressF3ToGo": "PRESSIONE F3 PARA IR",
+  "in_safezone": "VOCÊ ESTÁ NA",
+  "janeiro": "Janeiro",
+  "fevereiro": "Fevereiro",
+  "marco": "Março",
+  "abril": "Abril",
+  "maio": "Maio",
+  "junho": "Junho",
+  "julho": "Julho",
+  "agosto": "Agosto",
+  "setembro": "Setembro",
+  "outubro": "Outubro",
+  "novembro": "Novembro",
+  "dezembro": "Dezembro",
+  "settings": {
+    "title": "Configurações",
+    "subtitle": "Configurações Avançadas do HUD",
+    "tabs": {
+      "interface": "Interface",
+      "weather": "Clima",
+      "sound": "Som",
+      "chat": "Chat"
+    },
+    "interface": {
+      "hideCompleteHud": {
+        "title": "Ocultar HUD Completo",
+        "description": "Esconde todos os elementos da HUD da tela."
+      },
+      "speedometerUpdate": {
+        "title": "FPS do Velocímetro",
+        "description": "Ajusta a taxa de atualização do velocímetro."
+      },
+      "showMinimap": {
+        "title": "Mostrar Minimap",
+        "description": "Exibe o minimapa na tela."
+      },
+      "cinemaMode": {
+        "title": "Modo Cinema",
+        "description": "Mostra barras pretas para dar efeito de filme."
+      },
+      "hideSpeedometer": {
+        "title": "Ocultar Velocímetro",
+        "description": "Esconde o velocímetro da tela."
+      },
+      "hideOrgWaypoints": {
+        "title": "Ocultar waypoints de baús da organização",
+        "description": "Esconda os waypoints de baús da organização."
+      }
+    },
+    "weather": {
+      "weatherSync": {
+        "title": "Sincronizar Clima",
+        "description": "Sincronize com o clima do servidor."
+      },
+      "timeSync": {
+        "title": "Sincronizar Hora",
+        "description": "Sincronize com a hora do servidor."
+      },
+      "time": {
+        "title": "Horário",
+        "description": "Sincronização da linha do tempo"
+      },
+      "reset": "Redefinir",
+      "timeLabels": {
+        "start": "00:00",
+        "end": "23:59"
+      }
+    },
+    "sound": {
+      "volumePrincipal": {
+        "title": "Volume Principal",
+        "description": "Altere o volume principal"
+      },
+      "volumeRadio": {
+        "title": "Volume do Rádio",
+        "description": "Altere o volume do rádio"
+      },
+      "volumeMusica": {
+        "title": "Volume da Música",
+        "description": "Altere o volume da música"
+      }
+    },
+    "weatherOptions": {
+      "EXTRASUNNY": {
+        "title": "Muito Ensolarado",
+        "subtitle": "Muito Ensolarado"
+      },
+      "CLEAR": {
+        "title": "Limpo",
+        "subtitle": "Limpo"
+      },
+      "CLOUDS": {
+        "title": "Nublado",
+        "subtitle": "Nublado"
+      },
+      "SNOW": {
+        "title": "Neve",
+        "subtitle": "Neve"
+      },
+      "THUNDER": {
+        "title": "Trovoada",
+        "subtitle": "Trovoada"
+      },
+      "RAIN": {
+        "title": "Chuva",
+        "subtitle": "Chuva"
+      }
+    },
+    "dropdownOptions": {
+      "fps": {
+        "30": "30 FPS",
+        "60": "60 FPS",
+        "120": "120 FPS"
+      },
+      "minimap": {
+        "always": "Sempre",
+        "carOnly": "Somente no veículo"
+      },
+      "chatSocial": {
+        "all": "Todos",
+        "dating": "Apenas Inícios",
+        "none": "Nenhum"
+      }
+    },
+    "chat": {
+      "moderation": {
+        "title": "Moderação",
+        "description": "Anúncio de bans, advertências e chamados admin"
+      },
+      "arenaCombat": {
+        "title": "Arena / Combate",
+        "description": "Anúncios de Kill Streaks e eventos de FFA"
+      },
+      "warDomination": {
+        "title": "Guerra / Domínio",
+        "description": "Anúncios de placar, eventos de guerra e dominação"
+      },
+      "items": {
+        "title": "Itens",
+        "description": "Anúncio de itens utilizados: megafone, etc"
+      },
+      "social": {
+        "title": "Social",
+        "description": "Anúncios de relacionamento"
+      },
+      "organization": {
+        "title": "Organização",
+        "description": "Anúncios de recrutamentos e organização"
+      },
+      "dealership": {
+        "title": "Concessionária",
+        "description": "Anúncios de compra de veículos na concessionária"
+      }
+    }
+  },
+  "content": {
+    "restricted_area": {
+      "warning": "Você está em uma area restrita, somente staffs são permitidos aqui."
+    }
+  },
+  "halloween": {
+    "title": "CAÇA ÀS ABÓBORAS",
+    "description": "Abóboras apareceram, corra e pegue sua surpresa!"
+  },
+  "christmas": {
+    "title": "CAÇA OS PRESENTES",
+    "description": "🎄 Os presentes acabaram de aparecer por toda parte! Corra o mais rápido que puder e garanta o seu!"
+  },
+  "newyear": {
+    "title": "CAÇA AOS FOGOS!",
+    "description": "As caixas de fogos apareceram pela cidade. Corra, encontre e resgate os seus prêmios de Ano Novo!"
+  },
+  "valentine": {
+    "title": "ENCONTRE OS CUPIDOS!",
+    "description": "Os cupidos acabaram de aparecer pela cidade! Corra e pegue seu presente de amor antes que acabem!"
+  },
+  "carnival": {
+    "title": "ENCONTRE OS FOLIÕES!",
+    "description": "Os foliões acabaram de aparecer pela cidade! Corra e pegue seu saquinho antes que acabem!"
+  },
+  "easter": {
+    "title": "Caça aos Ovos de Páscoa",
+    "description": "Cestas de ovos apareceram pela cidade! Corra para coletar seus ovos antes que desapareçam!"
+  },
+  "egg": {
+    "closeUse": "Use",
+    "forClose": "para fechar"
+  },
+  "pvp": {
+    "killNotification": {
+      "eliminated": "Eliminou",
+      "headshot": "Headshot"
+    },
+    "countdown": {
+      "label": "Iniciando...",
+      "start": "START!",
+      "go": "GO!"
+    },
+    "teamSelection": {
+      "title": "Escolha um time",
+      "subtitle": "Escolha um dos quatro times disponíveis para entrar no modo de jogo.",
+      "play": "Jogar",
+      "blue": "Time Azul",
+      "green": "Time Verde",
+      "yellow": "Time Amarelo",
+      "red": "Time Vermelho"
+    },
+    "mapVote": {
+      "title": "Vote para o próximo mapa",
+      "votes": "Votos",
+      "nextMatchIn": "Próxima partida iniciando em",
+      "seconds": "Segundos",
+      "exitMatch": "Sair da partida"
+    },
+    "matchStart": {
+      "defaultMap": "Banco Central",
+      "defaultMode": "Time vs Time"
+    },
+    "scoreboard": {
+      "player": "Jogador",
+      "kills": "Abates",
+      "assists": "Assistência",
+      "deaths": "Mortes",
+      "ping": "Ping",
+      "connection": "Conexão",
+      "packetLossLabel": "PL"
+    },
+    "latencyWarning": {
+      "eyebrow": "Alerta de latência",
+      "title": "Conexão instável",
+      "description": "A latência de outro jogador está acima do ideal e pode causar atrasos durante a partida.",
+      "descriptionDuel": "A diferença de latência entre os jogadores está acima do ideal e pode afetar o confronto.",
+      "descriptionGroup": "Há um jogador na partida com ping mais alto que os demais. Isso pode causar atrasos nos comandos e afetar a fluidez da partida.",
+      "prompt": "Deseja continuar mesmo assim?",
+      "playerLabel": "Seu ping",
+      "opponentLabel": "Outro jogador",
+      "highestPingLabel": "Maior ping da partida",
+      "packetLossLabel": "PL",
+      "disparityLabel": "Diferença",
+      "leave": "Sair",
+      "continue": "Continuar"
+    },
+    "royaleResult": {
+      "mode": "Battle Royale",
+      "factionWinner": "Facção vencedora",
+      "description": "A última facção na disputa."
+    },
+    "matchResult": {
+      "victory": "VITÓRIA",
+      "defeat": "DERROTA",
+      "kills": "Abates",
+      "deaths": "Mortes",
+      "assists": "Assistência",
+      "headshot": "Headshot",
+      "points": "Pontos"
+    },
+    "levelUp": {
+      "title": "Subiu de Level",
+      "subtitle": "Level"
+    },
+    "hud": {
+      "exitHint": "Sair do jogo",
+      "pauseHint": "Solicitar pause",
+      "spawnsHint": "Spawns",
+      "storeHint": "Loja",
+      "vehiclesHint": "Veículos",
+      "personalChestHint": "Baú pessoal"
+    },
+    "pause": {
+      "activeTitle": "Partida Pausada",
+      "voteStartTitle": "Votação - Pausar Partida",
+      "voteResumeTitle": "Votação - Retomar Partida",
+      "startRequestedSuffix": "pediu uma pausa!",
+      "resumeRequestedSuffix": "pediu para retomar a partida!",
+      "activeBy": "Partida pausada por",
+      "opponentActive": "Partida pausada pelo time adversário! Aguarde o time adversário retomar",
+      "resumeHint": "Votar para despausar",
+      "accept": "Aceitar",
+      "reject": "Rejeitar",
+      "errorAction": "Não foi possível concluir a ação.",
+      "errorRequest": "Não foi possível solicitar pause."
+    },
+    "exitMatch": {
+      "title": "Sair da Partida",
+      "description": "Tem certeza que deseja sair da partida?",
+      "confirm": "Confirmar",
+      "cancel": "Cancelar"
+    },
+    "tournamentBracket": {
+      "victory": "VITÓRIA",
+      "defeat": "DERROTA",
+      "backToLobby": "Voltar para o lobby",
+      "defaultStage": "Fase Classificatória"
+    }
+  },
+  "afiliado": {
+    "shortcuts": {
+      "catalog": "Abrir catálogo",
+      "call": "Chamar afiliado",
+      "exit": "Sair do Mundo"
+    }
+  },
+  "recruitmentPunishment": {
+    "title": "Recrutamento de Qualidade",
+    "factsTitle": "O que você precisa saber",
+    "gain": {
+      "title": "O que você ganha",
+      "text": "Cada iniciante que fica na cidade vale mais de <b>+3.000 XP</b> pra você. E quando mais da metade dos seus iniciantes volta, cada volta vale o <b>dobro de XP</b>. Recrutando bem você garante seus efeitos especiais e seu personagem no pódio da praça!"
+    },
+    "subtitle": {
+      "timed": "ALERTA: você está no <r>ÚLTIMO AVISO!</r>",
+      "permanent": "ATENÇÃO: você está em <r>RISCO!</r>"
+    },
+    "banner": {
+      "timed": "<r>🚨 ALERTA</r>\n<r>ESTE É SEU ÚLTIMO AVISO!</r>\nVocê <b>ainda pode recrutar</b>.\nMas no <r>próximo dia de recrutamento sem qualidade</r> sua permissão será suspensa.",
+      "permanent": "<r>⚠️ ATENÇÃO</r>\n<r>EM RISCO!</r>\nVocê <b>ainda pode recrutar</b>.\nMas se continuar com <r>dias sem qualidade</r> sua permissão é suspensa."
+    },
+    "facts": {
+      "qualityDay": {
+        "title": "DIA DE QUALIDADE",
+        "text": "Quanto mais iniciantes voltarem no dia seguinte, você conquista um <b>Dia de Qualidade</b> e ganha <v>XP em dobro!</v>"
+      },
+      "sequence": {
+        "title": "SEQUÊNCIA",
+        "text": "Quanto mais <b>Dias de Qualidade seguidos</b> você tiver, mais XP você ganha e mais perto fica do <g>topo do ranking!</g>"
+      },
+      "noQualityDay": {
+        "title": "DIA SEM QUALIDADE",
+        "text": "Quando muitos iniciantes não voltam no dia seguinte, você tem um <b>Dia sem Qualidade</b> e <r>perde XP</r>."
+      },
+      "punishment": {
+        "title": "PUNIÇÃO",
+        "text": "Vários Dias sem Qualidade seguidos <r>bloqueiam sua permissão de recrutar</r>. Cada nova punição será <b>mais longa que a anterior!</b>"
+      }
+    },
+    "tips": {
+      "welcome": {
+        "title": "ACOLHER",
+        "text": "Receba bem e <b>não deixe o iniciante largado</b>. Ajude ele a dar os primeiros passos."
+      },
+      "connect": {
+        "title": "CONECTAR",
+        "text": "Apresente ele pra galera da sua organização e <b>faça ele se sentir parte da família!</b>"
+      },
+      "include": {
+        "title": "INCLUIR",
+        "text": "Chame ele pra participar de <b>atividades, eventos ou resenhas</b>. Engaje ele a curtir a cidade!"
+      },
+      "bringBack": {
+        "title": "FAÇA VOLTAR",
+        "text": "Continue por perto nos primeiros dias. <b>Crie vínculo e faça ele voltar e ficar na cidade!</b>"
+      }
+    },
+    "accept": "Estou ciente de que não <b>recrutar com qualidade</b> me deixa <r>sem permissão de recrutar</r>, e que a punição <b>aumenta a cada vez</b>.",
+    "finalCheck": "Estou ciente de que <b>recrutar sem qualidade</b> pode <r>suspender minha permissão</r> e que novas punições serão <b>mais longas</b>.",
+    "finalCheckHint": "Confirme os quatro pontos acima para liberar este aceite.",
+    "confirm": {
+      "timed": "Estou ciente",
+      "permanent": "Entendi"
+    },
+    "footer": {
+      "timed": "Sua permissão volta <b>automaticamente</b> quando o tempo acabar.",
+      "permanent": "Recrute com qualidade e o alerta some sozinho."
+    },
+    "tipsTitle": "Como recrutar com qualidade"
+  },
+  "waypointV3": {
+    "title": "Opa, e aí cidadão!",
+    "description": "Percebemos que você ainda não encontrou uma facção na cidade.",
+    "invitation": "Quer ir para a praça? Lá tem a galera pra encontrar 🚀",
+    "decline": "Não",
+    "accept": "Ir para praça"
+  }
+}

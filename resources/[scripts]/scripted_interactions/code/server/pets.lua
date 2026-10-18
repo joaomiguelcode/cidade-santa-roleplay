@@ -1,0 +1,2 @@
+-- scripted_interactions pets server-side
+-- handles pet scripted interactions state

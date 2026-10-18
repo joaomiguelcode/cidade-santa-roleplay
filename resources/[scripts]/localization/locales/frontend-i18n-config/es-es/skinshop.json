@@ -1,0 +1,31 @@
+{
+  "home": {
+    "primary": "Primarios",
+    "secondary": "Secundarios",
+
+    "cancel": "Cancelar",
+    "save": "Guardar"
+  },
+  "clothes": {
+    "back": "VOLVER",
+    "number": "Número",
+    "vip": "SOLO VIP"
+  },
+  "category": {
+    "torso": "Chaquetas",
+    "pants": "Pantalones",
+    "shoes": "Zapatos",
+    "tshirt": "Camisetas",
+    "arms": "Manos",
+    "hat": "Sombrero",
+    "glass": "Gafas",
+    "accessory": "Accesorios",
+    "backpack": "Mochilas",
+    "mask": "Máscara",
+    "vest": "Chalecos",
+    "decals": "Pegatinas",
+    "ear": "Pendientes",
+    "bracelet": "Pulseras",
+    "watch": "Relojes"
+  }
+}

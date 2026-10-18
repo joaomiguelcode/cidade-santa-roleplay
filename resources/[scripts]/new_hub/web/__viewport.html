@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <title>viewport harness</title>
+    <style>
+      html, body { margin: 0; background: #101010; height: 100%; overflow: hidden; }
+      #stage { position: absolute; top: 0; left: 0; transform-origin: top left; }
+      iframe { width: 1720px; height: 1080px; border: 0; display: block; }
+      #hud {
+        position: fixed; right: 6px; bottom: 6px; z-index: 10;
+        font: 12px/1.4 monospace; color: #9ad; background: rgba(0,0,0,.7);
+        padding: 4px 8px; border-radius: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="stage"><iframe id="f" src="/"></iframe></div>
+    <div id="hud"></div>
+    <script>
+      // Harness de resolução: o iframe tem viewport REAL de 1720x1080 (é o que o
+      // layout e as media queries enxergam); o transform só encolhe a pintura pra
+      // caber na janela do navegador. Query: ?w=&h=&scale=&route=
+      var q = new URLSearchParams(location.search);
+      var W = +q.get('w') || 1720;
+      var H = +q.get('h') || 1080;
+      var stage = document.getElementById('stage');
+      var f = document.getElementById('f');
+      f.style.width = W + 'px';
+      f.style.height = H + 'px';
+      function fit() {
+        var s = +q.get('scale') || Math.min(innerWidth / W, innerHeight / H);
+        stage.style.transform = 'scale(' + s + ')';
+        document.getElementById('hud').textContent =
+          W + 'x' + H + '  @' + s.toFixed(3);
+        window.__scale = s;
+      }
+      fit();
+      addEventListener('resize', fit);
+      // Ponte pro teste: navega o SPA de dentro sem recarregar o bundle.
+      window.go = function (path) {
+        f.contentWindow.history.pushState({}, '', path);
+        f.contentWindow.dispatchEvent(new PopStateEvent('popstate'));
+      };
+      window.doc = function () { return f.contentDocument; };
+    </script>
+  </body>
+</html>

@@ -1,0 +1,9 @@
+{
+  "title": "Classificação da Corrida",
+   "legend": "Será que está entre os 5 melhores do circuito?",
+   "progress": "Progresso",
+   "timer": "Tempo",
+   "ranking": "CLASSIFICAÇÃO",
+   "instruction": "Prima a tecla",
+   "instruction_2": "para fechar a classificação"
+}

@@ -1,0 +1,15 @@
+-- DEFINE_MISSION 'carga_pesada' {
+--     group = eMissionGroup.Criminal,
+--     order = 5,
+--     name = "Carga Pesada",
+--     description = "Intercepte um caminhao de carga no mapa, pare o veiculo, neutralize o motorista NPC e leve a carga ate o ponto de entrega marcado. A task completa quando o roubo de carga termina e a entrega e confirmada no destino.",
+--     dependencies = { 'parceiro_de_crime' },
+--     flags = eMissionFlags.NONE,
+--     rewards = {
+--         skills = { crime = 200, strength = 100 },
+--         title = "Peso Pesado",
+--     },
+--     metadata = {
+--         hook = "missions:hook:cargo_truck_delivery_completed",
+--     },
+-- }

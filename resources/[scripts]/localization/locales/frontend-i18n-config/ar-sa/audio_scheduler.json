@@ -1,0 +1,209 @@
+{
+  "audio": {
+    "title": "جدولة صوت",
+    "step_of": "الخطوة {current} من {total}",
+    "common": {
+      "continue": "متابعة",
+      "back": "رجوع",
+      "close": "إغلاق"
+    },
+    "type": {
+      "question": "ما نوع الإعلان؟",
+      "rules": "قواعد المدينة",
+      "culture": "الثقافة",
+      "operation": "عملية",
+      "actions": "إجراءات",
+      "free_factions": "فصائل حرة",
+      "sales": "إعلان تجاري",
+      "vip_launch": "إطلاق VIP",
+      "event": "فعالية"
+    },
+    "link": {
+      "title": "الصق رابط الصوت",
+      "description": "الصق رابط ملف الصوت من CDN الخاص بـ Santa.",
+      "placeholder": "https://cdn.santagroup.gg/...",
+      "listen": "استماع",
+      "stop": "إيقاف",
+      "invalid": "الصق رابطًا صالحًا من cdn.santagroup.gg."
+    },
+    "duration": {
+      "hint": "يمكن أن تكون مدة الصوت {max} ثانية كحد أقصى.",
+      "checking": "جارٍ التحقق من مدة الصوت...",
+      "ok": "مدة الصوت: {n} ثانية.",
+      "too_long": "مدة الصوت {n} ثانية. الحد الأقصى المسموح به {max} ثانية.",
+      "error": "تعذر تحميل الصوت. تحقق من الرابط."
+    },
+    "audience": {
+      "question": {
+        "default": "من سيستمع؟",
+        "world": "العالم"
+      },
+      "description": {
+        "default": "حسب الوقت الذي لعبه الشخص في المدينة.",
+        "world": "اختر العالم الذي سيُشغَّل فيه الصوت."
+      },
+      "new_players": {
+        "title": "لاعبون جدد",
+        "description": "حتى 100 ساعة لعب",
+        "short": "حتى 100 ساعة"
+      },
+      "veterans": {
+        "title": "لاعبون قدامى",
+        "description": "أكثر من 100 ساعة لعب",
+        "short": "أكثر من 100 ساعة"
+      },
+      "primary": {
+        "title": "العالم الأساسي",
+        "description": "لاعبون جدد"
+      },
+      "secondary": {
+        "title": "العالم الثانوي",
+        "description": "لاعبون قدامى"
+      },
+      "tertiary": {
+        "title": "العالم الثالث",
+        "description": "باقي اللاعبين"
+      },
+      "event": {
+        "title": "فعالية",
+        "description": "عالم الفعاليات"
+      },
+      "royale": {
+        "title": "رويال",
+        "description": "عالم الرويال"
+      },
+      "war": {
+        "title": "حرب",
+        "description": "عالم الحرب"
+      },
+      "affiliated": {
+        "title": "المنتسب"
+      },
+      "default": {
+        "title": "الافتراضي"
+      },
+      "all_players": {
+        "title": "جميع اللاعبين",
+        "description": "جميع اللاعبين، بغض النظر عن ساعات اللعب"
+      }
+    },
+    "frequency": {
+      "question": "متى سيُشغَّل؟",
+      "once": {
+        "title": "مرة واحدة فقط",
+        "description": "في اليوم والوقت الذي تختاره"
+      },
+      "daily": {
+        "title": "كل يوم",
+        "description": "دائمًا في نفس الوقت"
+      },
+      "instant": {
+        "title": "فوري",
+        "description": "يُشغَّل الآن بمجرد التأكيد"
+      }
+    },
+    "schedule": {
+      "title_once": "اختر اليوم والوقت",
+      "title_daily": "اختر الوقت",
+      "description_daily": "سيتم تشغيل الصوت كل يوم في المواعيد المحددة. انقر مرة أخرى لإلغاء التحديد.",
+      "slots_of": "أوقات {weekday}، {date}",
+      "free_slots": "الأوقات المتاحة",
+      "pick_day": "اختر يومًا من التقويم",
+      "busy": "محجوز",
+      "full_day": "اليوم ممتلئ، لا توجد أوقات متاحة",
+      "loading": "جارٍ تحميل الأوقات...",
+      "weekdays": {
+        "short": {
+          "mon": "إثن",
+          "tue": "ثلا",
+          "wed": "أرب",
+          "thu": "خمي",
+          "fri": "جمع",
+          "sat": "سبت",
+          "sun": "أحد"
+        },
+        "long": {
+          "mon": "الإثنين",
+          "tue": "الثلاثاء",
+          "wed": "الأربعاء",
+          "thu": "الخميس",
+          "fri": "الجمعة",
+          "sat": "السبت",
+          "sun": "الأحد"
+        }
+      },
+      "months": {
+        "1": "يناير",
+        "2": "فبراير",
+        "3": "مارس",
+        "4": "أبريل",
+        "5": "مايو",
+        "6": "يونيو",
+        "7": "يوليو",
+        "8": "أغسطس",
+        "9": "سبتمبر",
+        "10": "أكتوبر",
+        "11": "نوفمبر",
+        "12": "ديسمبر"
+      },
+      "selection_hint": "اختر موعداً واحداً أو أكثر. انقر مرة أخرى لإلغاء التحديد."
+    },
+    "confirm": {
+      "title": "راجع واحجز",
+      "type": "النوع",
+      "link": "الرابط",
+      "duration": "المدة",
+      "audience": "من سيستمع",
+      "when": "متى",
+      "duration_value": "{n} ثانية",
+      "when_once": "{weekday}، {date}، الساعة {time}",
+      "when_daily": "كل يوم الساعة {time}",
+      "submit": "حجز الوقت",
+      "error": "تعذر الحجز. حاول مرة أخرى.",
+      "when_instant": "الآن، بمجرد التأكيد",
+      "title_instant": "راجع وشغّل الآن",
+      "submit_instant": "تشغيل الآن",
+      "error_instant": "تعذر تشغيل الصوت. حاول مرة أخرى.",
+      "world": "العالم",
+      "submit_multiple": "حجز المواعيد"
+    },
+    "success": {
+      "title": "تم حجز الوقت",
+      "description_once": "سيُشغَّل صوتك يوم {weekday}، {date}، الساعة {time}.",
+      "description_daily": "سيُشغَّل صوتك كل يوم الساعة {time}.",
+      "close": "إغلاق",
+      "title_instant": "تم إرسال الصوت",
+      "description_instant": "صوتك يُشغَّل في المدينة الآن.",
+      "title_multiple": "تم حجز المواعيد"
+    },
+    "list": {
+      "title": "المقاطع الصوتية المجدولة",
+      "open": "عرض المقاطع الصوتية المجدولة",
+      "refresh": "تحديث",
+      "loading": "جارٍ تحميل الجدولات...",
+      "error": "تعذر تحميل الجدولات.",
+      "retry": "حاول مرة أخرى",
+      "empty": "لا توجد مقاطع صوتية مجدولة حتى الآن.",
+      "subtitle_one": "{n} مقطع صوتي في جدول المدينة",
+      "subtitle_other": "{n} مقاطع صوتية في جدول المدينة",
+      "daily_at": "كل يوم، {time}",
+      "once_at": "{weekday}، {date}، {time}",
+      "cancel": "إلغاء الصوت",
+      "confirm": "هل تريد الإلغاء فعلاً؟",
+      "confirm_yes": "نعم، ألغِ",
+      "confirm_no": "لا",
+      "cancel_error": "تعذر الإلغاء. حاول مرة أخرى.",
+      "search_placeholder": "ابحث حسب الملف أو النوع أو الشخص أو الوقت",
+      "clear_search": "مسح البحث",
+      "filter_all": "الكل",
+      "filter_daily": "يومية",
+      "filter_once": "مرة واحدة",
+      "clear_filters": "مسح عوامل التصفية",
+      "no_results": "لم يتم العثور على صوت بهذا الفلتر.",
+      "showing": "عرض {shown} من {total} مقاطع صوتية.",
+      "copy": "نسخ الرابط",
+      "copied": "تم نسخ الرابط",
+      "copy_error": "تعذر النسخ"
+    }
+  }
+}

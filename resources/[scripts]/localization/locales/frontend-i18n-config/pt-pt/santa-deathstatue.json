@@ -1,0 +1,52 @@
+{
+  "eventHud": {
+    "greenLight": "LUZ VERDE",
+    "greenAction": "CORRE!",
+    "redLight": "LUZ VERMELHA",
+    "redAction": "PÁRA!",
+    "rankingTitle": "RANKING",
+    "rankingSubtitle": "Pontuação atual do evento",
+    "roundsLabel": "Rondas",
+    "exitUse": "Usa",
+    "exitHint": "para sair do jogo",
+    "pointsSuffix": "pts",
+    "rankSuffix": "º",
+    "timeRemaining": "Tempo Restante"
+  },
+  "estatuaMortal": {
+    "exitUse": "Usa",
+    "exitHint": "para sair do jogo",
+    "logo": "Santa",
+    "rankSuffix": "º",
+    "lobby": {
+      "players": "Jogadores",
+      "startingIn": "a iniciar em"
+    },
+    "tutorial": {
+      "name": "Líder do Jogo",
+      "skip": "para saltar diálogo",
+      "text": "O jogo consiste num corredor onde todos os jogadores devem chegar ao outro lado. No entanto, ninguém se pode mexer enquanto a luz estiver vermelha, apenas quando estiver verde. Boa sorte a todos e bom jogo!"
+    },
+    "result": {
+      "title": "Estátua Mortal",
+      "subtitle": "Este foi o resultado final de todos os participantes do jogo da estátua.",
+      "close": "Fechar",
+      "colResult": "Resultado",
+      "colTime": "Tempo"
+    },
+    "ranking": {
+      "title": "Ranking Estátua Mortal",
+      "subtitle": "Acompanha o ranking da estátua mortal em tempo real",
+      "best": "Melhor Jogador",
+      "bestSub": "Melhor jogador de estátua mortal",
+      "colId": "ID",
+      "colName": "Nome",
+      "colPoints": "Pontos",
+      "colTime": "Tempo de Jogo",
+      "colWins": "Vitórias",
+      "empty": "Ainda não há jogadores no ranking",
+      "next": "Seguinte",
+      "previous": "Anterior"
+    }
+  }
+}

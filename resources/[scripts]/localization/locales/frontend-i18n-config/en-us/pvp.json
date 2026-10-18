@@ -1,0 +1,25 @@
+{
+  "next_weapon": "Next weapon",
+  "factions_ranking": "FACTIONS RANKING",
+  "type_to_hide": "Type /ranking",
+  "time_played_ranking": "PLAY TIME RANKING",
+  "money_ranking": "MONEY RANKING",
+  "countdown_ranking": "COUNTDOWN RANKING",
+  "domination_ranking": "DOMINATION RANKING",
+  "floor_arena_ranking": "Track Arena Ranking",
+  "alive": "ALIVE",
+  "hours": "HOURS",
+  "kills": "KILLS",
+  "faction_01": "FACTION 1",
+  "faction_02": "FACTION 2",
+  "use_command": "Use the command",
+  "to_exit": "to exit",
+  "exit_pista": "/exittrack",
+
+  "you_are_in_queue": "you are in the queue for ",
+  "players_left": "{0} players left",
+  "to_be_start": "to start",
+  "press": " press",
+  "to_cancel": "to cancel",
+  "starting_at": "STARTING AT"
+}

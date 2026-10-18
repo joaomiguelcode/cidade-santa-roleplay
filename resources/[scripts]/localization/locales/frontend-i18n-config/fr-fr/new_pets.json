@@ -1,0 +1,69 @@
+{
+  "ownpets": {
+    "header": {
+      "title": "Mes animaux",
+      "description": "Liste des animaux disponibles"
+    },
+    "counter": {
+      "pets": "animaux de compagnie"
+    },
+    "pagination": {
+      "previous": "Page précédente",
+      "next": "Page suivante"
+    },
+    "card": {
+      "age": "Âge",
+      "select": "Sélectionner"
+    },
+    "time": {
+      "year": "année",
+      "years": "années",
+      "month": "mois",
+      "months": "mois",
+      "day": "jour",
+      "days": "jours",
+      "hour": "heure",
+      "hours": "heures",
+      "minute": "minute",
+      "minutes": "minutes",
+      "justNow": "tout à l' heure"
+    }
+  },
+  "petinfo": {
+    "header": {
+      "interactions": "Interactions",
+      "close": "Fermer"
+    },
+    "stats": {
+      "hunger": "Faim",
+      "level": "Niveau"
+    },
+    "actions": {
+      "caresses": "Caresse"
+    },
+    "interactions": {
+      "title": "Interactions",
+      "description": "Jouez avec votre animal de compagnie"
+    },
+    "rename": {
+      "interaction": "Renommer",
+      "title": "Renommer l'animal",
+      "description": "Choisissez un nouveau nom pour votre animal.",
+      "label": "Nom de l'animal",
+      "cancel": "Annuler",
+      "confirm": "Confirmer",
+      "saving": "Enregistrement...",
+      "validation": {
+        "empty": "Saisissez un nom.",
+        "too_long": "Le nom ne peut pas dépasser 50 caractères.",
+        "invalid_characters": "Le nom contient des caractères invalides."
+      },
+      "errors": {
+        "invalid_name": "Ce nom est invalide.",
+        "not_owner": "Seul le propriétaire peut renommer cet animal.",
+        "pet_not_found": "Animal introuvable.",
+        "rename_failed": "Impossible de renommer l'animal. Réessayez."
+      }
+    }
+  }
+}

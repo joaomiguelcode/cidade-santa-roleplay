@@ -1,0 +1,27 @@
+{
+  "petinfo": {
+    "header": {
+      "interactions": "Interactions"
+    },
+    "interactions": {
+      "title": "Interactions",
+      "description": "Interactions avec votre animal de compagnie"
+    },
+    "actions": {
+      "caresses": "Caresses",
+      "play": "Jouer",
+      "feed": "Alimentation",
+      "walk": "Marcher",
+      "groom": "Marié",
+      "bath": "Bain"
+    },
+    "stats": {
+      "hunger": "Faim",
+      "level": "Niveau"
+    }
+  },
+  "savePet": "SAUVER L'ANIMAL DE COMPAGNIE",
+  "callPet": "APPELER UN ANIMAL DE COMPAGNIE",
+  "yourPets": "Vos animaux adoptés",
+  "yearsOld": "Années"
+}

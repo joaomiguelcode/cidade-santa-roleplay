@@ -1,0 +1,15 @@
+{
+  "kick_of_city": "EXPULSAR DE LA CIUDAD",
+  "kick_message": "Mensaje de Expulsión:",
+  "choose_option": "Elige una opción",
+  "cancel": "CANCELAR",
+  "fill_field": "RELLENAR CAMPO",
+  "confirm": "CONFIRMAR",
+
+  "min_bandit": "Mín. Bandido:",
+  "max_bandit": "Máx. Bandido:",
+  "min_police": "Mín. Policía:",
+  "max_police": "Máx. Policía:",
+  "estimated_time": "Estimado:",
+  "weapons_allowed": "Armas Perm:"
+}

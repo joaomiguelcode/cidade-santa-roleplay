@@ -1,0 +1,7 @@
+MINIMAP_LOADER.gfx was originally published as MINIMAP_LOADER.gfx in ScaleformUI Assets 5.8.1:
+https://github.com/manups4e/ScaleformUI
+
+decibelsz_santagroup_zoneprojector.gfx is a modified version of that loader.
+
+This work is licensed under the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
+To view a copy of this license, visit https://creativecommons.org/licenses/by-nc-sa/4.0/

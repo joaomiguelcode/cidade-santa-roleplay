@@ -1,0 +1,1 @@
+-- Register server module: app.lua

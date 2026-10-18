@@ -1,0 +1,7 @@
+RegisterNUICallback("getLang",function(resource_name,cb)
+  local lang_var = GetConvar("language", "pt-br")
+  print("getLang: ", lang_var)
+  local lang = LoadResourceFile("vrp", "config/frontend-i18n-config/"..lang_var.."/"..resource_name..".json")
+  local parsed = json.decode(lang)
+  cb(parsed)
+end)

@@ -1,0 +1,181 @@
+{
+    "tabs": {
+        "all": "Todos",
+        "information": "Información",
+        "interactions": "Interacciones",
+        "control": "Control"
+    },
+    "menu": {
+        "financial": "Financiero",
+        "purchases": "Compras",
+        "loginList": "Lista de Inicio de Sesión",
+        "copyId": "Copiar ID",
+        "discordId": "Discord ID",
+        "bans": "Baneos",
+        "revivePlayer": "Revivir Jugador",
+        "reviveLocations": "Ubicaciones de Revivir",
+        "giveItem": "Dar Objeto",
+        "openInventory": "Abrir Inventario",
+        "addGroup": "Añadir Grupo",
+        "groups": "Grupos",
+        "kickPlayer": "Expulsar Jugador",
+        "banPlayer": "Banear Jugador"
+    },
+    "playerCard": {
+        "openCloseMenu": "Abrir/Cerrar Menú Adm",
+        "exitSpectator": "Salir del Espectador",
+        "switchPlayer": "Cambiar Jugador",
+        "status": {
+            "low": "Leve",
+            "medium": "Medio",
+            "high": "Grave"
+        }
+    },
+    "keys": {
+        "ban": "Banear",
+        "reviveLocations": "Ubicaciones de Revivir",
+        "openInventory": "Abrir Inventario",
+        "copyId": "Copiar ID"
+    },
+    "shortcut": {
+        "title": "Atajo",
+        "description": "Coloca el atajo deseado para la función elegida.",
+        "placeholder": "Haz clic y selecciona un atajo",
+        "cancel": "Cancelar",
+        "confirm": "Finalizar",
+        "duplicateError": "Esta tecla ya está siendo usada por otra acción.",
+        "blockedKeyError": "Esta combinación de teclas no puede ser usada."
+    },
+    "loginList": {
+        "login": "Inició Sesión",
+        "logout": "Terminó Sesión",
+        "inProgress": "(en progreso)",
+        "totalTimePlayed": "Tiempo Total de Juego",
+        "to": "a las"
+    },
+    "bans": {
+        "banned": "Baneado",
+        "unbanned": "Desbaneado",
+        "bannedBy": "Baneado por:",
+        "unbannedBy": "Desbaneado por:"
+    },
+    "financial": {
+        "currency": "$",
+        "bankBalance": "Saldo Bancario",
+        "cashInHand": "Dinero en Efectivo",
+        "totalAssets": "Activos Totales"
+    },
+    "purchases": {
+        "totalSpent": "Gasto total en la ciudad",
+        "history": "Historial de compras"
+    },
+    "headers": {
+        "spectators": {
+            "title": "Espectadores",
+            "subtitle": "Lista de espectadores actuales"
+        },
+        "purchases": {
+            "title": "Compras",
+            "subtitle": "Historial de compras"
+        },
+        "groups": {
+            "title": "{id} | {name}",
+            "subtitle": "Menús de acciones del espectador"
+        },
+        "financial": {
+            "title": "{id} | {name}",
+            "subtitle": "Menús de acciones del espectador"
+        },
+        "loginList": {
+            "title": "{id} | {name}",
+            "subtitle": "Menús de acciones del espectador"
+        },
+        "bans": {
+            "title": "{id} | {name}",
+            "subtitle": "Menús de acciones del espectador"
+        },
+        "menu": {
+            "subtitle": "Menús de acciones del espectador"
+        }
+    },
+    "modals": {
+        "addGroup": {
+            "title": "Añadir Grupo",
+            "description": "Añade el grupo deseado al ID del jugador",
+            "playerIdLabel": "Pasaporte",
+            "playerIdPlaceholder": "Ingresa el pasaporte",
+            "groupLabel": "Grupo",
+            "groupPlaceholder": "Ingresa el nombre del grupo",
+            "levelLabel": "Nivel",
+            "levelPlaceholder": "Ingresa el nivel",
+            "submitText": "Añadir"
+        },
+        "reviveLocation": {
+            "title": "Ubicación de Revivir",
+            "description": "Elige la ubicación deseada para revivir al jugador",
+            "locationPlaceholder": "Ubicación",
+            "submitText": "Revivir",
+            "locations": {
+                "praca": "Plaza",
+                "pier-sul": "Muelle Sur",
+                "pier-norte": "Muelle Norte",
+                "hp-sul": "HP Sur",
+                "hp-norte": "HP Norte",
+                "mecanica": "Mecánica",
+                "dp1": "DP 1",
+                "dp2": "DP 2",
+                "dp3": "DP 3"
+            }
+        },
+        "removeGroup": {
+            "title": "Eliminar Grupo",
+            "message": "¿Estás seguro de que deseas eliminar el grupo {group} del ID {id}?",
+            "confirmText": "Eliminar",
+            "cancelText": "Cancelar"
+        },
+        "kickPlayer": {
+            "title": "Expulsar",
+            "description": "Ingresa el motivo de la expulsión en el campo a continuación.",
+            "playerIdLabel": "Pasaporte",
+            "playerIdPlaceholder": "ID del Jugador",
+            "reasonLabel": "Motivo",
+            "reasonPlaceholder": "Ingresa el motivo de la expulsión",
+            "submitText": "Expulsar"
+        },
+        "banPlayer": {
+            "title": "Banear",
+            "description": "Ingresa el motivo del baneo en el campo a continuación.",
+            "playerIdLabel": "Pasaporte",
+            "playerIdPlaceholder": "ID del Jugador",
+            "reasonLabel": "Motivo",
+            "reasonPlaceholder": "Ingresa el motivo del baneo",
+            "tagLabel": "Etiquetas",
+            "tagPlaceholder": "Selecciona una etiqueta",
+            "submitText": "Banear",
+            "tags": {
+                "zaralho": "Zaralho",
+                "desrespeito": "Falta de Respeto Ciudad/Staff",
+                "prog_ilicitos": "Programas Ilícitos/Rechazo de Revisión",
+                "dark_rp": "Dark RP",
+                "hacker": "Hacker",
+                "comercial": "Comercial"
+            }
+        },
+        "giveItem": {
+            "title": "Dar Objeto",
+            "description": "Elige el objeto y la cantidad que deseas dar al jugador",
+            "playerIdLabel": "Pasaporte",
+            "playerIdPlaceholder": "Ingresa el pasaporte",
+            "itemLabel": "Objeto",
+            "itemPlaceholder": "Nombre del objeto",
+            "addButton": "Añadir",
+            "submitText": "Dar Objeto",
+            "itemNotFound": "El objeto no existe",
+            "checkItemError": "Error al verificar el objeto",
+            "consumable": "Consumible"
+        }
+    },
+    "search": {
+        "placeholder": "Buscar"
+    }
+}

@@ -1,0 +1,7 @@
+{
+  "ban": {
+    "reason": "Motivo para banir",
+    "reason_for_ban": "Motivo para banir",
+    "id": "ID"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "title": "Ranking da Corrida",
+   "legend": "Será que você está entre os 5 melhores do circuito?",
+   "progress": "Progresso",
+   "timer": "Tempo",
+   "ranking": "RANKING",
+   "instruction": "Pressione a tecla",
+   "instruction_2": "para fechar o ranking"
+}

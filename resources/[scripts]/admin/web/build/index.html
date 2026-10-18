@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="icon" type="image/svg+xml" href="/src/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet"> 
+    
+    <title>Ban Window</title>
+    <script type="module" crossorigin src="./assets/index.7742690c.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    
+    <!-- clipper: buffer retroativo da tela do admin, para o clipe de ban.
+       Vive nesta pagina porque um resource so pode ter um ui_page, e o admin ja usa
+       este para a Ban Window. O script nao toca no app React: cria os proprios
+       elementos e so responde a mensagens marcadas com `clipper: true`.
+       ATENCAO: este index.html e artefato de build. Um rebuild da NUI apaga esta
+       linha - ela precisa ser reintroduzida na fonte (repositorio da NUI). -->
+  <script src="./clipper-recorder.js"></script>
+  <script src="./telagem-live.js"></script>
+</body>
+</html>

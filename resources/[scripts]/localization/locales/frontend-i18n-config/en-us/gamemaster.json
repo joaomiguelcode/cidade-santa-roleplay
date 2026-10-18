@@ -1,0 +1,181 @@
+{
+    "tabs": {
+        "all": "All",
+        "information": "Information",
+        "interactions": "Interactions",
+        "control": "Control"
+    },
+    "menu": {
+        "financial": "Financial",
+        "purchases": "Purchases",
+        "loginList": "Login List",
+        "copyId": "Copy ID",
+        "discordId": "Discord ID",
+        "bans": "Bans",
+        "revivePlayer": "Revive Player",
+        "reviveLocations": "Revive Locations",
+        "giveItem": "Give Item",
+        "openInventory": "Open Inventory",
+        "addGroup": "Add Group",
+        "groups": "Groups",
+        "kickPlayer": "Kick Player",
+        "banPlayer": "Ban Player"
+    },
+    "playerCard": {
+        "openCloseMenu": "Open/Close Menu Adm",
+        "exitSpectator": "Exit Spectator",
+        "switchPlayer": "Switch Player",
+        "status": {
+            "low": "Low",
+            "medium": "Medium",
+            "high": "High"
+        }
+    },
+    "keys": {
+        "ban": "Ban",
+        "reviveLocations": "Revive Locations",
+        "openInventory": "Open Inventory",
+        "copyId": "Copy ID"
+    },
+    "shortcut": {
+        "title": "Shortcut",
+        "description": "Place the desired shortcut for the chosen function.",
+        "placeholder": "Click and select a shortcut",
+        "cancel": "Cancel",
+        "confirm": "Finish",
+        "duplicateError": "This key is already being used by another action.",
+        "blockedKeyError": "This key combination cannot be used."
+    },
+    "loginList": {
+        "login": "Login",
+        "logout": "Logout",
+        "totalTimePlayed": "Total Time Played",
+        "inProgress": "(in progress)",
+        "to": "at"
+    },
+    "bans": {
+        "banned": "Banned",
+        "unbanned": "Unbanned",
+        "bannedBy": "Banned by:",
+        "unbannedBy": "Unbanned by:"
+    },
+    "financial": {
+        "currency": "$",
+        "bankBalance": "Bank Balance",
+        "cashInHand": "Cash in Hand",
+        "totalAssets": "Total Assets"
+    },
+    "purchases": {
+        "totalSpent": "Total city spending",
+        "history": "Purchase history"
+    },
+    "headers": {
+        "spectators": {
+            "title": "Spectators",
+            "subtitle": "Current spectators list"
+        },
+        "purchases": {
+            "title": "Purchases",
+            "subtitle": "Purchase history"
+        },
+        "groups": {
+            "title": "{id} | {name}",
+            "subtitle": "Spectator action menus"
+        },
+        "financial": {
+            "title": "{id} | {name}",
+            "subtitle": "Spectator action menus"
+        },
+        "loginList": {
+            "title": "{id} | {name}",
+            "subtitle": "Spectator action menus"
+        },
+        "bans": {
+            "title": "{id} | {name}",
+            "subtitle": "Spectator action menus"
+        },
+        "menu": {
+            "subtitle": "Spectator action menus"
+        }
+    },
+    "modals": {
+        "addGroup": {
+            "title": "Add Group",
+            "description": "Add the desired group to the player ID",
+            "playerIdLabel": "Passport",
+            "playerIdPlaceholder": "Enter passport",
+            "groupLabel": "Group",
+            "groupPlaceholder": "Enter group name",
+            "levelLabel": "Level",
+            "levelPlaceholder": "Enter level",
+            "submitText": "Add"
+        },
+        "reviveLocation": {
+            "title": "Revive Location",
+            "description": "Choose the desired location to revive the player",
+            "locationPlaceholder": "Location",
+            "submitText": "Revive",
+            "locations": {
+                "praca": "Square",
+                "pier-sul": "South Pier",
+                "pier-norte": "North Pier",
+                "hp-sul": "South HP",
+                "hp-norte": "North HP",
+                "mecanica": "Mechanic",
+                "dp1": "PD 1",
+                "dp2": "PD 2",
+                "dp3": "PD 3"
+            }
+        },
+        "removeGroup": {
+            "title": "Remove Group",
+            "message": "Are you sure you want to remove the group {group} from ID {id}?",
+            "confirmText": "Remove",
+            "cancelText": "Cancel"
+        },
+        "kickPlayer": {
+            "title": "Kick",
+            "description": "Enter the reason for the kick in the field below.",
+            "playerIdLabel": "Passport",
+            "playerIdPlaceholder": "Player ID",
+            "reasonLabel": "Reason",
+            "reasonPlaceholder": "Enter the reason for the kick",
+            "submitText": "Kick"
+        },
+        "banPlayer": {
+            "title": "Ban",
+            "description": "Enter the reason for the ban in the field below.",
+            "playerIdLabel": "Passport",
+            "playerIdPlaceholder": "Player ID",
+            "reasonLabel": "Reason",
+            "reasonPlaceholder": "Enter the reason for the ban",
+            "tagLabel": "Tags",
+            "tagPlaceholder": "Select a tag",
+            "submitText": "Ban",
+            "tags": {
+                "zaralho": "Zaralho",
+                "desrespeito": "Disrespect City/Staff",
+                "prog_ilicitos": "Illicit Programs/Refused Screening",
+                "dark_rp": "Dark RP",
+                "hacker": "Hacker",
+                "comercial": "Commercial"
+            }
+        },
+        "giveItem": {
+            "title": "Give Item",
+            "description": "Choose the item and quantity you want to give to the player",
+            "playerIdLabel": "Passport",
+            "playerIdPlaceholder": "Enter passport",
+            "itemLabel": "Item",
+            "itemPlaceholder": "Item name",
+            "addButton": "Add",
+            "submitText": "Give Item",
+            "itemNotFound": "Item does not exist",
+            "checkItemError": "Error checking item",
+            "consumable": "Consumable"
+        }
+    },
+    "search": {
+        "placeholder": "Search"
+    }
+}

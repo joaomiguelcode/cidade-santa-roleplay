@@ -1,0 +1,16 @@
+-- DEFINE_MISSION 'fuga_limpa' {
+--     group = eMissionGroup.Criminal,
+--     order = 3,
+--     name = "Fuga Limpa",
+--     description = "Entre em perseguicao policial (jogador ou NPC) por pelo menos 30 segundos com procurado/QRU ativo e escape perdendo o wanted sem ser preso. Pode ocorrer naturalmente durante outras atividades.",
+--     dependencies = { 'entrega_arriscada' },
+--     flags = eMissionFlags.NONE,
+--     rewards = {
+--         skills = { driving = 200, crime = 100 },
+--         title = "Invisível",
+--     },
+--     metadata = {
+--         hook = "missions:hook:clean_escape_completed",
+--         min_chase_seconds = 30,
+--     },
+-- }

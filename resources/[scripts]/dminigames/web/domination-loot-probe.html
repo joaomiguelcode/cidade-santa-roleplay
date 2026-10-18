@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Domination loot — teste incremental</title>
+    <style>
+      html, body {
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background: transparent;
+      }
+      body.probe-pattern {
+        box-sizing: border-box;
+        border: 8px solid white;
+        background: conic-gradient(#56d5b4 25%, #173946 0 50%, #d9edf0 0 75%, #247994 0);
+      }
+      #items {
+        position: absolute;
+        inset: 0;
+      }
+      #items img {
+        position: absolute;
+        width: 96px;
+        height: 96px;
+        object-fit: contain;
+        transform: translate(-50%, -50%);
+      }
+      /* Movimento opt-in: somente transform, sem promover camadas permanentemente. */
+      @media (prefers-reduced-motion: no-preference) {
+        body.probe-floating #items img[data-status="loaded"]:not([hidden]) {
+          animation: loot-float 2.8s cubic-bezier(0.45, 0, 0.55, 1) infinite;
+          animation-delay: var(--float-delay, 0s);
+        }
+        body.probe-floating #items img:nth-child(2) { --float-delay: -0.4s; }
+        body.probe-floating #items img:nth-child(3) { --float-delay: -1.2s; }
+        body.probe-floating #items img:nth-child(4) { --float-delay: -0.8s; }
+        body.probe-floating #items img:nth-child(5) { --float-delay: -2s; }
+        body.probe-floating #items img:nth-child(6) { --float-delay: -1.6s; }
+      }
+      @keyframes loot-float {
+        0%, 100% { transform: translate(-50%, -50%); }
+        50% { transform: translate(-50%, calc(-50% - 4px)); }
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+      // Indices visuais do catalogo Item.lua; URL/fallback iguais ao inventory.
+      const imageBase = 'https://santaimagens.roleplayrp.com/img/inventory/';
+      const samples = [
+        ['m1911', 168, 184],
+        ['pistolammo', 288, 160],
+        ['bandage', 358, 248],
+        ['water', 142, 296],
+        ['radio', 246, 282],
+        ['dollars', 316, 360],
+      ];
+      let content = null;
+      let items = null;
+      let splash = null;
+      const motionPreference = window.matchMedia('(prefers-reduced-motion: no-preference)');
+
+      function createItems() {
+        const layer = document.createElement('div');
+        layer.id = 'items';
+        for (const [index, x, y] of samples) {
+          const image = document.createElement('img');
+          image.alt = '';
+          image.draggable = false;
+          image.style.left = `${x / 512 * 100}%`;
+          image.style.top = `${y / 512 * 100}%`;
+          image.dataset.index = index;
+          image.dataset.status = 'loading';
+          image.onload = () => {
+            image.style.width = `${Math.min(96, image.naturalWidth)}px`;
+            image.style.height = `${Math.min(96, image.naturalHeight)}px`;
+            image.dataset.status = 'loaded';
+          };
+          image.onerror = () => {
+            image.dataset.fallback = 'true';
+            // Uma unica alternativa. Nao repetir requests se o CDN estiver fora.
+            image.onerror = () => {
+              image.onerror = null;
+              image.hidden = true;
+              image.dataset.status = 'error';
+            };
+            image.src = `${imageBase}no-image.png`;
+          };
+          image.src = `${imageBase}${index}.png`;
+          layer.appendChild(image);
+        }
+        document.body.appendChild(layer);
+        return layer;
+      }
+
+      function cancelSplash() {
+        if (!splash) return;
+        const animations = splash.animations;
+        splash = null;
+        for (const animation of animations) {
+          animation.onfinish = null;
+          animation.cancel();
+        }
+        items.dataset.splash = 'idle';
+      }
+
+      function showContent(next) {
+        if (!next || next === content) return;
+        if (next === 'animated' && !items) return;
+        cancelSplash();
+        content = next;
+        if (content === 'items' && !items) items = createItems();
+        if (items) items.hidden = content === 'pattern';
+        document.body.classList.toggle('probe-pattern', content === 'pattern');
+        document.body.classList.toggle('probe-floating', content === 'animated');
+      }
+
+      function playSplash() {
+        if (!items || content === 'pattern') return;
+        const images = Array.from(items.children);
+        // Teste manual: primeiro espere as imagens, depois execute splash.
+        if (images.some(image => image.dataset.status === 'loading')) {
+          items.dataset.splash = 'waiting-images';
+          return;
+        }
+        showContent('items');
+        const visible = images.filter(image => image.dataset.status === 'loaded' && !image.hidden);
+        if (!visible.length || !motionPreference.matches) {
+          showContent('animated');
+          return;
+        }
+        const run = { animations: [], remaining: visible.length };
+        splash = run;
+        content = 'splash';
+        items.dataset.splash = 'running';
+        // Uma animacao finita por imagem, no mesmo DOM. Sem RAF/timer ou leitura de layout.
+        images.forEach((image, index) => {
+          if (image.dataset.status !== 'loaded' || image.hidden) return;
+          const [, x, y] = samples[index];
+          const dx = 256 - x;
+          const dy = 272 - y;
+          const apex = Math.min(272, y) - y - 24;
+          const animation = image.animate([
+            { transform: `translate(calc(-50% + ${dx}px), calc(-50% + ${dy}px))`, offset: 0, easing: 'cubic-bezier(0.22, 1, 0.36, 1)' },
+            { transform: `translate(calc(-50% + ${dx * 0.35}px), calc(-50% + ${apex}px))`, offset: 0.45, easing: 'cubic-bezier(0.55, 0, 0.8, 0.45)' },
+            { transform: 'translate(-50%, -50%)', offset: 1 },
+          ], { duration: 620, delay: index * 16, fill: 'both' });
+          run.animations.push(animation);
+          animation.onfinish = () => {
+            if (splash !== run) return;
+            run.remaining--;
+            if (run.remaining === 0) showContent('animated');
+          };
+        });
+      }
+
+      motionPreference.addEventListener('change', () => {
+        if (!motionPreference.matches && splash) showContent('animated');
+      });
+
+      // Entrada vazia; assets apenas no primeiro comando items. Reusa o mesmo DOM.
+      window.addEventListener('message', (event) => {
+        if (event.data?.action === 'probeSplash') {
+          playSplash();
+          return;
+        }
+        showContent(event.data?.action === 'probePattern' ? 'pattern'
+          : event.data?.action === 'probeItems' ? 'items'
+          : event.data?.action === 'probeAnimated' ? 'animated' : null);
+      });
+    </script>
+  </body>
+</html>

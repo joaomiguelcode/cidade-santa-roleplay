@@ -1,0 +1,17 @@
+-- DEFINE_MISSION "cidadao_oficial" {
+-- 	group = eMissionGroup.Connect,
+-- 	order = 7,
+-- 	name = _t("mission.cidadao_oficial.name"),
+-- 	description = _t("mission.cidadao_oficial.description"),
+--     icon = "https://cdn.santagroup.gg/onboarding/cidad_o_oficial.svg",
+-- 	dependencies = {},
+-- 	flags = eMissionFlags.NONE,
+-- 	auto_activate = true,
+-- 	rewards = {
+-- 		skills = { social = 160 },
+-- 		title = _t("mission.cidadao_oficial.reward.title"),
+-- 	},
+-- 	metadata = {
+-- 		hook = "missions:hook:cellphone_verified",
+-- 	},
+-- }

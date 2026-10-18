@@ -1,0 +1,1 @@
+-- competitive mode server main

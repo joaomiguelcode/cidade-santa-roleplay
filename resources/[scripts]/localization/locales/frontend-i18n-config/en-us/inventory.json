@@ -1,0 +1,176 @@
+{
+    "title": {
+        "hotbar": "Hotbar",
+        "main": "Inventory",
+        "trunk": "Trunk",
+        "property": "Property",
+        "inspect": "Inspect",
+        "shop": "Shop",
+        "ground": "Ground",
+        "chest": "Chest",
+        "preview": "Preview"
+    },
+    "use": "Use",
+    "send": "Send",
+    "delivery": "Deliver",
+    "destroy": "Destroy",
+    "destruct": "Destruct",
+    "collection": "Exclusives",
+
+    "loading": "Loading...",
+    "chestPermission": {
+        "title": "Configure Chest",
+        "subtitle": "Choose who can withdraw items.",
+        "viewPermissions": "View chest permissions",
+        "activePermissions": "Active permissions",
+        "loadingPermissions": "Loading permissions...",
+        "noActivePermission": "No active permissions.",
+        "removePermission": "Remove permission from {0}",
+        "close": "Close",
+        "configureBy": "Configure by",
+        "whoCanWithdraw": "Who can withdraw",
+        "configureMember": "Configure Member",
+        "configureRole": "Configure Role",
+        "member": "Member",
+        "memberRole": "Member role",
+        "memberId": "Member ID",
+        "noOptionAvailable": "No options available.",
+        "noOptionFound": "No options found.",
+        "saleCommission": "Sales commission",
+        "saleCommissionDescription": "Percentage received by the seller for each transaction.",
+        "authorizeWithdraw": "Authorize item withdrawals",
+        "authorizedToWithdraw": "Authorized to withdraw items",
+        "authorizeConfigureChest": "Authorize chest configuration",
+        "authorizedToConfigureChest": "Authorized to configure chest",
+        "immediateChangesHint": "Changes take effect immediately for everyone affected.",
+        "cancel": "Cancel",
+        "saveChanges": "Save changes"
+    },
+    "factionArsenal": {
+        "fallbackFactionName": "Los Santos Vagos Faction",
+        "howItWorks": "How does it work?",
+        "helpSubtitle": "Learn what each arsenal option does",
+        "close": "Close",
+        "back": "Back",
+        "important": "IMPORTANT",
+        "understood": "Got it",
+        "stockNotice": "All items withdrawn by members through the Arsenal are automatically deducted from the Leader Chest stock.",
+        "helpTopics": {
+            "position": {
+                "title": "Arsenal location",
+                "description": "Sets where members access the arsenal. It must be within 50 m of the headquarters."
+            },
+            "roles": {
+                "title": "Configure roles",
+                "description": "Select the role that will receive its own configuration."
+            },
+            "enable": {
+                "title": "Enable arsenal",
+                "description": "Allows or blocks arsenal access for the selected role."
+            },
+            "cooldown": {
+                "title": "Cooldown",
+                "description": "Sets how long members must wait before withdrawing the kit again."
+            },
+            "kit": {
+                "title": "Kit items",
+                "description": "Sets the weapons, ammunition, other items, and quantities given to the role."
+            },
+            "disable-all": {
+                "title": "Enable/Disable all roles",
+                "description": "Toggles arsenal access for every faction role at once."
+            }
+        },
+        "roleArsenalSection": "1. Role arsenal",
+        "activateArsenal": "Enable arsenal",
+        "deactivateArsenal": "Disable arsenal",
+        "enabled": "Enabled",
+        "disabled": "Disabled",
+        "withdrawRulesSection": "2. Withdrawal rules",
+        "interval": "Interval",
+        "withdrawAgainHint": "Time before another withdrawal",
+        "kitItemsSection": "3. Kit items ({0})",
+        "emptyKit": "This role's kit has no items.",
+        "itemQuantity": "Quantity of {0}",
+        "max": "Max",
+        "removeItem": "Remove {0}",
+        "addItem": "Add item",
+        "saveChanges": "Save changes",
+        "itemPickerSubtitle": "Select an item to add to the role's kit.",
+        "closeItemList": "Close item list",
+        "searchItemPlaceholder": "Search items...",
+        "searchItem": "Search items",
+        "loadingItems": "Loading items...",
+        "noItemFound": "No items found.",
+        "discardTitle": "Discard changes?",
+        "discardDescription": "You changed this role. If you go back now, those changes will not be saved.",
+        "continueEditing": "Continue editing",
+        "discardAndBack": "Discard and go back",
+        "searchRolePlaceholder": "Search roles...",
+        "searchRole": "Search roles",
+        "rolesCount": "{0} roles",
+        "noRoleFound": "No roles found.",
+        "itemsCount": "{0} items",
+        "configureRoles": "Configure roles",
+        "setupPositionFirst": "Set the arsenal location first",
+        "toggleAllRoles": "Enable/Disable all roles",
+        "toggleAllRolesDescription": "Enables or disables the arsenal for every faction role",
+        "configureRolesDescription": "Kit, quantities, cooldown, and enable/disable settings",
+        "editPosition": "Edit location",
+        "markPosition": "Set arsenal location",
+        "editPositionDescription": "Saves your current position as the new arsenal location",
+        "markPositionDescription": "Saves your current position as the arsenal location (max. 50 m from HQ)",
+        "removePosition": "Remove location",
+        "removePositionDescription": "Removes the location — no one will be able to withdraw the kit"
+    },
+    "utils": [
+     {
+          "button": "RIGHT CLICK",
+          "description": "Use item"
+      },
+      {
+          "button": "SHIFT + RIGHT CLICK",
+          "description": "Use item"
+      },
+      {
+          "button": "SHIFT + RIGHT CLICK",
+          "description": "Use all items"
+      },
+      {
+          "button": "LEFT BUTTON",
+          "description": "Drag 1 item"
+      },
+      {
+          "button": "LEFT BUTTON + SHIFT",
+          "description": "Drag all"
+      },
+      {
+          "button": "1 to 5",
+          "description": "Quick shortcuts"
+    }
+    ],
+    "getAll": "GET ALL",
+    "getIllegal": "GET ILLEGAL",
+    "upgradeInventoryTitle": "Upgrade your inventory",
+    "upgradeInventoryButton": "INCREASE SPACE",
+    "noDescription": "No information available about this item.",
+    "priceDesc": "Price",
+    "quantityDesc": "Quantity",
+    "stockDesc": "Stock",
+    "weightDesc": "Weight",
+    "economyDesc": "Economy",
+    "expiresInDesc": "Expires in",
+    "durabilityDesc": "Durable for",
+    "rechargeDesc": "Rechargeable",
+    "nameDesc": "Name",
+    "passportDesc": "Passport",
+    "ageDesc": "Age",
+    "rolepassDesc": "Rolepass",
+    "keyDesc": "Key",
+    "phoneDesc": "Phone",
+    "premiumDesc": "Premium",
+    "suitcaseDesc": "Suitcase",
+    "collection": "Exclusives",
+    "days": "days",
+    "day": "day"
+}

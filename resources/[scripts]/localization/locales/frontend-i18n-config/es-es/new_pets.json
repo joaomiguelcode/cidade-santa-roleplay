@@ -1,0 +1,70 @@
+{
+    "ownpets": {
+        "header": {
+            "title": "Mis Mascotas",
+            "description": "Lista de mascotas disponibles"
+        },
+        "counter": {
+            "pets": "mascotas"
+        },
+        "pagination": {
+            "previous": "Página anterior",
+            "next": "Siguiente página"
+        },
+        "card": {
+            "age": "Edad",
+            "select": "Seleccionar"
+        },
+
+        "time": {
+            "year": "año",
+            "years": "años",
+            "month": "mes",
+            "months": "meses",
+            "day": "día",
+            "days": "días",
+            "hour": "hora",
+            "hours": "horas",
+            "minute": "minuto",
+            "minutes": "minutos",
+            "justNow": "justo ahora"
+        }
+    },
+    "petinfo": {
+        "header": {
+            "interactions": "Interacciones",
+            "close": "Cerrar"
+        },
+        "stats": {
+            "hunger": "Hambre",
+            "level": "Nivel"
+        },
+        "actions": {
+            "caresses": "Caricias"
+        },
+        "interactions": {
+            "title": "Interacciones",
+            "description": "Juega con tu mascota"
+        },
+        "rename": {
+            "interaction": "Cambiar nombre",
+            "title": "Cambiar el nombre de la mascota",
+            "description": "Elige un nuevo nombre para tu mascota.",
+            "label": "Nombre de la mascota",
+            "cancel": "Cancelar",
+            "confirm": "Confirmar",
+            "saving": "Guardando...",
+            "validation": {
+                "empty": "Introduce un nombre.",
+                "too_long": "El nombre puede tener como máximo 50 caracteres.",
+                "invalid_characters": "El nombre contiene caracteres no válidos."
+            },
+            "errors": {
+                "invalid_name": "Este nombre no es válido.",
+                "not_owner": "Solo el dueño puede cambiar el nombre de esta mascota.",
+                "pet_not_found": "Mascota no encontrada.",
+                "rename_failed": "No se pudo cambiar el nombre de la mascota. Inténtalo de nuevo."
+            }
+        }
+    }
+}

@@ -1,0 +1,377 @@
+body {
+  margin: 0;
+  /* background-color: #000000; */
+  font-family: 'Roboto', sans-serif;
+}
+
+#balloon-container {
+  height: 100vh;
+  padding: 1em;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  transition: opacity 500ms;
+  display: none;
+}
+
+#video-player {
+  width: 100%;
+  height: 100%;
+}
+
+.balloon {
+  height: 150px;
+  width: 135px;
+  border-radius: 75% 75% 70% 70%;
+  position: relative;
+}
+
+.balloon:before {
+  content: "";
+  height: 75px;
+  width: 1px;
+  padding: 1px;
+  background-color: #FDFD96;
+  display: block;
+  position: absolute;
+  top: 125px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.balloon:after {
+    content: "▲";
+    text-align: center;
+    display: block;
+    position: absolute;
+    color: inherit;
+    top: 120px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+@keyframes float {
+  from {transform: translateY(100vh);
+  opacity: 1;}
+  to {transform: translateY(-300vh);
+  opacity: 0;}
+}
+
+.messages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  font-size: 2em;
+  color: #FFFFFF;
+  text-shadow: 2px 2px 4px #000000;
+  transition: opacity 1500ms;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+
+  text-transform: uppercase;
+}
+
+.messages h1 {
+  margin: 0;
+  padding: 0;
+  font-weight: 900;
+  color: #FFFFFF;
+}
+
+.messages h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.messages p {
+  margin: 0;
+  padding: 0;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.message img {
+  width: 100%;
+  max-width: 300px;
+  margin: 1em;
+  object-fit: contain;
+}
+
+#premium {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  display: none;
+  padding: 32px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+
+  border-radius: 8px;
+  background: linear-gradient(107deg, rgba(13, 13, 13, 0.98) 0%, rgba(0, 0, 0, 0.93) 100%);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  padding-bottom: 25px;
+}
+
+.flex-1 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.flex-1 h1 {
+  color: #FFF;
+  text-align: center;
+  font-family: "Bebas Neue";
+  font-size: 38px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+  padding: 0;
+}
+
+.flex-2 {
+  display: flex;
+  justify-content: space-between;
+  gap: 22px;
+  min-width: 780px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 100%;
+  min-width: 380px;
+}
+
+.content span {
+  color: rgba(255, 255, 255, 0.95);
+  font-family: Blinker;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.video {
+  width: 458px;
+  height: 300px;
+  flex-shrink: 0;
+
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.03);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video span {
+  color: rgba(255, 255, 255, 0.25);
+  text-align: center;
+  font-family: Blinker;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.item-number {
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 4px;
+  background: rgba(175, 151, 50, 0.12);
+  color: #AF9732;
+  text-align: center;
+  font-family: "Bebas Neue";
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.item-box {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.item-box h2 {
+  color: #FFF;
+  font-family: Blinker;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 90.828%; /* 13.624px */
+  margin: 0;
+  padding: 0;
+}
+
+.item-box p {
+  color: rgba(255, 255, 255, 0.55);
+  font-family: Blinker;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 90.828%; /* 11.808px */
+  margin: 0;
+  padding: 0;
+}
+
+.whatsapp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  border-radius: 4px;
+  background: #EBCA46;
+  height: 50px;
+  width: 100%;
+
+  color: #000;
+  text-align: center;
+  font-family: "Bebas Neue";
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  transition: background 0.3s;
+}
+
+.whatsapp:hover {
+  background: #F0D85A;
+  cursor: pointer;
+}
+
+.whatsapp svg {
+  position: absolute;
+  left: 91%;
+}
+
+#congratulations {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  background: #000000;
+  color: #FFF;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#congratulations h1 {
+  color: #FFF;
+  text-align: center;
+  font-family: "Bebas Neue";
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+  padding: 0;
+}
+
+#congratulations span {
+  color: rgba(255, 255, 255, 0.75);
+  text-align: center;
+  font-family: Blinker;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 60%;
+  margin: 0;
+  padding: 0;
+}
+
+#congratulations span strong {
+  color: #FFF;
+  font-weight: 700;
+}
+
+.next-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+
+  border-radius: 4px;
+  background: #EBCA46;
+  width: 232px;
+  height: 36px;
+  flex-shrink: 0;
+  transition: background 0.3s;
+  position: relative;
+  margin-top: 24px;
+}
+
+.next-button:hover {
+  background: #F0D85A;
+  cursor: pointer;
+}
+
+.next-button p {
+  color: #000;
+  text-align: center;
+  font-family: "Bebas Neue";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+  padding: 0;
+}
+
+.next-button svg {
+  position: absolute;
+  left: 88%;
+}
+
+#close {
+  cursor: pointer;
+}

@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/src/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;800&family=Rajdhani:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chivo+Mono:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>With ❤️ by Santa Group</title>
+    <script type="module" crossorigin src="./assets/main-BI-fgqnv.js"></script>
+    <link rel="modulepreload" crossorigin href="./assets/MarkerDui-EsET5gEb.js">
+    <link rel="stylesheet" crossorigin href="./assets/MarkerDui-Bnum86hF.css">
+    <link rel="stylesheet" crossorigin href="./assets/main-MrdHXFVe.css">
+  </head>
+  <body>
+    <div id="root"></div>
+    <script src="http://localhost:8097"></script>
+    <script>
+      (function () {
+        var shotCtx = null;
+        var shotBuffer = null;
+        var lightBuffers = { green: null, red: null };
+        var activeLightSource = null;
+        var activeLightAudio = null;
+
+        function ensureAudioCtx() {
+          if (!shotCtx) {
+            shotCtx = new (window.AudioContext || window.webkitAudioContext)();
+          }
+          return shotCtx;
+        }
+
+        function loadBuffer(path, onReady) {
+          try {
+            var ctx = ensureAudioCtx();
+            fetch(path)
+              .then(function (res) { return res.arrayBuffer(); })
+              .then(function (buf) { return ctx.decodeAudioData(buf); })
+              .then(function (decoded) { onReady(decoded); })
+              .catch(function () {});
+          } catch (err) {}
+        }
+
+        function initCaughtShot() {
+          loadBuffer("./pistol-shot.mp3", function (decoded) {
+            shotBuffer = decoded;
+          });
+        }
+
+        function initLightSounds() {
+          loadBuffer("./green_light.mp3", function (decoded) {
+            lightBuffers.green = decoded;
+          });
+          loadBuffer("./red_light.mp3", function (decoded) {
+            lightBuffers.red = decoded;
+          });
+        }
+
+        initCaughtShot();
+        initLightSounds();
+
+        function clampVolume(volume) {
+          var vol = Number(volume);
+          return Number.isFinite(vol) ? Math.max(0, Math.min(1, vol)) : 1;
+        }
+
+        function playBuffer(buffer, volume, pathFallback) {
+          var vol = clampVolume(volume);
+          var ctx = shotCtx;
+
+          if (ctx && buffer) {
+            try {
+              if (ctx.state === "suspended") ctx.resume();
+              var source = ctx.createBufferSource();
+              source.buffer = buffer;
+              var gain = ctx.createGain();
+              gain.gain.value = vol;
+              source.connect(gain);
+              gain.connect(ctx.destination);
+              source.start(0);
+              return source;
+            } catch (err) {}
+          }
+
+          try {
+            var audio = new Audio(pathFallback);
+            audio.volume = vol;
+            audio.play().catch(function () {});
+            return audio;
+          } catch (err) {}
+
+          return null;
+        }
+
+        function playCaughtShot(volume) {
+          playBuffer(shotBuffer, volume, "./pistol-shot.mp3");
+        }
+
+        function stopLightSound() {
+          if (activeLightSource) {
+            try { activeLightSource.stop(0); } catch (err) {}
+            activeLightSource = null;
+          }
+          if (activeLightAudio) {
+            try {
+              activeLightAudio.pause();
+              activeLightAudio.currentTime = 0;
+            } catch (err) {}
+            activeLightAudio = null;
+          }
+        }
+
+        function playLightSound(light, volume) {
+          var key = light === "red" ? "red" : "green";
+          var path = key === "red" ? "./red_light.mp3" : "./green_light.mp3";
+          stopLightSound();
+          var played = playBuffer(lightBuffers[key], volume, path);
+          if (played && typeof played.stop === "function") {
+            activeLightSource = played;
+          } else if (played) {
+            activeLightAudio = played;
+          }
+        }
+
+        window.addEventListener("message", function (event) {
+          var msg = event.data;
+          if (!msg || !msg.action) return;
+
+          if (msg.action === "deathstatue:playCaughtShot") {
+            var shotData = msg.data || {};
+            playCaughtShot(shotData.volume);
+            return;
+          }
+
+          if (msg.action === "deathstatue:playLightSound") {
+            var lightData = msg.data || {};
+            playLightSound(lightData.light, lightData.volume);
+            return;
+          }
+
+          if (msg.action === "deathstatue:stopLightSound") {
+            stopLightSound();
+            return;
+          }
+        });
+      })();
+    </script>
+  </body>
+</html>

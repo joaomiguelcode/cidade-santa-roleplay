@@ -1,0 +1,97 @@
+{
+    "use": "Use",
+    "to_leave_the_game": "to leave the game",
+    "game_time": "Game Time",
+    "overtime": "OVERTIME",
+    "team_full": "Team full",
+    "choose_team": "Choose Team",
+    "killstreak_bonus": "Killstreak Bonus",
+    "player_killed": "Player killed",
+    "points": "Points",
+    "point": "Point",
+    "open_shop": "View shop",
+    "open_ranking": "View ranking",
+    "winner": "Winner!",
+    "next_game_in": "Next game in",
+    "seconds": "Seconds",
+    "most_falls": "Most falls",
+    "most_hits": "Most hits",
+    "rules": "Rules",
+    "actions": {
+        "take_snow": "Take Snow"
+    },
+    "taking_snowball": {
+        "description": "Taking snowball..."
+    },
+    "ranking": {
+        "title": "Snow War Ranking",
+        "description": "Follow the snow war ranking in real time",
+        "best": {
+            "title": "Best of the snows",
+            "subtitle": "Best snow warrior",
+            "points": "Points",
+            "victories": "Victories"
+        },
+        "table": {
+            "position": "Position",
+            "id": "ID",
+            "name": "Name",
+            "points": "Points",
+            "wins": "Wins",
+            "time_played": "Time played"
+        }
+    },
+    "ui": {
+        "previous": "Previous",
+        "next": "Next"
+    },
+    "team": {
+        "red": "Red Team",
+        "blue": "Blue Team"
+    },
+    "shop": {
+        "title": "Season events",
+        "description": "Exchange your coins for prizes",
+        "header": {
+            "title": "Snowball War",
+            "description": "Join our snowball war and enjoy the best prizes!",
+            "button": "Play now"
+        },
+        "error": {
+            "not_enough_coins": "You don't have enough coins",
+            "purchase_failed": "Failed to purchase item"
+        }
+    },
+    "store": {
+        "not": {
+            "enough": {
+                "quantity": "You don't have enough quantity"
+            },
+            "buy": {
+                "because": {
+                    "limit": "You have reached the limit of this item",
+                    "collectible": "You already own this collectible"
+                }
+            }
+        }
+    },
+    "leave_game_modal": {
+        "title": "Leave Match",
+        "description": "Are you sure you want to leave the match?",
+        "no": "No",
+        "yes": "Yes"
+    },
+    "combat": {
+        "hits": "Hits",
+        "falls": "Falls",
+        "points": "Points"
+    },
+    "countdown": {
+        "be_ready": "Be ready!",
+        "starting_in": "Starting in",
+        "starting": "STARTING!"
+    },
+    "data_table": {
+        "no_results": "No results"
+    }
+}

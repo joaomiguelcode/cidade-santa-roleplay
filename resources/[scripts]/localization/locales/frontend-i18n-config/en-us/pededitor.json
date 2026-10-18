@@ -1,0 +1,68 @@
+{
+    "search_placeholder": "Search",
+    "title": "My Skins",
+    "description": "Choose between different models",
+    "tab_humanos": "Humans",
+    "tab_animais": "Animals",
+    "tab_personagens": "Characters",
+    "equip_skin": "Equip Skin",
+    "unequip_skin": "Unequip Skin",
+    "rotate_label": "Rotate Character",
+    "pedshop": {
+        "ordinals": [
+            "First",
+            "Second",
+            "Third",
+            "Fourth",
+            "Fifth",
+            "Sixth",
+            "Seventh",
+            "Eighth",
+            "Ninth",
+            "Tenth"
+        ],
+        "common": {
+            "close": "Close",
+            "back": "Back"
+        },
+        "status": {
+            "permanent": "Permanent",
+            "temporary": "Temporary",
+            "daysRemaining": "{days} {unit} remaining",
+            "day": "day",
+            "days": "days"
+        },
+        "slots": {
+            "title": "Redeem Peds",
+            "subtitle": "Redeem your VIP ped here!",
+            "slotLabel": "{ordinal} Ped",
+            "unselected": "No ped selected",
+            "select": "Select Ped",
+            "swap": "Swap Ped",
+            "swapCountdown": "Swap available for",
+            "remove": "Remove Ped",
+            "redeem": "Redeem Peds"
+        },
+        "selection": {
+            "title": "Select {ordinal} Ped",
+            "subtitle": "Choose one of the available peds for this slot",
+            "alreadySelected": "Selected in another slot",
+            "confirm": "Confirm Ped",
+            "clear": "Remove from this slot"
+        },
+        "confirmation": {
+            "title": "Confirm Redemption",
+            "subtitle": "Review the selected peds before completing the redemption.",
+            "notice": "You may redeem fewer peds than the available limit.",
+            "back": "Back",
+            "submit": "Confirm Redemption",
+            "submitting": "Redeeming...",
+            "error": "The redemption could not be completed. Please try again."
+        },
+        "unavailable": {
+            "title": "Peds Unavailable!",
+            "text": "You currently have no peds to redeem.",
+            "button": "Done"
+        }
+    }
+}

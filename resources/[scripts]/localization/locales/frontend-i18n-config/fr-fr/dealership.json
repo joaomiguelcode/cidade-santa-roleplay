@@ -1,0 +1,22 @@
+{
+  "headerTitle": "Concession",
+  "headerSubtitle": "Véhicules",
+  "cars": "Voitures",
+  "motorcycles": "Motos",
+  "store": "Boutique VIP",
+  "vips": "Véhicules avec des diamants 💎",
+  "discount": "VIP ACTIF <b>50% DE RÉDUCTION</b> SUR TOUS LES VÉHICULES",
+  "testDrive": "Essai routier",
+  "vipTag": "VÉHICULE VIP",
+  "newTag": "NOUVEAU",
+  "priceTag": "Valeur {0}",
+  "decendingTag": "Descendant",
+  "ascendingTag": "Ascendant",
+  "alphabeticalTag": "Ordre alphabétique",
+  "modalTitle": "Confirmez votre achat",
+  "modalSubtitle": "Véhicule",
+  "modalConfirm": "Confirmer",
+  "modalClose": "Fermer",
+  "modalPrice": "Montant à payer",
+  "currency": "$"
+}

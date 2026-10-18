@@ -1,0 +1,2 @@
+-- pededitor model names
+PedModelNames = {}

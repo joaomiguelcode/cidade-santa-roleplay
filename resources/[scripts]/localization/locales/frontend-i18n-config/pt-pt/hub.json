@@ -1,0 +1,73 @@
+{
+  "allRanks": "TODOS OS RANKINGS",
+  "orgPanel": "Painel da Organização",
+
+  "battlepassTitle": "{0}PASS",
+  "battlepassTitle2": "{0}<span>PASS</span>",
+  "battlepassRedeemAll": "RESGATAR TODOS OS PRÊMIOS",
+  "battlepassBuy": "COMPRAR PASSE DE BATALHA",
+  "battlepassEndsIn": "Reseta todo o dia 1",
+  "battlepassItemRedeem": "Resgatar",
+  "battlepassItemRedeemed": "Resgatado",
+  "battlepassItemBlocked": "Bloqueado",
+  "battlepassLevel": "Dia {0}",
+
+  "passText": "PASSE",
+  "promotionExpired": "Expirada",
+  "gift": "Presente",
+
+  "unlockPass": "Liberar Passe",
+
+  "writeNotice": "Escrever uma notícia",
+
+  "redeemed": "Resgatado",
+
+  "removeImage": "Remover",
+  "single": "Solteiro",
+
+  "pasteImageLink": "Cole o link da imagem aqui: 340x100",
+
+  "renewVip": "Renovar",
+  "daysLeftVip": "{0} dias",
+  "hoursLeftVip": "{0} horas",
+  "minutesLeftVip": "{0} minutos",
+  "expiredVip": "Expirado",
+
+  "homeNav": "Início",
+  "missionsNav": "Conquistas",
+  "storeNav": "Loja",
+  "newsNav": "Notícias",
+  "mapNav": "Mapa",
+  "configNav": "Configurações",
+  "rulesNav": "Regras",
+
+  "titleAchievements": "Visão Geral",
+  "disponibleAchievements": "Títulos",
+  "redeemAchievement": "COLETAR RECOMPENSA",
+  "rewardAchievement": "Recompensa",
+
+  "writeTitle": "Escreva um título",
+  "publish": "Publicar",
+
+  "buyVipButton": "COMPRAR AGORA",
+
+  "buyVip": "Comprar",
+  "changeInsta": "Alterar",
+  "Insta": "Adicionar",
+  "changeTiktok": "Alterar",
+  "Tiktok": "Adicionar",
+  "hoursPlayed": "Horas jogadas",
+  "hasntVip": "Não possui VIP",
+
+  "clickToUnlock": "Liberar Passe",
+  "blocked": "Bloqueado",
+  "battlepassTime": "Acaba todo o dia 1",
+  "police": "POLICIAIS",
+  "medic": "MÉDICOS",
+  "mechanic": "MECÂNICOS",
+  "clickToCreateNews": "Clique aqui para criar a sua notícia!",
+  "clickToCreateNewsDescription": "Clicando aqui pode criar a sua notícia",
+
+  "achievements:playtime_hours_x_daily.displayName": "Conectado por + de {0} hora(s) (Hoje)",
+  "achievements:playtime_hours_x_daily.description": "Fique conectado por + de {0} hora hoje para completar esta missão."
+}

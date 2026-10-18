@@ -1,0 +1,145 @@
+shared_script '@likizao_ac/client/library.lua'
+
+fx_version "bodacious"
+game "gta5"
+lua54 "yes"
+
+ui_page "web/index.html"
+
+shared_scripts {
+    "translations.lua",
+    "@ox_lib/init.lua",
+    "@sx/linker.lua",
+    "@vrp/lib/Utils.lua",
+	"@vrp/config/Global.lua",
+	"@vrp/config/Groups.lua",
+    "@org_system/shared/shared.lua",
+    "@missions/shared/onboarding_index.lua",
+    "@social_ranking/shared/enabled_cities.lua",
+    "coupons/shared/types.lua",
+    "coupons/shared/config.lua",
+    "coupons/shared/translations.lua",
+    "shared/**/*",
+}
+
+client_scripts {
+	"@vrp/config/Native.lua",
+    "@PolyZone/client.lua",
+	"@PolyZone/BoxZone.lua",
+	"@PolyZone/EntityZone.lua",
+	"@PolyZone/CircleZone.lua",
+	"@PolyZone/ComboZone.lua",
+    "@vrp/config/Themes.lua",
+	'@sleepless_interact/init.lua',
+	"client/core.lua",
+    "client/feedback/quality/texts.lua",
+    "client/feedback/quality/nui.lua",
+    "client/feedback/main.lua",
+    "client/feedback/organization/main.lua",
+    "client/feedback/recruitment/main.lua",
+    "client/feedback/recruitment_punishment/texts.lua",
+    "client/feedback/recruitment_punishment/modal.lua",
+    "client/feedback/recruitment_punishment/nui.lua",
+    "client/feedback/punishment_modal/texts.lua",
+    "client/feedback/punishment_modal/nui.lua",
+    "client/feedback/achievements/main.lua",
+    "client/feedback/ranking_milestone/main.lua",
+    "client/feedback/bootstrap.lua",
+    "client/feedback/staff_duty/nui.lua",
+    "client/hud/*",
+    "client/waypoint/duiatlas.lua",
+    "client/waypoint/duipoint.lua",
+    "client/waypoint/manager.lua",
+    "client/waypoint/main.lua",
+    "client/waypoint/fac_qg.lua",
+    "client/jobs_discovery.lua",
+    "client/legal_focus.lua",
+	"client/notify/*",
+	"client/request/*",
+	"client/chat/*",
+    "client/whatsapp/*",
+    "client/chamaleon/*",
+    "client/missions/*",
+    "coupons/client/main.lua",
+    "coupons/client/admin-menu.lua",
+}
+
+server_scripts {
+	'@oxmysql/lib/MySQL.lua',
+	"@vrp/config/Item.lua",
+	"@vrp/config/translations.lua",
+	"server/core.lua",
+	"server/hud/factionfocus_v2/catalog.lua",
+	"server/hud/factionfocus_v2/runtime.lua",
+	"server/hud/factionfocus_v2/runtime_policy.lua",
+	"server/hud/factionfocus_compat.lua",
+	"server/hud/factionfocus_v3/shared.lua",
+	"server/hud/factionfocus_v3/audio.lua",
+	"server/hud/factionfocus_v3/leadership.lua",
+	"server/hud/factionfocus_v3/staff.lua",
+	"server/hud/factionfocus_v3/runtime.lua",
+	"server/hud/factionfocus_v3/handoff.lua",
+	"server/hud/factionfocus_v3/scheduler.lua",
+	"server/hud/factionfocus_v3/funnel.lua",
+	"server/hud/waypoint.lua",
+	"server/hud/factionfocus_v3/commands.lua",
+	"server/hud/factionfocus_v3/core.lua",
+	"server/hud/legal_focus.lua",
+    "server/feedback/config.lua",
+    "server/feedback/player.lua",
+    "server/feedback/ranking/*.lua",
+    "server/feedback/quality/*.lua",
+    "server/feedback/main.lua",
+    "server/feedback/organization/*.lua",
+    "server/feedback/recruitment/config.lua",
+    "server/feedback/recruitment/repository.lua",
+    "server/feedback/recruitment/reward.lua",
+    "server/feedback/recruitment/main.lua",
+    "server/feedback/recruitment/routes.lua",
+    "server/feedback/recruitment_punishment/main.lua",
+    "server/feedback/achievements/main.lua",
+    "server/feedback/routes.lua",
+    "server/feedback/bootstrap.lua",
+	-- Waypoint e compat ja carregam acima; repetir o glob inicia timers e handlers em dobro.
+	"server/hud/core.lua",
+	"server/hud/factionfocus.lua",
+	"server/hud/factionfocus_funnel.lua",
+	"server/hud/killfeed.lua",
+	"server/hud/reposed.lua",
+	"server/hud/vehicle.lua",
+	"server/hud/wanted.lua",
+	"server/notify/*",
+	"server/request/*",
+    "server/chat/*",
+    "server/whatsapp/*",
+
+	"server/chamaleon/utils.lua",
+	"server/chamaleon/repository.lua",
+	"server/chamaleon/routes.lua",
+
+    "coupons/server/config.lua",
+    "coupons/server/main.lua",
+    "coupons/server/domain.lua",
+    "coupons/server/repository.lua",
+    "coupons/server/use-cases/create.lua",
+    "coupons/server/use-cases/update.lua",
+    "coupons/server/use-cases/remove.lua",
+    "coupons/server/use-cases/list.lua",
+    "coupons/server/use-cases/interaction.lua",
+    "coupons/server/use-cases/vip-collection.lua",
+    "coupons/server/use-cases/initial-coupons.lua",
+    "coupons/server/use-cases/initial-vip-collection.lua",
+    "coupons/server/routes.lua",
+    "coupons/server/bootstrap.lua",
+}
+
+files {
+	"web/*",
+	"web/**/*",
+}
+
+-- # Tests
+
+-- shared_script '__tests__/request.test.lua'
+
+-- server_script '__tests__/factionfocus_sim.lua'
